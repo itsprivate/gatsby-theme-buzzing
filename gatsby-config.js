@@ -62,7 +62,9 @@ module.exports = {
       options: {
         locales: localesPath,
         i18nextOptions: {
+          debug: true,
           ns: getLocaleNamespaces(),
+          defaultNS: "common",
         },
       },
     },
