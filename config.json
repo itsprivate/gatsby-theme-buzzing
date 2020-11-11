@@ -1,0 +1,5 @@
+{
+  "localesPath": ".cache/gatsby-source-git/theowenyoung/topic-source/RedditTop/i18n/i18next",
+  "localeNamespacePrefixes": ["reddit-title-"],
+  "fromYear": 2020
+}
