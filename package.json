@@ -17,7 +17,7 @@
     "gatsby-source-twitter": "^3.2.2",
     "gatsby-theme-i18n": "^1.0.4",
     "gatsby-theme-i18n-react-i18next": "^1.0.4",
-    "gatsby-theme-timeline": "^0.1.39",
+    "gatsby-theme-timeline": "^0.1.41",
     "i18next": "^19.8.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

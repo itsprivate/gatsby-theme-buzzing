@@ -13,11 +13,11 @@ const ItemsTitle = ({ pageType, tag, basePath }) => {
     return (
       <Styled.h3>
         <LinkUI sx={{ color: `textMuted` }} as={Link} to={withPrefix(basePath)}>
-          <Trans>Links</Trans>
+          <Trans>All posts</Trans>
         </LinkUI>
         <span> / </span>
         <span>
-          <Trans>{tag}</Trans>
+          <Trans ns="translation-tag">{tag}</Trans>
         </span>
       </Styled.h3>
     )

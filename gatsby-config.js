@@ -62,7 +62,7 @@ module.exports = {
       options: {
         locales: localesPath,
         i18nextOptions: {
-          debug: false,
+          debug: true,
           ns: getLocaleNamespaces(),
           keySeparator: "__::__",
           nsSeparator: "__::::__",
@@ -72,18 +72,14 @@ module.exports = {
   ],
   // Customize your site metadata:
   siteMetadata: {
-    title: `My Blog Title`,
-    author: `My Name`,
+    title: `Reddit Top`,
+    author: `Reddit`,
     description: `My site description...`,
     siteUrl: "http://localhost:8000",
     social: [
       {
-        name: `twitter`,
-        url: `https://twitter.com/gatsbyjs`,
-      },
-      {
-        name: `github`,
-        url: `https://github.com/gatsbyjs`,
+        name: `Reddit`,
+        url: `https://www.reddit.com/`,
       },
     ],
   },
