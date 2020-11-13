@@ -14,7 +14,7 @@ const getAllYears = () => {
   return allYears
 }
 const getLocaleNamespaces = () => {
-  const namespaces = ["common", "common-tag"]
+  const namespaces = ["translation", "translation-tag"]
   const allYears = getAllYears()
   localeNamespacePrefixes.forEach(prefix => {
     allYears.forEach(year => {
