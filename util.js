@@ -13,6 +13,7 @@ const getAllYears = () => {
   }
   return allYears
 }
+exports.getAllYears = getAllYears
 const getLocaleNamespaces = () => {
   const namespaces = ["translation", "translation-tag"]
   const allYears = getAllYears()
