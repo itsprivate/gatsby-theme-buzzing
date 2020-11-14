@@ -173,6 +173,10 @@ module.exports = {
         name: `Reddit`,
         url: `https://www.reddit.com/`,
       },
+      {
+        name: `RSS`,
+        url: `/rss.xml`,
+      },
     ],
   },
 }
