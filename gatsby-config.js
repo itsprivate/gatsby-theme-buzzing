@@ -129,7 +129,7 @@ module.exports = {
             query: `
                {
                   allBlogPost(
-                    limit: 30
+                    limit: 50
                     sort: { fields: [date, slug], order: DESC }
                   ) {
                     nodes {
