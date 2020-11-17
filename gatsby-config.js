@@ -174,6 +174,10 @@ module.exports = {
         url: "/en",
       },
       {
+        name: "中文",
+        url: "/",
+      },
+      {
         name: `Reddit`,
         url: `https://www.reddit.com/`,
       },
