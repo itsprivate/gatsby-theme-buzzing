@@ -170,6 +170,10 @@ module.exports = {
     siteUrl: "https://reddit-top.vercel.app",
     social: [
       {
+        name: "English",
+        url: "/en",
+      },
+      {
         name: `Reddit`,
         url: `https://www.reddit.com/`,
       },
