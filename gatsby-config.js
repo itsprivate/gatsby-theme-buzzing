@@ -167,7 +167,7 @@ module.exports = {
     title: `Reddit Top`,
     author: `Reddit`,
     description: `The most popular posts on Reddit`,
-    siteUrl: "https://reddit-top.vercel.app",
+    siteUrl: "https://reddit.owenyoung.com",
     social: [
       {
         name: "English",
