@@ -56,6 +56,9 @@ module.exports = {
           defaultLang: `zh`,
           configPath: require.resolve(`./i18n/config.json`),
         },
+        disqus: {
+          shortname: "reddit-top",
+        },
       },
     },
     {
@@ -178,12 +181,13 @@ module.exports = {
         url: "/",
       },
       {
-        name: `Reddit`,
-        url: `https://www.reddit.com/`,
-      },
-      {
         name: `RSS`,
         url: `/rss.xml`,
+      },
+      {
+        name: `Reddit`,
+        url: `https://www.reddit.com/`,
+        external: true,
       },
     ],
   },

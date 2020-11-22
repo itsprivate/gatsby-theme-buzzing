@@ -9,11 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import { useTranslation } from "react-i18next"
 import { useLocalization } from "gatsby-theme-i18n"
+import i18next from "i18next"
 
 function SEO({ description, lang, meta, title, imageSource, imageAlt }) {
-  const { locale } = useLocalization()
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,20 +27,21 @@ function SEO({ description, lang, meta, title, imageSource, imageAlt }) {
       }
     `
   )
-  const { t } = useTranslation()
+  const { locale } = useLocalization()
   const metaDescription = description || site.siteMetadata.description
   const image = imageSource
     ? `${site.siteMetadata.siteUrl}${imageSource}`
     : null
   const imageAltText = imageAlt || metaDescription
+  let siteTitle = i18next.t(site.siteMetadata.title)
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: lang || locale,
       }}
       title={title}
-      titleTemplate={`%s | ${t(site.siteMetadata.title)}`}
+      titleTemplate={`%s | ${siteTitle}`}
       meta={[
         {
           name: `description`,
@@ -109,7 +109,6 @@ function SEO({ description, lang, meta, title, imageSource, imageAlt }) {
 }
 
 SEO.defaultProps = {
-  lang: locale,
   meta: [],
 }
 
