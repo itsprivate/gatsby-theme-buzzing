@@ -74,6 +74,26 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Reddit热门`,
+        short_name: `Reddit热门`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#FF4500`,
+        display: `standalone`,
+        localize: [
+          {
+            start_url: `/en/`,
+            lang: `en`,
+            name: `Reddit Top`,
+            short_name: `Reddit`,
+            description: `The most popular posts on Reddit`,
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         feeds: ["en", "zh"].map(locale => {
