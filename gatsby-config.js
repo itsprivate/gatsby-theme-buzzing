@@ -79,6 +79,8 @@ module.exports = {
         name: `Reddit热门`,
         short_name: `Reddit热门`,
         start_url: `/`,
+        lang: `zh`,
+        description: `用中文浏览Reddit上的热门内容`,
         background_color: `#f7f0eb`,
         theme_color: `#FF4500`,
         display: `standalone`,
