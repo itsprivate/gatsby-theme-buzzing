@@ -1,15 +1,11 @@
 /** @jsx jsx */
-import { Link as LinkUI, jsx } from "theme-ui"
 import { Trans } from "react-i18next"
-
-export default function ({ permalink }) {
+import { jsx } from "theme-ui"
+import ItemSource from "gatsby-theme-timeline/src/components/item-source"
+export default function ({ item }) {
   return (
-    <LinkUI
-      href={`https://www.reddit.com${permalink}`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <ItemSource to={`https://www.reddit.com${item.permalink}`}>
       <Trans>View on Reddit</Trans>
-    </LinkUI>
+    </ItemSource>
   )
 }

@@ -7846,10 +7846,10 @@ gatsby-theme-i18n@^1.0.4:
     gatsby-plugin-react-helmet "^3.3.10"
     react-helmet "^6.1.0"
 
-gatsby-theme-timeline@^0.1.55:
-  version "0.1.55"
-  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.55.tgz#4619b899832bfb995112367d0d114731d605bb3e"
-  integrity sha512-iftKzS1wdT4lR4mE/FweuXE1MMeDERM6P0lftdzaf2VV4HMr/US0LxhiqGAswxBpFiyYHY9/bkbVfHJrnoGDBw==
+gatsby-theme-timeline@^0.1.56:
+  version "0.1.56"
+  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.56.tgz#66a0c4a336b46009d84e5fbb8001257efc89ecb7"
+  integrity sha512-3hUQY2S7DfIFZM+Udx2vWMJ5DDeT6FAwFkjWPbJ3hvy09lQuC2wagzJYLjxB15D2Id5i53xXeRWZOVUM7CB/yA==
   dependencies:
     "@theme-ui/prism" "^0.4.0-rc.5"
     date-fns "^2.16.1"
