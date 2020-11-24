@@ -6,11 +6,10 @@ import ShareIcon from "./share-icon"
 export default function ({ item }) {
   const handleShare = () => {
     if (navigator.share) {
-      const origin = window.location.origin
       navigator
         .share({
           title: item.title,
-          url: origin + item.slug,
+          url: `https://www.reddit.com${item.permalink}`,
         })
         .then(() => {
           console.log("Thanks for sharing!")
