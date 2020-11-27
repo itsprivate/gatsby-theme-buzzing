@@ -57,8 +57,6 @@ plugins = plugins.concat([
     resolve: `gatsby-transformer-json`,
     options: {
       typeName: ({ node }) => {
-        console.log("node.relativeDirectory", node.relativeDirectory)
-
         const rootDirectoryName = node.relativeDirectory.split(`/`)[1]
         return _.upperFirst(_.camelCase(`${rootDirectoryName} Json`))
       },
