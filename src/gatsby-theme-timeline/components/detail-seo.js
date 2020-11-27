@@ -2,7 +2,7 @@ import React from "react"
 import SEO from "gatsby-theme-timeline/src/components/seo"
 import i18next from "i18next"
 
-export default item => {
+export default ({ item }) => {
   const { dateISO } = item
   const year = new Date(dateISO).getUTCFullYear()
   return (

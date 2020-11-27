@@ -3,7 +3,7 @@ import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import { Flex, jsx, Link as LinkUI } from "theme-ui"
 import { Trans } from "react-i18next"
 
-const DetailFooterNav = ({ previous, next, item, basePath }) => {
+const DetailFooterNav = ({ previous, next, item }) => {
   const { dateISO } = item
   const year = new Date(dateISO).getUTCFullYear()
   if (!(previous || next)) {
