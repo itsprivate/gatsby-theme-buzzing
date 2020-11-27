@@ -4,6 +4,7 @@ const { getLocaleNamespaces, onPreInit: init, getAllYears } = require("./util")
 const { localesPath } = require("./config.json")
 const fs = require("fs").promises
 init()
+
 let plugins = []
 if (process.env.NODE_ENV === "development") {
   // development not include the whole data
@@ -69,6 +70,7 @@ plugins = plugins.concat([
       tweetTypeName: ["TweetsJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditTopJson"],
       shouldTransformJson: false,
+      shouldTransformImage: false,
       i18nConfig: {
         defaultLang: `zh`,
         configPath: require.resolve(`./i18n/config.json`),
@@ -205,6 +207,7 @@ plugins = plugins.concat([
     },
   },
 ])
+
 module.exports = {
   plugins,
   // Customize your site metadata:
