@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === "development") {
     resolve: `@theowenyoung/gatsby-source-git`,
     options: {
       name: `RedditTop`,
-      remote: `https://github.com/theowenyoung/topic-source.git`,
+      remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
       patterns: ["data/reddit-top-fake/**"],
@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === "development") {
     resolve: `@theowenyoung/gatsby-source-git`,
     options: {
       name: `RedditTop`,
-      remote: `https://github.com/theowenyoung/topic-source.git`,
+      remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
       patterns: ["data/reddit-top/**"],
