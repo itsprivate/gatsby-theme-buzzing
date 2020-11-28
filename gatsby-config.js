@@ -114,6 +114,21 @@ plugins = plugins.concat([
     },
   },
   {
+    resolve: `gatsby-plugin-google-gtag`,
+    options: {
+      // You can add multiple tracking ids and a pageview event will be fired for all of them.
+      trackingIds: [
+        "G-GQVR44BC8T", // Google Analytics / GA
+      ],
+    },
+  },
+  {
+    resolve: "gatsby-plugin-robots-txt",
+    options: {
+      policy: [{ userAgent: "*", disallow: ["/"] }],
+    },
+  },
+  {
     resolve: `gatsby-plugin-feed`,
     options: {
       feeds: ["en", "zh"].map(locale => {
