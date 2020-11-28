@@ -6,7 +6,7 @@ const fs = require("fs").promises
 init()
 
 let plugins = []
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "development" && false) {
   // development not include the whole data
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,
@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === "development") {
       remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/reddit-top/**"],
+      patterns: ["data/reddit-top/**", "data/reddit-top-issues/**"],
     },
   })
 }

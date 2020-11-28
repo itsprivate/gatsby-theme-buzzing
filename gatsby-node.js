@@ -13,7 +13,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const issuesResult = await graphql(
     `
       {
-        allRedditTopWeeklyJson {
+        allRedditTopIssuesJson(filter: { draft: { eq: false } }) {
           nodes {
             id
             items {
@@ -29,8 +29,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (issuesResult.errors) {
     reporter.panic(issuesResult.errors)
   }
-  const { allRedditTopWeeklyJson } = issuesResult.data
-  const issues = allRedditTopWeeklyJson.nodes
+  const { allRedditTopIssuesJson } = issuesResult.data
+  const issues = allRedditTopIssuesJson.nodes
   for (let i = 0; i < issues.length; i++) {
     const issue = issues[i]
     const issueNumber = issue.id
@@ -41,6 +41,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }),
       },
     }
+
     const result = await graphql(
       `
         query ItemsCreatePageQuery($filter: BlogPostFilterInput) {
@@ -74,9 +75,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: {
         basePath,
         pageType: `issue`,
-        tagsFilter: postsFilter,
+        tagsFilter: {},
         filter: postsFilter,
-        limit: postsPerPage,
+        limit: 1000,
         skip: 0,
         totalPages,
         total: total,
