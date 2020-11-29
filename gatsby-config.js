@@ -4,9 +4,9 @@ const { getLocaleNamespaces, onPreInit: init, getAllYears } = require("./util")
 const { localesPath } = require("./config.json")
 const fs = require("fs").promises
 init()
-
+const isDev = process.env.NODE_ENV === "development"
 let plugins = []
-if (process.env.NODE_ENV === "development" && false) {
+if (process.env.NODE_ENV === "development") {
   // development not include the whole data
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,
@@ -69,6 +69,7 @@ plugins = plugins.concat([
       redditTypeName: ["RedditTopJson"],
       shouldTransformJson: false,
       shouldTransformImage: false,
+      postsPerPage: isDev ? 1 : 25,
       i18nConfig: {
         defaultLang: `zh`,
         configPath: require.resolve(`./i18n/config.json`),
@@ -229,6 +230,12 @@ module.exports = {
     author: `Reddit`,
     description: `The most popular posts on Reddit`,
     siteUrl: "https://reddit.owenyoung.com",
+    menuLinks: [
+      // {
+      //   name: "Issues",
+      //   url: "/issues",
+      // },
+    ],
     social: [
       {
         name: "English",

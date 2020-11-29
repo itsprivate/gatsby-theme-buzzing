@@ -7,6 +7,16 @@ import { Link as LinkUI } from "theme-ui"
 import { join as urlJoin } from "path"
 
 export default function PreviousPageLink({ prefix }, props) {
+  if (props.isActive) {
+    return (
+      <div
+        sx={{
+          flexGrow: 1,
+          textAlign: `left`,
+        }}
+      ></div>
+    )
+  }
   return (
     <div
       sx={{
@@ -15,7 +25,6 @@ export default function PreviousPageLink({ prefix }, props) {
       }}
     >
       <LinkUI
-        disabled={props.disabled}
         as={Link}
         to={withPrefix(
           props.value === 1

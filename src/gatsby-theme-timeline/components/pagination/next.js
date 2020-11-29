@@ -7,6 +7,16 @@ import { join as urlJoin } from "path"
 import { Trans } from "react-i18next"
 
 export default function NextPageLink({ prefix }, props) {
+  if (props.isActive) {
+    return (
+      <div
+        sx={{
+          flexGrow: 1,
+          textAlign: `right`,
+        }}
+      ></div>
+    )
+  }
   return (
     <div
       sx={{

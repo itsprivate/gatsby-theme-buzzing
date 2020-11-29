@@ -4,27 +4,34 @@ import { withPrefix } from "gatsby"
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import { Trans } from "react-i18next"
 
-/**
- * Shadow me to add your own bio content
- */
-
-const ItemsTitle = ({ pageType, tag, basePath }) => {
+const ItemsTitle = ({ pageType, tag, basePath, currentPage }) => {
+  const page = currentPage
   if (pageType === `tag`) {
     return (
-      <Styled.h3>
-        <LinkUI sx={{ color: `textMuted` }} as={Link} to={withPrefix(basePath)}>
+      <Styled.h4 sx={{ fontWeight: `normal`, mb: `1.5rem` }}>
+        <LinkUI sx={{ color: `text` }} as={Link} to={withPrefix(basePath)}>
           <Trans>All posts</Trans>
         </LinkUI>
-        <span> / </span>
-        <span>
-          <Trans ns="translation-tag">{tag}</Trans>
-        </span>
-      </Styled.h3>
+        <span sx={{ color: `textMuted` }}> / </span>
+        <span sx={{ color: `textMuted` }}>{tag}</span>
+        {currentPage > 1 && <span sx={{ color: `textMuted` }}> / </span>}
+        {currentPage > 1 && (
+          <span sx={{ color: `textMuted` }}>
+            <Trans page={currentPage}>page {{ page }}</Trans>
+          </span>
+        )}
+      </Styled.h4>
     )
   } else {
     return (
-      <Styled.h4>
+      <Styled.h4 sx={{ fontWeight: `normal`, mb: `1.5rem` }}>
         <Trans>Latest</Trans>
+        {currentPage > 1 && <span sx={{ color: `textMuted` }}> / </span>}
+        {currentPage > 1 && (
+          <span sx={{ color: `textMuted` }}>
+            <Trans page={currentPage}>page {{ page }}</Trans>
+          </span>
+        )}
       </Styled.h4>
     )
   }
