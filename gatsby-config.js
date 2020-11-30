@@ -6,7 +6,7 @@ const fs = require("fs").promises
 init()
 const isDev = process.env.NODE_ENV === "development"
 let plugins = []
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "development" && false) {
   // development not include the whole data
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,
@@ -16,6 +16,13 @@ if (process.env.NODE_ENV === "development") {
       branch: `main`,
       // Only import the docs folder from a codebase.
       patterns: ["data/reddit-top-fake/**"],
+    },
+  })
+  plugins.push({
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: "./__mocks__",
+      name: "MocksData",
     },
   })
 } else {
