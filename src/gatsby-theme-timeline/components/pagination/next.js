@@ -6,7 +6,14 @@ import { Link as LinkUI } from "theme-ui"
 import { join as urlJoin } from "path"
 import { Trans } from "react-i18next"
 
-export default function NextPageLink({ prefix }, props) {
+export default function NextPageLink({ prefix, pageContext }, props) {
+  const pageType = pageContext.pageType
+  let pagePath = "page"
+  let nextText = "Next"
+  if (pageType === "issue") {
+    pagePath = "issues"
+    nextText = "Next Issue"
+  }
   if (props.isActive) {
     return (
       <div
@@ -30,7 +37,7 @@ export default function NextPageLink({ prefix }, props) {
         to={withPrefix(
           props.value === 1
             ? `${prefix}`
-            : urlJoin(prefix, `page/${props.value}`)
+            : urlJoin(prefix, `${pagePath}/${props.value}`)
         )}
         sx={{
           color: `textMuted`,
@@ -38,7 +45,7 @@ export default function NextPageLink({ prefix }, props) {
           textAlign: `right`,
         }}
       >
-        <Trans>Next</Trans> &rarr;
+        <Trans>{nextText}</Trans> &rarr;
       </LinkUI>
     </div>
   )

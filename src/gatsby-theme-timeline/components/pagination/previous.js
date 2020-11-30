@@ -6,7 +6,15 @@ import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import { Link as LinkUI } from "theme-ui"
 import { join as urlJoin } from "path"
 
-export default function PreviousPageLink({ prefix }, props) {
+export default function PreviousPageLink({ prefix, pageContext }, props) {
+  const pageType = pageContext.pageType
+  let pagePath = "page"
+  let previousText = "Previous"
+  if (pageType === "issue") {
+    pagePath = "issues"
+    previousText = "Previous Issue"
+  }
+
   if (props.isActive) {
     return (
       <div
@@ -27,15 +35,15 @@ export default function PreviousPageLink({ prefix }, props) {
       <LinkUI
         as={Link}
         to={withPrefix(
-          props.value === 1
+          props.value === 1 && pageType !== "issue"
             ? `${prefix}`
-            : urlJoin(prefix, `page/${props.value}`)
+            : urlJoin(prefix, `${pagePath}/${props.value}`)
         )}
         sx={{
           color: `textMuted`,
         }}
       >
-        &larr; <Trans>Previous</Trans>
+        &larr; <Trans>{previousText}</Trans>
       </LinkUI>
     </div>
   )

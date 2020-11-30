@@ -102,7 +102,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const issuesResult = await graphql(
     `
       {
-        allIssue(filter: { draft: { eq: false } }) {
+        allIssue(
+          filter: { draft: { eq: false } }
+          sort: { fields: [date], order: DESC }
+        ) {
           nodes {
             id
             issueNumber
@@ -166,14 +169,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: ItemsTemplate,
       context: {
         basePath,
-        pageType: `issues`,
+        pageType: `issue`,
         tagsFilter: {},
         filter: postsFilter,
         limit: 1000,
         skip: 0,
         totalPages,
         total: total,
-        currentPage: i + 1,
+        currentPage: issueNumber,
         maxWidth: imageMaxWidth,
         maxHeight: imageMaxHeight,
       },

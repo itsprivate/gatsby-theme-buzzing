@@ -6,7 +6,7 @@ const fs = require("fs").promises
 init()
 const isDev = process.env.NODE_ENV === "development"
 let plugins = []
-if (process.env.NODE_ENV === "development" && false) {
+if (process.env.NODE_ENV === "development") {
   // development not include the whole data
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,
