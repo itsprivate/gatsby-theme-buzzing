@@ -55,7 +55,7 @@ const ItemsTitle = props => {
             )}
           </span>
         )}
-        {pageType ? (
+        {pageType === "issue" ? (
           <span sx={{ color: `textMuted` }}>{` · ${date}`}</span>
         ) : null}
       </Styled.h4>
