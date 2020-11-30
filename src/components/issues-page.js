@@ -26,8 +26,8 @@ const Items = ({ location, data, pageContext }) => {
       menuLinks={menuLinks}
       title={title}
     >
-      <ItemsSEO pageType={pageType} />
-      <ItemsTitle pageType={pageType} basePath={basePath}></ItemsTitle>
+      <ItemsSEO pageContext={pageContext} />
+      <ItemsTitle pageContext={pageContext}></ItemsTitle>
       <Grid gap={[null, null, 3, 4]} columns={[1, 1, `2fr 1fr`]}>
         <main sx={{ minWidth: 0 }}>
           <IssueItems items={items} basePath={basePath}></IssueItems>

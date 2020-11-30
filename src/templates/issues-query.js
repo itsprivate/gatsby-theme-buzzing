@@ -32,7 +32,7 @@ export const query = graphql`
     ) {
       nodes {
         issueNumber
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         dateISO: date
         datetime: date(formatString: "YYYY-MM-DD HH:mm")
         year: date(formatString: "YYYY")

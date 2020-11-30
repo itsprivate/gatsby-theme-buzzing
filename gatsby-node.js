@@ -109,6 +109,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           nodes {
             id
             issueNumber
+            date(formatString: "YYYY-MM-DD")
             items {
               slug
               type
@@ -170,6 +171,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: {
         basePath,
         pageType: `issue`,
+        date: issue.date,
         tagsFilter: {},
         filter: postsFilter,
         limit: 1000,

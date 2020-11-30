@@ -4,7 +4,10 @@ import { withPrefix } from "gatsby"
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import { Trans } from "react-i18next"
 import path from "path"
-const ItemsTitle = ({ pageType, tag, basePath, currentPage }) => {
+const ItemsTitle = props => {
+  const pageContext = props.pageContext
+  const { pageType, tag, basePath, currentPage, date } = pageContext
+
   const page = currentPage
   if (pageType === `tag`) {
     return (
@@ -40,8 +43,10 @@ const ItemsTitle = ({ pageType, tag, basePath, currentPage }) => {
         ) : (
           <Trans>{itemsTitle}</Trans>
         )}
-        {currentPage > 1 && <span sx={{ color: `textMuted` }}> / </span>}
-        {currentPage > 1 && (
+        {(currentPage > 1 || pageType === "issue") && (
+          <span sx={{ color: `textMuted` }}> / </span>
+        )}
+        {(currentPage > 1 || pageType === "issue") && (
           <span sx={{ color: `textMuted` }}>
             {pageType === "issue" ? (
               <Trans page={currentPage}>Issue {{ issueNumber }}</Trans>
@@ -50,6 +55,9 @@ const ItemsTitle = ({ pageType, tag, basePath, currentPage }) => {
             )}
           </span>
         )}
+        {pageType ? (
+          <span sx={{ color: `textMuted` }}>{` · ${date}`}</span>
+        ) : null}
       </Styled.h4>
     )
   }
