@@ -23,9 +23,13 @@ const ItemsTitle = ({ pageType, tag, basePath, currentPage }) => {
       </Styled.h4>
     )
   } else {
+    let itemsTitle = "Latest"
+    if (pageType === "issues") {
+      itemsTitle = "Weekly Selection"
+    }
     return (
       <Styled.h4 sx={{ fontWeight: `normal`, mb: `1.5rem` }}>
-        <Trans>Latest</Trans>
+        <Trans>{itemsTitle}</Trans>
         {currentPage > 1 && <span sx={{ color: `textMuted` }}> / </span>}
         {currentPage > 1 && (
           <span sx={{ color: `textMuted` }}>

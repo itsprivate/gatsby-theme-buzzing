@@ -231,10 +231,10 @@ module.exports = {
     description: `The most popular posts on Reddit`,
     siteUrl: "https://reddit.owenyoung.com",
     menuLinks: [
-      // {
-      //   name: "Issues",
-      //   url: "/issues",
-      // },
+      {
+        name: "Weekly Selection",
+        url: "/issues",
+      },
     ],
     social: [
       {

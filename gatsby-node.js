@@ -134,8 +134,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }),
       },
     }
-    console.log("postsFilter", postsFilter)
-
     const result = await graphql(
       `
         query ItemsCreatePageQuery($filter: BlogPostFilterInput) {

@@ -26,12 +26,16 @@ export const query = graphql`
         totalCount
       }
     }
-    allIssue(filter: { draft: { eq: false } }) {
+    allIssue(
+      filter: { draft: { eq: false } }
+      sort: { fields: [date], order: DESC }
+    ) {
       nodes {
         issueNumber
         date(formatString: "MMMM DD, YYYY")
         dateISO: date
         datetime: date(formatString: "YYYY-MM-DD HH:mm")
+        year: date(formatString: "YYYY")
       }
     }
   }
