@@ -20,6 +20,7 @@
     "gatsby-plugin-manifest": "^2.7.0",
     "gatsby-plugin-offline": "^3.5.0",
     "gatsby-plugin-robots-txt": "^1.5.3",
+    "gatsby-plugin-sitemap": "^2.8.0",
     "gatsby-source-twitter": "^3.2.2",
     "gatsby-theme-i18n": "^1.0.4",
     "gatsby-theme-i18n-react-i18next": "^1.0.4",

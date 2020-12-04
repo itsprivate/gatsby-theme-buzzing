@@ -235,6 +235,9 @@ plugins = plugins.concat([
       }),
     },
   },
+  {
+    resolve: `gatsby-plugin-sitemap`,
+  },
 ])
 
 module.exports = {
