@@ -1,30 +1,35 @@
 require("dotenv").config()
 const _ = require("lodash")
 const { getLocaleNamespaces, onPreInit: init, getAllYears } = require("./util")
-const { localesPath } = require("./config.json")
+let { localesPath } = require("./config.json")
+const isDev =
+  process.env.NODE_ENV === "development" || process.env.LOCAL === "true"
+if (isDev) {
+  const config = require("./config-dev.json")
+  localesPath = config.localesPath
+}
 const fs = require("fs").promises
 init()
-const isDev = process.env.NODE_ENV === "development"
 let plugins = []
-if (process.env.NODE_ENV === "development") {
+if (isDev) {
   // development not include the whole data
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,
     options: {
       name: `RedditTop`,
-      remote: `https://github.com/itsprivate/ts.git`,
+      remote: `git@github.com:itsprivate/ts-test.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/reddit-top-fake/**"],
+      patterns: ["data/reddit-top/**", "data/reddit-top-issues/**"],
     },
   })
-  plugins.push({
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      path: "./__mocks__",
-      name: "MocksData",
-    },
-  })
+  // plugins.push({
+  //   resolve: `gatsby-source-filesystem`,
+  //   options: {
+  //     path: "./__mocks__",
+  //     name: "MocksData",
+  //   },
+  // })
 } else {
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,
@@ -76,7 +81,7 @@ plugins = plugins.concat([
       redditTypeName: ["RedditTopJson"],
       shouldTransformJson: false,
       shouldTransformImage: false,
-      postsPerPage: isDev ? 1 : 25,
+      postsPerPage: isDev ? 5 : 25,
       i18nConfig: {
         defaultLang: `zh`,
         configPath: require.resolve(`./i18n/config.json`),
@@ -121,6 +126,9 @@ plugins = plugins.concat([
       ],
     },
   },
+  // {
+  //   resolve: "gatsby-plugin-offline",
+  // },
   {
     resolve: `gatsby-plugin-google-gtag`,
     options: {
@@ -130,12 +138,12 @@ plugins = plugins.concat([
       ],
     },
   },
-  {
-    resolve: "gatsby-plugin-robots-txt",
-    options: {
-      policy: [{ userAgent: "*", disallow: ["/"] }],
-    },
-  },
+  // {
+  //   resolve: "gatsby-plugin-robots-txt",
+  //   options: {
+  //     policy: [{ userAgent: "*", disallow: ["/"] }],
+  //   },
+  // },
   {
     resolve: `gatsby-plugin-feed`,
     options: {
@@ -233,9 +241,9 @@ module.exports = {
   plugins,
   // Customize your site metadata:
   siteMetadata: {
-    title: `Reddit Top`,
+    title: `Buzzing on Reddit`,
     author: `Reddit`,
-    description: `The most popular posts on Reddit`,
+    description: `See what's buzzing on Reddit in your native language`,
     siteUrl: "https://reddit.owenyoung.com",
     menuLinks: [
       {

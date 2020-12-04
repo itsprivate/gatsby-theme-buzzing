@@ -16,7 +16,9 @@ const ItemsTitle = props => {
           <Trans>All posts</Trans>
         </LinkUI>
         <span sx={{ color: `textMuted` }}> / </span>
-        <span sx={{ color: `textMuted` }}>{tag}</span>
+        <span sx={{ color: `textMuted` }}>
+          <Trans ns="translation-tag">{tag}</Trans>
+        </span>
         {currentPage > 1 && <span sx={{ color: `textMuted` }}> / </span>}
         {currentPage > 1 && (
           <span sx={{ color: `textMuted` }}>

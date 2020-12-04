@@ -10,10 +10,7 @@ export default function Bio() {
   return (
     <>
       <Trans>
-        <LinkUI as={Link} to="/">
-          See the hottest posts
-        </LinkUI>{" "}
-        on{" "}
+        See what's buzzing on{" "}
         <LinkUI
           href="https://reddit.com"
           target="_blank"
@@ -24,7 +21,10 @@ export default function Bio() {
         >
           Reddit
         </LinkUI>{" "}
-        right now
+        in your native language on{" "}
+        <LinkUI as={Link} to="/">
+          reddit.buzzing.cc
+        </LinkUI>
       </Trans>
     </>
   )

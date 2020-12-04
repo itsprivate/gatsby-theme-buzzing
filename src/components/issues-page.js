@@ -10,7 +10,7 @@ import AsideBox from "gatsby-theme-timeline/src/components/aside-box"
 import ItemsSEO from "gatsby-theme-timeline/src/components/items-seo"
 import IssueItems from "./issue-items"
 const Items = ({ location, data, pageContext }) => {
-  const { basePath, pageType } = pageContext
+  const { basePath } = pageContext
   const items = data.allIssue.nodes
   const {
     site: {

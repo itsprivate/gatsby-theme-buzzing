@@ -1,8 +1,15 @@
-const {
+let {
   localeNamespacePrefixes,
   fromYear,
   localesPath,
 } = require("./config.json")
+const isDev =
+  process.env.NODE_ENV === "development" || process.env.LOCAL === "true"
+
+if (isDev) {
+  const config = require("./config-dev.json")
+  localesPath = config.localesPath
+}
 const fs = require("fs-extra")
 const i18nConfig = require("./i18n/config.json")
 const getAllYears = () => {

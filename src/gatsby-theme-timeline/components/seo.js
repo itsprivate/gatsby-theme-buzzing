@@ -8,12 +8,23 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
+import path from "path"
 import i18next from "i18next"
 
-function SEO({ description, lang, meta, title, imageSource, imageAlt }) {
-  const { site } = useStaticQuery(
+function SEO({
+  description,
+  lang,
+  meta,
+  title,
+  imageSource,
+  imageAlt,
+  location,
+  pageType,
+  item,
+}) {
+  const { site, avatar } = useStaticQuery(
     graphql`
       query {
         site {
@@ -24,24 +35,101 @@ function SEO({ description, lang, meta, title, imageSource, imageAlt }) {
             siteUrl
           }
         }
+        avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
+          childImageSharp {
+            fixed(width: 48, height: 48) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `
   )
   const { locale } = useLocalization()
-  const metaDescription = description || site.siteMetadata.description
-  const image = imageSource
-    ? `${site.siteMetadata.siteUrl}${imageSource}`
-    : null
-  const imageAltText = imageAlt || metaDescription
-  let siteTitle = i18next.t(site.siteMetadata.title)
+  const siteDescription = i18next.t(site.siteMetadata.description)
+  const metaDescription = description || siteDescription
+  const author = site.siteMetadata.author
+  const siteUrl = site.siteMetadata.siteUrl
+  const avatarImage = avatar.childImageSharp.fixed.src
+  const getImagePath = imageURI => {
+    if (
+      !imageURI.match(
+        `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
+      )
+    )
+      return path.join(siteUrl, withPrefix(imageURI))
 
+    return imageURI
+  }
+  const image = imageSource ? getImagePath(imageSource) : null
+  const imageAltText = imageAlt || metaDescription
+  const siteTitle = i18next.t(site.siteMetadata.title)
+  const pageTitle = `${title} - ${siteTitle}`
+  const authorJSONLD = {
+    "@type": `Person`,
+    name: author,
+  }
+
+  const logoJSONLD = {
+    "@type": `ImageObject`,
+    url: getImagePath(avatarImage),
+    "@id": path.join(siteUrl, withPrefix(`#logo`)),
+    caption: `${siteTitle} Logo`,
+  }
+
+  const schemaOrgJSONLD = [
+    {
+      "@context": `http://schema.org`,
+      "@type": `WebSite`,
+      "@id": path.join(siteUrl, withPrefix(`#website`)),
+      url: withPrefix(siteUrl),
+      name: siteTitle,
+      image: logoJSONLD,
+    },
+  ]
+  if (pageType === `detail`) {
+    const postURL = path.join(siteUrl, location.pathname)
+    const datePublished = new Date(item.date)
+    schemaOrgJSONLD.push(
+      {
+        "@context": `http://schema.org`,
+        "@type": `BreadcrumbList`,
+        itemListElement: [
+          {
+            "@type": `ListItem`,
+            position: 1,
+            item: {
+              "@id": postURL,
+              name: title,
+              image,
+            },
+          },
+        ],
+      },
+      {
+        "@context": `http://schema.org`,
+        "@type": `BlogPosting`,
+        url: postURL,
+        name: title,
+        headline: title,
+        image: { "@type": `ImageObject`, url: image },
+        author: authorJSONLD,
+        publisher: {
+          ...authorJSONLD,
+          "@type": `Organization`,
+          logo: logoJSONLD,
+        },
+        datePublished,
+        description: metaDescription,
+      }
+    )
+  }
   return (
     <Helmet
       htmlAttributes={{
         lang: lang || locale,
       }}
-      title={title}
-      titleTemplate={`%s | ${siteTitle}`}
+      title={pageTitle}
       meta={[
         {
           name: `description`,
@@ -104,7 +192,11 @@ function SEO({ description, lang, meta, title, imageSource, imageAlt }) {
               ]
         )
         .concat(meta)}
-    />
+    >
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgJSONLD)}
+      </script>
+    </Helmet>
   )
 }
 
