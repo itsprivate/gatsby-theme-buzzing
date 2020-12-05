@@ -3,7 +3,8 @@ const _ = require("lodash")
 const { getLocaleNamespaces, onPreInit: init, getAllYears } = require("./util")
 let { localesPath } = require("./config.json")
 const isDev =
-  process.env.NODE_ENV === "development" || process.env.LOCAL === "true"
+  (process.env.NODE_ENV === "development" || process.env.LOCAL === "true") &&
+  process.env.LOCAL !== "false"
 if (isDev) {
   const config = require("./config-dev.json")
   localesPath = config.localesPath
