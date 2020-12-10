@@ -99,6 +99,11 @@ plugins = plugins.concat([
       i18nextOptions: {
         debug: process.env.NODE_ENV === "development" ? true : false,
         ns: getLocaleNamespaces(),
+        cleanCode: true,
+        fallbackLng: {
+          "zh-Hant": ["zh", "en"],
+          default: ["en"],
+        },
         keySeparator: "__::__",
         nsSeparator: "__::::__",
       },
