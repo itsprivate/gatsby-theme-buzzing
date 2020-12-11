@@ -9,7 +9,8 @@
     "build": "yarn workspace example gatsby build",
     "build:dev": "LOCAL=true yarn workspace example gatsby build",
     "clean": "yarn workspace example gatsby clean",
-    "serve": "yarn workspace example gatsby serve"
+    "serve": "yarn workspace example gatsby serve",
+    "release": "release-it"
   },
   "license": "0BSD",
   "workspaces": [
@@ -20,6 +21,7 @@
     "release-it": "^14.2.2"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^2.0.0",
     "release-it-yarn-workspaces": "^2.0.0"
   }
 }
