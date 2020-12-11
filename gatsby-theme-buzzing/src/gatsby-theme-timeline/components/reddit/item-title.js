@@ -15,7 +15,7 @@ export default function ({ item }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Styled.h3 sx={{ fontSize: 2, fontWeight: `medium` }}>
+      <Styled.h3 sx={{ fontSize: 2, fontWeight: `medium`, mb: 0 }}>
         <Trans ns={`reddit-title-${year}`}>{title}</Trans>
       </Styled.h3>
     </LinkUI>

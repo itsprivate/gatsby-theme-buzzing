@@ -66,7 +66,7 @@ export const query = graphql`
         url
         redditId
         parent {
-          ... on RedditTopJson {
+          ... on RedditJson {
             the_new_excerpt
           }
         }

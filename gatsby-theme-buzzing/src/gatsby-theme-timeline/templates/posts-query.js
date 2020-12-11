@@ -73,7 +73,7 @@ export const query = graphql`
           score
           redditId
           parent {
-            ... on RedditTopJson {
+            ... on RedditJson {
               the_new_excerpt
             }
           }

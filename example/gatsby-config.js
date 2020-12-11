@@ -37,7 +37,7 @@ plugins = plugins.concat([
     resolve: `gatsby-theme-buzzing`,
     options: {
       tweetTypeName: ["TweetsJson", "twitterStatusesUserTimelineMyTweet"],
-      redditTypeName: ["RedditTopJson"],
+      redditTypeName: ["RedditJson"],
       issueTypeName: ["RedditTopIssuesJson"],
       localesPath: localesPath,
       disqus: {

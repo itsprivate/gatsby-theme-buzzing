@@ -6,6 +6,7 @@ const fs = require("fs").promises
 
 module.exports = themeOptions => {
   const options = withDefaults(themeOptions)
+
   init(options)
 
   let plugins = []
@@ -16,7 +17,15 @@ module.exports = themeOptions => {
       options: {
         typeName: ({ node }) => {
           const rootDirectoryName = node.relativeDirectory.split(`/`)[1]
-          return _.upperFirst(_.camelCase(`${rootDirectoryName} Json`))
+          const rootArr = rootDirectoryName.split("-")
+          const rootPrefix = rootArr[0]
+          let isOtherType = false
+          if (rootArr.length > 1) {
+            isOtherType = rootArr[rootArr.length - 1] === "issues"
+          }
+          return _.upperFirst(
+            _.camelCase(`${isOtherType ? rootDirectoryName : rootPrefix} Json`)
+          )
         },
       },
     },
@@ -52,13 +61,21 @@ module.exports = themeOptions => {
             serialize: async ({ query: { site, allBlogPost } }) => {
               // read all translations
               const redditTitles = {}
-              const allYears = getAllYears()
+              const redditExcerpt = {}
+              const allYears = getAllYears({ fromYear: options.fromYear })
               for (let i = 0; i < allYears.length; i++) {
                 const year = allYears[i]
-                const redditTitleFilePath = `${localesPath}/${locale}/reddit-title-${year}.json`
+                const redditTitleFilePath = `${options.localesPath}/${locale}/reddit-title-${year}.json`
                 const json = await fs.readFile(redditTitleFilePath, "utf8")
                 const translation = JSON.parse(json)
                 redditTitles[year] = translation
+                const redditExcerptFilePath = `${options.localesPath}/${locale}/reddit-excerpt-${year}.json`
+                const excerptJson = await fs.readFile(
+                  redditExcerptFilePath,
+                  "utf8"
+                )
+                const excerptTranslation = JSON.parse(excerptJson)
+                redditExcerpt[year] = excerptTranslation
               }
               let items = []
               for (let i = 0; i < allBlogPost.nodes.length; i++) {
@@ -66,39 +83,36 @@ module.exports = themeOptions => {
                 const year = new Date(node.dateISO).getUTCFullYear()
 
                 let title = node.title
-                let expert = node.excerpt
+                let excerpt = node.excerpt
 
                 if (node.__typename === "RedditPost") {
                   title = redditTitles[year][node.title] || node.title
-                  expert =
-                    (node.parent && node.parent.the_new_excerpt) || node.expert
+                  excerpt =
+                    redditExcerpt[year][node.redditId] ||
+                    (node.parent && node.parent.the_new_excerpt) ||
+                    node.excerpt
                 }
-                items.push(
-                  Object.assign(
-                    {},
+                items.push({
+                  title,
+                  description: excerpt,
+                  date: node.dateISO,
+                  url: node.permalink
+                    ? `https://www.reddit.com${node.permalink}`
+                    : site.siteMetadata.siteUrl + node.slug,
+                  guid: site.siteMetadata.siteUrl + node.slug,
+                  language: locale,
+                  custom_elements: [
+                    { "content:encoded": node.body || excerpt },
                     {
-                      title,
-                      description: node.excerpt,
-                      date: node.dateISO,
-                      url: node.permalink
-                        ? `https://www.reddit.com${node.permalink}`
-                        : site.siteMetadata.siteUrl + node.slug,
-                      guid: site.siteMetadata.siteUrl + node.slug,
-                      language: locale,
-                      custom_elements: [
-                        { "content:encoded": node.body || node.excerpt },
-                        {
-                          category: {
-                            _attr: {
-                              term: node.subreddit,
-                              label: `/r/${node.subreddit}`,
-                            },
-                          },
+                      category: {
+                        _attr: {
+                          term: node.subreddit,
+                          label: `/r/${node.subreddit}`,
                         },
-                      ],
-                    }
-                  )
-                )
+                      },
+                    },
+                  ],
+                })
               }
               return items
             },
@@ -119,8 +133,9 @@ module.exports = themeOptions => {
                     ... on RedditPost {
                       permalink
                       subreddit
+                      redditId
                       parent {
-                        ... on RedditTopJson {
+                        ... on RedditJson {
                           the_new_excerpt
                         }
                       }
