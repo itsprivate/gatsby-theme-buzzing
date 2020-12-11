@@ -37,9 +37,7 @@ exports.createResolvers = ({ createResolvers }) => {
 exports.onCreateNode = async ({ node, actions, getNode }, themeOptions) => {
   const { createNode, createParentChildLink, createNodeField } = actions
   // todo
-  const { issueTypeName, basePath } = withDefaults({
-    issueTypeName: ["RedditTopIssuesJson"],
-  })
+  const { issueTypeName, basePath } = withDefaults(themeOptions)
 
   let allIssueTypeName = []
   if (typeof issueTypeName === `string`) {

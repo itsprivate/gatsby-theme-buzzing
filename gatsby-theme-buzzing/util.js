@@ -1,19 +1,5 @@
-let {
-  localeNamespacePrefixes,
-  fromYear,
-  localesPath,
-} = require("./config.json")
-const isDev =
-  (process.env.NODE_ENV === "development" || process.env.LOCAL === "true") &&
-  process.env.LOCAL !== "false"
-
-if (isDev) {
-  const config = require("./config-dev.json")
-  localesPath = config.localesPath
-}
 const fs = require("fs-extra")
-const i18nConfig = require("./i18n/config.json")
-const getAllYears = () => {
+const getAllYears = ({ fromYear }) => {
   const currentYears = new Date().getUTCFullYear()
   const allYears = []
   for (let i = fromYear; i <= currentYears + 1; i++) {
@@ -22,9 +8,9 @@ const getAllYears = () => {
   return allYears
 }
 exports.getAllYears = getAllYears
-const getLocaleNamespaces = () => {
+const getLocaleNamespaces = ({ fromYear, localeNamespacePrefixes }) => {
   const namespaces = ["translation", "translation-tag"]
-  const allYears = getAllYears()
+  const allYears = getAllYears({ fromYear })
   localeNamespacePrefixes.forEach(prefix => {
     allYears.forEach(year => {
       namespaces.push(prefix + year)
@@ -32,19 +18,39 @@ const getLocaleNamespaces = () => {
   })
   return namespaces
 }
-const getLocalesFilePaths = () => {
+const getLocalesFilePaths = ({
+  i18nConfig,
+  localeNamespacePrefixes,
+  fromYear,
+  localesPath,
+}) => {
   const files = []
-  const localeNamespaces = getLocaleNamespaces()
-  i18nConfig.forEach(locale => {
+  const localeNamespaces = getLocaleNamespaces({
+    fromYear,
+    localeNamespacePrefixes,
+  })
+  const i18nConfigPath = i18nConfig.configPath
+  const i18nList = require(i18nConfigPath)
+  i18nList.forEach(locale => {
     localeNamespaces.forEach(namespace => {
       files.push(`${localesPath}/${locale.code}/${namespace}.json`)
     })
   })
   return files
 }
-const onPreInit = () => {
+const onPreInit = ({
+  localeNamespacePrefixes,
+  fromYear,
+  localesPath,
+  i18nConfig,
+}) => {
   // create i18n files if not exists
-  const localeFiles = getLocalesFilePaths()
+  const localeFiles = getLocalesFilePaths({
+    i18nConfig,
+    localeNamespacePrefixes,
+    fromYear,
+    localesPath,
+  })
   for (let i = 0; i < localeFiles.length; i++) {
     const file = localeFiles[i]
     const isExist = fs.pathExistsSync(file)

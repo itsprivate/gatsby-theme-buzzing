@@ -1,38 +1,25 @@
 {
-  "name": "gatsby-starter-blog-theme",
+  "name": "gatsby-starter-buzzing",
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "develop": "yarn workspace example gatsby develop",
+    "start": "yarn workspace example gatsby develop",
     "start:prod": "LOCAL=false yarn start",
-    "build": "gatsby build",
-    "build:dev": "LOCAL=true gatsby build",
-    "clean": "gatsby clean",
-    "serve": "gatsby serve"
+    "build": "yarn workspace example gatsby build",
+    "build:dev": "LOCAL=true yarn workspace example gatsby build",
+    "clean": "yarn workspace example gatsby clean",
+    "serve": "yarn workspace example gatsby serve"
   },
   "license": "0BSD",
+  "workspaces": [
+    "gatsby-theme-buzzing",
+    "example"
+  ],
   "dependencies": {
-    "@theowenyoung/gatsby-source-git": "^1.1.2",
-    "fs-extra": "^9.0.1",
-    "gatsby": "^2.27.1",
-    "gatsby-plugin-feed": "^2.7.0",
-    "gatsby-plugin-google-gtag": "^2.3.0",
-    "gatsby-plugin-manifest": "^2.7.0",
-    "gatsby-plugin-offline": "^3.5.0",
-    "gatsby-plugin-robots-txt": "^1.5.3",
-    "gatsby-plugin-sitemap": "^2.8.0",
-    "gatsby-source-twitter": "^3.2.2",
-    "gatsby-theme-i18n": "^1.0.4",
-    "gatsby-theme-i18n-react-i18next": "^1.0.4",
-    "gatsby-theme-timeline": "^0.1.76",
-    "i18next": "^19.8.3",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-i18next": "^11.7.3",
-    "theme-ui": "0.4.0-rc.5"
+    "release-it": "^14.2.2"
   },
-  "resolutions": {
-    "sharp": "^0.25.4"
+  "devDependencies": {
+    "release-it-yarn-workspaces": "^2.0.0"
   }
 }

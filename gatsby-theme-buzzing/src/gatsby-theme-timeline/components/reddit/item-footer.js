@@ -25,7 +25,12 @@ export default function ({ item }) {
       console.log("Not support share yet")
     }
   }
-
+  const handleKeyDown = ev => {
+    // check keys if you want
+    if (ev.keyCode === 13) {
+      handleShare()
+    }
+  }
   return (
     <footer sx={{ display: `flex`, justifyContent: "space-between" }}>
       <Flex>
@@ -49,10 +54,11 @@ export default function ({ item }) {
           data-a2a-url={`https://www.reddit.com${item.permalink}`}
           role="button"
           tabIndex={0}
+          onKeyDown={handleKeyDown}
           onClick={handleShare}
           sx={{ cursor: "pointer" }}
         >
-          <a className="share-button" href="#">
+          <a className="share-button" href="#!">
             <ShareIcon></ShareIcon>
           </a>
         </div>

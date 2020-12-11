@@ -1,0 +1,21 @@
+{
+  "git": {
+    "commitMessage": "chore(release): 🤖 v${version}",
+    "requireCommits": false,
+    "tagName": "v${version}",
+    "push": true
+  },
+  "github": {
+    "release": false
+  },
+  "npm": false,
+  "plugins": {
+    "release-it-yarn-workspaces": {
+      "workspaces": ["gatsby-theme-buzzing"]
+    },
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}
