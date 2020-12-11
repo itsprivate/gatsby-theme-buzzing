@@ -153,7 +153,7 @@ plugins = plugins.concat([
   {
     resolve: `gatsby-plugin-feed`,
     options: {
-      feeds: ["en", "zh"].map(locale => {
+      feeds: ["en", "zh", "zh-Hant"].map(locale => {
         return {
           serialize: async ({ query: { site, allBlogPost } }) => {
             // read all translations
@@ -161,7 +161,7 @@ plugins = plugins.concat([
             const allYears = getAllYears()
             for (let i = 0; i < allYears.length; i++) {
               const year = allYears[i]
-              const redditTitleFilePath = `${localesPath}/zh/reddit-title-${year}.json`
+              const redditTitleFilePath = `${localesPath}/${locale}/reddit-title-${year}.json`
               const json = await fs.readFile(redditTitleFilePath, "utf8")
               const translation = JSON.parse(json)
               redditTitles[year] = translation
@@ -171,12 +171,17 @@ plugins = plugins.concat([
               const node = allBlogPost.nodes[i]
               const year = new Date(node.dateISO).getUTCFullYear()
 
-              const title =
-                locale === "zh"
-                  ? redditTitles[year][node.title]
-                    ? redditTitles[year][node.title]
-                    : node.title
-                  : node.title
+              let title = node.title
+              let expert = node.excerpt
+
+              if (node.__typename === "RedditPost") {
+                title = redditTitles[year][node.title] || node.title
+                expert =
+                  (node.parent && node.parent.the_new_excerpt) || node.expert
+                console.log("title", title)
+
+                console.log("expert", expert)
+              }
               items.push(
                 Object.assign(
                   {},
@@ -223,6 +228,11 @@ plugins = plugins.concat([
                     ... on RedditPost {
                       permalink
                       subreddit
+                      parent {
+                        ... on RedditTopJson {
+                          the_new_excerpt
+                        }
+                      }
                     }
                     ... on MdxBlogPost {
                       id
@@ -259,20 +269,12 @@ module.exports = {
         name: "Weekly Selection",
         url: "/issues",
       },
+      {
+        name: "RSS",
+        url: "/rss.xml",
+      },
     ],
     social: [
-      {
-        name: "English",
-        url: "/en",
-      },
-      {
-        name: "中文",
-        url: "/",
-      },
-      {
-        name: `RSS`,
-        url: `/rss.xml`,
-      },
       {
         name: `Reddit`,
         url: `https://www.reddit.com/`,
