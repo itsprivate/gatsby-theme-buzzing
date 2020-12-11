@@ -52,7 +52,7 @@ export default function ({ item }) {
           onClick={handleShare}
           sx={{ cursor: "pointer" }}
         >
-          <a className="share-button" href="https://www.addtoany.com/share">
+          <a className="share-button" href="#">
             <ShareIcon></ShareIcon>
           </a>
         </div>
