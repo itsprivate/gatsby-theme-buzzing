@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.2.0...v0.2.1) (2020-12-11)
+
+
+### Bug Fixes
+
+* ui ([dd70ee5](https://github.com/itsprivate/gatsby-theme-buzzing/commit/dd70ee544cc8156a7a3bc65941fe0a4e9e4e68ab))
+
 # [0.2.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.1.4...v0.2.0) (2020-12-11)
 
 
