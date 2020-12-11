@@ -9,7 +9,7 @@ export default function ({ item }) {
     return null
   }
   return (
-    <Styled.p sx={{ whiteSpace: `pre-line` }}>
+    <Styled.p sx={{ mt: 0, whiteSpace: `pre-line` }}>
       <Trans
         ns={`reddit-excerpt-${year}`}
         i18nKey={redditId}

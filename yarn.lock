@@ -7472,10 +7472,10 @@ gatsby-theme-i18n@^1.0.4:
     gatsby-plugin-react-helmet "^3.3.10"
     react-helmet "^6.1.0"
 
-gatsby-theme-timeline@^0.1.78:
-  version "0.1.78"
-  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.78.tgz#e40b5c18f3efddcd42c44bd4eae34d7f74653a83"
-  integrity sha512-lVAOqXntdFXFoqp1d0spg6csmblzDfz0mhtm+u9cfX1xrHAQUf8rqP5EDfHPgLd6Xuqv8uw5AVlvupJ9PPYX1g==
+gatsby-theme-timeline@^0.1.80:
+  version "0.1.80"
+  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.80.tgz#c8d8b1a1b37796f47200030b5ac76b276006bcfd"
+  integrity sha512-GHxCeYKUCICB0ksqrIsZGaHHSappqxRRX8d7nRwft0FTZLCMGcvgCs13YMsXf/IQx1B0WquLsCli3p0nue7V9w==
   dependencies:
     "@theme-ui/prism" "^0.4.0-rc.5"
     date-fns "^2.16.1"
@@ -7488,7 +7488,7 @@ gatsby-theme-timeline@^0.1.78:
     gatsby-plugin-twitter "^2.3.10"
     gatsby-theme-blog-core "^2.0.2"
     gatsby-theme-i18n "^1.0.4"
-    gatsby-theme-ui-timeline-preset "^0.1.11"
+    gatsby-theme-ui-timeline-preset "^0.1.13"
     gatsby-transformer-json "^2.4.14"
     html-to-text "^6.0.0"
     path "^0.12.7"
@@ -7498,10 +7498,10 @@ gatsby-theme-timeline@^0.1.78:
     react-ultimate-pagination "^1.2.0"
     theme-ui "^0.4.0-rc.5"
 
-gatsby-theme-ui-timeline-preset@^0.1.11:
-  version "0.1.11"
-  resolved "https://registry.npmjs.org/gatsby-theme-ui-timeline-preset/-/gatsby-theme-ui-timeline-preset-0.1.11.tgz#821feadcb8b6a5f5a08e9a94fbedf3fa2ff12272"
-  integrity sha512-702lRZ/1GJ3QheyMkzcxSdHXVn8oPQhp54cNTNfGH3yyiJhDYY9o9TIKCNkDRrLbliwm/x+ikdD+jqjW+s2MOg==
+gatsby-theme-ui-timeline-preset@^0.1.13:
+  version "0.1.13"
+  resolved "https://registry.npmjs.org/gatsby-theme-ui-timeline-preset/-/gatsby-theme-ui-timeline-preset-0.1.13.tgz#40bc28f0d4e74016d9d1d13edc575334a3e9ddfa"
+  integrity sha512-LIoLtX0jLI6tl6RcmNzAtN7zoAUUCyRcp0K8ZhopUxbyTumjS1yT+Wg9eEbEPbusaoGJ4+d3B16K+ytn76Awfw==
   dependencies:
     "@theme-ui/preset-tailwind" "^0.4.0-rc.5"
 

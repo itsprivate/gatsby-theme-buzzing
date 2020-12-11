@@ -10,9 +10,7 @@
   },
   "npm": false,
   "plugins": {
-    "release-it-yarn-workspaces": {
-      "workspaces": ["gatsby-theme-buzzing"]
-    },
+    "release-it-yarn-workspaces": {},
     "@release-it/conventional-changelog": {
       "preset": "angular",
       "infile": "CHANGELOG.md"
