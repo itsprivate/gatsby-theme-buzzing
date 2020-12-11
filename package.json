@@ -1,6 +1,7 @@
 {
   "name": "gatsby-starter-buzzing",
   "private": true,
+  "version": "0.1.3",
   "scripts": {
     "develop": "yarn workspace example gatsby develop",
     "start": "yarn workspace example gatsby develop",
