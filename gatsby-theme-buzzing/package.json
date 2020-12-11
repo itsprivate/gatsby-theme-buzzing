@@ -2,7 +2,6 @@
   "name": "gatsby-theme-buzzing",
   "description": "A Gatsby theme for buzzing",
   "main": "index.js",
-  "version": "0.1.0",
   "author": {
     "name": "Owen Young",
     "email": "theowenyoung@gmail.com"

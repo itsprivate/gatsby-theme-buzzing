@@ -1,3 +1,37 @@
+# [](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v...vnull) (2020-12-11)
+
+
+### Bug Fixes
+
+* mocks data ([0539f8a](https://github.com/itsprivate/gatsby-theme-buzzing/commit/0539f8a7cf5a26dc7cc22747e70c9e2ef74ce8ac))
+* username too long ([2290bf4](https://github.com/itsprivate/gatsby-theme-buzzing/commit/2290bf4550027ce582998a7f91ba4d46d8a73cad))
+
+
+### Features
+
+* adapt latest theme ([6abaf1e](https://github.com/itsprivate/gatsby-theme-buzzing/commit/6abaf1e74fd37f3244bf8be22d38c1116d4f40a2))
+* add add to any ([7220bea](https://github.com/itsprivate/gatsby-theme-buzzing/commit/7220bea6c3854af66a0932d0428f60958b451c28))
+* add footer ([cb2b80f](https://github.com/itsprivate/gatsby-theme-buzzing/commit/cb2b80fc8e9e8eecc75bf052e8a93cddf75eafe3))
+* add github deploy ([626c633](https://github.com/itsprivate/gatsby-theme-buzzing/commit/626c633ee2651c04b6b3567281fc5eea9dea942f))
+* add issue date ([0733e90](https://github.com/itsprivate/gatsby-theme-buzzing/commit/0733e9086751948595f22ff7587ae617851ef723))
+* add issue page support ([54696de](https://github.com/itsprivate/gatsby-theme-buzzing/commit/54696de661f3df4e68cefde7d1b7433732ff4266))
+* add issues ([3bef82d](https://github.com/itsprivate/gatsby-theme-buzzing/commit/3bef82d9bf02b4f1ea40668c3031f63cd8c31483))
+* add locale list ([a17b354](https://github.com/itsprivate/gatsby-theme-buzzing/commit/a17b35422eee98d599bf68632991791ae53e4559))
+* add rss ([6fbfd89](https://github.com/itsprivate/gatsby-theme-buzzing/commit/6fbfd89d7b43c1e4fd93f2842fbc968ebd019dd5))
+* add seo i18n ([e56c1d0](https://github.com/itsprivate/gatsby-theme-buzzing/commit/e56c1d083c5e5eec24b7fc0f2dbf572a8be2ce2e))
+* add share ([f79b5c4](https://github.com/itsprivate/gatsby-theme-buzzing/commit/f79b5c4dadea866bfc0c0a6f5543ac8bc8e51d0f))
+* change cname ([ba611ea](https://github.com/itsprivate/gatsby-theme-buzzing/commit/ba611ea73e269e74bbfac43a33a89d46f0768341))
+* change link ([05c0a11](https://github.com/itsprivate/gatsby-theme-buzzing/commit/05c0a11a146e38fa46b16a6c5ad04e7a00d5b9b7))
+* detail seo ([d7e15e0](https://github.com/itsprivate/gatsby-theme-buzzing/commit/d7e15e0f7f3f2bff83ef0a2f40257466d84cdc01))
+* fix video problem ([1b98a72](https://github.com/itsprivate/gatsby-theme-buzzing/commit/1b98a720e0284b16bceb5a4de22f2193b9d94f5a))
+* initial commit ([706b70d](https://github.com/itsprivate/gatsby-theme-buzzing/commit/706b70d41963bd1ebade600f17b46dc138e6bdcc))
+* initial for buzzing ([0daf014](https://github.com/itsprivate/gatsby-theme-buzzing/commit/0daf014d15dcac625d1aff2d3b13e436b87b471b))
+* international ([e5130cd](https://github.com/itsprivate/gatsby-theme-buzzing/commit/e5130cd037e90b7d7060058e6d11cd70c76a621c))
+* locale ([bfb778c](https://github.com/itsprivate/gatsby-theme-buzzing/commit/bfb778c7714195b810ec14e615b7bd7835d0073c))
+* remove workflow ([f2c580f](https://github.com/itsprivate/gatsby-theme-buzzing/commit/f2c580fe09f49f23f1d25a7fc940bac926dc2c11))
+* seo ([ae85b21](https://github.com/itsprivate/gatsby-theme-buzzing/commit/ae85b2119928a94cc8d4b2ce71721c23ded98040))
+* support zh-Hant ([15efbba](https://github.com/itsprivate/gatsby-theme-buzzing/commit/15efbbad3f5611cada73d6982909d9e00fd55ae1))
+
 #  (2020-12-11)
 
 
