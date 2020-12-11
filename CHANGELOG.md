@@ -1,3 +1,15 @@
+# [0.2.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.1.4...v0.2.0) (2020-12-11)
+
+
+### Bug Fixes
+
+* build issue ([15b2eb5](https://github.com/itsprivate/gatsby-theme-buzzing/commit/15b2eb5d1849667bbf61b9325897cc49d5086cff))
+
+
+### Features
+
+* better for example ([240e846](https://github.com/itsprivate/gatsby-theme-buzzing/commit/240e84694be71561714c505324f97035977e8dae))
+
 ## [0.1.4](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.1.3...v0.1.4) (2020-12-11)
 
 ## [0.1.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v...vnull) (2020-12-11)
