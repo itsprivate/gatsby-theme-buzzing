@@ -1,6 +1,16 @@
 const { urlResolve, createContentDigest } = require(`gatsby-core-utils`)
 const { ISSUE_TYPE_NAME } = require("./utils/constans")
 const withDefaults = require("./utils/default-options")
+const path = require("path")
+let absoluteLocalesDirectory
+
+exports.onPreInit = ({ store }, themeOptions) => {
+  const { localesPath } = withDefaults(themeOptions)
+  absoluteLocalesDirectory = path.join(
+    store.getState().program.directory,
+    localesPath
+  )
+}
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   createTypes(`
@@ -192,4 +202,39 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     },
   }
   createPage(issuePageInfo)
+}
+
+exports.onCreatePage = ({ page, actions }, themeOptions) => {
+  const { createPage, deletePage } = actions
+  // Check if originalPath was already set and bail early as otherwise an infinite loop could occur
+  // as other plugins like gatsby-plugin-mdx could modify this
+  if (!page.context.originalPath) {
+    return
+  }
+  const { i18nextOptions } = withDefaults(themeOptions)
+
+  const locale = page.context.locale
+  deletePage(page)
+  let i18nextResources = {}
+  i18nextOptions.ns.forEach(name => {
+    const data = require(`${absoluteLocalesDirectory}/${locale}/${name}.json`)
+    i18nextResources = {
+      ...i18nextResources,
+      [locale]: {
+        ...i18nextResources[locale],
+        [name]: data,
+      },
+    }
+  })
+  // console.log("i18nextResources", i18nextResources)
+
+  const newPage = {
+    ...page,
+    context: {
+      ...page.context,
+      i18nextResources,
+    },
+  }
+
+  createPage(newPage)
 }

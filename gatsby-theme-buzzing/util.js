@@ -1,4 +1,4 @@
-const fs = require("fs-extra")
+// const fs = require("fs-extra")
 const getAllYears = ({ fromYear }) => {
   const currentYears = new Date().getUTCFullYear()
   const allYears = []
@@ -38,28 +38,28 @@ const getLocalesFilePaths = ({
   })
   return files
 }
-const onPreInit = ({
-  localeNamespacePrefixes,
-  fromYear,
-  localesPath,
-  i18nConfig,
-}) => {
-  // create i18n files if not exists
-  const localeFiles = getLocalesFilePaths({
-    i18nConfig,
-    localeNamespacePrefixes,
-    fromYear,
-    localesPath,
-  })
-  for (let i = 0; i < localeFiles.length; i++) {
-    const file = localeFiles[i]
-    const isExist = fs.pathExistsSync(file)
-    if (!isExist) {
-      // create parent folder
-      fs.outputJsonSync(file, {})
-    }
-  }
-}
+// const onPreInit = ({
+//   localeNamespacePrefixes,
+//   fromYear,
+//   localesPath,
+//   i18nConfig,
+// }) => {
+//   // create i18n files if not exists
+//   const localeFiles = getLocalesFilePaths({
+//     i18nConfig,
+//     localeNamespacePrefixes,
+//     fromYear,
+//     localesPath,
+//   })
+//   for (let i = 0; i < localeFiles.length; i++) {
+//     const file = localeFiles[i]
+//     const isExist = fs.pathExistsSync(file)
+//     if (!isExist) {
+//       // create parent folder
+//       fs.outputJsonSync(file, {})
+//     }
+//   }
+// }
 exports.getLocaleNamespaces = getLocaleNamespaces
 exports.getLocalesFilePaths = getLocalesFilePaths
-exports.onPreInit = onPreInit
+// exports.onPreInit = onPreInit

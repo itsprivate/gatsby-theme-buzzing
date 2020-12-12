@@ -1,13 +1,13 @@
 require("dotenv").config()
 const _ = require("lodash")
-const { getLocaleNamespaces, onPreInit: init, getAllYears } = require("./util")
+const { getLocaleNamespaces, getAllYears } = require("./util")
 const withDefaults = require(`./utils/default-options`)
 const fs = require("fs").promises
 
 module.exports = themeOptions => {
   const options = withDefaults(themeOptions)
 
-  init(options)
+  // init(options)
 
   let plugins = []
 
@@ -33,25 +33,27 @@ module.exports = themeOptions => {
       resolve: `gatsby-theme-timeline`,
       options: options,
     },
-    {
-      resolve: `gatsby-theme-i18n-react-i18next`,
-      options: {
-        locales: options.localesPath,
-        i18nextOptions: {
-          debug: process.env.NODE_ENV === "development" ? true : false,
-          ns: getLocaleNamespaces({
-            fromYear: options.fromYear,
-            localeNamespacePrefixes: options.localeNamespacePrefixes,
-          }),
-          fallbackLng: {
-            "zh-Hant": ["zh", "en"],
-            default: ["en"],
-          },
-          keySeparator: "__::__",
-          nsSeparator: "__::::__",
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-theme-i18n-react-i18next`,
+    //   options: {
+    //     locales: options.localesPath,
+    //     i18nextOptions: {
+    //       // debug: process.env.NODE_ENV === "development" ? true : false,
+    //       ns: getLocaleNamespaces({
+    //         fromYear: options.fromYear,
+    //         localeNamespacePrefixes: options.localeNamespacePrefixes,
+    //       }),
+    // fallbackLng: false,
+    // load: "currentOnly",
+    // fallbackLng: {
+    //   "zh-Hant": ["zh", "en"],
+    //   default: ["en"],
+    // },
+    // keySeparator: "__::__",
+    // nsSeparator: "__::::__",
+    //     },
+    //   },
+    // },
 
     {
       resolve: `gatsby-plugin-feed`,
