@@ -1,3 +1,15 @@
+# [0.3.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.2.1...v0.3.0) (2020-12-13)
+
+
+### Bug Fixes
+
+* detail pages not found ([0db88a4](https://github.com/itsprivate/gatsby-theme-buzzing/commit/0db88a474e8b34ec6b1265f7099f1e880a070f82))
+
+
+### Features
+
+* support i18nResource ([6c8ee1e](https://github.com/itsprivate/gatsby-theme-buzzing/commit/6c8ee1eb7cf669b650013c4ea61bcbf5cc67fc46))
+
 ## [0.2.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.2.0...v0.2.1) (2020-12-11)
 
 
