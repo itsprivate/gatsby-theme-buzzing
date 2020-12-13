@@ -1,6 +1,6 @@
 require("dotenv").config()
 const _ = require("lodash")
-const { getLocaleNamespaces, onPreInit: init, getAllYears } = require("./util")
+const { onPreInit: init } = require("./util")
 const withDefaults = require(`./utils/default-options`)
 const fs = require("fs").promises
 
@@ -39,10 +39,7 @@ module.exports = themeOptions => {
         locales: options.localesPath,
         i18nextOptions: {
           debug: process.env.NODE_ENV === "development" ? true : false,
-          ns: getLocaleNamespaces({
-            fromYear: options.fromYear,
-            localeNamespacePrefixes: options.localeNamespacePrefixes,
-          }),
+          ns: ["translation", "translation-tag"],
           fallbackLng: {
             "zh-Hant": ["zh", "en"],
             default: ["en"],
@@ -57,41 +54,39 @@ module.exports = themeOptions => {
       resolve: `gatsby-plugin-feed`,
       options: {
         feeds: ["en", "zh", "zh-Hant"].map(locale => {
+          const kebabLocale = kebabToSnakeCase(locale)
           return {
             serialize: async ({ query: { site, allBlogPost } }) => {
-              // read all translations
-              const redditTitles = {}
-              const redditExcerpt = {}
-              const allYears = getAllYears({ fromYear: options.fromYear })
-              for (let i = 0; i < allYears.length; i++) {
-                const year = allYears[i]
-                const redditTitleFilePath = `${options.localesPath}/${locale}/reddit-title-${year}.json`
-                const json = await fs.readFile(redditTitleFilePath, "utf8")
-                const translation = JSON.parse(json)
-                redditTitles[year] = translation
-                const redditExcerptFilePath = `${options.localesPath}/${locale}/reddit-excerpt-${year}.json`
-                const excerptJson = await fs.readFile(
-                  redditExcerptFilePath,
-                  "utf8"
-                )
-                const excerptTranslation = JSON.parse(excerptJson)
-                redditExcerpt[year] = excerptTranslation
-              }
               let items = []
               for (let i = 0; i < allBlogPost.nodes.length; i++) {
                 const node = allBlogPost.nodes[i]
-                const year = new Date(node.dateISO).getUTCFullYear()
 
                 let title = node.title
                 let excerpt = node.excerpt
-
                 if (node.__typename === "RedditPost") {
-                  title = redditTitles[year][node.title] || node.title
-                  excerpt =
-                    redditExcerpt[year][node.redditId] ||
-                    (node.parent && node.parent.the_new_excerpt) ||
-                    node.excerpt
+                  if (node.parent && node.parent.the_new_excerpt) {
+                    excerpt = node.parent.the_new_excerpt
+                  }
                 }
+                if (
+                  node.parent &&
+                  node.parent.i18nResource &&
+                  node.parent.i18nResource[kebabLocale]
+                ) {
+                  if (node.parent.i18nResource[kebabLocale].title) {
+                    title = node.parent.i18nResource[kebabLocale].title
+                  }
+                  if (node.parent.i18nResource[kebabLocale].excerpt) {
+                    excerpt = node.parent.i18nResource[kebabLocale].excerpt
+                  }
+                  if (node.__typename === "RedditPost") {
+                    if (node.parent.i18nResource[kebabLocale].the_new_excerpt) {
+                      excerpt =
+                        node.parent.i18nResource[kebabLocale].the_new_excerpt
+                    }
+                  }
+                }
+
                 items.push({
                   title,
                   description: excerpt,
@@ -100,7 +95,6 @@ module.exports = themeOptions => {
                     ? `https://www.reddit.com${node.permalink}`
                     : site.siteMetadata.siteUrl + node.slug,
                   guid: site.siteMetadata.siteUrl + node.slug,
-                  language: locale,
                   custom_elements: [
                     { "content:encoded": node.body || excerpt },
                     {
@@ -137,6 +131,16 @@ module.exports = themeOptions => {
                       parent {
                         ... on RedditJson {
                           the_new_excerpt
+                          i18nResource {
+                            zh {
+                              title
+                              the_new_excerpt
+                            }
+                            zh_Hant {
+                              title
+                              the_new_excerpt
+                            }
+                          }
                         }
                       }
                     }
@@ -153,6 +157,7 @@ module.exports = themeOptions => {
               }
             `,
             output: locale === "zh" ? "/rss.xml" : `/${locale}/rss.xml`,
+            language: locale,
           }
         }),
       },
@@ -168,7 +173,7 @@ module.exports = themeOptions => {
       title: `Buzzing on Reddit`,
       author: `Reddit`,
       description: `See what's buzzing on Reddit in your native language`,
-      siteUrl: "https://reddit.owenyoung.com",
+      siteUrl: "https://reddit.buzzing.cc",
       menuLinks: [
         {
           name: "Weekly Selection",
@@ -177,6 +182,7 @@ module.exports = themeOptions => {
         {
           name: "RSS",
           url: "/rss.xml",
+          prefetch: false,
         },
       ],
       social: [
@@ -188,4 +194,7 @@ module.exports = themeOptions => {
       ],
     },
   }
+}
+const kebabToSnakeCase = str => {
+  return str.replace(/-/g, "_")
 }

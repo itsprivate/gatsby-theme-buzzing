@@ -3,12 +3,19 @@ import { jsx, Flex } from "theme-ui"
 import ItemDate from "gatsby-theme-timeline/src/components/reddit/item-date"
 import ItemSource from "./item-source"
 import ShareIcon from "./share-icon"
-import i18next from "i18next"
 
-export default function ({ item }) {
-  const { dateISO } = item
-  const year = new Date(dateISO).getUTCFullYear()
-  const title = i18next.t(`reddit-title-${year}__::::__${item.title}`)
+export default function ({ item, pageContext: { locale } }) {
+  let title = item.title
+  if (item.__typename === "RedditPost") {
+    if (
+      item.parent &&
+      item.parent.i18nResource &&
+      item.parent.i18nResource[locale] &&
+      item.parent.i18nResource[locale].title
+    ) {
+      title = item.parent.i18nResource[locale].title
+    }
+  }
   const handleShare = () => {
     if (navigator.share) {
       navigator

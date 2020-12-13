@@ -1,9 +1,18 @@
 /** @jsx jsx */
 import { Link as LinkUI, jsx, Styled } from "theme-ui"
-import { Trans } from "react-i18next"
-export default function ({ item }) {
-  const { title, isSelf, permalink, url, postHint, dateISO } = item
-  const year = new Date(dateISO).getUTCFullYear()
+import { kebabToSnakeCase } from "../../../util"
+export default function ({ item, pageContext: { locale } }) {
+  const { title, isSelf, permalink, url, postHint } = item
+  let finalTitle = title
+  let finalLocale = kebabToSnakeCase(locale)
+  if (
+    item.parent &&
+    item.parent.i18nResource &&
+    item.parent.i18nResource[finalLocale] &&
+    item.parent.i18nResource[finalLocale].title
+  ) {
+    finalTitle = item.parent.i18nResource[finalLocale].title
+  }
   return (
     <LinkUI
       sx={{ color: `text` }}
@@ -16,7 +25,7 @@ export default function ({ item }) {
       rel="noopener noreferrer"
     >
       <Styled.h3 sx={{ fontSize: 2, fontWeight: `medium` }}>
-        <Trans ns={`reddit-title-${year}`}>{title}</Trans>
+        {finalTitle}
       </Styled.h3>
     </LinkUI>
   )

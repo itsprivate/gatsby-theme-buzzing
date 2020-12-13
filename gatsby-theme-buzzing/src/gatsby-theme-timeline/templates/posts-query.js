@@ -18,11 +18,13 @@ export const query = graphql`
           name
           url
           external
+          prefetch
         }
         menuLinks {
           name
           url
           external
+          prefetch
         }
       }
     }
@@ -75,6 +77,16 @@ export const query = graphql`
           parent {
             ... on RedditJson {
               the_new_excerpt
+              i18nResource {
+                zh {
+                  title
+                  the_new_excerpt
+                }
+                zh_Hant {
+                  title
+                  the_new_excerpt
+                }
+              }
             }
           }
         }
