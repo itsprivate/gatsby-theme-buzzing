@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.3.0...v0.4.0) (2020-12-13)
+
+
+### Features
+
+* add trigger workflows ([fc309ec](https://github.com/itsprivate/gatsby-theme-buzzing/commit/fc309ec9139183f4ef1a6fe5080e0ec0e2ec003d))
+
 # [0.3.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.2.1...v0.3.0) (2020-12-13)
 
 
