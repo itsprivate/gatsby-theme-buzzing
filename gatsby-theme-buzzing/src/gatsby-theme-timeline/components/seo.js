@@ -33,6 +33,7 @@ function SEO({
             description
             author
             siteUrl
+            keywords
           }
         }
         avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
@@ -50,6 +51,7 @@ function SEO({
   const metaDescription = description || siteDescription
   const author = site.siteMetadata.author
   const siteUrl = site.siteMetadata.siteUrl
+  const keywords = site.siteMetadata.keywords || []
   const avatarImage = avatar.childImageSharp.fixed.src
   const getImagePath = imageURI => {
     if (
@@ -134,6 +136,14 @@ function SEO({
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: keywords
+            .map(item => {
+              return i18next.t(item)
+            })
+            .join(`,`),
         },
         {
           property: `og:title`,
