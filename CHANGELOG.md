@@ -1,3 +1,10 @@
+## [0.7.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.2...v0.7.3) (2020-12-14)
+
+
+### Bug Fixes
+
+* miss type ([8950e87](https://github.com/itsprivate/gatsby-theme-buzzing/commit/8950e8788c6d79bf153428612a125e770a7b0eab))
+
 ## [0.7.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.1...v0.7.2) (2020-12-14)
 
 
