@@ -22,6 +22,15 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
     ) {
       finalPreviousTitle = previous.parent.i18nResource[finalLocale].title
     }
+    if (
+      previous.__typename === "TweetPost" &&
+      previous.parent &&
+      previous.parent.i18nResource &&
+      previous.parent.i18nResource[finalLocale] &&
+      previous.parent.i18nResource[finalLocale].full_text
+    ) {
+      finalPreviousTitle = previous.parent.i18nResource[finalLocale].full_text
+    }
   }
   let finalNextTitle = ""
   if (next) {
@@ -34,6 +43,15 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
       next.parent.i18nResource[finalLocale].title
     ) {
       finalNextTitle = next.parent.i18nResource[finalLocale].title
+    }
+    if (
+      next.__typename === "TweetPost" &&
+      next.parent &&
+      next.parent.i18nResource &&
+      next.parent.i18nResource[finalLocale] &&
+      next.parent.i18nResource[finalLocale].full_text
+    ) {
+      finalNextTitle = next.parent.i18nResource[finalLocale].full_text
     }
   }
 
