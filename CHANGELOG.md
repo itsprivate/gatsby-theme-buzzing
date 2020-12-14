@@ -1,3 +1,10 @@
+## [0.7.7](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.6...v0.7.7) (2020-12-14)
+
+
+### Bug Fixes
+
+* detail footer i18n ([c40dbbe](https://github.com/itsprivate/gatsby-theme-buzzing/commit/c40dbbeb93d238a59bf5bdc2cf76b5620b14e143))
+
 ## [0.7.6](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.5...v0.7.6) (2020-12-14)
 
 
