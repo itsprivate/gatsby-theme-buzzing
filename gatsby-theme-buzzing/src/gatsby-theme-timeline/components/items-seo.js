@@ -1,12 +1,26 @@
 import React from "react"
 import SEO from "gatsby-theme-timeline/src/components/seo"
 import i18next from "i18next"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default ({ pageContext }) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+          }
+        }
+      }
+    `
+  )
   const { pageType, tag, currentPage, date } = pageContext
   const page = currentPage
   const issueNumber = page
-  let title = i18next.t(`See what's buzzing on Reddit in your native language`)
+  const description = site.siteMetadata.description || site.siteMetadata.title
+  let title = i18next.t(description)
   if (pageType === `tag`) {
     title = i18next.t(`translation-tag__::::__${tag}`)
   } else if (pageType === `issues`) {

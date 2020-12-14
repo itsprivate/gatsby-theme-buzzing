@@ -85,6 +85,7 @@ module.exports = {
     author: `Reddit`,
     description: `See what's buzzing on Reddit in your native language`,
     siteUrl: "https://reddit.buzzing.cc",
+    keywords: ["buzzing"],
     menuLinks: [
       {
         name: "Weekly Selection",
