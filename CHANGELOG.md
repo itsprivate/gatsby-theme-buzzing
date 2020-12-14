@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.4.0...v0.5.0) (2020-12-14)
+
+
+### Features
+
+* add keywords seo ([831c479](https://github.com/itsprivate/gatsby-theme-buzzing/commit/831c47945e9fc3bb1136b34df0a5ebaf1c5890fb))
+
 # [0.4.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.3.0...v0.4.0) (2020-12-13)
 
 
