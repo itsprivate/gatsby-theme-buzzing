@@ -1,3 +1,10 @@
+## [0.7.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.1...v0.7.2) (2020-12-14)
+
+
+### Bug Fixes
+
+* detail seo title ([cd3edbb](https://github.com/itsprivate/gatsby-theme-buzzing/commit/cd3edbb8a907d7cf03d177ba95702ec05207c212))
+
 ## [0.7.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.0...v0.7.1) (2020-12-14)
 
 # [0.7.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.6.1...v0.7.0) (2020-12-14)
