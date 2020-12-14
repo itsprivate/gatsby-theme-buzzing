@@ -17,7 +17,11 @@ if (isDev) {
       remote: `git@github.com:itsprivate/ts-test.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/reddit-top/**", "data/reddit-top-issues/**"],
+      patterns: [
+        "data/tweet-stocks/**",
+        "data/reddit-stocks/**",
+        "data/reddit-top-issues/**",
+      ],
     },
   })
 } else {
@@ -36,7 +40,7 @@ plugins = plugins.concat([
   {
     resolve: `gatsby-theme-buzzing`,
     options: {
-      tweetTypeName: ["TweetsJson", "twitterStatusesUserTimelineMyTweet"],
+      tweetTypeName: ["TweetJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditJson"],
       issueTypeName: ["RedditTopIssuesJson"],
       localesPath: localesPath,

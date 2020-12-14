@@ -125,6 +125,18 @@ export const query = graphql`
               }
             }
           }
+          parent {
+            ... on TweetJson {
+              i18nResource {
+                zh {
+                  full_text
+                }
+                zh_Hant {
+                  full_text
+                }
+              }
+            }
+          }
         }
       }
     }
