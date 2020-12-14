@@ -18,7 +18,9 @@ if (isDev) {
       branch: `main`,
       // Only import the docs folder from a codebase.
       patterns: [
-        "data/tweet-stocks/**",
+        "data/tweet-placeholder/1.json",
+        "data/reddit-placeholder/1.json",
+        // "data/tweet-stocks/**",
         "data/reddit-stocks/**",
         "data/reddit-top-issues/**",
       ],

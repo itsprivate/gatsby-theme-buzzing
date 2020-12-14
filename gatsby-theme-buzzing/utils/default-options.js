@@ -9,6 +9,11 @@ module.exports = themeOptions => {
     ...baseOptions,
     shouldTransformJson: false,
     shouldTransformImage: false,
+    postsFilter: {
+      id: {
+        nin: ["TweetPost-1", "RedditPost-1"],
+      },
+    },
     ...themeOptions,
     issueTypeName,
     localesPath,
