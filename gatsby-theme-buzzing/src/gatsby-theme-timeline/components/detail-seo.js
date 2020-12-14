@@ -27,8 +27,6 @@ export default ({ item, location, pageContext: { locale } }) => {
       }
     }
   }
-  console.log("item.__typename", item.__typename, item)
-
   if (item.__typename === "TweetPost") {
     if (
       item.parent &&

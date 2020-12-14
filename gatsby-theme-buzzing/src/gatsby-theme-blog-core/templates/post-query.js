@@ -161,6 +161,20 @@ export const query = graphql`
           }
         }
       }
+      ... on TweetPost {
+        parent {
+          ... on TweetJson {
+            i18nResource {
+              zh {
+                full_text
+              }
+              zh_Hant {
+                full_text
+              }
+            }
+          }
+        }
+      }
     }
     next: blogPost(id: { eq: $nextId }) {
       id
@@ -177,6 +191,20 @@ export const query = graphql`
               }
               zh_Hant {
                 title
+              }
+            }
+          }
+        }
+      }
+      ... on TweetPost {
+        parent {
+          ... on TweetJson {
+            i18nResource {
+              zh {
+                full_text
+              }
+              zh_Hant {
+                full_text
               }
             }
           }
