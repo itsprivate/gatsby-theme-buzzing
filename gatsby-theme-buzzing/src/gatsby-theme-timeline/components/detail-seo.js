@@ -27,6 +27,18 @@ export default ({ item, location, pageContext: { locale } }) => {
       }
     }
   }
+  console.log("item.__typename", item.__typename, item)
+
+  if (item.__typename === "TweetPost") {
+    if (
+      item.parent &&
+      item.parent.i18nResource &&
+      item.parent.i18nResource[finalLocale] &&
+      item.parent.i18nResource[finalLocale].full_text
+    ) {
+      title = item.parent.i18nResource[finalLocale].full_text
+    }
+  }
   if (!description) {
     description = title
   }

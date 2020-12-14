@@ -121,6 +121,18 @@ export const query = graphql`
         fields {
           basePath
         }
+        parent {
+          ... on TweetJson {
+            i18nResource {
+              zh {
+                full_text
+              }
+              zh_Hant {
+                full_text
+              }
+            }
+          }
+        }
       }
       ... on MdxBlogPost {
         id

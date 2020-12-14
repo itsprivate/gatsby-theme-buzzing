@@ -20,7 +20,7 @@ if (isDev) {
       patterns: [
         "data/tweet-placeholder/1.json",
         "data/reddit-placeholder/1.json",
-        // "data/tweet-stocks/**",
+        "data/tweet-stocks/**",
         "data/reddit-stocks/**",
         "data/reddit-top-issues/**",
       ],
@@ -34,7 +34,13 @@ if (isDev) {
       remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/reddit-top/**", "data/reddit-top-issues/**"],
+      patterns: [
+        "data/tweet-placeholder/1.json",
+        "data/reddit-placeholder/1.json",
+        "data/tweet-stocks/**",
+        "data/reddit-stocks/**",
+        "data/reddit-top-issues/**",
+      ],
     },
   })
 }
