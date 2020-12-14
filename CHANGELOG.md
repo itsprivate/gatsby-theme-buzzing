@@ -1,3 +1,10 @@
+## [0.6.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.6.0...v0.6.1) (2020-12-14)
+
+
+### Bug Fixes
+
+* items seo ([7d106de](https://github.com/itsprivate/gatsby-theme-buzzing/commit/7d106de3e498678b287478945318628bf879638a))
+
 # [0.6.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.5.0...v0.6.0) (2020-12-14)
 
 
