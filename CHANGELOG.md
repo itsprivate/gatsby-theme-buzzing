@@ -1,3 +1,10 @@
+## [0.7.5](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.4...v0.7.5) (2020-12-14)
+
+
+### Bug Fixes
+
+* tweet title ([effef64](https://github.com/itsprivate/gatsby-theme-buzzing/commit/effef64396ebd269fd5683729881ab868a2de285))
+
 ## [0.7.4](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.3...v0.7.4) (2020-12-14)
 
 ## [0.7.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.2...v0.7.3) (2020-12-14)
