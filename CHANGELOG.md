@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.6.1...v0.7.0) (2020-12-14)
+
+
+### Features
+
+* udpate ([c4f821a](https://github.com/itsprivate/gatsby-theme-buzzing/commit/c4f821aebf57b474cf69a50bee8fd901897688c5))
+
 ## [0.6.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.6.0...v0.6.1) (2020-12-14)
 
 
