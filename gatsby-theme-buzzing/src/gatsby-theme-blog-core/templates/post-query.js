@@ -126,9 +126,13 @@ export const query = graphql`
             i18nResource {
               zh {
                 full_text
+                quoted_status_full_text
+                retweeted_status_full_text
               }
               zh_Hant {
                 full_text
+                quoted_status_full_text
+                retweeted_status_full_text
               }
             }
           }

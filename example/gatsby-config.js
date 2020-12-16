@@ -39,7 +39,6 @@ if (isDev) {
         "data/reddit-placeholder/1.json",
         "data/tweet-stocks/**",
         "data/reddit-stocks/**",
-        "data/reddit-top-issues/**",
       ],
     },
   })
