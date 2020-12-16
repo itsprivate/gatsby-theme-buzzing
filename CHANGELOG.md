@@ -1,3 +1,10 @@
+## [0.7.8](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.7...v0.7.8) (2020-12-16)
+
+
+### Bug Fixes
+
+* meta merge ([2121f89](https://github.com/itsprivate/gatsby-theme-buzzing/commit/2121f893c26485b6e82c11167a67156de9ec9dcc))
+
 ## [0.7.7](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.6...v0.7.7) (2020-12-14)
 
 
