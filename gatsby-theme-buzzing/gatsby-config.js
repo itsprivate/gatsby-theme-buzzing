@@ -174,24 +174,8 @@ module.exports = themeOptions => {
       author: `Reddit`,
       description: `See what's buzzing on Reddit in your native language`,
       siteUrl: "https://reddit.buzzing.cc",
-      menuLinks: [
-        {
-          name: "Weekly Selection",
-          url: "/issues",
-        },
-        {
-          name: "RSS",
-          url: "/rss.xml",
-          prefetch: false,
-        },
-      ],
-      social: [
-        {
-          name: `Reddit`,
-          url: `https://www.reddit.com/`,
-          external: true,
-        },
-      ],
+      menuLinks: [],
+      social: [],
     },
   }
 }
