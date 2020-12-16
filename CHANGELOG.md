@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.8...v0.8.0) (2020-12-16)
+
+
+### Features
+
+* add translate ([15fd64c](https://github.com/itsprivate/gatsby-theme-buzzing/commit/15fd64cfe0328f9e1ba12e4d840e6864b43d2324))
+
 ## [0.7.8](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.7...v0.7.8) (2020-12-16)
 
 
