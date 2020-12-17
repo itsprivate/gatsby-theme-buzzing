@@ -1,3 +1,10 @@
+# [0.10.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.9.0...v0.10.0) (2020-12-17)
+
+
+### Features
+
+* item source ([015e48f](https://github.com/itsprivate/gatsby-theme-buzzing/commit/015e48f3ef06e059a5e9014c4ec48f2eee13689a))
+
 # [0.9.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.8.0...v0.9.0) (2020-12-17)
 
 
