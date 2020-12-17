@@ -37,8 +37,8 @@ if (isDev) {
       patterns: [
         "data/tweet-placeholder/1.json",
         "data/reddit-placeholder/1.json",
-        "data/tweet-stocks/**",
-        "data/reddit-stocks/**",
+        "data/hn-placeholder/1.json",
+        "data/hn-top/**",
       ],
     },
   })

@@ -90,6 +90,25 @@ export const query = graphql`
             }
           }
         }
+        ... on HnPost {
+          imageRemote
+          authorName
+          score
+          hnId
+          url
+          parent {
+            ... on HnJson {
+              i18nResource {
+                zh {
+                  title
+                }
+                zh_Hant {
+                  title
+                }
+              }
+            }
+          }
+        }
         ... on TweetPost {
           idStr
           retweeted

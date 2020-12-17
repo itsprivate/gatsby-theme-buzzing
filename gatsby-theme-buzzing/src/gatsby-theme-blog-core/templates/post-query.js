@@ -83,6 +83,25 @@ export const query = graphql`
           }
         }
       }
+      ... on HnPost {
+        imageRemote
+        authorName
+        score
+        hnId
+        url
+        parent {
+          ... on HnJson {
+            i18nResource {
+              zh {
+                title
+              }
+              zh_Hant {
+                title
+              }
+            }
+          }
+        }
+      }
       ... on TweetPost {
         idStr
         retweeted
@@ -165,6 +184,20 @@ export const query = graphql`
           }
         }
       }
+      ... on HnPost {
+        parent {
+          ... on HnJson {
+            i18nResource {
+              zh {
+                title
+              }
+              zh_Hant {
+                title
+              }
+            }
+          }
+        }
+      }
       ... on TweetPost {
         parent {
           ... on TweetJson {
@@ -189,6 +222,20 @@ export const query = graphql`
       ... on RedditPost {
         parent {
           ... on RedditJson {
+            i18nResource {
+              zh {
+                title
+              }
+              zh_Hant {
+                title
+              }
+            }
+          }
+        }
+      }
+      ... on HnPost {
+        parent {
+          ... on HnJson {
             i18nResource {
               zh {
                 title

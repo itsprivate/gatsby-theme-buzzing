@@ -23,6 +23,15 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
       finalPreviousTitle = previous.parent.i18nResource[finalLocale].title
     }
     if (
+      previous.__typename === "HnPost" &&
+      previous.parent &&
+      previous.parent.i18nResource &&
+      previous.parent.i18nResource[finalLocale] &&
+      previous.parent.i18nResource[finalLocale].title
+    ) {
+      finalPreviousTitle = previous.parent.i18nResource[finalLocale].title
+    }
+    if (
       previous.__typename === "TweetPost" &&
       previous.parent &&
       previous.parent.i18nResource &&
@@ -37,6 +46,15 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
     finalNextTitle = next.title
     if (
       next.__typename === "RedditPost" &&
+      next.parent &&
+      next.parent.i18nResource &&
+      next.parent.i18nResource[finalLocale] &&
+      next.parent.i18nResource[finalLocale].title
+    ) {
+      finalNextTitle = next.parent.i18nResource[finalLocale].title
+    }
+    if (
+      next.__typename === "HnPost" &&
       next.parent &&
       next.parent.i18nResource &&
       next.parent.i18nResource[finalLocale] &&
