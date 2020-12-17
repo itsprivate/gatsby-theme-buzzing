@@ -1,3 +1,10 @@
+# [0.9.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.8.0...v0.9.0) (2020-12-17)
+
+
+### Features
+
+* hn init ([6f4d6e7](https://github.com/itsprivate/gatsby-theme-buzzing/commit/6f4d6e766fae117d2b1d9546998ebb1bb595ff56))
+
 # [0.8.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.7.8...v0.8.0) (2020-12-16)
 
 
