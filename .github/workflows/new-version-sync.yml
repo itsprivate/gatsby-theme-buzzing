@@ -9,19 +9,19 @@ jobs:
     steps:
       - name: Sleep for NPM Update
         run: sleep 5m
-      - name: Repository Dispatch
+      - name: Repository Dispatch1
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/gatsby-buzzing-starter
           event-type: new_version_with_buzzing_theme
-      - name: Repository Dispatch
+      - name: Repository Dispatch2
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/rt
           event-type: new_version_with_buzzing_theme
-      - name: Repository Dispatch
+      - name: Repository Dispatch3
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
