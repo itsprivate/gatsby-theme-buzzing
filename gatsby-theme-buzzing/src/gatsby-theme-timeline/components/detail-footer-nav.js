@@ -5,7 +5,7 @@ import { kebabToSnakeCase } from "../../util"
 
 const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
   let finalLocale = kebabToSnakeCase(locale)
-
+  const { title } = item
   if (!(previous || next)) {
     return null
   }
@@ -30,6 +30,15 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
       previous.parent.i18nResource[finalLocale].title
     ) {
       finalPreviousTitle = previous.parent.i18nResource[finalLocale].title
+    }
+    if (
+      previous.__typename === "PhPost" &&
+      previous.parent &&
+      previous.parent.i18nResource &&
+      previous.parent.i18nResource[finalLocale] &&
+      previous.parent.i18nResource[finalLocale].tagline
+    ) {
+      finalPreviousTitle = `${title} - ${previous.parent.i18nResource[finalLocale].tagline}`
     }
     if (
       previous.__typename === "TweetPost" &&
@@ -61,6 +70,15 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
       next.parent.i18nResource[finalLocale].title
     ) {
       finalNextTitle = next.parent.i18nResource[finalLocale].title
+    }
+    if (
+      next.__typename === "PhPost" &&
+      next.parent &&
+      next.parent.i18nResource &&
+      next.parent.i18nResource[finalLocale] &&
+      next.parent.i18nResource[finalLocale].tagline
+    ) {
+      finalNextTitle = `${title} - ${next.parent.i18nResource[finalLocale].tagline}`
     }
     if (
       next.__typename === "TweetPost" &&

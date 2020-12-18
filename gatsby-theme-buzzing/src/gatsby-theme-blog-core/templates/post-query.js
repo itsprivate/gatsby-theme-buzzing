@@ -102,6 +102,31 @@ export const query = graphql`
           }
         }
       }
+      ... on PhPost {
+        imageRemote
+        authorName
+        authorUrl
+        phUrl
+        score
+        url
+        tagline
+        video
+        phId
+        parent {
+          ... on PhJson {
+            i18nResource {
+              zh {
+                description
+                tagline
+              }
+              zh_Hant {
+                description
+                tagline
+              }
+            }
+          }
+        }
+      }
       ... on TweetPost {
         idStr
         retweeted
@@ -198,6 +223,20 @@ export const query = graphql`
           }
         }
       }
+      ... on PhPost {
+        parent {
+          ... on PhJson {
+            i18nResource {
+              zh {
+                tagline
+              }
+              zh_Hant {
+                tagline
+              }
+            }
+          }
+        }
+      }
       ... on TweetPost {
         parent {
           ... on TweetJson {
@@ -242,6 +281,20 @@ export const query = graphql`
               }
               zh_Hant {
                 title
+              }
+            }
+          }
+        }
+      }
+      ... on PhPost {
+        parent {
+          ... on PhJson {
+            i18nResource {
+              zh {
+                tagline
+              }
+              zh_Hant {
+                tagline
               }
             }
           }

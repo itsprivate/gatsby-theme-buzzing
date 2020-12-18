@@ -6,16 +6,23 @@ export default ({ item, location, pageContext: { locale } }) => {
   let description = item.excerpt
   let title = item.title
   let finalLocale = kebabToSnakeCase(locale)
-
+  if (
+    item.parent &&
+    item.parent.i18nResource &&
+    item.parent.i18nResource[finalLocale] &&
+    item.parent.i18nResource[finalLocale].title
+  ) {
+    title = item.parent.i18nResource[finalLocale].title
+  }
+  if (
+    item.parent &&
+    item.parent.i18nResource &&
+    item.parent.i18nResource[finalLocale] &&
+    item.parent.i18nResource[finalLocale].description
+  ) {
+    description = item.parent.i18nResource[finalLocale].description
+  }
   if (item.__typename === "RedditPost") {
-    if (
-      item.parent &&
-      item.parent.i18nResource &&
-      item.parent.i18nResource[finalLocale] &&
-      item.parent.i18nResource[finalLocale].title
-    ) {
-      title = item.parent.i18nResource[finalLocale].title
-    }
     if (item.parent && item.parent.the_new_excerpt) {
       description = item.parent.the_new_excerpt
       if (
@@ -35,6 +42,15 @@ export default ({ item, location, pageContext: { locale } }) => {
       item.parent.i18nResource[finalLocale].full_text
     ) {
       title = item.parent.i18nResource[finalLocale].full_text
+    }
+  }
+  if (item.__typename === "PhPost") {
+    if (
+      item.parent.i18nResource &&
+      item.parent.i18nResource[finalLocale] &&
+      item.parent.i18nResource[finalLocale].tagline
+    ) {
+      title = `${item.title} - ${item.parent.i18nResource[finalLocale].tagline}`
     }
   }
   if (!description) {

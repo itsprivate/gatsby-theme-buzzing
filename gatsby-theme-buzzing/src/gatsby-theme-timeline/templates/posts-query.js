@@ -109,6 +109,31 @@ export const query = graphql`
             }
           }
         }
+        ... on PhPost {
+          imageRemote
+          authorName
+          authorUrl
+          phUrl
+          score
+          url
+          tagline
+          video
+          phId
+          parent {
+            ... on PhJson {
+              i18nResource {
+                zh {
+                  description
+                  tagline
+                }
+                zh_Hant {
+                  description
+                  tagline
+                }
+              }
+            }
+          }
+        }
         ... on TweetPost {
           idStr
           retweeted
