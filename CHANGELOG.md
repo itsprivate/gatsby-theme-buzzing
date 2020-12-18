@@ -1,3 +1,10 @@
+## [0.11.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.11.1...v0.11.2) (2020-12-18)
+
+
+### Bug Fixes
+
+* keywords ([9a2b2dc](https://github.com/itsprivate/gatsby-theme-buzzing/commit/9a2b2dc67ce19d82991f076f731106ed6634ff3b))
+
 ## [0.11.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.11.0...v0.11.1) (2020-12-18)
 
 
