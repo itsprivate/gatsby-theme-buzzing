@@ -4,8 +4,6 @@ import { kebabToSnakeCase } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
   const { title, url, tagline } = item
-  console.log("item", item)
-
   let finalTitle = `${title} - ${tagline}`
   let finalLocale = kebabToSnakeCase(locale)
   if (

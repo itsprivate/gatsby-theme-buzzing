@@ -79,6 +79,15 @@ module.exports = themeOptions => {
                   if (node.parent.i18nResource[kebabLocale].excerpt) {
                     excerpt = node.parent.i18nResource[kebabLocale].excerpt
                   }
+                  if (node.parent.i18nResource[kebabLocale].description) {
+                    excerpt = node.parent.i18nResource[kebabLocale].description
+                  }
+                  if (node.__typename === "PhPost") {
+                    if (node.parent.i18nResource[kebabLocale].tagline) {
+                      title = `${node.title} - ${node.parent.i18nResource[kebabLocale].tagline}`
+                    }
+                  }
+
                   if (node.__typename === "RedditPost") {
                     if (node.parent.i18nResource[kebabLocale].the_new_excerpt) {
                       excerpt =
@@ -114,7 +123,7 @@ module.exports = themeOptions => {
              {
                 allBlogPost(
                   limit: 50
-                  sort: { fields: [date, slug], order: DESC }
+                  sort: { fields: [date, title], order: DESC }
                 ) {
                   nodes {
                     id
@@ -124,6 +133,25 @@ module.exports = themeOptions => {
                     title
                     body
                     dateISO: date
+                    ... on HnPost {
+                      imageRemote
+                      authorName
+                      score
+                      hnId
+                      url
+                      parent {
+                        ... on HnJson {
+                          i18nResource {
+                            zh {
+                              title
+                            }
+                            zh_Hant {
+                              title
+                            }
+                          }
+                        }
+                      }
+                    }
                     ... on RedditPost {
                       permalink
                       subreddit
@@ -144,11 +172,66 @@ module.exports = themeOptions => {
                         }
                       }
                     }
+                    ... on PhPost {
+                      imageRemote
+                      authorName
+                      authorUrl
+                      phUrl
+                      score
+                      url
+                      tagline
+                      video
+                      phId
+                      parent {
+                        ... on PhJson {
+                          i18nResource {
+                            zh {
+                              description
+                              tagline
+                            }
+                            zh_Hant {
+                              description
+                              tagline
+                            }
+                          }
+                        }
+                      }
+                    }
                     ... on MdxBlogPost {
                       id
                       parent {
                         ... on Mdx {
                           html
+                        }
+                      }
+                    }
+                    ... on TweetPost {
+                      idStr
+                      retweeted
+                      isQuoteStatus
+                      imageRemote
+                      quoteImageRemote
+                      authorAvatarRemote
+                      quoteAuthorAvatarRemote
+                      quoteBody
+                      quoteAuthorName
+                      quoteAuthorScreenName
+                      authorName
+                      authorScreenName
+                      parent {
+                        ... on TweetJson {
+                          i18nResource {
+                            zh {
+                              full_text
+                              quoted_status_full_text
+                              retweeted_status_full_text
+                            }
+                            zh_Hant {
+                              full_text
+                              quoted_status_full_text
+                              retweeted_status_full_text
+                            }
+                          }
                         }
                       }
                     }
