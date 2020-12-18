@@ -1,3 +1,10 @@
+## [0.11.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.11.0...v0.11.1) (2020-12-18)
+
+
+### Bug Fixes
+
+* rss i18n ([60982f3](https://github.com/itsprivate/gatsby-theme-buzzing/commit/60982f3044f4e953a53b69777dbccbba99530952))
+
 # [0.11.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.10.0...v0.11.0) (2020-12-18)
 
 
