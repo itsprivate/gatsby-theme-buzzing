@@ -13,6 +13,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
         social {
           name
           url
@@ -27,6 +28,8 @@ export const query = graphql`
         }
         localize {
           title
+          description
+          locale
           social {
             name
             url

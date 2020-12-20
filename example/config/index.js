@@ -50,6 +50,12 @@ const siteMetadata = {
         },
       ],
     },
+    {
+      locale: "zh-Hant",
+      title: "Reddit 熱門",
+      shortTitle: "Reddit熱門",
+      description: "用中文瀏覽Reddit熱門內容",
+    },
   ],
 }
 

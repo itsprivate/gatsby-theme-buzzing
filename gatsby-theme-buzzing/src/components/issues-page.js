@@ -27,7 +27,7 @@ const Items = ({ location, data, pageContext }) => {
       pageContext={pageContext}
       siteMetadata={siteMetadata}
     >
-      <ItemsSEO pageContext={pageContext} />
+      <ItemsSEO pageContext={pageContext} siteMetadata={siteMetadata} />
       <ItemsTitle pageContext={pageContext}></ItemsTitle>
       <Grid gap={[null, null, 3, 4]} columns={[1, 1, `2fr 1fr`]}>
         <main sx={{ minWidth: 0 }}>
