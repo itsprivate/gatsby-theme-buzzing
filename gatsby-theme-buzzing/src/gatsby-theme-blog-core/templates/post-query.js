@@ -193,6 +193,7 @@ export const query = graphql`
       slug
       title
       date(formatString: "MMMM DD, YYYY")
+      __typename
       ... on RedditPost {
         parent {
           ... on RedditJson {
@@ -239,6 +240,7 @@ export const query = graphql`
       excerpt
       slug
       title
+      __typename
       date(formatString: "MMMM DD, YYYY")
       ... on RedditPost {
         parent {

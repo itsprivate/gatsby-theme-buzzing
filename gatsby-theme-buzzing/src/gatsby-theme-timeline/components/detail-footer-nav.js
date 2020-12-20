@@ -43,7 +43,7 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
         next.tagline,
         locale
       )}`
-    } else if (previous.__typename === "TweetPost") {
+    } else if (next.__typename === "TweetPost") {
       finalNextTitle = t("full_text", localize, finalNextTitle, locale)
     } else {
       finalNextTitle = t("title", localize, finalNextTitle, locale)

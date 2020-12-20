@@ -1,6 +1,6 @@
 require("dotenv").config()
 const _ = require("lodash")
-const { onPreInit: init } = require("./util")
+const { onPreInit: init, t } = require("./util")
 const withDefaults = require(`./utils/default-options`)
 const fs = require("fs").promises
 
@@ -54,7 +54,6 @@ module.exports = themeOptions => {
       resolve: `gatsby-plugin-feed`,
       options: {
         feeds: ["en", "zh", "zh-Hant"].map(locale => {
-          const kebabLocale = kebabToSnakeCase(locale)
           return {
             serialize: async ({ query: { site, allBlogPost } }) => {
               let items = []
@@ -62,50 +61,45 @@ module.exports = themeOptions => {
                 const node = allBlogPost.nodes[i]
 
                 let title = node.title
-                let excerpt = node.excerpt
-                if (node.__typename === "RedditPost") {
-                  if (node.parent && node.parent.the_new_excerpt) {
-                    excerpt = node.parent.the_new_excerpt
-                  }
+                let description = node.excerpt
+                let localize = []
+                if (node.parent && node.parent.localize) {
+                  localize = node.parent.localize
                 }
-                if (
-                  node.parent &&
-                  node.parent.i18nResource &&
-                  node.parent.i18nResource[kebabLocale]
-                ) {
-                  if (node.parent.i18nResource[kebabLocale].title) {
-                    title = node.parent.i18nResource[kebabLocale].title
-                  }
-                  if (node.parent.i18nResource[kebabLocale].excerpt) {
-                    excerpt = node.parent.i18nResource[kebabLocale].excerpt
-                  }
-                  if (node.parent.i18nResource[kebabLocale].description) {
-                    excerpt = node.parent.i18nResource[kebabLocale].description
-                  }
-                  if (node.__typename === "PhPost") {
-                    if (node.parent.i18nResource[kebabLocale].tagline) {
-                      title = `${node.title} - ${node.parent.i18nResource[kebabLocale].tagline}`
-                    }
-                  }
+                if (node.__typename === "PhPost") {
+                  title = `${title} - ${t(
+                    "tagline",
+                    localize,
+                    node.tagline,
+                    locale
+                  )}`
+                } else if (node.__typename === "TweetPost") {
+                  title = t("full_text", localize, title, locale)
+                } else {
+                  title = t("title", localize, title, locale)
+                }
 
-                  if (node.__typename === "RedditPost") {
-                    if (node.parent.i18nResource[kebabLocale].the_new_excerpt) {
-                      excerpt =
-                        node.parent.i18nResource[kebabLocale].the_new_excerpt
-                    }
-                  }
+                if (node.__typename === "RedditPost") {
+                  description = t(
+                    "the_new_excerpt",
+                    localize,
+                    node.parent.the_new_excerpt,
+                    locale
+                  )
+                } else {
+                  description = t("description", localize, description, locale)
                 }
 
                 items.push({
                   title,
-                  description: excerpt,
+                  description: description,
                   date: node.dateISO,
                   url: node.permalink
                     ? `https://www.reddit.com${node.permalink}`
                     : site.siteMetadata.siteUrl + node.slug,
                   guid: site.siteMetadata.siteUrl + node.slug,
                   custom_elements: [
-                    { "content:encoded": node.body || excerpt },
+                    { "content:encoded": node.body || description },
                     {
                       category: {
                         _attr: {
@@ -141,13 +135,9 @@ module.exports = themeOptions => {
                       url
                       parent {
                         ... on HnJson {
-                          i18nResource {
-                            zh {
-                              title
-                            }
-                            zh_Hant {
-                              title
-                            }
+                          localize {
+                            title
+                            locale
                           }
                         }
                       }
@@ -159,15 +149,10 @@ module.exports = themeOptions => {
                       parent {
                         ... on RedditJson {
                           the_new_excerpt
-                          i18nResource {
-                            zh {
-                              title
-                              the_new_excerpt
-                            }
-                            zh_Hant {
-                              title
-                              the_new_excerpt
-                            }
+                          localize {
+                            title
+                            the_new_excerpt
+                            locale
                           }
                         }
                       }
@@ -184,15 +169,10 @@ module.exports = themeOptions => {
                       phId
                       parent {
                         ... on PhJson {
-                          i18nResource {
-                            zh {
+                          localize {
+                              locale
                               description
                               tagline
-                            }
-                            zh_Hant {
-                              description
-                              tagline
-                            }
                           }
                         }
                       }
@@ -220,17 +200,11 @@ module.exports = themeOptions => {
                       authorScreenName
                       parent {
                         ... on TweetJson {
-                          i18nResource {
-                            zh {
-                              full_text
-                              quoted_status_full_text
-                              retweeted_status_full_text
-                            }
-                            zh_Hant {
-                              full_text
-                              quoted_status_full_text
-                              retweeted_status_full_text
-                            }
+                          localize {
+                            locale
+                            full_text
+                            quoted_status_full_text
+                            retweeted_status_full_text
                           }
                         }
                       }
