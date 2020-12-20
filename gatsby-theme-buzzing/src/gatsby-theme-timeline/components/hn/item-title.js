@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Link as LinkUI, jsx, Styled } from "theme-ui"
-import { kebabToSnakeCase } from "../../../util"
+import { t } from "../../../util"
 
 function getDomain(url) {
   url = url.replace(/(https?:\/\/)?(www.)?/i, ``)
@@ -12,16 +12,12 @@ function getDomain(url) {
 }
 export default function ({ item, pageContext: { locale } }) {
   const { title, url, hnId } = item
-  let finalTitle = title
-  let finalLocale = kebabToSnakeCase(locale)
-  if (
-    item.parent &&
-    item.parent.i18nResource &&
-    item.parent.i18nResource[finalLocale] &&
-    item.parent.i18nResource[finalLocale].title
-  ) {
-    finalTitle = item.parent.i18nResource[finalLocale].title
+  let localize = []
+  if (item.parent && item.parent.localize) {
+    localize = item.parent.localize
   }
+  let finalTitle = t("title", localize, title, locale)
+
   let finalUrl = url
   if (!url) {
     finalUrl = `https://news.ycombinator.com/item?id=${hnId}`

@@ -3,19 +3,14 @@ import { jsx, Flex } from "theme-ui"
 import ItemDate from "gatsby-theme-timeline/src/components/reddit/item-date"
 import ItemSource from "./item-source"
 import ShareIcon from "./share-icon"
-
+import { t } from "../../../util"
 export default function ({ item, pageContext: { locale } }) {
   let title = item.title
-  if (item.__typename === "RedditPost") {
-    if (
-      item.parent &&
-      item.parent.i18nResource &&
-      item.parent.i18nResource[locale] &&
-      item.parent.i18nResource[locale].title
-    ) {
-      title = item.parent.i18nResource[locale].title
-    }
+  let localize = []
+  if (item.parent && item.parent.localize) {
+    localize = item.parent.localize
   }
+  title = t("title", localize, title, locale)
   const handleShare = () => {
     if (navigator.share) {
       navigator

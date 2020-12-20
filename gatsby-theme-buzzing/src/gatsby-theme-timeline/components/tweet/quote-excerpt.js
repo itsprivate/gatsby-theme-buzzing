@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { Box, jsx } from "theme-ui"
 import processTweetString from "gatsby-theme-timeline/src/components/tweet/process-tweet-string"
-import { kebabToSnakeCase } from "../../../util"
+import { t } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
   const { isQuoteStatus, quoteBody } = item
@@ -11,16 +11,12 @@ export default function ({ item, pageContext: { locale } }) {
   }
   let finalExcerpt = quoteBody
   let finalQuoteBody = ``
-  let finalLocale = kebabToSnakeCase(locale)
-  if (
-    item.parent &&
-    item.parent.i18nResource &&
-    item.parent.i18nResource[finalLocale] &&
-    item.parent.i18nResource[finalLocale]["quoted_status_full_text"]
-  ) {
-    finalExcerpt =
-      item.parent.i18nResource[finalLocale]["quoted_status_full_text"]
+
+  let localize = []
+  if (item.parent && item.parent.localize) {
+    localize = item.parent.localize
   }
+  finalExcerpt = t("quoted_status_full_text", localize, finalExcerpt, locale)
   if (isQuoteStatus) {
     finalQuoteBody = processTweetString(finalExcerpt)
   }

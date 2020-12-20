@@ -1,19 +1,16 @@
 /** @jsx jsx */
 import { Link as LinkUI, jsx, Styled } from "theme-ui"
-import { kebabToSnakeCase } from "../../../util"
+import { t } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
   const { title, url, tagline } = item
-  let finalTitle = `${title} - ${tagline}`
-  let finalLocale = kebabToSnakeCase(locale)
-  if (
-    item.parent &&
-    item.parent.i18nResource &&
-    item.parent.i18nResource[finalLocale] &&
-    item.parent.i18nResource[finalLocale].tagline
-  ) {
-    finalTitle = `${title} - ${item.parent.i18nResource[finalLocale].tagline}`
+
+  let localize = []
+  if (item.parent && item.parent.localize) {
+    localize = item.parent.localize
   }
+  let finalTagline = t("tagline", localize, tagline, locale)
+  let finalTitle = `${title} - ${finalTagline}`
   return (
     <LinkUI
       sx={{ color: `text` }}

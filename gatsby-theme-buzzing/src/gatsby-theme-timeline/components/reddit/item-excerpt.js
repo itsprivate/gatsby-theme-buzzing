@@ -1,22 +1,23 @@
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui"
-import { kebabToSnakeCase } from "../../../util"
+import { t } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
   const { parent } = item
   if (!parent || !parent.the_new_excerpt) {
     return null
   }
-  let finalExcerpt = parent.the_new_excerpt
-  let finalLocale = kebabToSnakeCase(locale)
-  if (
-    item.parent &&
-    item.parent.i18nResource &&
-    item.parent.i18nResource[finalLocale] &&
-    item.parent.i18nResource[finalLocale].the_new_excerpt
-  ) {
-    finalExcerpt = item.parent.i18nResource[finalLocale].the_new_excerpt
+
+  let localize = []
+  if (item.parent && item.parent.localize) {
+    localize = item.parent.localize
   }
+  const finalExcerpt = t(
+    "the_new_excerpt",
+    localize,
+    parent.the_new_excerpt,
+    locale
+  )
   return (
     <Styled.p sx={{ mt: 0, whiteSpace: `pre-line` }}>{finalExcerpt}</Styled.p>
   )

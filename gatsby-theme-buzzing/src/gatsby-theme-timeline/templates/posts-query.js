@@ -93,15 +93,10 @@ export const query = graphql`
           parent {
             ... on RedditJson {
               the_new_excerpt
-              i18nResource {
-                zh {
-                  title
-                  the_new_excerpt
-                }
-                zh_Hant {
-                  title
-                  the_new_excerpt
-                }
+              localize {
+                title
+                the_new_excerpt
+                locale
               }
             }
           }
@@ -114,13 +109,9 @@ export const query = graphql`
           url
           parent {
             ... on HnJson {
-              i18nResource {
-                zh {
-                  title
-                }
-                zh_Hant {
-                  title
-                }
+              localize {
+                title
+                locale
               }
             }
           }
@@ -137,15 +128,10 @@ export const query = graphql`
           phId
           parent {
             ... on PhJson {
-              i18nResource {
-                zh {
-                  description
-                  tagline
-                }
-                zh_Hant {
-                  description
-                  tagline
-                }
+              localize {
+                description
+                tagline
+                locale
               }
             }
           }
@@ -187,17 +173,11 @@ export const query = graphql`
           }
           parent {
             ... on TweetJson {
-              i18nResource {
-                zh {
-                  full_text
-                  quoted_status_full_text
-                  retweeted_status_full_text
-                }
-                zh_Hant {
-                  full_text
-                  quoted_status_full_text
-                  retweeted_status_full_text
-                }
+              localize {
+                locale
+                full_text
+                quoted_status_full_text
+                retweeted_status_full_text
               }
             }
           }

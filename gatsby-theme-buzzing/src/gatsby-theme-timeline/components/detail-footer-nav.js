@@ -1,10 +1,9 @@
 /** @jsx jsx */
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import { Flex, jsx, Link as LinkUI } from "theme-ui"
-import { kebabToSnakeCase } from "../../util"
+import { t } from "../../util"
 
 const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
-  let finalLocale = kebabToSnakeCase(locale)
   const { title } = item
   if (!(previous || next)) {
     return null
@@ -12,82 +11,42 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
   let finalPreviousTitle = ""
   if (previous) {
     finalPreviousTitle = previous.title
+    let localize = []
+    if (previous.parent && previous.parent.localize) {
+      localize = previous.parent.localize
+    }
 
-    if (
-      previous.__typename === "RedditPost" &&
-      previous.parent &&
-      previous.parent.i18nResource &&
-      previous.parent.i18nResource[finalLocale] &&
-      previous.parent.i18nResource[finalLocale].title
-    ) {
-      finalPreviousTitle = previous.parent.i18nResource[finalLocale].title
-    }
-    if (
-      previous.__typename === "HnPost" &&
-      previous.parent &&
-      previous.parent.i18nResource &&
-      previous.parent.i18nResource[finalLocale] &&
-      previous.parent.i18nResource[finalLocale].title
-    ) {
-      finalPreviousTitle = previous.parent.i18nResource[finalLocale].title
-    }
-    if (
-      previous.__typename === "PhPost" &&
-      previous.parent &&
-      previous.parent.i18nResource &&
-      previous.parent.i18nResource[finalLocale] &&
-      previous.parent.i18nResource[finalLocale].tagline
-    ) {
-      finalPreviousTitle = `${title} - ${previous.parent.i18nResource[finalLocale].tagline}`
-    }
-    if (
-      previous.__typename === "TweetPost" &&
-      previous.parent &&
-      previous.parent.i18nResource &&
-      previous.parent.i18nResource[finalLocale] &&
-      previous.parent.i18nResource[finalLocale].full_text
-    ) {
-      finalPreviousTitle = previous.parent.i18nResource[finalLocale].full_text
+    if (previous.__typename === "PhPost") {
+      finalPreviousTitle = `${title} - ${t(
+        "tagline",
+        localize,
+        previous.tagline,
+        locale
+      )}`
+    } else if (previous.__typename === "TweetPost") {
+      finalPreviousTitle = t("full_text", localize, finalPreviousTitle, locale)
+    } else {
+      finalPreviousTitle = t("title", localize, finalPreviousTitle, locale)
     }
   }
   let finalNextTitle = ""
   if (next) {
     finalNextTitle = next.title
-    if (
-      next.__typename === "RedditPost" &&
-      next.parent &&
-      next.parent.i18nResource &&
-      next.parent.i18nResource[finalLocale] &&
-      next.parent.i18nResource[finalLocale].title
-    ) {
-      finalNextTitle = next.parent.i18nResource[finalLocale].title
+    let localize = []
+    if (next.parent && next.parent.localize) {
+      localize = next.parent.localize
     }
-    if (
-      next.__typename === "HnPost" &&
-      next.parent &&
-      next.parent.i18nResource &&
-      next.parent.i18nResource[finalLocale] &&
-      next.parent.i18nResource[finalLocale].title
-    ) {
-      finalNextTitle = next.parent.i18nResource[finalLocale].title
-    }
-    if (
-      next.__typename === "PhPost" &&
-      next.parent &&
-      next.parent.i18nResource &&
-      next.parent.i18nResource[finalLocale] &&
-      next.parent.i18nResource[finalLocale].tagline
-    ) {
-      finalNextTitle = `${title} - ${next.parent.i18nResource[finalLocale].tagline}`
-    }
-    if (
-      next.__typename === "TweetPost" &&
-      next.parent &&
-      next.parent.i18nResource &&
-      next.parent.i18nResource[finalLocale] &&
-      next.parent.i18nResource[finalLocale].full_text
-    ) {
-      finalNextTitle = next.parent.i18nResource[finalLocale].full_text
+    if (next.__typename === "PhPost") {
+      finalNextTitle = `${title} - ${t(
+        "tagline",
+        localize,
+        next.tagline,
+        locale
+      )}`
+    } else if (previous.__typename === "TweetPost") {
+      finalNextTitle = t("full_text", localize, finalNextTitle, locale)
+    } else {
+      finalNextTitle = t("title", localize, finalNextTitle, locale)
     }
   }
 

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { Box, jsx } from "theme-ui"
 import processTweetString from "gatsby-theme-timeline/src/components/tweet/process-tweet-string"
-import { kebabToSnakeCase } from "../../../util"
+import { t } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
   const { excerpt, retweeted } = item
@@ -9,19 +9,17 @@ export default function ({ item, pageContext: { locale } }) {
     return null
   }
   let finalExcerpt = excerpt
-  let finalLocale = kebabToSnakeCase(locale)
   let field = "full_text"
   if (retweeted) {
     field = "retweeted_status_full_text"
   }
-  if (
-    item.parent &&
-    item.parent.i18nResource &&
-    item.parent.i18nResource[finalLocale] &&
-    item.parent.i18nResource[finalLocale][field]
-  ) {
-    finalExcerpt = item.parent.i18nResource[finalLocale][field]
+
+  let localize = []
+  if (item.parent && item.parent.localize) {
+    localize = item.parent.localize
   }
+  finalExcerpt = t(field, localize, excerpt, locale)
+
   const body = processTweetString(finalExcerpt)
   return <Box sx={{ fontSize: 1, py: 2, whiteSpace: `pre-line` }}>{body}</Box>
 }
