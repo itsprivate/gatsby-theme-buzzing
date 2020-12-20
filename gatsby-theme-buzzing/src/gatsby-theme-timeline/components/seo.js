@@ -12,7 +12,7 @@ import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import path from "path"
 import i18next from "i18next"
-
+import { t } from "../../util"
 function SEO({
   description,
   lang,
@@ -34,6 +34,13 @@ function SEO({
             author
             siteUrl
             keywords
+            localize {
+              locale
+              title
+              description
+              author
+              keywords
+            }
           }
         }
         avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
@@ -46,12 +53,28 @@ function SEO({
       }
     `
   )
+
   const { locale } = useLocalization()
-  const siteDescription = i18next.t(site.siteMetadata.description)
+  const siteDescription = t(
+    "description",
+    site.siteMetadata.localize,
+    site.siteMetadata.description,
+    locale
+  )
   const metaDescription = description || siteDescription
-  const author = site.siteMetadata.author
+  const author = t(
+    "author",
+    site.siteMetadata.localize,
+    site.siteMetadata.author,
+    locale
+  )
   const siteUrl = site.siteMetadata.siteUrl
-  const keywords = site.siteMetadata.keywords || []
+  const keywords = t(
+    "keywords",
+    site.siteMetadata.localize,
+    site.siteMetadata.keywords,
+    locale
+  )
   const avatarImage = avatar.childImageSharp.fixed.src
   const getImagePath = imageURI => {
     if (
@@ -65,7 +88,12 @@ function SEO({
   }
   const image = imageSource ? getImagePath(imageSource) : null
   const imageAltText = imageAlt || metaDescription
-  const siteTitle = i18next.t(site.siteMetadata.title)
+  const siteTitle = t(
+    "title",
+    site.siteMetadata.localize,
+    site.siteMetadata.title,
+    locale
+  )
   const pageTitle = `${title} - ${siteTitle}`
   const authorJSONLD = {
     "@type": `Person`,
@@ -159,7 +187,7 @@ function SEO({
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: author,
         },
         {
           name: `twitter:title`,

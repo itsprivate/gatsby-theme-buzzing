@@ -253,12 +253,48 @@ module.exports = themeOptions => {
     plugins,
     // Customize your site metadata:
     siteMetadata: {
-      title: `Buzzing on Reddit`,
-      author: `Reddit`,
-      description: `See what's buzzing on Reddit in your native language`,
       siteUrl: "https://reddit.buzzing.cc",
-      menuLinks: [],
-      social: [],
+      author: `Reddit`,
+      locale: "zh",
+      title: "Reddit 热门",
+      shortTitle: "Reddit热门",
+      description: "用中文浏览Reddit热门内容",
+      keywords: ["buzzing"],
+      menuLinks: [
+        {
+          name: "每周精选",
+          url: "/issues",
+        },
+      ],
+      social: [
+        {
+          name: `Reddit`,
+          url: `https://www.reddit.com/`,
+          external: true,
+        },
+      ],
+      localize: [
+        {
+          locale: "en",
+          title: `Buzzing on Reddit`,
+          shortTitle: "BuzzReddit",
+          description: `See what's buzzing on Reddit in your native language`,
+          keywords: ["buzzing"],
+          menuLinks: [
+            {
+              name: "Weekly Selection",
+              url: "/issues",
+            },
+          ],
+          social: [
+            {
+              name: `Reddit`,
+              url: `https://www.reddit.com/`,
+              external: true,
+            },
+          ],
+        },
+      ],
     },
   }
 }

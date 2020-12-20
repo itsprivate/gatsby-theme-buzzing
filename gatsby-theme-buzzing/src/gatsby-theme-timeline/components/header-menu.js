@@ -1,9 +1,14 @@
 /** @jsx jsx */
 import { jsx, NavLink as LinkUI, Flex } from "theme-ui"
-import { Trans } from "react-i18next"
-import { LocalizedLink as Link, useLocalization } from "gatsby-theme-i18n"
-const Title = ({ menuLinks }) => {
-  const { locale, defaultLang, localizedPath } = useLocalization()
+import { LocalizedLink as Link } from "gatsby-theme-i18n"
+import { t } from "../../util"
+const Title = ({ pageContext: { locale }, siteMetadata }) => {
+  const menuLinks = t(
+    "menuLinks",
+    siteMetadata.localize,
+    siteMetadata.menuLinks,
+    locale
+  )
   if (!menuLinks) {
     return null
   }
@@ -20,8 +25,6 @@ const Title = ({ menuLinks }) => {
         }
         if (nav.prefetch === false && !nav.external) {
           isUseATag = true
-
-          url = localizedPath(defaultLang, locale, url)
         }
 
         return (
@@ -32,7 +35,7 @@ const Title = ({ menuLinks }) => {
             key={url}
             {...attr}
           >
-            <Trans>{nav.name}</Trans>
+            {nav.name}
           </LinkUI>
         )
       })}

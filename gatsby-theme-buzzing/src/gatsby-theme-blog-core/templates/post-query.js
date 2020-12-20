@@ -25,6 +25,21 @@ export const query = graphql`
           external
           prefetch
         }
+        localize {
+          title
+          social {
+            name
+            url
+            external
+            prefetch
+          }
+          menuLinks {
+            name
+            url
+            external
+            prefetch
+          }
+        }
       }
     }
     blogPost(id: { eq: $id }) {

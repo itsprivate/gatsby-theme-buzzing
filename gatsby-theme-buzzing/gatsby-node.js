@@ -20,6 +20,21 @@ exports.createSchemaCustomization = ({ actions }) => {
       draft: Boolean!
       items: [IssueItem!]
     }
+    type SiteSiteMetadataLocalizeMenuLinks {
+      name: String!
+      url: String!
+      external: Boolean
+      prefetch: Boolean
+    }
+    type SiteSiteMetadataLocalizeSocial {
+      name: String
+      url: String
+      external: Boolean
+      prefetch: Boolean
+    }
+    type SiteSiteMetadataLocalize {
+      author: String
+    }
   `)
 }
 exports.createResolvers = ({ createResolvers }) => {

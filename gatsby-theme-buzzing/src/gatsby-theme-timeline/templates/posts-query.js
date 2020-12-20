@@ -26,6 +26,22 @@ export const query = graphql`
           external
           prefetch
         }
+        localize {
+          locale
+          title
+          social {
+            name
+            url
+            external
+            prefetch
+          }
+          menuLinks {
+            name
+            url
+            external
+            prefetch
+          }
+        }
       }
     }
     tagsGroup: allBlogPost(
