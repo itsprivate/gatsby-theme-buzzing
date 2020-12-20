@@ -1,3 +1,10 @@
+## [0.12.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.12.0...v0.12.1) (2020-12-20)
+
+
+### Bug Fixes
+
+* issue template ([18b23d1](https://github.com/itsprivate/gatsby-theme-buzzing/commit/18b23d197c16dca210c1c934b5e8fe4eb0fd627a))
+
 # [0.12.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.11.3...v0.12.0) (2020-12-20)
 
 
