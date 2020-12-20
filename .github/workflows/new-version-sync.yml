@@ -5,6 +5,7 @@ on:
       - "v*"
 jobs:
   build:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Sleep for NPM Update
