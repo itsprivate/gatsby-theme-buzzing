@@ -1,3 +1,11 @@
+# [0.12.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.11.3...v0.12.0) (2020-12-20)
+
+
+### Features
+
+* support localize ([6bdce02](https://github.com/itsprivate/gatsby-theme-buzzing/commit/6bdce0251073b6186bf5c68c88539ad76237f39b))
+* support localize ([a7554ee](https://github.com/itsprivate/gatsby-theme-buzzing/commit/a7554ee7d191a260ba781abfdb76130b6b159a13))
+
 ## [0.11.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.11.2...v0.11.3) (2020-12-18)
 
 ## [0.11.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.11.1...v0.11.2) (2020-12-18)
