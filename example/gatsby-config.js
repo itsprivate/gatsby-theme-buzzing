@@ -43,6 +43,8 @@ if (isDev) {
         "data/hn-placeholder/1.json",
         "data/ph-placeholder/1.json",
         "data/ph-top/**",
+        "data/reddit-top-issues/**",
+        "data/reddit-top/**",
       ],
     },
   })
@@ -94,6 +96,7 @@ plugins = plugins.concat([
   },
 ])
 module.exports = {
+  flags: { QUERY_ON_DEMAND: true },
   plugins: plugins,
   siteMetadata: siteMetadata,
 }
