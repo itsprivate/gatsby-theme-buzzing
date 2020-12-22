@@ -219,6 +219,7 @@ module.exports = themeOptions => {
         }),
       },
     },
+    "gatsby-plugin-robots-txt",
     {
       resolve: `gatsby-plugin-sitemap`,
     },

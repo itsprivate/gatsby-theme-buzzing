@@ -28,3 +28,15 @@ jobs:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/rs
           event-type: new_version_with_buzzing_theme
+      - name: Repository Dispatch4
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/hn
+          event-type: new_version_with_buzzing_theme
+      - name: Repository Dispatch5
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/ph
+          event-type: new_version_with_buzzing_theme
