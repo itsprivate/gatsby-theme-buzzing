@@ -1,3 +1,10 @@
+# [0.13.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.12.4...v0.13.0) (2020-12-22)
+
+
+### Features
+
+* add robots txt ([1597027](https://github.com/itsprivate/gatsby-theme-buzzing/commit/15970279d82d2097a63f7cf04f279c8f5e60f8a1))
+
 ## [0.12.4](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.12.3...v0.12.4) (2020-12-20)
 
 ## [0.12.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.12.2...v0.12.3) (2020-12-20)
