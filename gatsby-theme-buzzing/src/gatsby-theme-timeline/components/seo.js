@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
-import path from "path"
+import urlJoin from "url-join"
 import i18next from "i18next"
 import { t } from "../../util"
 function SEO({
@@ -82,7 +82,7 @@ function SEO({
         `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
       )
     )
-      return path.join(siteUrl, withPrefix(imageURI))
+      return urlJoin(siteUrl, withPrefix(imageURI))
 
     return imageURI
   }
@@ -103,7 +103,7 @@ function SEO({
   const logoJSONLD = {
     "@type": `ImageObject`,
     url: getImagePath(avatarImage),
-    "@id": path.join(siteUrl, withPrefix(`#logo`)),
+    "@id": urlJoin(siteUrl, withPrefix(`#logo`)),
     caption: `${siteTitle} Logo`,
   }
 
@@ -111,14 +111,14 @@ function SEO({
     {
       "@context": `http://schema.org`,
       "@type": `WebSite`,
-      "@id": path.join(siteUrl, withPrefix(`#website`)),
+      "@id": urlJoin(siteUrl, withPrefix(`#website`)),
       url: withPrefix(siteUrl),
       name: siteTitle,
       image: logoJSONLD,
     },
   ]
   if (pageType === `detail`) {
-    const postURL = path.join(siteUrl, location.pathname)
+    const postURL = urlJoin(siteUrl, location.pathname)
     const datePublished = new Date(item.date)
     schemaOrgJSONLD.push(
       {

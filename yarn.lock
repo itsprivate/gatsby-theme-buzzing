@@ -7487,10 +7487,10 @@ gatsby-theme-i18n@^1.0.4:
     gatsby-plugin-react-helmet "^3.3.10"
     react-helmet "^6.1.0"
 
-gatsby-theme-timeline@^0.1.98:
-  version "0.1.98"
-  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.98.tgz#21b327cbd7175ee4a9adc3da59d8c55cf40e8d60"
-  integrity sha512-u4wKb05VjyEOaA11rq5jxIDpC35LIqjNNnEM8JtxudSte0CpmDlXJthZnodwZwUt0lhhcQ/ToHWKBbbHuqY9Ag==
+gatsby-theme-timeline@^0.1.99:
+  version "0.1.99"
+  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.99.tgz#d09a36c9c45bb0b9d18ecb462b1182765f8dadd9"
+  integrity sha512-xefFtFmBAJ+ixGQlvWekz02c0UmQgX2Jsn4ETc5OvN7oEgEdHza8NFbGLxg59AHniY+t5IU/UzGxb8RGDcc75A==
   dependencies:
     "@theme-ui/prism" "^0.4.0-rc.5"
     date-fns "^2.16.1"
@@ -7514,6 +7514,7 @@ gatsby-theme-timeline@^0.1.98:
     react-twemoji "^0.3.0"
     react-ultimate-pagination "^1.2.0"
     theme-ui "^0.4.0-rc.5"
+    url-join "^4.0.1"
 
 gatsby-theme-ui-timeline-preset@^0.1.13:
   version "0.1.13"
