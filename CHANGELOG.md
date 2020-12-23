@@ -1,3 +1,10 @@
+## [0.13.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.13.0...v0.13.1) (2020-12-23)
+
+
+### Bug Fixes
+
+* seo url ([bbfef1c](https://github.com/itsprivate/gatsby-theme-buzzing/commit/bbfef1c1506edfe58a83dc6724c52ee4be952506))
+
 # [0.13.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.12.4...v0.13.0) (2020-12-22)
 
 
