@@ -40,3 +40,9 @@ jobs:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/ph
           event-type: new_version_with_buzzing_theme
+      - name: Repository Dispatch6
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/cmv
+          event-type: new_version_with_buzzing_theme
