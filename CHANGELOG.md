@@ -1,3 +1,10 @@
+## [0.13.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.13.1...v0.13.2) (2020-12-24)
+
+
+### Bug Fixes
+
+* quote status ([6b5c9d2](https://github.com/itsprivate/gatsby-theme-buzzing/commit/6b5c9d2edf1b270df101205a43cf9c7a35e25f5b))
+
 ## [0.13.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.13.0...v0.13.1) (2020-12-23)
 
 
