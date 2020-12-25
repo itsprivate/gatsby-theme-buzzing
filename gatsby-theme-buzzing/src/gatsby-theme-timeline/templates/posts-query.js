@@ -118,6 +118,19 @@ export const query = graphql`
             }
           }
         }
+        ... on RedirectPost {
+          authorName
+          authorUrl
+          url
+          parent {
+            ... on RedirectJson {
+              localize {
+                title
+                locale
+              }
+            }
+          }
+        }
         ... on PhPost {
           imageRemote
           authorName

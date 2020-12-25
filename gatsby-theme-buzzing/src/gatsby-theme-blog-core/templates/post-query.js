@@ -111,6 +111,19 @@ export const query = graphql`
           }
         }
       }
+      ... on RedirectPost {
+        authorName
+        authorUrl
+        url
+        parent {
+          ... on RedirectJson {
+            localize {
+              title
+              locale
+            }
+          }
+        }
+      }
       ... on PhPost {
         imageRemote
         authorName
@@ -214,6 +227,16 @@ export const query = graphql`
           }
         }
       }
+      ... on RedirectPost {
+        parent {
+          ... on RedirectJson {
+            localize {
+              title
+              locale
+            }
+          }
+        }
+      }
       ... on PhPost {
         parent {
           ... on PhJson {
@@ -255,6 +278,16 @@ export const query = graphql`
       ... on HnPost {
         parent {
           ... on HnJson {
+            localize {
+              title
+              locale
+            }
+          }
+        }
+      }
+      ... on RedirectPost {
+        parent {
+          ... on RedirectJson {
             localize {
               title
               locale

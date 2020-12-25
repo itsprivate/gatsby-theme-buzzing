@@ -23,9 +23,7 @@ if (isDev) {
         "data/reddit-placeholder/1.json",
         "data/hn-placeholder/1.json",
         "data/ph-placeholder/1.json",
-        "data/tweet-stocks/**",
-        "data/reddit-stocks/**",
-        "data/reddit-top-issues/**",
+        "data/redirect-newstop/**",
       ],
     },
   })
@@ -42,9 +40,7 @@ if (isDev) {
         "data/reddit-placeholder/1.json",
         "data/hn-placeholder/1.json",
         "data/ph-placeholder/1.json",
-        "data/ph-top/**",
-        "data/reddit-top-issues/**",
-        "data/reddit-top/**",
+        "data/redirect-newstop/**",
       ],
     },
   })
