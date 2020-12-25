@@ -1,3 +1,10 @@
+# [0.14.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.13.2...v0.14.0) (2020-12-25)
+
+
+### Features
+
+* support redirect ([43d655e](https://github.com/itsprivate/gatsby-theme-buzzing/commit/43d655e620af246292a7bbea317910403e582e53))
+
 ## [0.13.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.13.1...v0.13.2) (2020-12-24)
 
 
