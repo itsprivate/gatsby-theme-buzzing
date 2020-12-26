@@ -29,7 +29,7 @@ if (isDev) {
       remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/*-placeholder/1.json", "data/redirect-newstop/**"],
+      patterns: ["data/*-placeholder/1.json", "data/youtube-top/**"],
     },
   })
 }

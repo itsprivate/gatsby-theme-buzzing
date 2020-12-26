@@ -11,7 +11,6 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import urlJoin from "url-join"
-import i18next from "i18next"
 import { t } from "../../util"
 function SEO({
   description,
@@ -167,11 +166,7 @@ function SEO({
         },
         {
           name: `keywords`,
-          content: keywords
-            .map(item => {
-              return i18next.t(item)
-            })
-            .join(`,`),
+          content: keywords.join(`,`),
         },
         {
           property: `og:title`,

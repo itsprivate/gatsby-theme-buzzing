@@ -131,6 +131,24 @@ export const query = graphql`
             }
           }
         }
+        ... on YoutubePost {
+          imageRemote
+          authorName
+          authorUrl
+          views
+          score
+          url
+          video
+          parent {
+            ... on YoutubeJson {
+              localize {
+                title
+                description
+                locale
+              }
+            }
+          }
+        }
         ... on PhPost {
           imageRemote
           authorName

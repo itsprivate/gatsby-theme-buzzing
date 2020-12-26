@@ -177,6 +177,24 @@ module.exports = themeOptions => {
                         }
                       }
                     }
+                    ... on YoutubePost {
+                      imageRemote
+                      authorName
+                      authorUrl
+                      views
+                      score
+                      url
+                      video
+                      parent {
+                        ... on YoutubeJson {
+                          localize {
+                            title
+                            description
+                            locale
+                          }
+                        }
+                      }
+                    }
                     ... on MdxBlogPost {
                       id
                       parent {

@@ -124,6 +124,24 @@ export const query = graphql`
           }
         }
       }
+      ... on YoutubePost {
+        imageRemote
+        authorName
+        authorUrl
+        views
+        score
+        url
+        video
+        parent {
+          ... on YoutubeJson {
+            localize {
+              title
+              description
+              locale
+            }
+          }
+        }
+      }
       ... on PhPost {
         imageRemote
         authorName
@@ -227,6 +245,16 @@ export const query = graphql`
           }
         }
       }
+      ... on YoutubePost {
+        parent {
+          ... on YoutubeJson {
+            localize {
+              title
+              locale
+            }
+          }
+        }
+      }
       ... on RedirectPost {
         parent {
           ... on RedirectJson {
@@ -278,6 +306,16 @@ export const query = graphql`
       ... on HnPost {
         parent {
           ... on HnJson {
+            localize {
+              title
+              locale
+            }
+          }
+        }
+      }
+      ... on YoutubePost {
+        parent {
+          ... on YoutubeJson {
             localize {
               title
               locale
