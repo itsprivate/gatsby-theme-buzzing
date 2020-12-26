@@ -1,3 +1,10 @@
+# [0.15.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.14.2...v0.15.0) (2020-12-26)
+
+
+### Features
+
+* support youtube ([7d2a391](https://github.com/itsprivate/gatsby-theme-buzzing/commit/7d2a39162d2b50dad89dbbde5560bb5965743c25))
+
 ## [0.14.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.14.1...v0.14.2) (2020-12-26)
 
 
