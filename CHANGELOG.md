@@ -1,3 +1,10 @@
+## [0.14.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.14.1...v0.14.2) (2020-12-26)
+
+
+### Bug Fixes
+
+* type ([86e4677](https://github.com/itsprivate/gatsby-theme-buzzing/commit/86e4677ec5fb73106cc0cb6817190b60c94971f8))
+
 ## [0.14.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.14.0...v0.14.1) (2020-12-26)
 
 
