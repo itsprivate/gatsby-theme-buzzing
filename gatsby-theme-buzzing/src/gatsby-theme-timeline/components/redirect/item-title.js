@@ -4,8 +4,6 @@ import { t } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
   const { title, url } = item
-  console.log("item", item)
-
   let localize = []
   if (item.parent && item.parent.localize) {
     localize = item.parent.localize
