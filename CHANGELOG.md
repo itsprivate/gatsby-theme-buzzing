@@ -1,3 +1,10 @@
+## [0.14.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.14.0...v0.14.1) (2020-12-26)
+
+
+### Bug Fixes
+
+* console ([a09dde2](https://github.com/itsprivate/gatsby-theme-buzzing/commit/a09dde2320825a743a0ee848c48fb0916562612a))
+
 # [0.14.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.13.2...v0.14.0) (2020-12-25)
 
 
