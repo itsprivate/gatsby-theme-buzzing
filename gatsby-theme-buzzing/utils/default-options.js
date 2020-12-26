@@ -11,7 +11,7 @@ module.exports = themeOptions => {
     shouldTransformImage: false,
     postsFilter: {
       id: {
-        nin: ["TweetPost-1", "RedditPost-1", "HnPost-1", "PhPost-1"],
+        glob: "!*Post-1",
       },
     },
     ...themeOptions,
