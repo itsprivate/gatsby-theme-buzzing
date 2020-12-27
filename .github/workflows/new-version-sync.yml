@@ -51,3 +51,15 @@ jobs:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/crp
           event-type: new_version_with_buzzing_theme
+      - name: Repository Dispatch8
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/news
+          event-type: new_version_with_buzzing_theme
+      - name: Repository Dispatch9
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/yt
+          event-type: new_version_with_buzzing_theme
