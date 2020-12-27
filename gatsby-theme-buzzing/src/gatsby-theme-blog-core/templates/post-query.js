@@ -114,6 +114,7 @@ export const query = graphql`
       ... on RedirectPost {
         authorName
         authorUrl
+        imageRemote
         url
         parent {
           ... on RedirectJson {

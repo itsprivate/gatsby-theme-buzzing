@@ -122,6 +122,7 @@ export const query = graphql`
           authorName
           authorUrl
           url
+          imageRemote
           parent {
             ... on RedirectJson {
               localize {

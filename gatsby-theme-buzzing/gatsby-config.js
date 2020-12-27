@@ -94,20 +94,10 @@ module.exports = themeOptions => {
                   title,
                   description: description,
                   date: node.dateISO,
-                  url: node.permalink
-                    ? `https://www.reddit.com${node.permalink}`
-                    : site.siteMetadata.siteUrl + node.slug,
+                  url: site.siteMetadata.siteUrl + node.slug,
                   guid: site.siteMetadata.siteUrl + node.slug,
                   custom_elements: [
                     { "content:encoded": node.body || description },
-                    {
-                      category: {
-                        _attr: {
-                          term: node.subreddit,
-                          label: `/r/${node.subreddit}`,
-                        },
-                      },
-                    },
                   ],
                 })
               }
@@ -135,6 +125,20 @@ module.exports = themeOptions => {
                       url
                       parent {
                         ... on HnJson {
+                          localize {
+                            title
+                            locale
+                          }
+                        }
+                      }
+                    }
+                    ... on RedirectPost {
+                      authorName
+                      authorUrl
+                      url
+                      imageRemote
+                      parent {
+                        ... on RedirectJson {
                           localize {
                             title
                             locale
