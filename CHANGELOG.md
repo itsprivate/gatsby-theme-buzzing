@@ -1,3 +1,10 @@
+# [0.16.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.15.0...v0.16.0) (2020-12-27)
+
+
+### Features
+
+* add hn image ([27305e6](https://github.com/itsprivate/gatsby-theme-buzzing/commit/27305e6527bd8af0082ee7c2f9484efac9aebd30))
+
 # [0.15.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.14.2...v0.15.0) (2020-12-26)
 
 
