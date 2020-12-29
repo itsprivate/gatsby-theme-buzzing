@@ -10,7 +10,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     type IssueItem {
       type: String!
       slug: String!
-      createdAT: Date! @dateformat
     }
     type ${ISSUE_TYPE_NAME} implements Node @dontInfer {
       id: ID!
@@ -68,14 +67,7 @@ exports.onCreateNode = async ({ node, actions, getNode }, themeOptions) => {
       date: date,
       issueNumber: node.issueNumber,
       draft: node.draft,
-      items: node.items.map(item => {
-        const itemCreatedAt = new Date(item.createdAt).toISOString()
-        return {
-          slug: item.slug,
-          type: item.type,
-          createdAt: itemCreatedAt,
-        }
-      }),
+      items: node.items,
     }
 
     const nodeId = `${ISSUE_TYPE_NAME}-${node.id}`
@@ -125,7 +117,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             date(formatString: "YYYY-MM-DD")
             items {
               slug
-              type
             }
           }
         }
@@ -147,32 +138,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const postsFilter = {
       slug: {
         in: issue.items.map(item => {
-          return `/reddit${item.slug}`
+          return `${item.slug}`
         }),
       },
     }
-    const result = await graphql(
-      `
-        query ItemsCreatePageQuery($filter: BlogPostFilterInput) {
-          allBlogPost(
-            sort: { fields: [date, slug], order: DESC }
-            filter: $filter
-          ) {
-            nodes {
-              id
-              slug
-            }
-          }
-        }
-      `,
-      {
-        filter: postsFilter,
-      }
-    )
-
-    if (result.errors) {
-      reporter.panic(result.errors)
-    }
+    console.log("postsFilter", JSON.stringify(postsFilter, null, 2))
 
     // Create Posts and Post pages.
     const totalPages = Math.ceil(issues.length / postsPerPage)
