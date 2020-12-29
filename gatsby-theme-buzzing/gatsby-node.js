@@ -142,8 +142,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }),
       },
     }
-    console.log("postsFilter", JSON.stringify(postsFilter, null, 2))
-
     // Create Posts and Post pages.
     const totalPages = Math.ceil(issues.length / postsPerPage)
     const total = issues.length
