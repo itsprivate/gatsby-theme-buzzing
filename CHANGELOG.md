@@ -1,3 +1,10 @@
+# [0.18.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.17.1...v0.18.0) (2020-12-30)
+
+
+### Features
+
+* support hn tag ([9acd84c](https://github.com/itsprivate/gatsby-theme-buzzing/commit/9acd84cd252d9f8ea8aa037a6769a7710dc02c61))
+
 ## [0.17.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.17.0...v0.17.1) (2020-12-29)
 
 # [0.17.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.16.0...v0.17.0) (2020-12-29)
