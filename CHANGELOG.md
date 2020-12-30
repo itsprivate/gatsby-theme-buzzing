@@ -1,3 +1,10 @@
+# [0.19.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.18.0...v0.19.0) (2020-12-30)
+
+
+### Features
+
+* seo ([ef84b14](https://github.com/itsprivate/gatsby-theme-buzzing/commit/ef84b14451092731dc4de351c65616a2690514f9))
+
 # [0.18.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.17.1...v0.18.0) (2020-12-30)
 
 
