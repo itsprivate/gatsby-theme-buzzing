@@ -3,7 +3,7 @@ import SEO from "gatsby-theme-timeline/src/components/seo"
 import i18next from "i18next"
 import { t } from "../../util"
 export default ({ pageContext, siteMetadata }) => {
-  const { pageType, tag, currentPage, date } = pageContext
+  const { pageType, tag: pageTag, currentPage, date } = pageContext
   const page = currentPage
   const issueNumber = page
   const description = t(
@@ -13,10 +13,28 @@ export default ({ pageContext, siteMetadata }) => {
     pageContext.locale
   )
   let title = description
+  let seoDescription = ""
+  let siteTitle = t(
+    "title",
+    siteMetadata.localize,
+    siteMetadata.title,
+    pageContext.locale
+  )
   if (pageType === `tag`) {
-    title = i18next.t(`translation-tag__::::__${tag}`)
+    const tag = i18next.t(`translation-tag__::::__${pageTag}`)
+    title = tag
+    seoDescription = i18next.t(`See all posts about {{tag}} at {{siteTitle}}`, {
+      tag,
+      siteTitle,
+    })
   } else if (pageType === `issues`) {
     title = i18next.t(`Weekly Selection`)
+    seoDescription = i18next.t(
+      `{{siteTitle}} selects the most popular content for you each week`,
+      {
+        siteTitle,
+      }
+    )
   } else if (pageType === `issue`) {
     const dateTitle = ` · ${date}`
     title =
@@ -26,6 +44,13 @@ export default ({ pageContext, siteMetadata }) => {
         issueNumber,
       }) +
       dateTitle
+    seoDescription = i18next.t(
+      `Click to view Issue {{issueNumber}} of {{siteTitle}}`,
+      {
+        siteTitle,
+        issueNumber,
+      }
+    )
   }
-  return <SEO title={title} />
+  return <SEO title={title} description={seoDescription} />
 }
