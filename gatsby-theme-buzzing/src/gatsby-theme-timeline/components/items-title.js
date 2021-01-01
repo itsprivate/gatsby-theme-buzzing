@@ -11,7 +11,10 @@ const ItemsTitle = props => {
   const page = currentPage
   if (pageType === `tag`) {
     return (
-      <Styled.h4 sx={{ fontWeight: `normal`, mb: `1.5rem` }}>
+      <Styled.h4
+        data-test="list-title"
+        sx={{ fontWeight: `normal`, mb: `1.5rem` }}
+      >
         <LinkUI sx={{ color: `text` }} as={Link} to={withPrefix(basePath)}>
           <Trans>All posts</Trans>
         </LinkUI>
@@ -37,7 +40,10 @@ const ItemsTitle = props => {
 
     const issueNumber = page
     return (
-      <Styled.h4 sx={{ fontWeight: `normal`, mb: `1.5rem` }}>
+      <Styled.h4
+        data-test="list-title"
+        sx={{ fontWeight: `normal`, mb: `1.5rem` }}
+      >
         {currentPage > 1 ? (
           <LinkUI sx={{ color: `text` }} as={Link} to={withPrefix(homePath)}>
             <Trans>{itemsTitle}</Trans>

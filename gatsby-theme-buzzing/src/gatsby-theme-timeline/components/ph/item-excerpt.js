@@ -14,7 +14,10 @@ export default function ({ item, pageContext: { locale } }) {
   const finalExcerpt = t("description", localize, excerpt, locale)
 
   return (
-    <Styled.p sx={{ whiteSpace: `pre-line`, color: `textMuted` }}>
+    <Styled.p
+      data-test="item-excerpt"
+      sx={{ whiteSpace: `pre-line`, color: `textMuted` }}
+    >
       {finalExcerpt}
     </Styled.p>
   )

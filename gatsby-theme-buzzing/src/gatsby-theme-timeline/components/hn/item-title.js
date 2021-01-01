@@ -23,7 +23,7 @@ export default function ({ item, pageContext: { locale } }) {
     finalUrl = `https://news.ycombinator.com/item?id=${hnId}`
   }
   return (
-    <LinkUI sx={{ color: `text` }} href={finalUrl}>
+    <LinkUI data-test="item-title" sx={{ color: `text` }} href={finalUrl}>
       <Styled.h3 sx={{ fontWeight: `normal`, fontSize: `1.15rem` }}>
         {finalTitle}
         {` `}

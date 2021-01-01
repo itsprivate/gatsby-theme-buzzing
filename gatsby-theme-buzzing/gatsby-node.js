@@ -104,6 +104,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `gatsby-theme-timeline/src/templates/posts-query`
   )
   const IssuesTemplate = require.resolve(`./src/templates/issues-query`)
+  const IssuePlainTemplate = require.resolve(
+    `./src/templates/issue-plain-query`
+  )
+
   const issuesResult = await graphql(
     `
       {
@@ -165,6 +169,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     }
     createPage(pageInfo)
+    const issuePlainPageInfo = {
+      ...pageInfo,
+      path: urlResolve(basePath, `/plain/issues/${issueNumber}`),
+      component: IssuePlainTemplate,
+    }
+    createPage(issuePlainPageInfo)
   }
   const issuePageInfo = {
     path: urlResolve(basePath, `issues`),
