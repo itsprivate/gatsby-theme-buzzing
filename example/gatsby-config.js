@@ -4,7 +4,7 @@ const isDev =
   process.env.LOCAL !== "false"
 let localesPath =
   ".cache/gatsby-source-git/itsprivate/ts/RedditTop/i18n/i18next"
-if (isDev) {
+if (isDev || true) {
   localesPath =
     ".cache/gatsby-source-git/itsprivate/ts-test/RedditTop/i18n/i18next"
 }
