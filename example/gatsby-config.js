@@ -4,12 +4,12 @@ const isDev =
   process.env.LOCAL !== "false"
 let localesPath =
   ".cache/gatsby-source-git/itsprivate/ts/RedditTop/i18n/i18next"
-if (isDev || true) {
+if (isDev) {
   localesPath =
     ".cache/gatsby-source-git/itsprivate/ts-test/RedditTop/i18n/i18next"
 }
 let plugins = []
-if (isDev || true) {
+if (isDev) {
   // development not include the whole data
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,
