@@ -9,7 +9,7 @@ if (isDev) {
     ".cache/gatsby-source-git/itsprivate/ts-test/RedditTop/i18n/i18next"
 }
 let plugins = []
-if (isDev) {
+if (isDev || true) {
   // development not include the whole data
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,
@@ -27,21 +27,21 @@ if (isDev) {
     },
   })
 } else {
-  plugins.push({
-    resolve: `@theowenyoung/gatsby-source-git`,
-    options: {
-      name: `RedditTop`,
-      remote: `https://github.com/itsprivate/ts.git`,
-      branch: `main`,
-      fetchOptions: ["--depth", "1"],
-      // Only import the docs folder from a codebase.
-      patterns: [
-        "data/*-placeholder/1.json",
-        "data/hn-top/**",
-        "data/hn-top-issues/**",
-      ],
-    },
-  })
+  // plugins.push({
+  //   resolve: `@theowenyoung/gatsby-source-git`,
+  //   options: {
+  //     name: `RedditTop`,
+  //     remote: `https://github.com/itsprivate/ts.git`,
+  //     branch: `main`,
+  //     fetchOptions: ["--depth", "1"],
+  //     // Only import the docs folder from a codebase.
+  //     patterns: [
+  //       "data/*-placeholder/1.json",
+  //       "data/hn-top/**",
+  //       "data/hn-top-issues/**",
+  //     ],
+  //   },
+  // })
 }
 plugins = plugins.concat([
   {
