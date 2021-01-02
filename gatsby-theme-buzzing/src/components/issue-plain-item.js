@@ -10,13 +10,18 @@ const ItemBox = props => {
       data-index={props.index}
       itemScope
       itemType="https://schema.org/Article https://schema.org/itemListElement"
+      sx={{ m: 0 }}
     >
       <Styled.h3 sx={{}}>
         <Link itemProp="name" href="/#" sx={{ color: "text" }}>
           {title}
         </Link>
       </Styled.h3>
-      <Styled.p data-test="item-header" sx={{ color: "#718096", mt: "-10px" }}>
+      <Styled.p
+        as="sup"
+        data-test="item-header"
+        sx={{ color: "#718096", mt: "-10px" }}
+      >
         Posted by{" "}
         <Link href="/#" itemProp="author">
           {authorName}
