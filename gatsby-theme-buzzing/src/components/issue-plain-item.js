@@ -22,20 +22,18 @@ const ItemBox = props => {
         </Link>
       </Styled.p>
       <Styled.h3>
-        <Link itemProp="name" itemProp="name" href="/#" sx={{ color: "text" }}>
+        <Link itemProp="name" href="/#" sx={{ color: "text" }}>
           {title}
         </Link>
       </Styled.h3>
-      <Styled.p sx={{ textAlign: "center" }}>
-        {imageRemote && (
-          <Styled.img
-            sx={{ maxHeight: "512px" }}
-            src={imageRemote}
-            alt="item hero"
-            itemProp="image"
-          ></Styled.img>
-        )}
-      </Styled.p>
+      {imageRemote && (
+        <Styled.img
+          sx={{ maxHeight: "512px", m: "0 auto", display: "block" }}
+          src={imageRemote}
+          alt="item hero"
+          itemProp="image"
+        ></Styled.img>
+      )}
 
       <Styled.p
         itemProp="description"

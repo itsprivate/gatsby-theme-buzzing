@@ -20,12 +20,12 @@ const Items = ({ data, pageContext }) => {
         maxWidth: [`full`, `3xl`, `3xl`, `3xl`],
         mx: `auto`,
         px: [3, 4],
-        pb: 4,
+        py: 4,
       }}
-      itemscope
+      itemScope
       itemType="https://schema.org/ItemList"
     >
-      <Styled.h2 itemprop="name">{pageTitle}</Styled.h2>
+      <Styled.h2 itemProp="name">{pageTitle}</Styled.h2>
       {items.map((item, index) => {
         return (
           <ItemBox

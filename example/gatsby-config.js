@@ -116,7 +116,6 @@ plugins = plugins.concat([
     },
   },
 ])
-console.log("plugins", plugins)
 
 module.exports = {
   flags: { QUERY_ON_DEMAND: true },
