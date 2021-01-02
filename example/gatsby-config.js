@@ -15,7 +15,7 @@ if (isDev) {
     resolve: `@theowenyoung/gatsby-source-git`,
     options: {
       name: `RedditTop`,
-      remote: `git@github.com:itsprivate/ts-test.git`,
+      remote: `https://github.com/itsprivate/ts-test.git`,
       branch: `main`,
       fetchOptions: ["--depth", "1"],
       // Only import the docs folder from a codebase.
@@ -37,7 +37,7 @@ if (isDev) {
     resolve: `@theowenyoung/gatsby-source-git`,
     options: {
       name: `RedditTop`,
-      remote: `git@github.com:itsprivate/ts-test.git`,
+      remote: `https://github.com/itsprivate/ts-test.git`,
       branch: `main`,
       fetchOptions: ["--depth", "1"],
       // Only import the docs folder from a codebase.
@@ -116,6 +116,8 @@ plugins = plugins.concat([
     },
   },
 ])
+console.log("plugins", plugins)
+
 module.exports = {
   flags: { QUERY_ON_DEMAND: true },
   plugins: plugins,
