@@ -5,7 +5,12 @@ import i18next from "i18next"
 const Items = ({ data, pageContext }) => {
   const { basePath, currentPage: issueNumber, date, dateISO } = pageContext
   const items = data.allBlogPost.nodes
+  const {
+    site: { siteMetadata },
+  } = data
   const pageTitle =
+    siteMetadata.title +
+    " " +
     i18next.t(`Weekly Selection`) +
     "-" +
     i18next.t("Issue {{issueNumber}}", `Issue ${issueNumber}`, {

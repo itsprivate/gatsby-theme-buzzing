@@ -16,7 +16,7 @@ const ItemBox = props => {
           {title}
         </Link>
       </Styled.h3>
-      <Styled.p sx={{ color: "textMuted", mt: "-10px" }}>
+      <Styled.p data-test="item-header" sx={{ color: "#718096", mt: "-10px" }}>
         Posted by{" "}
         <Link href="/#" itemProp="author">
           {authorName}
