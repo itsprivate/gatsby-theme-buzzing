@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://reddit.buzzing.cc/sitemap.xml
+Host: https://reddit.buzzing.cc
