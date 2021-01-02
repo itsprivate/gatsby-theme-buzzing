@@ -11,7 +11,12 @@ const ItemBox = props => {
       itemScope
       itemType="https://schema.org/Article https://schema.org/itemListElement"
     >
-      <Styled.p sx={{ color: "textMuted", mb: "-10px" }}>
+      <Styled.h3 sx={{}}>
+        <Link itemProp="name" href="/#" sx={{ color: "text" }}>
+          {title}
+        </Link>
+      </Styled.h3>
+      <Styled.p sx={{ color: "textMuted", mt: "-10px" }}>
         Posted by{" "}
         <Link href="/#" itemProp="author">
           {authorName}
@@ -21,11 +26,6 @@ const ItemBox = props => {
           {datetime}
         </Link>
       </Styled.p>
-      <Styled.h3>
-        <Link itemProp="name" href="/#" sx={{ color: "text" }}>
-          {title}
-        </Link>
-      </Styled.h3>
       {imageRemote && (
         <Styled.img
           sx={{ maxHeight: "512px", m: "0 auto", display: "block" }}
