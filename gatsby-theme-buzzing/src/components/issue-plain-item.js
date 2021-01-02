@@ -5,7 +5,7 @@ const ItemBox = props => {
   const { item } = props
   let { title, datetime, excerpt, imageRemote, authorName, slug } = item
   return (
-    <div
+    <li
       data-test="item-container"
       data-index={props.index}
       itemScope
@@ -48,7 +48,7 @@ const ItemBox = props => {
           my: "48px",
         }}
       ></Styled.hr>
-    </div>
+    </li>
   )
 }
 export default ItemBox

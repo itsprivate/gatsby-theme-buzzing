@@ -29,17 +29,19 @@ const Items = ({ data, pageContext }) => {
       <time sx={{ color: "textMuted" }} dateTime={dateISO}>
         {date}
       </time>
-      {items.map((item, index) => {
-        return (
-          <ItemBox
-            key={`item-box-${index}`}
-            index={index}
-            basePath={basePath}
-            item={item}
-            pageContext={pageContext}
-          ></ItemBox>
-        )
-      })}
+      <ul>
+        {items.map((item, index) => {
+          return (
+            <ItemBox
+              key={`item-box-${index}`}
+              index={index}
+              basePath={basePath}
+              item={item}
+              pageContext={pageContext}
+            ></ItemBox>
+          )
+        })}
+      </ul>
     </div>
   )
 }
