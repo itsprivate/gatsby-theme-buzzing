@@ -21,7 +21,13 @@ if (isDev) {
       // Only import the docs folder from a codebase.
       patterns: [
         "data/*-placeholder/1.json",
-        "data/**",
+        "data/reddit-top",
+        "data/hn-top",
+        "data/youtube-top",
+        "data/ph-top",
+        "data/reddit-stocks",
+        "data/reddit-changemyview",
+        "data/tweet-crypto",
         "data/hn-top-issues/**",
       ],
     },
@@ -37,7 +43,13 @@ if (isDev) {
       // Only import the docs folder from a codebase.
       patterns: [
         "data/*-placeholder/1.json",
-        "data/**",
+        "data/reddit-top",
+        "data/hn-top",
+        "data/youtube-top",
+        "data/ph-top",
+        "data/reddit-stocks",
+        "data/reddit-changemyview",
+        "data/tweet-crypto",
         "data/hn-top-issues/**",
       ],
     },
