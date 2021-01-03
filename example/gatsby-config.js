@@ -3,7 +3,7 @@ const isDev =
   (process.env.NODE_ENV === "development" || process.env.LOCAL === "true") &&
   process.env.LOCAL !== "false"
 let localesPath =
-  ".cache/gatsby-source-git/itsprivate/ts-test/RedditTop/i18n/i18next"
+  ".cache/gatsby-source-git/itsprivate/ts/RedditTop/i18n/i18next"
 if (isDev) {
   localesPath =
     ".cache/gatsby-source-git/itsprivate/ts-test/RedditTop/i18n/i18next"
@@ -37,18 +37,19 @@ if (isDev) {
     resolve: `@theowenyoung/gatsby-source-git`,
     options: {
       name: `RedditTop`,
-      remote: `https://github.com/itsprivate/ts-test.git`,
+      remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       fetchOptions: ["--depth", "1"],
       // Only import the docs folder from a codebase.
       patterns: [
         "data/*-placeholder/1.json",
-        "data/reddit-top/**",
-        "data/hn-top/**",
-        "data/youtube-top/**",
-        "data/ph-top/**",
-        "data/reddit-stocks/**",
-        "data/reddit-changemyview/**",
+        // "data/reddit-top/**",
+        // "data/hn-top/**",
+        // "data/youtube-top/**",
+        // "data/ph-top/**",
+        // "data/reddit-stocks/**",
+        // "data/reddit-changemyview/**",
+        "data/reddit-crypto/**",
         "data/tweet-crypto/**",
         "data/hn-top-issues/**",
       ],

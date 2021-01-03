@@ -30,31 +30,6 @@ const ItemBox = props => {
       itemType="https://schema.org/Article https://schema.org/itemListElement"
       sx={{ m: 0 }}
     >
-      {provider === "Twitter" ? (
-        <Styled.p itemProp="name" sx={{ fontSize: 2, whiteSpace: `pre-line` }}>
-          {ProcessString(provider, getTitle(item, locale))}
-        </Styled.p>
-      ) : (
-        <Styled.h3 sx={{}}>
-          <Link itemProp="name" href={finalUrl} sx={{ color: "text" }}>
-            {getTitle(item, locale)}
-          </Link>
-        </Styled.h3>
-      )}
-      <Styled.p
-        as="sup"
-        data-test="item-header"
-        sx={{ color: "#718096", mt: "-10px" }}
-      >
-        Posted by{" "}
-        <Link href={finalAuthorUrl} itemProp="author">
-          {finalAuthor}
-        </Link>{" "}
-        at{" "}
-        <Link href={finalUrl} itemProp="datePublished">
-          {datetime}
-        </Link>
-      </Styled.p>
       {imageRemote && (
         <Styled.img
           sx={{ maxHeight: "512px", m: "0 auto", display: "block" }}
@@ -62,6 +37,17 @@ const ItemBox = props => {
           alt="item hero"
           itemProp="image"
         ></Styled.img>
+      )}
+      {provider === "Twitter" ? (
+        <Styled.h3 itemProp="name" sx={{ whiteSpace: `pre-line` }}>
+          {ProcessString(provider, getTitle(item, locale))}
+        </Styled.h3>
+      ) : (
+        <Styled.h3 sx={{}}>
+          <Link itemProp="name" href={finalUrl} sx={{ color: "text" }}>
+            {getTitle(item, locale)}
+          </Link>
+        </Styled.h3>
       )}
       {provider !== "Twitter" && (
         <Styled.p
@@ -74,10 +60,25 @@ const ItemBox = props => {
           {ProcessString(provider, getExcerpt(item, locale))}
         </Styled.p>
       )}
-
+      <Styled.blockquote
+        as="sup"
+        data-test="item-header"
+        sx={{ color: "#718096", mt: "-10px" }}
+      >
+        Posted by{" "}
+        <Link href={finalAuthorUrl} itemProp="author">
+          {finalAuthor}
+        </Link>{" "}
+        at{" "}
+        <Link href={finalUrl} itemProp="datePublished">
+          {datetime}
+        </Link>{" "}
+        on {provider}
+      </Styled.blockquote>
       <Styled.hr
         sx={{
-          my: "48px",
+          mt: "20px",
+          mb: "48px",
         }}
       ></Styled.hr>
     </li>

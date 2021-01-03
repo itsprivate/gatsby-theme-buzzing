@@ -20,7 +20,7 @@ const Items = ({ data, pageContext }) => {
   return (
     <div
       sx={{
-        maxWidth: [`full`, `3xl`, `3xl`, `3xl`],
+        maxWidth: [`full`, `640px`, `640px`, `640px`],
         mx: `auto`,
         px: [4, 4],
         pt: 4,
