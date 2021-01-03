@@ -1,3 +1,11 @@
+# [0.20.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.19.0...v0.20.0) (2021-01-03)
+
+
+### Features
+
+* adapt timeline ([ff36e54](https://github.com/itsprivate/gatsby-theme-buzzing/commit/ff36e54222c68a49ef13dde1c7ea7bc5c4ebbc41))
+* reui ([e9d4ce1](https://github.com/itsprivate/gatsby-theme-buzzing/commit/e9d4ce107f905f31ea4f1ac5d6bb07af6cd6f918))
+
 # [0.19.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.18.0...v0.19.0) (2020-12-30)
 
 
