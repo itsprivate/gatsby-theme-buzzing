@@ -32,7 +32,7 @@ const getTitle = (item, locale = "zh") => {
     const pureTagline = titleArr[1]
     let finalTagline = t("tagline", localize, pureTagline, locale)
     finalTitle = `${pureTitle} - ${finalTagline}`
-  } else if (provider === "TweetPost") {
+  } else if (provider === "Twitter") {
     const sharedContent = item.sharedContent
     const retweeted =
       sharedContent && sharedContent.title && finalTitle.startsWith(`RT @`)
