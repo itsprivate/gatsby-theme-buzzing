@@ -61,7 +61,6 @@ const ItemBox = props => {
         </Styled.p>
       )}
       <Styled.blockquote
-        as="sup"
         data-test="item-header"
         sx={{ color: "#718096", mt: "-10px" }}
       >
