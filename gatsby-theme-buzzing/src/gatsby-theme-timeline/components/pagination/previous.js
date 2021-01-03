@@ -7,11 +7,11 @@ import { Link as LinkUI } from "theme-ui"
 import { join as urlJoin } from "path"
 
 export default function PreviousPageLink({ prefix, pageContext }, props) {
-  const pageType = pageContext.pageType
+  const { originalPath, currentPage, pageType } = pageContext
   let pagePath = "page"
   let previousText = "Previous"
   if (pageType === "issue") {
-    pagePath = "issues"
+    pagePath = originalPath.slice(1, originalPath.indexOf(`/${currentPage}`))
     previousText = "Previous Issue"
   }
 

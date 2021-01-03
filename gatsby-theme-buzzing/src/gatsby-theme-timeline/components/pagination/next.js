@@ -7,11 +7,11 @@ import { join as urlJoin } from "path"
 import { Trans } from "react-i18next"
 
 export default function NextPageLink({ prefix, pageContext }, props) {
-  const pageType = pageContext.pageType
+  const { originalPath, currentPage, pageType } = pageContext
   let pagePath = "page"
   let nextText = "Next"
   if (pageType === "issue") {
-    pagePath = "issues"
+    pagePath = originalPath.slice(1, originalPath.indexOf(`/${currentPage}`))
     nextText = "Next Issue"
   }
   if (props.isActive) {

@@ -41,8 +41,6 @@ export default function processReactString(type, body) {
       {
         regex: /(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/,
         fn: (key, result) => {
-          console.log("result[1]", result[1])
-
           const emoji = (
             <Twemoji
               tag="span"
@@ -59,7 +57,6 @@ export default function processReactString(type, body) {
               {result[1]}
             </Twemoji>
           )
-          console.log("emoji", emoji)
           return emoji
         },
       },

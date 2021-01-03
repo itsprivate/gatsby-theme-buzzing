@@ -3,6 +3,8 @@ import ItemBox from "./issue-plain-item"
 import { jsx, Styled, Link } from "theme-ui"
 import i18next from "i18next"
 import SEO from "gatsby-theme-timeline/src/components/seo"
+import ItemsFooter from "gatsby-theme-timeline/src/components/items-footer"
+
 const Items = ({ data, pageContext }) => {
   const { basePath, currentPage: issueNumber, date, dateISO } = pageContext
   const items = data.allBlogPost.nodes
@@ -78,6 +80,7 @@ const Items = ({ data, pageContext }) => {
           })}
         </ul>
       </article>
+      <ItemsFooter pageContext={pageContext}></ItemsFooter>
     </div>
   )
 }
