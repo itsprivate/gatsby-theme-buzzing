@@ -22,7 +22,8 @@ const ItemBox = props => {
   const finalAuthorUrl = authorUrl || channelUrl
   const finalAuthor = author || channel
   const finalUrl = originalUrl || url
-
+  const finalExcerpt =
+    provider === "Twitter" ? getTitle(item, locale) : getExcerpt(item, locale)
   return (
     <li
       data-test="item-container"
@@ -49,21 +50,18 @@ const ItemBox = props => {
         </Styled.h4>
       )}
       <Styled.blockquote data-test="item-header" sx={{ color: "#718096" }}>
-        <Styled.p
-          itemProp="description"
-          sx={{
-            color: "textMuted",
-            whiteSpace: `pre-line`,
-          }}
-        >
-          {ProcessString(
-            provider,
-            provider === "Twitter"
-              ? getTitle(item, locale)
-              : getExcerpt(item, locale)
-          )}
-        </Styled.p>
-        <Styled.p>
+        {finalExcerpt && (
+          <Styled.p
+            itemProp="description"
+            sx={{
+              color: "textMuted",
+              whiteSpace: `pre-line`,
+            }}
+          >
+            {ProcessString(provider, finalExcerpt)}
+          </Styled.p>
+        )}
+        <Styled.p data-test="source">
           Posted by{" "}
           <Link href={finalAuthorUrl} itemProp="author">
             {finalAuthor}
