@@ -1,16 +1,9 @@
 /** @jsx jsx */
 import { Link as LinkUI, jsx, Styled } from "theme-ui"
-import { t } from "../../../util"
+import { getTitle } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
-  const { title, url, tagline } = item
-
-  let localize = []
-  if (item.parent && item.parent.localize) {
-    localize = item.parent.localize
-  }
-  let finalTagline = t("tagline", localize, tagline, locale)
-  let finalTitle = `${title} - ${finalTagline}`
+  const { url } = item
   return (
     <LinkUI
       sx={{ color: `text` }}
@@ -18,7 +11,9 @@ export default function ({ item, pageContext: { locale } }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Styled.h3 sx={{ fontWeight: `normal` }}>{finalTitle}</Styled.h3>
+      <Styled.h3 sx={{ fontWeight: `normal` }}>
+        {getTitle(item, locale)}
+      </Styled.h3>
     </LinkUI>
   )
 }

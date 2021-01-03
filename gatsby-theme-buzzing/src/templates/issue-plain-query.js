@@ -80,69 +80,94 @@ export const query = graphql`
           }
         }
         imageAlt
-        ... on RedditPost {
-          imageRemote
-          video
-          videoWidth
-          videoHeight
-          permalink
-          isSelf
-          postHint
-          isVideo
-          subreddit
-          authorName
+        ... on SocialMediaPost {
+          provider
+          thirdPartyId
           url
+          originalUrl
+          imageRemote
+          video {
+            url
+            embed
+            width
+            height
+          }
+          channel
+          channelUrl
+          author
+          authorUrl
+          authorImage {
+            childImageSharp {
+              fixed(width: 48, height: 48) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          authorSlug
           score
-          redditId
+          views
+          sharedCount
+          likeCount
+          sharedContent {
+            excerpt
+            slug
+            title
+            date(formatString: "MMMM DD, YYYY")
+            dateISO: date
+            datetime: date(formatString: "YYYY-MM-DD HH:mm")
+            tags
+            imageRemote
+            image {
+              childImageSharp {
+                fluid(maxHeight: $maxHeight) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            imageAlt
+            authorImage {
+              childImageSharp {
+                fixed(width: 24, height: 24) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            video {
+              url
+              embed
+              width
+              height
+            }
+            channel
+            channelUrl
+            author
+            authorUrl
+            authorSlug
+            score
+            views
+            sharedCount
+            likeCount
+          }
           parent {
             ... on RedditJson {
-              the_new_excerpt
               localize {
                 title
                 the_new_excerpt
                 locale
               }
             }
-          }
-        }
-        ... on HnPost {
-          imageRemote
-          authorName
-          score
-          hnId
-          url
-          parent {
             ... on HnJson {
               localize {
                 title
                 locale
               }
             }
-          }
-        }
-        ... on RedirectPost {
-          authorName
-          authorUrl
-          url
-          imageRemote
-          parent {
             ... on RedirectJson {
               localize {
                 title
                 locale
               }
             }
-          }
-        }
-        ... on YoutubePost {
-          imageRemote
-          authorName
-          authorUrl
-          views
-          score
-          url
-          video
-          parent {
             ... on YoutubeJson {
               localize {
                 title
@@ -150,19 +175,6 @@ export const query = graphql`
                 locale
               }
             }
-          }
-        }
-        ... on PhPost {
-          imageRemote
-          authorName
-          authorUrl
-          phUrl
-          score
-          url
-          tagline
-          video
-          phId
-          parent {
             ... on PhJson {
               localize {
                 description
@@ -170,44 +182,6 @@ export const query = graphql`
                 locale
               }
             }
-          }
-        }
-        ... on TweetPost {
-          idStr
-          retweeted
-          isQuoteStatus
-          imageRemote
-          quoteImageRemote
-          authorAvatarRemote
-          quoteAuthorAvatarRemote
-          quoteBody
-          quoteAuthorName
-          quoteAuthorScreenName
-          quoteAuthorAvatar {
-            childImageSharp {
-              fixed(width: 24, height: 24) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
-          quoteImage {
-            childImageSharp {
-              fluid(maxHeight: $maxHeight) {
-                ...GatsbyImageSharpFluid
-                src
-              }
-            }
-          }
-          authorName
-          authorScreenName
-          authorAvatar {
-            childImageSharp {
-              fixed(width: 48, height: 48) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
-          parent {
             ... on TweetJson {
               localize {
                 locale

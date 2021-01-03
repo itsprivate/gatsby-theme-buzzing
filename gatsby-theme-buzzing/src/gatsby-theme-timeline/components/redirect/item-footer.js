@@ -4,7 +4,7 @@ import ItemDate from "gatsby-theme-timeline/src/components/redirect/item-date"
 import { Trans } from "react-i18next"
 
 export default function ({ item }) {
-  const { authorUrl, authorName } = item
+  const { channelUrl, channel } = item
   return (
     <footer sx={{ display: `flex` }}>
       <ItemDate item={item}></ItemDate>
@@ -18,7 +18,7 @@ export default function ({ item }) {
       >
         ·
       </span>
-      {authorUrl ? (
+      {channelUrl ? (
         <Link
           target="_blank"
           rel="noopener noreferrer"
@@ -29,9 +29,9 @@ export default function ({ item }) {
             whiteSpace: `nowrap`,
             display: `inline-block`,
           }}
-          href={authorUrl}
+          href={channelUrl}
         >
-          <Trans ns="translation-tag">{authorName}</Trans>
+          <Trans ns="translation-tag">{channel}</Trans>
         </Link>
       ) : (
         <span
@@ -43,7 +43,7 @@ export default function ({ item }) {
             display: `inline-block`,
           }}
         >
-          <Trans ns="translation-tag">{authorName}</Trans>
+          <Trans ns="translation-tag">{channel}</Trans>
         </span>
       )}
     </footer>

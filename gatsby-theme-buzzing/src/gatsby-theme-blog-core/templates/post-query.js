@@ -72,68 +72,98 @@ export const query = graphql`
           }
         }
       }
-      ... on RedditPost {
-        video
-        videoWidth
-        videoHeight
-        imageRemote
-        permalink
-        isSelf
-        postHint
-        isVideo
-        subreddit
-        authorName
+      ... on SocialMediaPost {
+        fields {
+          basePath
+        }
+        thirdPartyId
+        provider
         url
-        redditId
+        originalUrl
+        imageRemote
+        video {
+          url
+          embed
+          width
+          height
+        }
+        channel
+        channelUrl
+        author
+        authorUrl
+        authorImage {
+          childImageSharp {
+            fixed(width: 48, height: 48) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        authorSlug
+        score
+        views
+        sharedCount
+        likeCount
+        sharedContent {
+          excerpt
+          slug
+          title
+          date(formatString: "MMMM DD, YYYY")
+          dateISO: date
+          datetime: date(formatString: "YYYY-MM-DD HH:mm")
+          tags
+          imageRemote
+          image {
+            childImageSharp {
+              fluid(maxWidth: $maxWidth) {
+                ...GatsbyImageSharpFluid
+                src
+              }
+            }
+          }
+          imageAlt
+          authorImage {
+            childImageSharp {
+              fixed(width: 24, height: 24) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          video {
+            url
+            embed
+            width
+            height
+          }
+          channel
+          channelUrl
+          author
+          authorUrl
+          authorSlug
+          score
+          views
+          sharedCount
+          likeCount
+        }
         parent {
           ... on RedditJson {
-            the_new_excerpt
             localize {
               title
               the_new_excerpt
               locale
             }
           }
-        }
-      }
-      ... on HnPost {
-        imageRemote
-        authorName
-        score
-        hnId
-        url
-        parent {
           ... on HnJson {
             localize {
               title
               locale
             }
           }
-        }
-      }
-      ... on RedirectPost {
-        authorName
-        authorUrl
-        imageRemote
-        url
-        parent {
           ... on RedirectJson {
             localize {
               title
               locale
             }
           }
-        }
-      }
-      ... on YoutubePost {
-        imageRemote
-        authorName
-        authorUrl
-        views
-        score
-        url
-        video
-        parent {
           ... on YoutubeJson {
             localize {
               title
@@ -141,19 +171,6 @@ export const query = graphql`
               locale
             }
           }
-        }
-      }
-      ... on PhPost {
-        imageRemote
-        authorName
-        authorUrl
-        phUrl
-        score
-        url
-        tagline
-        video
-        phId
-        parent {
           ... on PhJson {
             localize {
               description
@@ -161,47 +178,6 @@ export const query = graphql`
               locale
             }
           }
-        }
-      }
-      ... on TweetPost {
-        idStr
-        retweeted
-        isQuoteStatus
-        quoteBody
-        quoteAuthorName
-        quoteAuthorScreenName
-        imageRemote
-        quoteImageRemote
-        authorAvatarRemote
-        quoteAuthorAvatarRemote
-        quoteAuthorAvatar {
-          childImageSharp {
-            fixed(width: 24, height: 24) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        quoteImage {
-          childImageSharp {
-            fluid(maxWidth: $maxWidth) {
-              ...GatsbyImageSharpFluid
-              src
-            }
-          }
-        }
-        authorName
-        authorScreenName
-        authorAvatar {
-          childImageSharp {
-            fixed(width: 48, height: 48) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        fields {
-          basePath
-        }
-        parent {
           ... on TweetJson {
             localize {
               locale
@@ -212,12 +188,6 @@ export const query = graphql`
           }
         }
       }
-      ... on MdxBlogPost {
-        id
-        fields {
-          basePath
-        }
-      }
     }
     previous: blogPost(id: { eq: $previousId }) {
       id
@@ -226,62 +196,47 @@ export const query = graphql`
       title
       date(formatString: "MMMM DD, YYYY")
       __typename
-      ... on RedditPost {
+      ... on SocialMediaPost {
         parent {
           ... on RedditJson {
             localize {
               title
+              the_new_excerpt
               locale
             }
           }
-        }
-      }
-      ... on HnPost {
-        parent {
           ... on HnJson {
             localize {
               title
               locale
             }
           }
-        }
-      }
-      ... on YoutubePost {
-        parent {
-          ... on YoutubeJson {
-            localize {
-              title
-              locale
-            }
-          }
-        }
-      }
-      ... on RedirectPost {
-        parent {
           ... on RedirectJson {
             localize {
               title
               locale
             }
           }
-        }
-      }
-      ... on PhPost {
-        parent {
+          ... on YoutubeJson {
+            localize {
+              title
+              description
+              locale
+            }
+          }
           ... on PhJson {
             localize {
+              description
               tagline
               locale
             }
           }
-        }
-      }
-      ... on TweetPost {
-        parent {
           ... on TweetJson {
             localize {
-              full_text
               locale
+              full_text
+              quoted_status_full_text
+              retweeted_status_full_text
             }
           }
         }
@@ -294,61 +249,47 @@ export const query = graphql`
       title
       __typename
       date(formatString: "MMMM DD, YYYY")
-      ... on RedditPost {
+      ... on SocialMediaPost {
         parent {
           ... on RedditJson {
             localize {
               title
+              the_new_excerpt
               locale
             }
           }
-        }
-      }
-      ... on HnPost {
-        parent {
           ... on HnJson {
             localize {
               title
               locale
             }
           }
-        }
-      }
-      ... on YoutubePost {
-        parent {
-          ... on YoutubeJson {
-            localize {
-              title
-              locale
-            }
-          }
-        }
-      }
-      ... on RedirectPost {
-        parent {
           ... on RedirectJson {
             localize {
               title
               locale
             }
           }
-        }
-      }
-      ... on PhPost {
-        parent {
+          ... on YoutubeJson {
+            localize {
+              title
+              description
+              locale
+            }
+          }
           ... on PhJson {
             localize {
+              description
               tagline
               locale
             }
           }
-        }
-      }
-      ... on TweetPost {
-        parent {
           ... on TweetJson {
             localize {
+              locale
               full_text
+              quoted_status_full_text
+              retweeted_status_full_text
             }
           }
         }

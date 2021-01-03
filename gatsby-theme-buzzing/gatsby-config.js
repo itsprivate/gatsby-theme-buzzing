@@ -3,7 +3,7 @@ const _ = require("lodash")
 const { onPreInit: init, t } = require("./util")
 const withDefaults = require(`./utils/default-options`)
 const fs = require("fs").promises
-
+const { getTitle, getExcerpt } = require("./utils")
 module.exports = themeOptions => {
   const options = withDefaults(themeOptions)
 
@@ -60,39 +60,12 @@ module.exports = themeOptions => {
               for (let i = 0; i < allBlogPost.nodes.length; i++) {
                 const node = allBlogPost.nodes[i]
 
-                let title = node.title
-                let description = node.excerpt
-                let localize = []
-                if (node.parent && node.parent.localize) {
-                  localize = node.parent.localize
-                }
-                if (node.__typename === "PhPost") {
-                  title = `${title} - ${t(
-                    "tagline",
-                    localize,
-                    node.tagline,
-                    locale
-                  )}`
-                } else if (node.__typename === "TweetPost") {
-                  title = t("full_text", localize, title, locale)
-                } else {
-                  title = t("title", localize, title, locale)
-                }
-
-                if (node.__typename === "RedditPost") {
-                  description = t(
-                    "the_new_excerpt",
-                    localize,
-                    node.parent.the_new_excerpt,
-                    locale
-                  )
-                } else {
-                  description = t("description", localize, description, locale)
-                }
+                let title = getTitle(node, locale)
+                let description = getExcerpt(node, locale)
 
                 items.push({
                   title,
-                  description: description,
+                  description,
                   date: node.dateISO,
                   url: site.siteMetadata.siteUrl + node.slug,
                   guid: site.siteMetadata.siteUrl + node.slug,
@@ -117,84 +90,93 @@ module.exports = themeOptions => {
                     title
                     body
                     dateISO: date
-                    ... on HnPost {
-                      imageRemote
-                      authorName
-                      score
-                      hnId
+                    ... on SocialMediaPost {
+                      provider
+                      thirdPartyId
                       url
-                      parent {
-                        ... on HnJson {
-                          localize {
-                            title
-                            locale
-                          }
-                        }
+                      originalUrl
+                      imageRemote
+                      video {
+                        url
+                        embed
+                        width
+                        height
                       }
-                    }
-                    ... on RedirectPost {
-                      authorName
+                      channel
+                      channelUrl
+                      author
                       authorUrl
-                      url
-                      imageRemote
-                      parent {
-                        ... on RedirectJson {
-                          localize {
-                            title
-                            locale
-                          }
+                      authorSlug
+                      score
+                      views
+                      sharedCount
+                      likeCount
+                      sharedContent {
+                        excerpt
+                        slug
+                        title
+                        date(formatString: "MMMM DD, YYYY")
+                        dateISO: date
+                        datetime: date(formatString: "YYYY-MM-DD HH:mm")
+                        tags
+                        imageRemote
+                        imageAlt
+                        video {
+                          url
+                          embed
+                          width
+                          height
                         }
+                        channel
+                        channelUrl
+                        author
+                        authorUrl
+                        authorSlug
+                        score
+                        views
+                        sharedCount
+                        likeCount
                       }
-                    }
-                    ... on RedditPost {
-                      permalink
-                      subreddit
-                      redditId
                       parent {
                         ... on RedditJson {
-                          the_new_excerpt
                           localize {
                             title
                             the_new_excerpt
                             locale
                           }
                         }
-                      }
-                    }
-                    ... on PhPost {
-                      imageRemote
-                      authorName
-                      authorUrl
-                      phUrl
-                      score
-                      url
-                      tagline
-                      video
-                      phId
-                      parent {
-                        ... on PhJson {
+                        ... on HnJson {
                           localize {
-                              locale
-                              description
-                              tagline
+                            title
+                            locale
                           }
                         }
-                      }
-                    }
-                    ... on YoutubePost {
-                      imageRemote
-                      authorName
-                      authorUrl
-                      views
-                      score
-                      url
-                      video
-                      parent {
+                        ... on RedirectJson {
+                          localize {
+                            title
+                            locale
+                          }
+                        }
                         ... on YoutubeJson {
                           localize {
                             title
                             description
                             locale
+                          }
+                        }
+                        ... on PhJson {
+                          localize {
+                            description
+                            tagline
+                            locale
+                          }
+                        }
+                        ... on TweetJson {
+                          localize {
+                            locale
+                            full_text
+                            quoted_status_full_text
+                            retweeted_status_full_text
                           }
                         }
                       }
@@ -207,30 +189,7 @@ module.exports = themeOptions => {
                         }
                       }
                     }
-                    ... on TweetPost {
-                      idStr
-                      retweeted
-                      isQuoteStatus
-                      imageRemote
-                      quoteImageRemote
-                      authorAvatarRemote
-                      quoteAuthorAvatarRemote
-                      quoteBody
-                      quoteAuthorName
-                      quoteAuthorScreenName
-                      authorName
-                      authorScreenName
-                      parent {
-                        ... on TweetJson {
-                          localize {
-                            locale
-                            full_text
-                            quoted_status_full_text
-                            retweeted_status_full_text
-                          }
-                        }
-                      }
-                    }
+
                   }
                 }
               }

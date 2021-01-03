@@ -43,6 +43,20 @@ exports.createResolvers = ({ createResolvers }) => {
         type: `Fields`,
       },
     },
+    SocialMediaPost: {
+      excerpt: {
+        resolve: (source, _, context, __) => {
+          if (source.provider === "Reddit") {
+            const parentNode = context.nodeModel.getNodeById({
+              id: source.parent,
+            })
+            return parentNode.the_new_excerpt || ""
+          } else {
+            return source.excerpt || ""
+          }
+        },
+      },
+    },
   }
   createResolvers(resolvers)
 }

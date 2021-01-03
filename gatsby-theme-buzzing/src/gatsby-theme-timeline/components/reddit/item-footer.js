@@ -1,11 +1,12 @@
 /** @jsx jsx */
 import { jsx, Flex } from "theme-ui"
 import ItemDate from "gatsby-theme-timeline/src/components/reddit/item-date"
-import ItemSource from "./item-source"
+import ItemSource from "gatsby-theme-timeline/src/components/item-source"
 import ShareIcon from "./share-icon"
 import { t } from "../../../util"
 export default function ({ item, pageContext: { locale } }) {
   let title = item.title
+  const url = item.url
   let localize = []
   if (item.parent && item.parent.localize) {
     localize = item.parent.localize
@@ -16,7 +17,7 @@ export default function ({ item, pageContext: { locale } }) {
       navigator
         .share({
           title: title,
-          url: `https://www.reddit.com${item.permalink}`,
+          url: item.url,
         })
         .then(() => {
           console.log("Thanks for sharing!")
@@ -53,7 +54,7 @@ export default function ({ item, pageContext: { locale } }) {
         <div
           className="a2a_kit share-this"
           data-a2a-title={title}
-          data-a2a-url={`https://www.reddit.com${item.permalink}`}
+          data-a2a-url={url}
           role="button"
           tabIndex={0}
           onKeyDown={handleKeyDown}

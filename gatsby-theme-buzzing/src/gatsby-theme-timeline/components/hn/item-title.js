@@ -11,7 +11,7 @@ function getDomain(url) {
   return url
 }
 export default function ({ item, pageContext: { locale } }) {
-  const { title, url, hnId } = item
+  const { title, url } = item
   let localize = []
   if (item.parent && item.parent.localize) {
     localize = item.parent.localize
@@ -19,9 +19,7 @@ export default function ({ item, pageContext: { locale } }) {
   let finalTitle = t("title", localize, title, locale)
 
   let finalUrl = url
-  if (!url) {
-    finalUrl = `https://news.ycombinator.com/item?id=${hnId}`
-  }
+
   return (
     <LinkUI data-test="item-title" sx={{ color: `text` }} href={finalUrl}>
       <Styled.h3 sx={{ fontWeight: `normal`, fontSize: `1.15rem` }}>
