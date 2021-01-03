@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import ItemBox from "./issue-plain-item"
-import { jsx, Styled, Link } from "theme-ui"
+import { jsx, Styled, Link as LinkUI } from "theme-ui"
+import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import i18next from "i18next"
 import SEO from "gatsby-theme-timeline/src/components/seo"
 import ItemsFooter from "gatsby-theme-timeline/src/components/items-footer"
@@ -49,9 +50,9 @@ const Items = ({ data, pageContext }) => {
         {pageTitle}
       </Styled.h1>
       <address sx={{ pb: 4 }}>
-        <Link href={siteMetadata.siteUrl} rel="author">
+        <LinkUI href={siteMetadata.siteUrl} rel="author">
           {siteMetadata.author}
-        </Link>
+        </LinkUI>
         <time
           sx={{
             color: "textMuted",
@@ -81,6 +82,46 @@ const Items = ({ data, pageContext }) => {
         </ul>
       </article>
       <ItemsFooter pageContext={pageContext}></ItemsFooter>
+
+      <footer
+        sx={{
+          mt: 4,
+          pb: 3,
+          textAlign: "center",
+        }}
+      >
+        © {new Date().getFullYear()}
+        <LinkUI
+          sx={{ ml: 4, mr: 2 }}
+          data-test="main-site-link"
+          href="https://www.buzzing.cc"
+        >
+          Buzzing.cc
+        </LinkUI>
+        <LinkUI
+          as={Link}
+          data-test="all-issues"
+          sx={{ mx: 2, color: "textMuted" }}
+          to="/issues"
+        >
+          All Issues
+        </LinkUI>
+        <LinkUI
+          sx={{ mx: 2, color: "textMuted" }}
+          data-test="privacy-link"
+          href="https://www.buzzing.cc/privacy"
+        >
+          Privacy
+        </LinkUI>
+        <LinkUI
+          sx={{ mx: 2, color: "textMuted" }}
+          data-test="terms-link"
+          href="https://www.buzzing.cc/terms"
+        >
+          Terms of Service
+        </LinkUI>
+        {` `}
+      </footer>
     </div>
   )
 }
