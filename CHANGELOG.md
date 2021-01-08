@@ -1,3 +1,10 @@
+## [0.20.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.2...v0.20.3) (2021-01-08)
+
+
+### Bug Fixes
+
+* video ([b0582f0](https://github.com/itsprivate/gatsby-theme-buzzing/commit/b0582f0c89026fd4a4c565a239bd489914a7f38c))
+
 ## [0.20.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.1...v0.20.2) (2021-01-08)
 
 
