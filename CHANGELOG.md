@@ -1,3 +1,10 @@
+## [0.20.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.1...v0.20.2) (2021-01-08)
+
+
+### Bug Fixes
+
+* hn title url ([b49f3e8](https://github.com/itsprivate/gatsby-theme-buzzing/commit/b49f3e88b2ff6914dd34e30ff014d7c1075ca3ef))
+
 ## [0.20.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.0...v0.20.1) (2021-01-08)
 
 # [0.20.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.19.0...v0.20.0) (2021-01-03)
