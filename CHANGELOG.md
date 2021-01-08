@@ -1,3 +1,5 @@
+## [0.20.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.0...v0.20.1) (2021-01-08)
+
 # [0.20.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.19.0...v0.20.0) (2021-01-03)
 
 
