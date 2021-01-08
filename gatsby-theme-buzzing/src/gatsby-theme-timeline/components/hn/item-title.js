@@ -11,23 +11,23 @@ function getDomain(url) {
   return url
 }
 export default function ({ item, pageContext: { locale } }) {
-  const { title, url } = item
+  const { title, url, originalUrl } = item
   let localize = []
   if (item.parent && item.parent.localize) {
     localize = item.parent.localize
   }
   let finalTitle = t("title", localize, title, locale)
 
-  let finalUrl = url
+  let finalUrl = originalUrl || url
 
   return (
     <LinkUI data-test="item-title" sx={{ color: `text` }} href={finalUrl}>
       <Styled.h3 sx={{ fontWeight: `normal`, fontSize: `1.15rem` }}>
         {finalTitle}
         {` `}
-        {url && (
+        {finalUrl && (
           <span sx={{ color: `textMuted`, fontSize: `0.9rem` }}>
-            ({getDomain(url)})
+            ({getDomain(finalUrl)})
           </span>
         )}
       </Styled.h3>

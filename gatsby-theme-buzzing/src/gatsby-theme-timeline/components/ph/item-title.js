@@ -3,7 +3,7 @@ import { Link as LinkUI, jsx, Styled } from "theme-ui"
 import { getTitle } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
-  const { url } = item
+  const { originalUrl: url } = item
   return (
     <LinkUI
       sx={{ color: `text` }}
