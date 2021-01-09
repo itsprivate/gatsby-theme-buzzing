@@ -6,6 +6,7 @@ import Video from "gatsby-theme-timeline/src/components/item-video"
 const ItemBox = props => {
   const {
     item,
+    index,
     pageContext: { locale },
   } = props
   let {
@@ -45,7 +46,7 @@ const ItemBox = props => {
       {provider === "Twitter" ? null : (
         <Styled.h4>
           <Link itemProp="name" href={finalUrl} sx={{ color: "text" }}>
-            {getTitle(item, locale)}
+            {index + 1}. {getTitle(item, locale)}
           </Link>
         </Styled.h4>
       )}
