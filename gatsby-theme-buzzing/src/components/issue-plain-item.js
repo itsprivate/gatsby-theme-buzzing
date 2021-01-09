@@ -25,6 +25,8 @@ const ItemBox = props => {
   const finalUrl = originalUrl || url
   const finalExcerpt =
     provider === "Twitter" ? getTitle(item, locale) : getExcerpt(item, locale)
+  console.log("item", item)
+
   return (
     <li
       data-test="item-container"
@@ -33,7 +35,14 @@ const ItemBox = props => {
       itemType="https://schema.org/Article https://schema.org/itemListElement"
       sx={{ m: 0, listStyle: "none" }}
     >
-      {imageRemote && (
+      {provider === "Twitter" ? null : (
+        <Styled.h4>
+          <Link itemProp="name" href={finalUrl} sx={{ color: "text" }}>
+            {index + 1}. {getTitle(item, locale)}
+          </Link>
+        </Styled.h4>
+      )}
+      {imageRemote && !item.video && (
         <Styled.img
           sx={{ maxHeight: "512px", display: "block" }}
           src={imageRemote}
@@ -42,14 +51,6 @@ const ItemBox = props => {
         ></Styled.img>
       )}
       <Video item={item}></Video>
-      <br></br>
-      {provider === "Twitter" ? null : (
-        <Styled.h4>
-          <Link itemProp="name" href={finalUrl} sx={{ color: "text" }}>
-            {index + 1}. {getTitle(item, locale)}
-          </Link>
-        </Styled.h4>
-      )}
       <Styled.blockquote data-test="item-header" sx={{ color: "#718096" }}>
         {finalExcerpt && (
           <Styled.p
