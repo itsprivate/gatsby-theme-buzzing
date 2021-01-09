@@ -1,3 +1,10 @@
+# [0.22.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.21.0...v0.22.0) (2021-01-09)
+
+
+### Features
+
+* add telegram channel meta ([e04601f](https://github.com/itsprivate/gatsby-theme-buzzing/commit/e04601fd326a30c13f3b2c8ccbb6dac2b98705c9))
+
 # [0.21.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.5...v0.21.0) (2021-01-09)
 
 
