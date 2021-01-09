@@ -1,3 +1,15 @@
+# [0.26.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.25.0...v0.26.0) (2021-01-09)
+
+
+### Bug Fixes
+
+* items image ([96b9255](https://github.com/itsprivate/gatsby-theme-buzzing/commit/96b9255f0ce97bbb385fdcf666195f92b96a1da2))
+
+
+### Features
+
+* issue title ([4189e16](https://github.com/itsprivate/gatsby-theme-buzzing/commit/4189e16faba3e4d2607644bc1af9120a0020bb7b))
+
 # [0.25.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.24.0...v0.25.0) (2021-01-09)
 
 
