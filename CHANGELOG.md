@@ -1,3 +1,10 @@
+# [0.25.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.24.0...v0.25.0) (2021-01-09)
+
+
+### Features
+
+* twitter title ([a9d97b2](https://github.com/itsprivate/gatsby-theme-buzzing/commit/a9d97b20c14faaa9c4c00d2b6f10830212ac00dd))
+
 # [0.24.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.23.0...v0.24.0) (2021-01-09)
 
 
