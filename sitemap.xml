@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://reddit.buzzing.cc/en/reddit/r/wallstreetbets/comments/ktducc/gain_porn_for_you_degenerates_go_long/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/ktducc/gain_porn_for_you_degenerates_go_long/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/zh-Hant/reddit/r/wallstreetbets/comments/ktducc/gain_porn_for_you_degenerates_go_long/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/en/hn/25699338</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/hn/25699338</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/zh-Hant/hn/25699338</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/en/reddit/r/investing/comments/ktslbf/1999_all_over_again/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/reddit/r/investing/comments/ktslbf/1999_all_over_again/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/zh-Hant/reddit/r/investing/comments/ktslbf/1999_all_over_again/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -2994,12 +3000,6 @@
 <url> <loc>https://reddit.buzzing.cc/en/tweet/1341931475260895236</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/tweet/1341931475260895236</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/zh-Hant/tweet/1341931475260895236</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://reddit.buzzing.cc/en/hn/25516459</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://reddit.buzzing.cc/hn/25516459</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://reddit.buzzing.cc/zh-Hant/hn/25516459</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://reddit.buzzing.cc/en/hn/25525290</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://reddit.buzzing.cc/hn/25525290</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://reddit.buzzing.cc/zh-Hant/hn/25525290</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/en/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/zh-Hant/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -3579,6 +3579,12 @@
 <url> <loc>https://reddit.buzzing.cc/en/tags/wallstreetbets/page/6</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/tags/wallstreetbets/page/6</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/zh-Hant/tags/wallstreetbets/page/6</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/en/hn/25516459</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/hn/25516459</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/zh-Hant/hn/25516459</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/en/hn/25525290</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/hn/25525290</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://reddit.buzzing.cc/zh-Hant/hn/25525290</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/en/reddit/r/stocks/comments/kiymtm/rstocks_decided_on_my_longterm_portfolio_and_this/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/reddit/r/stocks/comments/kiymtm/rstocks_decided_on_my_longterm_portfolio_and_this/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://reddit.buzzing.cc/zh-Hant/reddit/r/stocks/comments/kiymtm/rstocks_decided_on_my_longterm_portfolio_and_this/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
