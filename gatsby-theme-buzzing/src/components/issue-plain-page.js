@@ -26,7 +26,8 @@ const Items = ({ data, pageContext }) => {
     "-" +
     i18next.t("Issue {{issueNumber}}", `Issue ${issueNumber}`, {
       issueNumber,
-    })
+    }) +
+    ` - ${siteTitle}`
   const seoDescription = i18next.t(
     `Click to view Issue {{issueNumber}} of {{siteTitle}}`,
     {

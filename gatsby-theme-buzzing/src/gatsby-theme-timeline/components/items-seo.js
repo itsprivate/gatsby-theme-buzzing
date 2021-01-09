@@ -43,7 +43,8 @@ export default ({ pageContext, siteMetadata }) => {
       i18next.t("Issue {{issueNumber}}", `Issue ${issueNumber}`, {
         issueNumber,
       }) +
-      dateTitle
+      dateTitle +
+      ` - ${siteTitle}`
     seoDescription = i18next.t(
       `Click to view Issue {{issueNumber}} of {{siteTitle}}`,
       {
