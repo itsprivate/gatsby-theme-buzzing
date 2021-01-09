@@ -35,13 +35,12 @@ const ItemBox = props => {
       itemType="https://schema.org/Article https://schema.org/itemListElement"
       sx={{ m: 0, listStyle: "none" }}
     >
-      {provider === "Twitter" ? null : (
-        <Styled.h4>
-          <Link itemProp="name" href={finalUrl} sx={{ color: "text" }}>
-            {index + 1}. {getTitle(item, locale)}
-          </Link>
-        </Styled.h4>
-      )}
+      <Styled.h4>
+        <Link itemProp="name" href={finalUrl} sx={{ color: "text" }}>
+          {index + 1}. {provider === "Twitter" ? null : getTitle(item, locale)}
+        </Link>
+      </Styled.h4>
+
       {imageRemote && !item.video && (
         <Styled.img
           sx={{ maxHeight: "512px", display: "block" }}
