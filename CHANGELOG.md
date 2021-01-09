@@ -1,3 +1,10 @@
+# [0.24.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.23.0...v0.24.0) (2021-01-09)
+
+
+### Features
+
+* pic 2 ([62f1337](https://github.com/itsprivate/gatsby-theme-buzzing/commit/62f1337dc5d4a2767fd913c05440279088e4117c))
+
 # [0.23.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.22.0...v0.23.0) (2021-01-09)
 
 
