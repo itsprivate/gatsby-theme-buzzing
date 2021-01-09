@@ -1,3 +1,10 @@
+## [0.20.4](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.3...v0.20.4) (2021-01-09)
+
+
+### Bug Fixes
+
+* tag ([86ff701](https://github.com/itsprivate/gatsby-theme-buzzing/commit/86ff701c75ead2250ce8f7072d1c245b97d40675))
+
 ## [0.20.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.2...v0.20.3) (2021-01-08)
 
 
