@@ -1,3 +1,10 @@
+# [0.21.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.5...v0.21.0) (2021-01-09)
+
+
+### Features
+
+* add index for issue ([f60d032](https://github.com/itsprivate/gatsby-theme-buzzing/commit/f60d03221e4b04e6963c669a01daffbfa4737b22))
+
 ## [0.20.5](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.20.4...v0.20.5) (2021-01-09)
 
 
