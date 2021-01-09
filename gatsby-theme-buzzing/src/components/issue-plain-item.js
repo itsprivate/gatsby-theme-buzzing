@@ -67,7 +67,7 @@ const ItemBox = props => {
             {finalAuthor}
           </Link>{" "}
           at{" "}
-          <Link href={finalUrl} itemProp="datePublished">
+          <Link href={url} itemProp="datePublished">
             {datetime}
           </Link>{" "}
           on {provider}{" "}

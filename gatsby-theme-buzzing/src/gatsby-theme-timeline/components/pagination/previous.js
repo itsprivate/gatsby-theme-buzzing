@@ -43,7 +43,9 @@ export default function PreviousPageLink({ prefix, pageContext }, props) {
           color: `textMuted`,
         }}
       >
-        &larr; <Trans>{previousText}</Trans>
+        <h4 sx={{ fontWeight: "400" }}>
+          &larr; <Trans>{previousText}</Trans>
+        </h4>
       </LinkUI>
     </div>
   )
