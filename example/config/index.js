@@ -6,6 +6,7 @@ const siteMetadata = {
   shortTitle: "Reddit热门",
   description: "用中文浏览Reddit热门内容",
   keywords: ["buzzing"],
+  telegram: "buzzingcc",
   menuLinks: [
     {
       name: "每周精选",

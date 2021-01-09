@@ -33,6 +33,7 @@ function SEO({
             author
             siteUrl
             keywords
+            telegram
             localize {
               locale
               title
@@ -61,6 +62,8 @@ function SEO({
     locale
   )
   const metaDescription = description || siteDescription
+  const telegram = site.siteMetadata.telegram
+
   const author = t(
     "author",
     site.siteMetadata.localize,
@@ -223,6 +226,16 @@ function SEO({
                   content: `summary`,
                 },
               ]
+        )
+        .concat(
+          telegram
+            ? [
+                {
+                  name: `telegram:channel`,
+                  content: telegram,
+                },
+              ]
+            : []
         )
         .concat(meta)}
     >
