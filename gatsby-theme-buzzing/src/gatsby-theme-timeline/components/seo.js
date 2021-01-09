@@ -23,7 +23,7 @@ function SEO({
   pageType,
   item,
 }) {
-  const { site, avatar } = useStaticQuery(
+  const { site, avatar, defaultImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -40,6 +40,15 @@ function SEO({
               description
               author
               keywords
+            }
+          }
+        }
+        defaultImage: file(
+          absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 630, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -88,7 +97,11 @@ function SEO({
 
     return imageURI
   }
-  const image = imageSource ? getImagePath(imageSource) : null
+  const image = imageSource
+    ? getImagePath(imageSource)
+    : getImagePath(
+        defaultImage ? defaultImage?.childImageSharp?.fluid.src : null
+      )
   const imageAltText = imageAlt || metaDescription
   const siteTitle = t(
     "title",
@@ -197,7 +210,7 @@ function SEO({
         },
       ]
         .concat(
-          imageSource
+          image
             ? [
                 {
                   name: `og:image`,
