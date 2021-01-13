@@ -1,3 +1,10 @@
+# [0.27.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.26.0...v0.27.0) (2021-01-13)
+
+
+### Features
+
+* support subscriptions ([20f3ede](https://github.com/itsprivate/gatsby-theme-buzzing/commit/20f3ede1ad65868deaaeeb8a5fe71e7170b1ef4f))
+
 # [0.26.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.25.0...v0.26.0) (2021-01-09)
 
 
