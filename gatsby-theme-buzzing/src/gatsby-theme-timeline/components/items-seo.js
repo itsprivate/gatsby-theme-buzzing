@@ -3,8 +3,6 @@ import SEO from "gatsby-theme-timeline/src/components/seo"
 import i18next from "i18next"
 import { t } from "../../util"
 export default ({ pageContext, siteMetadata, image }) => {
-  console.log("image", image)
-
   const { pageType, tag: pageTag, currentPage, date } = pageContext
   const page = currentPage
   const issueNumber = page

@@ -1,9 +1,6 @@
 /** @jsx jsx */
 import Layout from "gatsby-theme-timeline/src/components/layout"
 import Footer from "gatsby-theme-timeline/src/components/home-footer"
-import Bio from "gatsby-theme-timeline/src/components/bio"
-import Tags from "gatsby-theme-timeline/src/components/tags"
-import Links from "gatsby-theme-timeline/src/components/links"
 import { jsx, Grid } from "theme-ui"
 import ItemsTitle from "gatsby-theme-timeline/src/components/items-title"
 import AsideBox from "gatsby-theme-timeline/src/components/aside-box"
@@ -14,9 +11,8 @@ const Items = ({ location, data, pageContext }) => {
   const items = data.allIssue.nodes
   const {
     site: { siteMetadata },
-    tagsGroup: { group },
   } = data
-  const { social, title, menuLinks } = siteMetadata
+  const { title, menuLinks } = siteMetadata
   return (
     <Layout
       basePath={basePath}
@@ -33,11 +29,11 @@ const Items = ({ location, data, pageContext }) => {
         <main sx={{ minWidth: 0 }}>
           <IssueItems items={items} basePath={basePath}></IssueItems>
         </main>
-        <AsideBox>
-          <Bio basePath={basePath}></Bio>
-          <Tags basePath={basePath} group={group}></Tags>
-          <Links links={social}></Links>
-        </AsideBox>
+        <AsideBox
+          location={location}
+          data={data}
+          pageContext={pageContext}
+        ></AsideBox>
       </Grid>
       <Footer />
     </Layout>

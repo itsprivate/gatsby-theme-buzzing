@@ -25,8 +25,6 @@ const ItemBox = props => {
   const finalUrl = originalUrl || url
   const finalExcerpt =
     provider === "Twitter" ? getTitle(item, locale) : getExcerpt(item, locale)
-  console.log("item", item)
-
   return (
     <li
       data-test="item-container"
