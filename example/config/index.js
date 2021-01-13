@@ -7,6 +7,23 @@ const siteMetadata = {
   description: "用中文浏览Reddit热门内容",
   keywords: ["buzzing"],
   telegram: "buzzingcc",
+  subscriptions: [
+    {
+      name: "Twitter @buzzingcc",
+      url: "https://twitter.com/buzzingcc",
+      external: true,
+    },
+    {
+      name: "Telegram @buzzingcc",
+      url: "https://t.me/buzzingcc",
+      external: true,
+    },
+    {
+      name: "RSS",
+      url: "/rss.xml",
+      prefetch: false,
+    },
+  ],
   menuLinks: [
     {
       name: "每周精选",
