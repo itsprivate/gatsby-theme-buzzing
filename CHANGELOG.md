@@ -1,3 +1,10 @@
+## [0.27.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.27.0...v0.27.1) (2021-01-13)
+
+
+### Bug Fixes
+
+* issue page ([d79d318](https://github.com/itsprivate/gatsby-theme-buzzing/commit/d79d318d97d7ce80ffcd1471399a3057981553f9))
+
 # [0.27.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.26.0...v0.27.0) (2021-01-13)
 
 
