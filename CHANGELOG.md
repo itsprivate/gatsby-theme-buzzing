@@ -1,3 +1,10 @@
+## [0.27.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.27.1...v0.27.2) (2021-01-14)
+
+
+### Bug Fixes
+
+* menulink ([0ac3880](https://github.com/itsprivate/gatsby-theme-buzzing/commit/0ac388061b0c49212243c16274e82e97ade52740))
+
 ## [0.27.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.27.0...v0.27.1) (2021-01-13)
 
 
