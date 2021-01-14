@@ -216,19 +216,8 @@ module.exports = themeOptions => {
       shortTitle: "Reddit热门",
       description: "用中文浏览Reddit热门内容",
       keywords: ["buzzing"],
-      menuLinks: [
-        {
-          name: "每周精选",
-          url: "/issues",
-        },
-      ],
-      social: [
-        {
-          name: `Reddit`,
-          url: `https://www.reddit.com/`,
-          external: true,
-        },
-      ],
+      menuLinks: [],
+      social: [],
       localize: [
         {
           locale: "en",

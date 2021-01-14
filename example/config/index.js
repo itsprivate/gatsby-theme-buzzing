@@ -24,24 +24,8 @@ const siteMetadata = {
       prefetch: false,
     },
   ],
-  menuLinks: [
-    {
-      name: "每周精选",
-      url: "/issues",
-    },
-    {
-      name: "RSS",
-      url: "/rss.xml",
-      prefetch: false,
-    },
-  ],
-  social: [
-    {
-      name: `Reddit`,
-      url: `https://www.reddit.com/`,
-      external: true,
-    },
-  ],
+  menuLinks: [],
+  social: [],
   localize: [
     {
       locale: "en",
