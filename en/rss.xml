@@ -1,439 +1,975 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Reddit 热门]]></title><description><![CDATA[用中文浏览Reddit热门内容]]></description><link>https://reddit.buzzing.cc</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 14 Jan 2021 22:20:14 GMT</lastBuildDate><language><![CDATA[en]]></language><item><title><![CDATA[Game stop “short squeeze”]]></title><description><![CDATA[So GameStop jumped big yesterday. I read about a “short squeeze”. I’m fairly new
-and I didn’t really understand the article. What does that mean in simple terms?
-Does that mean it’s only a short jump and will drop soon? Like a small surge?]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kx50lg/game_stop_short_squeeze/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kx50lg/game_stop_short_squeeze/</guid><pubDate>Thu, 14 Jan 2021 22:10:08 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;So GameStop jumped big yesterday. I read about a “short squeeze”. I’m fairly new and I didn’t really understand the article. What does that mean in simple terms? Does that mean it’s only a short jump and will drop soon? Like a small surge?&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Testosterone levels show steady decrease among young US men]]></title><link>https://reddit.buzzing.cc/hn/25780013</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25780013</guid><pubDate>Thu, 14 Jan 2021 22:10:04 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[CATHIE WOOD & ARKX TO THE MOON 🛸🚀🚀🛸🛰]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx85ne/cathie_wood_arkx_to_the_moon/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx85ne/cathie_wood_arkx_to_the_moon/</guid><pubDate>Thu, 14 Jan 2021 21:38:24 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Don't lie, we've all done it]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kxaet0/dont_lie_weve_all_done_it/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kxaet0/dont_lie_weve_all_done_it/</guid><pubDate>Thu, 14 Jan 2021 21:00:54 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Fuckin' Lurkin' Cramer]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx8x24/fuckin_lurkin_cramer/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx8x24/fuckin_lurkin_cramer/</guid><pubDate>Thu, 14 Jan 2021 21:00:54 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[u/DeepFuckingValue drawing conclusions on GME a year ago]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kxajoq/udeepfuckingvalue_drawing_conclusions_on_gme_a/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kxajoq/udeepfuckingvalue_drawing_conclusions_on_gme_a/</guid><pubDate>Thu, 14 Jan 2021 21:00:54 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[WE HAVE THE POWWWWWEEEEERR]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx79qj/we_have_the_powwwwweeeeerr/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx79qj/we_have_the_powwwwweeeeerr/</guid><pubDate>Thu, 14 Jan 2021 20:17:42 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Dungeon Magazine]]></title><link>https://reddit.buzzing.cc/hn/25775786</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25775786</guid><pubDate>Thu, 14 Jan 2021 20:17:40 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Twitter shuts down account of Sci-Hub]]></title><link>https://reddit.buzzing.cc/hn/25779367</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25779367</guid><pubDate>Thu, 14 Jan 2021 20:17:40 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[U.S. insurrectionists received $500k in bitcoins from French donor]]></title><link>https://reddit.buzzing.cc/hn/25780334</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25780334</guid><pubDate>Thu, 14 Jan 2021 20:17:40 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[At $110 billion, Airbnb now has a higher market than the 6 largest hotel chains (Marriott, Hilton, InterContentintal, Hyatt, Wyndham, &amp; Choice) ... combined. 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Reddit 热门]]></title><description><![CDATA[用中文浏览Reddit热门内容]]></description><link>https://reddit.buzzing.cc</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 17 Jan 2021 05:20:44 GMT</lastBuildDate><language><![CDATA[en]]></language><item><title><![CDATA[On GME and what to expect Tues/Wed (DD)]]></title><description><![CDATA[Hi everyone,
 
-$ABNB
+I'm going to use this space to say what I would expect Tues/Wed regarding GME
+(obviously not an expert).
 
-Chart via @ycharts https://t.co/bFTi88MqqY]]></title><link>https://reddit.buzzing.cc/tweet/1349753648746803200</link><guid isPermaLink="false">https://reddit.buzzing.cc/tweet/1349753648746803200</guid><pubDate>Thu, 14 Jan 2021 19:36:14 GMT</pubDate><content:encoded>At $110 billion, Airbnb now has a higher market than the 6 largest hotel chains (Marriott, Hilton, InterContentintal, Hyatt, Wyndham, &amp;amp; Choice) ... combined. 
 
-$ABNB
+FIRST SOME FACTS:
 
-Chart via @ycharts https://t.co/bFTi88MqqY</content:encoded></item><item><title><![CDATA[$GME $PLTR $BB - You cannot stop us..]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx9irt/gme_pltr_bb_you_cannot_stop_us/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx9irt/gme_pltr_bb_you_cannot_stop_us/</guid><pubDate>Thu, 14 Jan 2021 19:36:09 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[$GME - King autist demands his tendies]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx7aks/gme_king_autist_demands_his_tendies/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx7aks/gme_king_autist_demands_his_tendies/</guid><pubDate>Thu, 14 Jan 2021 19:36:09 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Borrowed 31K from my 401K and 10K from parents. Turned on margin and maxed it out on GME shares. Who’s retarded now?]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx9k3v/borrowed_31k_from_my_401k_and_10k_from_parents/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx9k3v/borrowed_31k_from_my_401k_and_10k_from_parents/</guid><pubDate>Thu, 14 Jan 2021 19:36:09 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[GME Rebound In A Nutshell]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx9ul1/gme_rebound_in_a_nutshell/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx9ul1/gme_rebound_in_a_nutshell/</guid><pubDate>Thu, 14 Jan 2021 19:36:09 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Watching everyone post millions in Gain Porn as I continue to hold my 15 GME shares.]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx97dr/watching_everyone_post_millions_in_gain_porn_as_i/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx97dr/watching_everyone_post_millions_in_gain_porn_as_i/</guid><pubDate>Thu, 14 Jan 2021 19:36:09 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[What are some historical examples of 1000% market cap rises like Tesla did last year?]]></title><description><![CDATA[Are there historical examples of 1000% market cap rises like Tesla did last
-year?
+1) There was an obscene amount of shorts of GME before it went up last week
+(138%+ of float). There is now still an EVEN MORE obscene amount of shorts of
+GME…]]></description><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kynnxf/on_gme_and_what_to_expect_tueswed_dd/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kynnxf/on_gme_and_what_to_expect_tueswed_dd/</guid><pubDate>Sun, 17 Jan 2021 05:14:43 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi everyone,&lt;/p&gt;
 
-I think it would be interesting to see how the market did with other highly
-speculative investments that gained traction so quick.
+&lt;p&gt;I&amp;#39;m going to use this space to say what I would expect Tues/Wed regarding GME (obviously not an expert).&lt;/p&gt;
 
-Any examples in the near or distant past?
+&lt;h1&gt;First some facts:&lt;/h1&gt;
 
-And how about absolute size in market cap.…]]></description><link>https://reddit.buzzing.cc/reddit/r/investing/comments/kx3o4o/what_are_some_historical_examples_of_1000_market/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/investing/comments/kx3o4o/what_are_some_historical_examples_of_1000_market/</guid><pubDate>Thu, 14 Jan 2021 19:36:09 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Are there historical examples of 1000% market cap rises like Tesla did last year?&lt;/p&gt;
+&lt;p&gt;1) There was an obscene amount of shorts of GME before it went up last week (138%+ of float). There is now still an EVEN MORE obscene amount of shorts of GME (120-170% of float as high-quality estimates).&lt;/p&gt;
 
-&lt;p&gt;I think it would be interesting to see how the market did with other highly speculative investments that gained traction so quick.&lt;/p&gt;
+&lt;p&gt;2) There has been over a month of likely &amp;quot;naked short selling.&amp;quot; Aka, ILLEGAL market manipulation (Sells of unconfirmed shares that then end up not going through) in an attempt to further drive down price (27 days on NYSE Threshold securities list, since Dec 8th).&lt;/p&gt;
 
-&lt;p&gt;Any examples in the near or distant past?&lt;/p&gt;
+&lt;p&gt;3) Fees to borrow GME have gone up significantly (sitting around 30% atm) and required margins have increased at brokers (75% for Fidelity, 100% for Schwab). This means those brokers are less confident in it going down, and that there are less available shares floating around (lower volumes).&lt;/p&gt;
 
-&lt;p&gt;And how about absolute size in market cap. Did any other company in the history of mankind gained $500 Billion in market cap in 12 months?&lt;/p&gt;
+&lt;p&gt;4) Friday, there was a huge early shorting of the stock (the rapid 10% drop) that led to Rule 201 being invoked (stock can only be shorted on an uptick until EOD Tuesday). How do I know it was likely shorting? Because the drop stopped as soon as the Rule was invoked.&lt;/p&gt;
 
-&lt;p&gt;Personally, I am interested in what the stock market is doing over decades. Not so much in what it does over days. Anybody else here interested in such long term observations?&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[🚀🚀$BB Gang 🚀🚀]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx7bie/bb_gang/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx7bie/bb_gang/</guid><pubDate>Thu, 14 Jan 2021 19:36:09 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Bill and Melinda Gates revealed as largest private farmland owners in US]]></title><link>https://reddit.buzzing.cc/hn/25779681</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25779681</guid><pubDate>Thu, 14 Jan 2021 19:36:03 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Can Apple's M1 help you train models faster and cheaper than Nvidia's V100?]]></title><link>https://reddit.buzzing.cc/hn/25773109</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25773109</guid><pubDate>Thu, 14 Jan 2021 19:36:03 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Wine 6.0]]></title><link>https://reddit.buzzing.cc/hn/25778088</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25778088</guid><pubDate>Thu, 14 Jan 2021 19:36:03 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[5,7 million return on GME. How do you even get out of a trade like this without crashing the stock before you sold it all?]]></title><description><![CDATA[Almost 6 million in Stocks and options on GME.
-https://imgur.com/nyeLv4A
-According to Yahoo the average volume for GME is 10 million.
-I mean, if he sells the stocks first, im assuming the options would dip down and
-vice versa. How do you get out of this without dragging shooting yourself in…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kwvam1/57_million_return_on_gme_how_do_you_even_get_out/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kwvam1/57_million_return_on_gme_how_do_you_even_get_out/</guid><pubDate>Thu, 14 Jan 2021 18:36:35 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Almost 6 million in Stocks and options on GME.&lt;br/&gt;
-&lt;a href=&quot;https://imgur.com/nyeLv4A&quot;&gt;https://imgur.com/nyeLv4A&lt;/a&gt;&lt;br/&gt;
-According to Yahoo the average volume for GME is 10 million.&lt;br/&gt;
-I mean, if he sells the stocks first, im assuming the options would dip down and vice versa. How do you get out of this without dragging shooting yourself in the foot?&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[After 8 months of trial and error, hundreds of hours of Youtube, losing money, almost giving up, I can finally say I made my first $100 trading stocks]]></title><description><![CDATA[I started paper trading and thought that what I was doing was working (looking
-back at my trades makes me cringe now), so I decided to put $1000 in my account
-and try it for real. I was on a steady downtrend for the first 2 months (while
-the general market is on a steady uptrend) and found my…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kxa9r4/after_8_months_of_trial_and_error_hundreds_of/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kxa9r4/after_8_months_of_trial_and_error_hundreds_of/</guid><pubDate>Thu, 14 Jan 2021 18:36:35 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I started paper trading and thought that what I was doing was working (looking back at my trades makes me cringe now), so I decided to put $1000 in my account and try it for real.  I was on a steady downtrend for the first 2 months (while the general market is on a steady uptrend) and found my account balance to be below $850. I had to take a break at this point and had serious thoughts about giving up. I thought I wasn&amp;#39;t cut out to be a trader; I must be a part of the 95% who fail.  I decided to give it one more shot. I took a deep analytical dive into my past trades. I reevaluated my strategy, and found what was working and what wasn&amp;#39;t. I slowly started seeing results. I clawed my way back to the original $1000 investment and today have officially hit the $100 profit mark. &lt;/p&gt;
+&lt;h1&gt;From these facts, what are conclusions I have drawn?&lt;/h1&gt;
+
+&lt;p&gt;1) Investors (firms or otherwise) who have shorted GME are &lt;strong&gt;repeatedly doubling down&lt;/strong&gt;. Big players are doing so to directly (and sometimes illegally, see naked short selling above) manipulate the market in a downward direction. &lt;strong&gt;They have been working on this for months, making the stock undervalued by far,  which is why short volume has been so high, and are continuing to manipulate this stock downward in an attempt to make those earlier shorts less of a failure.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;2) They believe the current price increase will not be sustained or, more like IMHO, that they can out-short any increase that is sustained, so they are paying increasing fees on those shorts every day until the price drops enough (and it needs to drop A LOT for their earlier shorts).&lt;/p&gt;
+
+&lt;h1&gt;So what do I think will happen Tues/Wed?&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;1) On Tuesday, SEC Rule 201 is still in effect. That means that short sellers can only sell shorts on &amp;quot;upticks&amp;quot; (aka, they can only short at prices above the current market price). I expect that those short sellers will continue to double down, so we may see a price ceiling come into effect. Every time the price increases, the shorting can happen so they&amp;#39;ll short it. I expect volume will be relatively low, and the price will not move very far.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2) On Wednesday, SEC Rule 201 is not in effect yet. If price moves significantly upwards on Tues, I would almost definitely expect an early short on Wednesday in an attempt to drive small profit selling and further drop the price. If price moves significantly downward on Tues, I would expect the same early shorting in an attempt to induce panic selling. Finally, if price doesn&amp;#39;t move much on Tuesday, its much more of a toss-up on their strategy, but I would (personally) anticipate another attempt to short sell the price down as we saw Friday (deep pockets of shorters, already in very deep on shorts).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR: I think shorters gonna keep shorting (legally and illegally) so everyone should be prepared for that. They think the risks of losing older shorts outweighs the risks of additional shorting/the fees of new/old shorts. They&amp;#39;ve done this level of consistent, repetitive shorting/market manipulation before and have only paid for it a handful of times.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Just sharing my opinion of what happens next. I&amp;#39;m not here to convince anyone to do anything.&lt;/p&gt;
+
+&lt;p&gt;GME 266 at 36.54&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[PLTR FOLKS LISTEN IN - KARP AND COHEN TO MAKE >$188M PURCHASE OF PLTR WITHIN THE NEXT 30 DAYS]]></title><description><![CDATA[Happy Saturday bois:
+
+https://www.ftc.gov/enforcement/premerger-notification-program/early-termination-notices/20210753
+
+https://www.ftc.gov/enforcement/premerger-notification-program/early-termination-notices/20210752
+
+These two boys made HSR filings + a request for early termination (that…]]></description><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kym23z/pltr_folks_listen_in_karp_and_cohen_to_make_188m/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kym23z/pltr_folks_listen_in_karp_and_cohen_to_make_188m/</guid><pubDate>Sun, 17 Jan 2021 05:14:43 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Happy Saturday bois:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ftc.gov/enforcement/premerger-notification-program/early-termination-notices/20210753&quot;&gt;https://www.ftc.gov/enforcement/premerger-notification-program/early-termination-notices/20210753&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ftc.gov/enforcement/premerger-notification-program/early-termination-notices/20210752&quot;&gt;https://www.ftc.gov/enforcement/premerger-notification-program/early-termination-notices/20210752&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These two boys &lt;strong&gt;made HSR filings + a request for early termination&lt;/strong&gt; (that was granted). For those of you who don&amp;#39;t know what this means:&lt;/p&gt;
+
+&lt;p&gt;HSR filings are required (amongst a couple of other requirements) when someone is making an acquisition of &amp;gt;$94m (this is the rate for the past year in 2020. will likely hike somewhere to ~$100m in 2021). This is what we saw with Mithril when they bought a fuck ton of shares in December (&lt;a href=&quot;https://www.ftc.gov/enforcement/premerger-notification-program/early-termination-notices/20210675&quot;&gt;https://www.ftc.gov/enforcement/premerger-notification-program/early-termination-notices/20210675&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Early termination requests are made to bypass the customary 30-day waiting period when someone makes an HSR filing.&lt;/strong&gt; This implies that the individual wants to make a purchase in less than 30 days. Both of the early termination requests were granted. Karpy and Cohen are either buying leading up to demo day/the assumed (HOPEFULLY) price hike we see, or, maybe, right around lockup expy time.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;d leave another thicc rocket for you fuckers, but mods keep auto-deleting the post because of the image.&lt;/p&gt;
+
+&lt;p&gt;Current positions: 850 shares bought consistently from $10-$26 (average basis ~$22), and a fuck ton of calls for Nov &amp;#39;21, Jan &amp;#39;22&lt;/p&gt;
 
 &lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;p&gt;If anyone is still reading this, I know what you&amp;#39;re thinking: &amp;quot;Wow, 100 bucks, big deal,&amp;quot; and you&amp;#39;re right. It&amp;#39;s not much. However, If an average guy like myself can grow his account 10%, I strongly believe that anyone can; with enough dedication. I&amp;#39;d be happy to talk more about my journey to anyone who&amp;#39;s interested or just starting out.&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[BlackBerry a phone company?]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx0iqx/blackberry_a_phone_company/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx0iqx/blackberry_a_phone_company/</guid><pubDate>Thu, 14 Jan 2021 18:36:35 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Exclusive: The First Man On The Moon🚀]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx56jt/exclusive_the_first_man_on_the_moon/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx56jt/exclusive_the_first_man_on_the_moon/</guid><pubDate>Thu, 14 Jan 2021 18:36:35 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[MMEDF worth buying?]]></title><description><![CDATA[Is MMEDF worth buying? I am really thinking about buying some shares but I also
-looked at the company’s history. They first started with shares a little higher
-than right now then dipped. Has anything changed with the company of market
-that’s different now. I know it sounds like a neat idea but is…]]></description><link>https://reddit.buzzing.cc/reddit/r/investing/comments/kwy37t/mmedf_worth_buying/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/investing/comments/kwy37t/mmedf_worth_buying/</guid><pubDate>Thu, 14 Jan 2021 18:36:35 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Is MMEDF worth buying? I am really thinking about buying some shares but I also looked at the company’s history. They first started with shares a little higher than right now then dipped. Has anything changed with the company of market that’s different now. I know it sounds like a neat idea but is it marketable to general public? I’m just trying to plays devils advocate to see the reasons against these types of arguments.&lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[A Nepali team has made the first winter ascent of K2]]></title><link>https://reddit.buzzing.cc/hn/25804183</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25804183</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[AMD Launches Ryzen 5000 Mobile: Zen 3 and Cezanne for Notebooks]]></title><link>https://reddit.buzzing.cc/hn/25790323</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25790323</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Every day at the same time, my internet dies for 1 minute. How do I investigate?]]></title><link>https://reddit.buzzing.cc/hn/25802714</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25802714</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Google Images Restored]]></title><link>https://reddit.buzzing.cc/hn/25804597</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25804597</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[My preferred .NET console stack]]></title><link>https://reddit.buzzing.cc/hn/25792422</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25792422</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Mysterious helicopters have been circling Los Angeles]]></title><link>https://reddit.buzzing.cc/hn/25778185</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25778185</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Show HN: Vmctl/Vmcli – Easily Run Linux VMs on M1 Macs]]></title><link>https://reddit.buzzing.cc/hn/25786640</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25786640</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Signal apps DDoS'ed their own server]]></title><link>https://reddit.buzzing.cc/hn/25803010</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25803010</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[StimulusReflex, or LiveView for Rails]]></title><link>https://reddit.buzzing.cc/hn/25789703</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25789703</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[The richer you are, the more likely you’ll social distance, study finds]]></title><link>https://reddit.buzzing.cc/hn/25780961</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25780961</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Toxic positivity does more harm than good]]></title><link>https://reddit.buzzing.cc/hn/25803568</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25803568</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[“Appointment” as professor at Harvard was an elaborate phishing attack]]></title><link>https://reddit.buzzing.cc/hn/25802160</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25802160</guid><pubDate>Sun, 17 Jan 2021 05:14:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[The only DD I trust here]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyvat7/the_only_dd_i_trust_here/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyvat7/the_only_dd_i_trust_here/</guid><pubDate>Sun, 17 Jan 2021 04:16:59 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Mnm – an open source project to replace email and SMTP]]></title><link>https://reddit.buzzing.cc/hn/25804869</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25804869</guid><pubDate>Sun, 17 Jan 2021 04:16:56 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[New Post:
 
-&lt;p&gt;&lt;em&gt;EDIT&lt;/em&gt;: Which other stocks are similar (in terms of a bullish outlook for success and being a (relatively) new company) that people recommend.&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA['Rent-a-person who does nothing' in Tokyo receives endless requests, gratitude]]></title><link>https://reddit.buzzing.cc/hn/25778135</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25778135</guid><pubDate>Thu, 14 Jan 2021 18:36:30 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[DuckDuckGo Reaches 100M Daily Search Queries]]></title><link>https://reddit.buzzing.cc/hn/25779323</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25779323</guid><pubDate>Thu, 14 Jan 2021 18:36:30 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[The new length of bear markets:
+The Beginning of the End of Covid-19...
 
-Stock market - 18 days
+https://t.co/Kbtqcbix4O https://t.co/iM44m8J5QD]]></title><link>https://reddit.buzzing.cc/tweet/1350498748724604928</link><guid isPermaLink="false">https://reddit.buzzing.cc/tweet/1350498748724604928</guid><pubDate>Sun, 17 Jan 2021 03:30:06 GMT</pubDate><content:encoded>New Post:
 
-Bitcoin - 18 hours]]></title><link>https://reddit.buzzing.cc/tweet/1349709631661232131</link><guid isPermaLink="false">https://reddit.buzzing.cc/tweet/1349709631661232131</guid><pubDate>Thu, 14 Jan 2021 17:20:02 GMT</pubDate><content:encoded>The new length of bear markets:
+The Beginning of the End of Covid-19...
 
-Stock market - 18 days
+https://t.co/Kbtqcbix4O https://t.co/iM44m8J5QD</content:encoded></item><item><title><![CDATA[$GME - this guy was SELLING January 15th $20 naked calls the day before The Great Squeeze on Wednesday. F’s in the chat boys]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyqwlk/gme_this_guy_was_selling_january_15th_20_naked/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyqwlk/gme_this_guy_was_selling_january_15th_20_naked/</guid><pubDate>Sun, 17 Jan 2021 03:30:03 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[/u/DeepFuckingValue vs. Melvin Capital: The siege of Tendie Island]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kysop2/udeepfuckingvalue_vs_melvin_capital_the_siege_of/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kysop2/udeepfuckingvalue_vs_melvin_capital_the_siege_of/</guid><pubDate>Sun, 17 Jan 2021 03:30:03 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Best ETF’s to hold for 2021?]]></title><description><![CDATA[So I’m looking to possibly add some more ETF’s to my portfolio. I currently hold
+ARKK, LIT, SMH, and ONLN. Is there any other ETF’s worth considering or are the
+ones that I have good enough for my portfolio?]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kytkby/best_etfs_to_hold_for_2021/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kytkby/best_etfs_to_hold_for_2021/</guid><pubDate>Sun, 17 Jan 2021 03:30:03 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;So I’m looking to possibly add some more ETF’s to my portfolio. I currently hold ARKK, LIT, SMH, and ONLN. Is there any other ETF’s worth considering or are the ones that I have good enough for my portfolio?&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Me investing in BB last on Friday]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kymqw1/me_investing_in_bb_last_on_friday/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kymqw1/me_investing_in_bb_last_on_friday/</guid><pubDate>Sun, 17 Jan 2021 03:30:03 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[$BB Story time for you miserable souls that bought the top... gather round my camp fire 🔥 lads, let me polish your 💎 🙌 until the mythical piercing green dildo will penetrate us so hard we get sent to the fucking moon 🚀 🌙]]></title><description><![CDATA[I deleted a couple posts showing my $BB positions because I don’t want anyone
+IRL seeing balances
 
-Bitcoin - 18 hours</content:encoded></item><item><title><![CDATA[FOOD gene editing stocks UPDATE!]]></title><description><![CDATA[Morning everyone.
+“JuST mAkE a NeW acCoUnT”
 
-You may recall I wrote a post on here not too long ago on how GMO food plays
-could be the next hot sector.
+Stfu reet
 
-For those who didn’t and would like to find out more, have a read and read the
-comments. It was a great/informative discussion that didn’t revolve around “BUY
-PLTR OR BUY…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kx38a3/food_gene_editing_stocks_update/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kx38a3/food_gene_editing_stocks_update/</guid><pubDate>Thu, 14 Jan 2021 17:19:58 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Morning everyone.&lt;/p&gt;
+I’ll probably delete this as well soon but I know some of you autistic bastards
+need to hear this now, yes you, who put market orders first thing Friday…]]></description><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyk10v/bb_story_time_for_you_miserable_souls_that_bought/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyk10v/bb_story_time_for_you_miserable_souls_that_bought/</guid><pubDate>Sun, 17 Jan 2021 02:13:05 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I deleted a couple posts showing my $BB positions because I don’t want anyone IRL seeing balances &lt;/p&gt;
 
-&lt;p&gt;You may recall I wrote a post on here not too long ago on how GMO food plays could be the next hot sector.&lt;/p&gt;
+&lt;p&gt;“JuST mAkE a NeW acCoUnT” &lt;/p&gt;
 
-&lt;p&gt;For those who didn’t and would like to find out more, have a read and read the comments. It was a great/informative discussion that didn’t revolve around “BUY PLTR OR BUY DKNG”&lt;/p&gt;
+&lt;p&gt;Stfu reet&lt;/p&gt;
 
-&lt;p&gt;Good DD and suggested plays, enjoy;&lt;/p&gt;
+&lt;p&gt;I’ll probably delete this as well soon but I know some of you autistic bastards need to hear this now, yes you, who put market orders first thing Friday morning expecting $BB to rocket from high 10’s to 15’s in a single trading session. Pure majestic autism. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/stocks/comments/jbc4v7/the_next_hot_sector_food_gene_editing_stocks/?utm_source=share&amp;amp;utm_medium=ios_app&amp;amp;utm_name=iossmf&quot;&gt;https://www.reddit.com/r/stocks/comments/jbc4v7/the_next_hot_sector_food_gene_editing_stocks/?utm_source=share&amp;amp;utm_medium=ios_app&amp;amp;utm_name=iossmf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I come out of Plato’s cave to tell you I understand your pains. I was there not too long ago... you see... &lt;/p&gt;
 
-&lt;p&gt;For those who did read or had an interest in it, I just thought I would provide an update on how they are going. I think this sector is going to have a huge year.&lt;/p&gt;
+&lt;p&gt;Back in November I noticed $BB cleanly up-trending on the hourly bouncing off the 9 and 26 MA (I use ichimoku) heading towards a resistance level that had already formed a double top &lt;/p&gt;
 
-&lt;p&gt;My post was 91 days ago  and my suggested plays were;&lt;/p&gt;
+&lt;p&gt;Like a true Gamblers fallacy believing retard I made a wager: &lt;/p&gt;
 
-&lt;p&gt;Corteva (CTVA)&lt;/p&gt;
+&lt;p&gt;$10k into 3/19 6c’s on the DD that: “what are the chances it falls AGAIN there” ... that’s it. &lt;/p&gt;
 
-&lt;p&gt;$33.82 Now: $44.13&lt;/p&gt;
+&lt;p&gt;A few days later AWS news came, and that $10k turned into $70k. Pure luck. Sometimes she goes, sometimes she doesn’t. She went that day.&lt;/p&gt;
 
-&lt;p&gt;Precision Bioscience (DTIL)&lt;/p&gt;
+&lt;p&gt;In that moment of seeing massive profits on AWS news day, I experienced violent and absolutely tremendous autism and thought, this thing is going from $5’s to $15 in a single trading session, yes, even more retarded than you guys that bought the top on Friday &lt;/p&gt;
 
-&lt;p&gt;$6.52 Now: $9.80&lt;/p&gt;
+&lt;p&gt;Sensible thoughts couldn’t penetrate my helmet fast enough as drool gushed from my gaping mouth, gasping for oxygen and yelling at the top of my lungs what barely resembled words about Lambo’s and Yachts... so I hurled about $100k into shares at $8.77 and about $10k more into $15 leaps &lt;/p&gt;
 
-&lt;p&gt;Calyxt (CLXT)&lt;/p&gt;
+&lt;p&gt;I proceeded to watch my profit dwindle to nothing as earnings came and bent me over so hard I couldn’t bring myself to watch the stock for a week &lt;/p&gt;
 
-&lt;p&gt;$5.07 Now: $4.76
-(offering/dilution occurred soon after, not ideal but has been steadily climbing)&lt;/p&gt;
+&lt;p&gt;I thought about selling the bottom, I was there, order ready typed, just needed to hit the send button, and I was going to close my position around $6.7ish and be back to break even after striking gold &lt;/p&gt;
 
-&lt;p&gt;Yield 10 Bioscience (YTEN)&lt;/p&gt;
+&lt;p&gt;But you know what, I remembered it’s just money. I remembered that everything in reality is in flux, and changing, and decaying, and being born again, and to just flow with it and stop clinging and desiring one set of experiences over another (aka a fat bank account over giving $5 blowies behind a Wendy’s) who cares? &lt;/p&gt;
 
-&lt;p&gt;$6.49 Now: $7.61&lt;/p&gt;
+&lt;p&gt;All is well lads. So let go of the burden if you bought the top and are stressing, it’s really fine. Look at what’s happening right now:&lt;/p&gt;
 
-&lt;p&gt;Origin Argitech (SEED)&lt;/p&gt;
+&lt;p&gt;1) Insane volume, insane moves, erratic behavior (something is going on behind the curtain) &lt;/p&gt;
 
-&lt;p&gt;$9.63 Now: $16.51&lt;/p&gt;
+&lt;p&gt;PS: this movement and volume is NOT because of WSB, full stop. Big players are making huge moves here, and fast, we don’t know why yet &lt;/p&gt;
 
-&lt;p&gt;I was getting a lot of DMs about the original post so said it would be easier to do an update.&lt;/p&gt;
+&lt;p&gt;2) 1 Billion annual revenue &lt;/p&gt;
 
-&lt;p&gt;To answer a few questions, I am still very, very bullish on this sector. I think it is only the beginning.&lt;/p&gt;
+&lt;p&gt;3) Soon to come online a RECURRING AUTO DATA business that will drive revenue into growth cycle, BB is literally Microsoft Windows for cars but the auto sector was still underdeveloped technologically to benefit from this position, hence this vertical is finally about to print HUGE HUGE HUGE MEGA BILLIONS ANNUALLY. This was always the plan and they just had to wait it out until the auto sector caught up with them digitally &lt;/p&gt;
 
-&lt;p&gt;My recommendation and largest holding from the above is SEED.&lt;/p&gt;
+&lt;p&gt;(The auto data tech sector is so lucrative it made Papa Elon the richest person in the world, and forced a fucking god damn phone company to join the race 🍎—it’s huge)&lt;/p&gt;
 
-&lt;p&gt;SEED have been working for 10 years to get their GMO right and approved by government, finally they are in and the government is ready to roll out GMO in China. SEED will dominate this space.&lt;/p&gt;
+&lt;p&gt;4) UNDER, FUCKING, VALUED &lt;/p&gt;
 
-&lt;p&gt;It has had a huge run so far but there are way more catalysts ahead and with a 3 million share float, this going to go parabolic soon. Shorts covering the higher it inevitably goes, think GameStop, Nio, XPEV type of runs , the ones that just look outrageous on your watch list.&lt;/p&gt;
+&lt;p&gt;5) VERTICALS GALORE&lt;/p&gt;
 
-&lt;p&gt;Read more about the opportunity for SEED here&lt;/p&gt;
+&lt;p&gt;5) FB settled, imagine the BALLS on BB going after this massive and dirty tech behemoth run by a literal lizard, they are honest Canadians doing God’s work &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.sec.gov/Archives/edgar/data/1321851/000110465920094375/tm2027521d1_ex99-1.htm&quot;&gt;https://www.sec.gov/Archives/edgar/data/1321851/000110465920094375/tm2027521d1_ex99-1.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;6) IOT, AI, smart city’s, insert other buzzwords &lt;/p&gt;
 
-&lt;p&gt;SEED turned down $24 a share in 2014.
-The CFO commented “I tell people the value of this company is Monsanto multiplied by Baidu divided by Google,” Talk about being bullish and keeping the faith. He was right.&lt;/p&gt;
+&lt;p&gt;I could go on and on, and honestly, I’ve never felt more comfortable holding ANY stock than this &lt;/p&gt;
 
-&lt;p&gt;Again, before commenting mindless comments, “BUY PLTR” “PUMP IT” , just read the original post where I dived deep or do a quick google on GMO or the stocks above.&lt;/p&gt;
+&lt;p&gt;Moral of the story: as I let go and accepted my circumstances and decided to diamond hand 💎 🤚 BB to the death, within a few days I proceeded to watch the fattest, thickest, randomest, greenest dildo penetrate my butt hole to the high heavens and take me from what was $70k profit to 0 profit back up to $130k profit. I’ve trimmed half the options, I don’t even know why tbh, reverse autism maybe, but I’m riding my remaining calls and entire share position to Valhalla. &lt;/p&gt;
 
-&lt;p&gt;There are a lot of newbies, so many pump and dumpers but genuine, informative posts about companies still exist on here. I still love this sub!&lt;/p&gt;
+&lt;p&gt;Will likely add more if it dips. But...&lt;/p&gt;
 
-&lt;p&gt;I’m a long term investor so I’m not to bothered by short term volatility. SEEDs all time high was around $170 15 years ago. In a few months, SEED can be up at 30-40 and I think in a year , it can be at $100, no problem.&lt;/p&gt;
+&lt;p&gt;Just hold. Something is cooking on BB. You have to be a retard not to see it. Look at the fucking daily chart, look at the volume, the gaps, the swings, BB chart literally has Tourette’s syndrome right now... &lt;/p&gt;
 
-&lt;p&gt;Hope you enjoyed and hope everyone has a great year investing!&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Fuck Melvin Capital]]></title><description><![CDATA[I know everyone here is excited about GME stock, but have you really sat back
-and thought about who and what we're up against? Let me remind you.
+&lt;p&gt;This stock has not moved like this for 10 years. &lt;/p&gt;
 
-Melvin Capital bet that GameStop would go bankrupt. If it had, those assholes
-would've been dancing in their New York offices, popping champagne and…]]></description><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx5wu9/fuck_melvin_capital/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx5wu9/fuck_melvin_capital/</guid><pubDate>Thu, 14 Jan 2021 17:19:58 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I know everyone here is excited about GME stock, but have you really sat back and thought about who and what we&amp;#39;re up against? Let me remind you.&lt;/p&gt;
+&lt;p&gt;It might stall a little, deflate from here, consolidate a bit more, or it might blast off again any second. Point is, nobody knows when, but it looks like in a short time, we will know why this stock is moving the way it has. Something is DEFINITELY going on behind the scenes the public is not aware of and neither is the media &lt;/p&gt;
 
-&lt;p&gt;Melvin Capital bet that GameStop would go bankrupt. If it had, those assholes would&amp;#39;ve been dancing in their New York offices, popping champagne and laughing, completely aware of the damage they were rejoicing in. They tried to capitalize on a global pandemic as the final nail in the coffin for yet another retail company that wouldn&amp;#39;t change.&lt;/p&gt;
+&lt;p&gt;For fucks sake I found the court docs showing global settlement with FB is done 24 hours before gay ass Bloomberg even picked it up. The majority of the investor world still thinks they make fucking phones for Gods sake. Everyone is sleeping on this &lt;/p&gt;
 
-&lt;p&gt;On the other side, things would&amp;#39;ve been pretty grim. GameStop workers make, what, slightly more than minimum wage? They are probably completely unaware of companies like Melvin Capital who hope their employer goes out of business. They&amp;#39;re just trying to make a buck.&lt;/p&gt;
+&lt;p&gt;A note on Jim just in case he reads this:&lt;/p&gt;
 
-&lt;p&gt;Not this time.&lt;/p&gt;
+&lt;p&gt;Jim Cramer hates this stock because 1) BB and John Chen are not bootlicking CEO’s jerking off CNBC and massaging Cramers asshole for air time, they’re a tightly run, honorable company doing real things 2) He most likely became a bag holder during the epic fall of the BB phone and sold for a fat loss and wants to protect his ego by continuing to ignore the facts on the company&lt;/p&gt;
 
-&lt;p&gt;GameStop may have an outdated business model that hasn&amp;#39;t adapted to 2011, let alone 2021, but it&amp;#39;s an American institution. Every single one of us has walked into a GameStop at least once and bought a game we were excited about. Our little brothers and sisters would beg us to take them there to buy the 80th edition of Pokemon Red/Blue/Yellow/Gold/whatever. We&amp;#39;ve all perused a Game Informer, hoping to see a 10 rating. You can shit on them for charging too much or not paying enough for a used game, but you don&amp;#39;t hope their people go on unemployment.&lt;/p&gt;
+&lt;p&gt;The guy wants you to invest in CRWD with a fucking ridiculous market cap, no verticals, and less revenue than BB. Promoting a literal bubble over a value play. What a bizarre world we live in. Take advantage of it, I hear this phrase all the time and I fucking hate it, but this is literally “free money” &lt;/p&gt;
 
-&lt;p&gt;So Melvin Capital and short sellers (lol &lt;a href=&quot;https://i.redd.it/wxohwokyrab61.jpg&quot;&gt;Frankfurt School Associates&lt;/a&gt;) can go fuck themselves. Go read about these assholes if you want to put a smile on your face, knowing what they&amp;#39;re dealing with right now. I hope Gabriel Plotkin has to sell his $40 million Miami mansion (he just bought it in December). Hell, I hope Ryan Cohen buys it from him.&lt;/p&gt;
+&lt;p&gt;Know what you own. There is TRUE value in this company. No hype. Pure value. &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Positions&lt;/strong&gt;: Half my Roth IRA in GME shares. A few calls. Just like a lot of you, not enough to really make a difference. But together we can slay giants.&lt;/p&gt;
+&lt;p&gt;Diamond hand, double down, buy more, and just hold. You are in good hands 🙌&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Exit Strategy&lt;/strong&gt;: I have no sell orders. I&amp;#39;ll sell when someone posts a story about Melvin Capital going bankrupt. Fuck em.&lt;/p&gt;
+&lt;p&gt;Tl;dr diamond hand $BB&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[David Faber has joined Cramer in recognizing our power]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyoomf/david_faber_has_joined_cramer_in_recognizing_our/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyoomf/david_faber_has_joined_cramer_in_recognizing_our/</guid><pubDate>Sun, 17 Jan 2021 02:13:05 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Melvin Capital on Tuesday (forgive the watermarks for I am a meme apprentice)]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyqzr0/melvin_capital_on_tuesday_forgive_the_watermarks/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyqzr0/melvin_capital_on_tuesday_forgive_the_watermarks/</guid><pubDate>Sun, 17 Jan 2021 02:13:05 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[The Problem with Gradle]]></title><link>https://reddit.buzzing.cc/hn/25801986</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25801986</guid><pubDate>Sun, 17 Jan 2021 02:13:01 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[WSB enduring another long weekend waiting for Market to Reopen]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyoo8r/wsb_enduring_another_long_weekend_waiting_for/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyoo8r/wsb_enduring_another_long_weekend_waiting_for/</guid><pubDate>Sun, 17 Jan 2021 00:18:20 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[GME - Option, Margin and Other Factors for Trading Next Week]]></title><description><![CDATA[TLDR: GME likely to be very volatile next week around $30, $35, $39-$40
+especially. If price shoots up into the mid 50s 🚀🚀🚀🚀 , definitely duck for
+cover Friday. Margin changes are actually bearish. Consider being on a brokerage
+that pays to loan your shares to shorts if long, because it's very…]]></description><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyoixl/gme_option_margin_and_other_factors_for_trading/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyoixl/gme_option_margin_and_other_factors_for_trading/</guid><pubDate>Sat, 16 Jan 2021 23:27:30 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;strong&gt;TLDR:&lt;/strong&gt; GME likely to be very volatile next week around $30, $35, $39-$40 especially. If price shoots up into the mid 50s  🚀🚀🚀🚀 , definitely duck for cover Friday.  Margin changes are actually bearish. Consider being on a brokerage that pays to loan your shares to shorts if long, because it&amp;#39;s very profitable. Shorts can be squeezed, but so too can longs who use call options, and shorts who use put options.&lt;/p&gt;
 
-&lt;p&gt;Don&amp;#39;t fucking sell.&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Tesla's Model Y wins 5-star safety rating from NHTSA]]></title><description><![CDATA[https://www.foxbusiness.com/technology/teslas-model-y-wins-5-star-rating-from-nhtsa
+&lt;p&gt;&lt;strong&gt;Details:&lt;/strong&gt;&lt;/p&gt;
 
-The NHTSA grades vehicles based on a series of scenarios, including frontal
-crashes, with subcategories for the driver and passenger seats, side crashes
-involving poles and barriers, and a rollover. The Model Y has…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kx6mkw/teslas_model_y_wins_5star_safety_rating_from_nhtsa/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kx6mkw/teslas_model_y_wins_5star_safety_rating_from_nhtsa/</guid><pubDate>Thu, 14 Jan 2021 17:19:58 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.foxbusiness.com/technology/teslas-model-y-wins-5-star-rating-from-nhtsa&quot;&gt;https://www.foxbusiness.com/technology/teslas-model-y-wins-5-star-rating-from-nhtsa&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’ve seen a lot of discussions about GME over the past week that are missing important bull and bear elements in the thesis. This sub is so incredibly bullish  🚀🚀🚀🚀  that unsurprisingly, there’s more missing bear arguments than bull, and bearish information is sometimes perceived as bullish (such as the margin requirement increases, which I feel are net-bearish). But there&amp;#39;s also missing bull information, namely that more new gamma ramps exist high than low it appears, and they appear pretty large.&lt;/p&gt;
 
-&lt;p&gt;The NHTSA grades vehicles based on a series of scenarios, including frontal crashes, with subcategories for the driver and passenger seats, side crashes involving poles and barriers, and a rollover. The Model Y has a rollover risk of 7.9%, the lowest of any SUV recorded to date by the organization.&lt;/p&gt;
+&lt;p&gt;I previously posted about some option dynamics last week, that seem to have played out to an extent. I actually lost money on my puts because the expressed vol was less than I thought, and Friday ended up playing out in a basically neutral way from a bull/bear perspective with a mere 10% drawdown. That post is here. I correct predicted the outcome, but didn’t predict the magnitude well enough and thus my trade sucked:&lt;/p&gt;
 
-&lt;p&gt;The Model Y is &amp;quot;engineered to distribute crash forces around the cabin and away from vehicle occupants, greatly reducing the risk of injury,&amp;quot; according to the automaker.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/comments/kxb7dy/analysis_of_massive_potential_gme_forced_selling/&quot;&gt;https://www.reddit.com/r/wallstreetbets/comments/kxb7dy/analysis_of_massive_potential_gme_forced_selling/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;quot;Safety is at the core of every Tesla vehicle, and Model Y benefits from years of immense passion for vehicle safety,&amp;quot; Tesla added. &amp;quot;By providing the most advanced equipment and technologies, our goal is to help customers prevent avoidable accidents whenever possible, and, when they are not avoidable, to help mitigate injury to the fullest extent possible. Indeed, we believe Model Y to be among the safest vehicles available to consumers on the road.&amp;quot;&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[10 years-ish of Elixir]]></title><link>https://reddit.buzzing.cc/hn/25776525</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25776525</guid><pubDate>Thu, 14 Jan 2021 17:19:51 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Apple reportedly dropped plan for encrypting backups after FBI complained (2020)]]></title><link>https://reddit.buzzing.cc/hn/25777207</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25777207</guid><pubDate>Thu, 14 Jan 2021 17:19:51 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Facebook Has Been Showing Military Gear Ads Next to “Insurrection” Posts]]></title><link>https://reddit.buzzing.cc/hn/25776590</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25776590</guid><pubDate>Thu, 14 Jan 2021 17:19:51 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[I wonder if Tom Brady is gonna be pitching bitcoin IRAs someday when he’s retired https://t.co/I2mtNk7QAY]]></title><link>https://reddit.buzzing.cc/tweet/1349507526010806274</link><guid isPermaLink="false">https://reddit.buzzing.cc/tweet/1349507526010806274</guid><pubDate>Thu, 14 Jan 2021 16:07:43 GMT</pubDate><content:encoded>I wonder if Tom Brady is gonna be pitching bitcoin IRAs someday when he’s retired https://t.co/I2mtNk7QAY</content:encoded></item><item><title><![CDATA[Stock Market News for Today | GME Squeeze | BABA, INTC, TGT, AFRM & other Stock Market News [01-14]]]></title><description><![CDATA[GameStop short squeeze is ON! Alibaba continues to push into the EV world. Intel
-spikes while AMD & TSM suffer. Let’s talk about this and other stock market
-news!
+&lt;p&gt;In this new post, I’ll cover what I know about current option structure (and will update once updated data for Friday comes out), and the implications (TLDR: Mostly, expect vol around multiples of 5 in stock price), as well as other trading dynamic topics that I think are misunderstood or rarely spoken of.&lt;/p&gt;
 
-Hello everyone and Good Morning! So, let’s start with the recap of yesterday as
-we saw the stock market finishing mixed, with the Nasdaq…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kx57p4/stock_market_news_for_today_gme_squeeze_baba_intc/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kx57p4/stock_market_news_for_today_gme_squeeze_baba_intc/</guid><pubDate>Thu, 14 Jan 2021 16:07:39 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;strong&gt;GameStop short squeeze is ON! Alibaba continues to push into the EV world. Intel spikes while AMD &amp;amp; TSM suffer. Let’s talk about this and other stock market news!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’m not going to talk about my opinion of the value of the stock or the turn-around plan. I’m actually in what is a modest put position for me at the moment (jan 22 $38 puts x 80), but I fully acknowledge this could go to the moon  🚀🚀🚀🚀  next week and I&amp;#39;ll feel like a miniature Melvin capital (though shorting at $38 is a lot smarter than at $17) and probably deserve it in that case.&lt;/p&gt;
 
-&lt;p&gt;Hello everyone and Good Morning! So, let’s start with the recap of yesterday as we saw the stock market finishing mixed, with the &lt;a href=&quot;https://ibb.co/qybhmjC&quot;&gt;Nasdaq Composite&lt;/a&gt; gaining .43%, the &lt;a href=&quot;https://ibb.co/YL4XS6m&quot;&gt;SP500&lt;/a&gt; also gaining .23% while the &lt;a href=&quot;https://ibb.co/YTFwLcx&quot;&gt;Dow Jones&lt;/a&gt; lost just 8 points to close out the day. We also saw the &lt;a href=&quot;https://ibb.co/0r28dsT&quot;&gt;VIX&lt;/a&gt; dropping almost 5% again, continuing the downtrend after that huge spike with the Georgia elections, as it sits at similar levels to the ones before Christmas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Current Option Structure:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Despite the positive gains for the broad stock market SP500, &lt;a href=&quot;https://ibb.co/PrDh7DD&quot;&gt;OVERALL&lt;/a&gt;, we saw about 57% of the companies declining yesterday, with most of them trading below average volumes, as the number of companies trading above the 50-day moving average still sits over 70%, which is pretty high. Yesterday we saw 6 of the 11 &lt;a href=&quot;https://ibb.co/wJH4B8C&quot;&gt;SECTORS&lt;/a&gt; finish in the green with Real Estate and Utilities posting gains of more than 1% while the laggards were Energy, Industrials and Materials, as we saw large-cap growth companies finally &lt;a href=&quot;https://ibb.co/kKtRY96&quot;&gt;OUTPERFORMED&lt;/a&gt; for once in 2021, with small &amp;amp; mid-caps giving up some of the big gains they have posted in this short year, though, Large-Cap Growth companies are still underperforming by 3% compared to the next factor group in 2021.&lt;/p&gt;
+&lt;p&gt;I will update this as new data gets in, but you can see big concentrations of options at 30, 35, 39/40 and 45. There isn’t open interest data for Friday, but volume suggests there are further ramps at 50/55/60, but they are probably smaller than the 39/40 and 30 ramps. Normally, dealers are going to be long calls (from people selling covered calls) and short puts (From people buying protection). On GME I think we all know it’s short calls and short puts, since people are buying tons of calls from them, and also speculating with puts. As such, dealers are extremely short gamma, and that means that prices accelerate from dealer activity greatly. When the stock sells, the dealers have to dump stock (or short it). When the stock goes up, dealers have to buy.  &lt;strong&gt;I believe that the Wednesday melt-up was as much a short squeeze as a gamma squeeze, as the price moved over a bunch of OTM options, forcing dealers to buy as much as 1/3 of the total float of the company to hedge!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Here is the &lt;a href=&quot;https://ibb.co/Ms0qkCh&quot;&gt;HEAT MAP&lt;/a&gt; from yesterday, which shows pretty mixed results as expected, with most of the big tech companies posting small gains like Apple, Amazon, Google, Netflix and the rest of the bunch, with Alibaba posting a 4% gain after some EV news popped up and Intel also gaining almost 7% and pushed the rest of the Semiconductors down with TSM and AMD both down over 3%.&lt;/p&gt;
+&lt;p&gt;These patterns are most sharp at these large concentrations of strike prices, so the stock can jump from 39 to 41 a lot easier than from 36 to 38 as an example. On average, it’s about $1m of stock bought/sold by dealers per percent change. To put in context, there was a jump Friday where about 250k shares got bought and moved the price 5%. That means that if accurate, dealer activity might have been up to half in that flash.   &lt;strong&gt;We don’t yet have the Friday data, but there was a lot of Friday volume. This amplification may be greater next week. This week had a gamma event on Wednesday, after which there were a ton of ITM WSB calls and OOM Melvin puts that don’t have gamma, and thus the price de-volatilized somewhat. But we may now be in a situation with a lot of near the money options, which means we could see very large gamma squeezes up or down again.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;We also got a lot of economic data yesterday as the US &lt;a href=&quot;https://ibb.co/QXXDBrc&quot;&gt;DEFICIT&lt;/a&gt; fell by $2B to $143B in December compared to the previous month, but is up 10 fold from the $13B deficit from the same period in 2019, and this doesn’t even include any of the $900B stimulus packaged that passed late in December, while the December consumer price &lt;a href=&quot;https://ibb.co/n1Jr9G2&quot;&gt;INDEX&lt;/a&gt; increased by 0.4% m/m and Core CPI also increase by 0.1%, coming in-line with expectations, as the Atlanta FED business inflation expectations &lt;a href=&quot;https://ibb.co/t2v98jw&quot;&gt;ROSE&lt;/a&gt; to 2.2% in January compared to December, though sales and profit margins compared to normal, decreased since the last month, while one of the FED’s Vice Chairs &lt;a href=&quot;https://ibb.co/WtNxQKM&quot;&gt;RESTATED&lt;/a&gt; that the FED won’t raise rates until the average long-term inflation stands at 2% for a year.&lt;/p&gt;
+&lt;p&gt;Here’s the structure, I’ll update once there is Friday OI data available. This chart assumes that calls are positive gamma – they will all be negative gamma in this case, so predict accordingly.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://ibb.co/C79879d&quot;&gt;Today&lt;/a&gt; we get lots of important economic data with Jobless numbers in the early morning, which are expected to come around the same numbers as the previous week and end with the Money Supply and FED Balance Sheet while the stock market will also turn its eyes to see what the FED Leader Powell announces in terms of the FED keeping the money printer going, and of course to see what Biden announces about a further stimulus packaged that is expected to be as big as $2T.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/a/czrKy6X&quot;&gt;https://imgur.com/a/czrKy6X&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;In some other stock market news, we saw &lt;a href=&quot;https://ibb.co/9bHNxrx&quot;&gt;Intel&lt;/a&gt; spiking yesterday after the company decided on a change in leadership, this move put some selling pressure on rival companies like TSM, AMD &amp;amp; others, but I think this is more of a “hype move” right now. Intel has still fallen behind it’s competition and it will take massive Capex and R&amp;amp;D investments to catch up, so the selloff in other players should rather be a buying point, especially for AMD.&lt;/p&gt;
+&lt;p&gt;Also worth mentioning is the expirations next week. Here’s the current structure for next week, using Thursday data, which I’ll update once I get Friday data:&lt;/p&gt;
 
-&lt;p&gt;We also saw &lt;a href=&quot;https://ibb.co/Phk4N4s&quot;&gt;Target&lt;/a&gt; reporting huge comp sale increases with a 4.3% increase in traffic and a massive 12.3% increase in the average ticket, as comparable digital sales more than doubled.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/a/4wKTspB&quot;&gt;https://imgur.com/a/4wKTspB&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;We also saw, their same-day services post an impressive growth of almost 200%, as they remain one of the best plays in the consumer discretionary sector, as 95% of their sales were fulfilled by their 1600 store that are within 10miles of ¾ of the US population.&lt;/p&gt;
+&lt;p&gt;This is a lot less bearish than the Friday we just had, but again, I’ll update once I get the data. It’s still a net sell on Friday as those option positions get cleared out (people sell to realize, and then buy other things in general), but more like under 1/10th of float vs the 1/3 of float we were staring at this Friday. Unless people piled into ITM calls Friday, which I find highly unlikely. As such, the downwards force this coming Friday, if this Friday was -10%, is more like -2 or -3% in a vacuum.  However, the higher the prices go into Friday, the more selling this in turn causes Friday, so in a world where we end at $55 on Thursday, I&amp;#39;d definitely not go into Friday long as this forced selling increases.&lt;/p&gt;
 
-&lt;p&gt;Also, guys, these small cap companies keep on giving me reasons to come back to the same points I have been making in the past weeks, with company after company issuing shares, with the latest ones being &lt;a href=&quot;https://ibb.co/qDRKJ7Y&quot;&gt;Nano&lt;/a&gt; Dimension which are diluting their shares by about 20% while &lt;a href=&quot;https://ibb.co/27StT0c&quot;&gt;Lemonade&lt;/a&gt; has also increased their stock offering by another 300.000 shares.&lt;/p&gt;
+&lt;p&gt;My sense out of all of this is:&lt;/p&gt;
 
-&lt;p&gt;While in another kind of news we saw &lt;a href=&quot;https://ibb.co/pLMSXrb&quot;&gt;GameStop&lt;/a&gt; soar yesterday finishing the day up over 57%, after a huge short squeeze pushed the stock up as high as 90% at one point. This has happened after GameStop has &lt;a href=&quot;https://ibb.co/F3S2XTT&quot;&gt;PUSHED&lt;/a&gt; for a change in leadership with plenty of experience in the e-commerce and online marketing world, with 3 veterans from Chewy, which has been an impressive performer in the online e-commerce business. The &lt;a href=&quot;https://ibb.co/y8XVnd7&quot;&gt;STOCK&lt;/a&gt; Is up another 20% in pre-market right now as the short squeeze keeps increasing the pressure on the bears.&lt;/p&gt;
+&lt;p&gt;- The current gamma structure provides more ramps up than down from $35, but there are strong ramps in either direction. BUT, the volume suggests a lot of new put positions were established. On net – volatility up, not bearish or bullish.&lt;/p&gt;
 
-&lt;p&gt;We also saw &lt;a href=&quot;https://ibb.co/vjKdwKW&quot;&gt;Alibaba&lt;/a&gt; making a couple of headlines yesterday, which helped push the stocks 4% higher, after the Wall Street Journal reported that the US is expected to continue to allow investments in Alibaba, Baidu &amp;amp; Tencent, while also continuing their charge into the &lt;a href=&quot;https://ibb.co/0tVsJSS&quot;&gt;EV&lt;/a&gt; world, with a new electric sedan that features wireless charging in cooperation with China’s state owned SAIC Motor. This is their latest push into the EV world, as Alibaba is also an investor in Xpeng. This news, might help the stock see a recovery, that could be boosted if Jack Ma finally appears and the Ant Group IPO eventually receives the green light.&lt;/p&gt;
+&lt;p&gt;- There is some forced selling this coming Friday, but if that was the driving force yesterday, it would be a -3% or -2% not a -10%.  Slightly bearish.&lt;/p&gt;
 
-&lt;p&gt;And one last piece of &lt;a href=&quot;https://ibb.co/Z8RSWQL&quot;&gt;NEWS&lt;/a&gt; is that Affirm went public yesterday and started trading at just over 90$, more than 80% above the IPO price, as the IPO mania keeps on pushing any recent IPO to big pops on the first day of trading, but unfortunately, retail investors do not benefit from this, as the actual return for people who manage to buy right at the open price, is under 10% while also risking a severe drop in the next days. Hopefully more companies will move to direct listings IPOs which will allow retail investors to get part of the action, which will benefit most of the people, not just the “big players” who get in at much lower prices.&lt;/p&gt;
+&lt;p&gt;- If the stock moons this week, I would encourage you to approach Friday with care, and a more bearish or defensive mentality, even if fundamentally bullish. Similarly, if we are in the 20s, there are situations where friday eventually becomes forced buying from a ton of short term puts printing, and a bear would not want to be short into Friday.&lt;/p&gt;
 
-&lt;p&gt;So, let’s hope for a good day in the markets as the &lt;a href=&quot;https://ibb.co/T8wRNxc&quot;&gt;WORLD&lt;/a&gt; Markets are in the green while the US &lt;a href=&quot;https://ibb.co/LkrrWtc&quot;&gt;FUTURES&lt;/a&gt; are also pointing to a good open.&lt;/p&gt;
+&lt;p&gt;- A LOT of capital went into OOM puts and calls this week targeting the week after. If the stock is not volatile, a lot of speculators bleed out on both sides.&lt;/p&gt;
 
-&lt;p&gt;🙏Thank you everyone for reading!🙏 Hope you enjoyed the content! Be sure to leave a comment down below with your opinion on the stock market! Have a great day and see you next time❗&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[The Big Squeeze | The Story Of GME's Parabolic Move]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kwwi2m/the_big_squeeze_the_story_of_gmes_parabolic_move/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kwwi2m/the_big_squeeze_the_story_of_gmes_parabolic_move/</guid><pubDate>Thu, 14 Jan 2021 16:07:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[They don't even know what they're getting into - let's show them 🚀🚀🚀🚀🚀]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx5cmy/they_dont_even_know_what_theyre_getting_into_lets/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx5cmy/they_dont_even_know_what_theyre_getting_into_lets/</guid><pubDate>Thu, 14 Jan 2021 16:07:39 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Machine Learning: The Great Stagnation]]></title><link>https://reddit.buzzing.cc/hn/25775740</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25775740</guid><pubDate>Thu, 14 Jan 2021 16:07:36 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Parisian Accent in 1912]]></title><link>https://reddit.buzzing.cc/hn/25775091</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25775091</guid><pubDate>Thu, 14 Jan 2021 16:07:36 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Jobless claims: Another 965,000 Americans filed new unemployment claims last week]]></title><description><![CDATA[New weekly unemployment claims spiked far more than expected last week to reach
-a five-month high, as the coronavirus pandemic and stay-in-place orders weighed
-heavily on the labor market.
+&lt;p&gt;&lt;strong&gt;Margin Changes&lt;/strong&gt;&lt;/p&gt;
 
-The U.S. Department of Labor released its weekly report on new jobless claims
-Thursday morning at 8:30 a.m.…]]></description><link>https://reddit.buzzing.cc/reddit/r/investing/comments/kx5z5x/jobless_claims_another_965000_americans_filed_new/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/investing/comments/kx5z5x/jobless_claims_another_965000_americans_filed_new/</guid><pubDate>Thu, 14 Jan 2021 15:18:19 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;New weekly unemployment claims spiked far more than expected last week to reach a five-month high, as the coronavirus pandemic and stay-in-place orders weighed heavily on the labor market.&lt;/p&gt;
+&lt;p&gt;There was a lot of talk about how various brokerages have increased margin requirements on GME stock. Some set to 100% (Schwab), others set up a bit (TDA from 70% to 75%),  others rumored to be planning but haven’t (IBKR). The reaction of the sub is that this is bullish. It’s actually bearish.&lt;/p&gt;
 
-&lt;p&gt;The U.S. Department of Labor released its weekly report on new jobless claims Thursday morning at 8:30 a.m. ET. Here were the main results in the report, compared to consensus estimates compiled by Bloomberg:&lt;/p&gt;
+&lt;p&gt;The reason is that most of the shorts, in my opinion, are institutional. Retail will typically short with OOM puts which don’t cause much actual selling to hedge. Institutions short GME are going to have that in a giant account with a ton of other assets, so changes on margin placed on them, if indeed that happened, wont margin call them except in scenarios where GME goes up 20x in a day or something.&lt;/p&gt;
 
-&lt;p&gt;Initial jobless claims, week ended Jan. 9: 965,000 vs. 789,000 expected and a revised 784,000 during the prior week&lt;/p&gt;
+&lt;p&gt;On the other hand, if you are a retail trader where half or all of your positions are GME, this margin change does effect you, especially if you were out on margin, and it makes it harder to buy more shares. I don’t think many retail traders are directly short the stock.  Anyone want to raise their hand and admit they are 50%+ GME and on margin to do it?&lt;/p&gt;
 
-&lt;p&gt;Continuing claims, week ended Jan. 2: 5.271 million vs. 5.000 million expected and 5.072 million during the prior week&lt;/p&gt;
+&lt;p&gt;Also, consider the context -retail brokerages just did this on the back of everyone here buying shares long. That to me suggests they are looking at customer accounts, seeing some over-extension, worrying about it, and setting the rule to prevent themselves being burned. Some of you have a net worth of mostly GME in your levered account. If that gets squeezed down and a liquidation is forced those brokerages won’t be seeing the money.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://finance.yahoo.com/news/initial-jobless-claims-week-ended-jan-9-2021-coronavirus-pandemic-191640522.html&quot;&gt;https://finance.yahoo.com/news/initial-jobless-claims-week-ended-jan-9-2021-coronavirus-pandemic-191640522.html&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[$GME /r/wallstreetbets vs Melvin Capital]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx2elq/gme_rwallstreetbets_vs_melvin_capital/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kx2elq/gme_rwallstreetbets_vs_melvin_capital/</guid><pubDate>Thu, 14 Jan 2021 14:51:37 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[TSLA CAN SENSE A DEAD MAN WALKING. TSLA TO 1000 EOW 🚀🚀]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kwy1j6/tsla_can_sense_a_dead_man_walking_tsla_to_1000_eow/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kwy1j6/tsla_can_sense_a_dead_man_walking_tsla_to_1000_eow/</guid><pubDate>Thu, 14 Jan 2021 14:13:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[DD] 12k on NextEra Energy (NEE) LEAPs as a clean energy play]]></title><description><![CDATA[I wasn't really planning on making a post on this, but I'd like to make the case
-for investing in a utilities company focused on clean energy as a smart play for
-the upcoming stimulus/shift towards renewables.
+&lt;p&gt;So, I think the margin changes are bearish. I would also urge you bulls to not set yourself up to be squeezed, which is my next point.&lt;/p&gt;
 
-So what's NextEra Energy? Summarized from Wikipedia:
+&lt;p&gt;&lt;strong&gt;Squeezes and Short Interest&lt;/strong&gt;&lt;/p&gt;
 
- * It is the largest electric…]]></description><link>https://reddit.buzzing.cc/reddit/r/investing/comments/kwyduo/dd_12k_on_nextera_energy_nee_leaps_as_a_clean/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/investing/comments/kwyduo/dd_12k_on_nextera_energy_nee_leaps_as_a_clean/</guid><pubDate>Thu, 14 Jan 2021 13:00:02 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I  wasn&amp;#39;t really planning on making a post on this, but I&amp;#39;d like to make the case for investing in a utilities company focused on clean energy as a smart play for the upcoming stimulus/shift towards renewables.&lt;/p&gt;
+&lt;p&gt;It’s true that this stock has high short interest. There’s contradictory evidence as to if the shorts went up this week or went down. IBKR share availability suggests it may have went down, other sources suggest up, and I&amp;#39;ll update once we have solid post-Friday data that someone posts. However, just because the short interest is high, doesn’t mean that it can be squeezed easily from here – Wednesday I think was that squeeze. A lot of the old shorts may have covered then, and we may be looking at new shorts. It’s also possible that these institutional shorts hedged with previously deep oom call options and ironically further helped create the melt up, but didn’t take losses after a certain point.&lt;/p&gt;
 
-&lt;p&gt;So what&amp;#39;s NextEra Energy? Summarized from Wikipedia:&lt;/p&gt;
+&lt;p&gt;Additionally, while GME longs here on stock are not squeezable if not on margin, those of you on OOM call options ARE squeezable, and those of you on ITM options are in a sense even more squeezable. OOM call options decay if the stock doesn’t go up, and then the shares dealers bought to hedge the call they sold you get sold back into the pool. ITM options, when sold, do the same but more powerfully – selling a very ITM call option on GME means a dealer immediately goes out and dumps 100 shares of GME on the market. If you in turn buy 100 shares, it’s netural, or if you buy a bunch of NTM calls, you might even cause a net buy. But, those will tend to cause selling if people take money off the table and as time goes on.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;It is the largest electric utility in the USA by market capitalization. (At 160B currently)&lt;/li&gt;
-&lt;li&gt;Revenues of over $19.20 billion in 2019. Operating income of $5.35 billion in 2019.&lt;/li&gt;
-&lt;li&gt;About 14,000 employees throughout the US and Canada.&lt;/li&gt;
-&lt;li&gt;The important subsidiaries include
+&lt;p&gt;And yes, there are a TON of new put options, and those get squeezed out too.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;The Utilities;
+&lt;p&gt;So there is a dual squeeze potential here – shorts vs their losses and borrow fees and decaying option positions which cause dealer buying, and longs using margin and longs in call options fighting time and also watching dealers dump their hedged longs.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Florida Power &amp;amp; Light (FPL) - A Florida electric utility. Notable for having wider profit margins than usual.&lt;/li&gt;
-&lt;li&gt;Gulf Power Company - Electric utility in the Alabama area&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;NextEra Energy Capital Holdings (NEECH)
+&lt;p&gt;One other thing -  contrary to what I sometimes read, Melvin Capital was already squeezed, or rather, their dealer was by proxy.  Wednesday was that squeeze. They bought a bunch of ITM put options which forced dealers to sell a ton of stock to hedge. When the price shot up, dealers bought into that short they made to hedge the Melvin puts, and now the Melvin puts expired worthless. Melvin can not be squeezed further unless they enter a new short position of some type. They lost 55M on that trade, and they manage 20 billion. They may be back in it at this point, shorting this even harder is within their power...&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;NextEra  Energy Resources (NEER) - The largest operators of wind and solar  projects in the world. Importantly, expansive holdings in the Midwest.  Also has numerous energy storage projects under their belt.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;They also have a 35% stake in NextEra Energy Partners (NEP) with Jim Robo being the CEO of both companies.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Lastly, it has been brought up that some of the GME short, especially those puts lurking at $2 and $1, are hedges by bond holders against bankruptcy, or are hedges by those who sold CDS to bond holders to hedge their short CDS. Those are going to keep accumulating because bankruptcy is possible (though unlikely) in the few year range, and getting those puts now is basically free. But they won&amp;#39;t affect the price since they are so far OOM.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.investor.nexteraenergy.com/fixed-income-investors/financial-policy&quot;&gt;In  fact, I&amp;#39;ll just direct you to NextEra&amp;#39;s IR page, because for some  reason they&amp;#39;ve placed a very solid series of pages outlining their  financial health where almost nobody will find them.&lt;/a&gt; You can flip  through the Policy, Strength, Funding/Capital Structure, Cash  Flow/Leverage, and Liquidity pages there at your leisure to understand  more about the company. But basically, they&amp;#39;re extremely healthy as a  company. Notably, they&amp;#39;ve been &lt;a href=&quot;http://www.investor.nexteraenergy.com/news-and-events/news-releases/2020/11-02-2020-222338600&quot;&gt;unwinding positions for cash&lt;/a&gt; recently despite their solid balance sheet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Uptick Rule&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Now,  I&amp;#39;d like to point out their P/E: 41. Yup, this is a &amp;quot;boring&amp;quot; utility company trading at 41x P/E after running up 200% in 5 years and 80% in  2. For reference, Microsoft is trading at 34.90 P/E. As far as utilities  go, I think it&amp;#39;s fair to say these guys are as far from boring as it  gets.&lt;/p&gt;
+&lt;p&gt;Because the stock was down a lot Friday the uptick rule was triggered until eod Tuesday. That means shorts can’t sell at the bid to force down price they can only sell at the ask. In practice this won’t matter a ton since you can still buy puts to make a dealer do this, and my understanding is they aren’t subject to that rule anyway.&lt;/p&gt;
 
-&lt;p&gt;Summary of the fundamentals;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Yield Enhancement Program&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Management is extremely reliable&lt;/li&gt;
-&lt;li&gt;They&amp;#39;re the market leader in renewables deployment&lt;/li&gt;
-&lt;li&gt;They&amp;#39;ve proven they know how to compete and edge out profits in cutthroat industries&lt;/li&gt;
-&lt;li&gt;High P/E, but in a stable industry&lt;/li&gt;
-&lt;li&gt;They have plenty of leverage available for massive capital expenditures&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;A pro tip I have for this sub is – if you intend to hold a ton of long stock that is in high demand by short sellers, you should get paid to lend it to short sellers. That’s how the option dealers make a lot of their money – I’m sure citadel is making a killing holding a ton of GME stock to hedge, and promptly lending it to hedge funds at 30% borrow rate, while having very little risk.&lt;/p&gt;
 
-&lt;p&gt;Now  onto why I think they will collect more than their fair share of  Biden&amp;#39;s upcoming stimulus. Let&amp;#39;s start off by looking at what Biden has  been pushing in his announcements;&lt;/p&gt;
+&lt;p&gt;Most brokerages don’t pay you for lending your shares out, but IBKR does. Right now, if your GME shares are loaned out, you get something like 15% annualized in rebates. Apparently, Fidelity also will do this, but I&amp;#39;ve not used their program, and you probably have to ask them to sign up. This doesn’t work if the shares are in margin, they have be fully paid and settled, but it is a substantial extra if you are a long-term believer in the stock, and on other brokerages, they get paid instead of you.  If any other brokerages have this feature that are non-institutional, please post and I’ll add.&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Pushing the environmental costs onto polluters&lt;/li&gt;
-&lt;li&gt;Pushing renewables directly&lt;/li&gt;
-&lt;li&gt;Creating long-term middle class union jobs&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;A Few Other Thoughts on Shorts&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Among utilities, &lt;a href=&quot;http://www.investor.nexteraenergy.com/news-and-events/news-releases/2020/12-11-2020-173514490&quot;&gt;NextEra stands out as an early and consistent investor in renewables&lt;/a&gt;. Straight from the link above:&lt;/p&gt;
+&lt;p&gt;Institutions do sometimes hedge large short positions. It is possible that some of the calls held on Wednesday that caused the giant explosion up were hedges for short positions held by hedge funds/family offices and others.  The fact we didn&amp;#39;t see a lot of selling Friday suggests that at least the near the money ones were mostly NOT held as hedges, otherwise they would&amp;#39;ve been more monetized. But, it&amp;#39;s possible that the short pain is less than thought. We just don&amp;#39;t know.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I think the major factor here remains simply the desire of this sub to pile new money in. However, it’s hard to maintain this volatility level and ever higher prices for more than a few weeks without additional catalysts because options are getting pricey and decay will set in, and the higher the price, the more money is required to buy a share.&lt;/p&gt;
+
+&lt;p&gt;- The margin changes, again, are definitely bearish. How bearish? That depends on how many of you guys bought a ton of GME shares on margin and whether or not we gap down Tuesday. I don&amp;#39;t think it affects the short interest much.&lt;/p&gt;
+
+&lt;p&gt;- The option situation is probably net bullish Tuesday/Wednesday/Thursday, but net bearish Friday (slightly)… but does mean that next week can be insanely volatile&lt;/p&gt;
+
+&lt;p&gt;- Price moves are easier in the vicinity of $35, $30, $39, $40, and to a lesser extent, $45, $50, $55, $60 due to gamma &amp;#39;ramps&amp;#39;.&lt;/p&gt;
+
+&lt;p&gt;- I’ll post new data when I get it&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[If you’re young with a high risk tolerance, is there a better ETF than ARKK?]]></title><description><![CDATA[I’m in my mid-20s with around 100k invested. Right now it’s all in a solid
+mutual fund (PRWCX) but one with 60/40 stock/bond mix, and since I’m in this for
+the long haul, I’m naturally open to upping my risk exposure. I have no debt and
+live a very low cost lifestyle, so I can take a bit of a swing,…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kyox09/if_youre_young_with_a_high_risk_tolerance_is/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kyox09/if_youre_young_with_a_high_risk_tolerance_is/</guid><pubDate>Sat, 16 Jan 2021 23:27:30 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I’m in my mid-20s with around 100k invested. Right now it’s all in a solid mutual fund (PRWCX) but one with 60/40 stock/bond mix, and since I’m in this for the long haul, I’m naturally open to upping my risk exposure. I have no debt and live a very low cost lifestyle, so I can take a bit of a swing, albeit I’m not going to be irresponsible about it. &lt;/p&gt;
+
+&lt;p&gt;I know ARK/Cathie Wood has become a tired meme here, but the growth potential of her strategy seems compelling, at least to my novice eyes. If I’m looking to maximize returns over the next 5+ years in an ETF or similar investment option, are there better options out there?&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Is Nokia a good long term buy? Current market price is $4.07.]]></title><description><![CDATA[Nokia just secured multiple contracts to build its presence in the 5g domain.
+Projects with the National Cybersecurity Center, T-mobile and Alphabet Inc.
+After the deal they secured with NASA it feels like Nokia is making moves and
+has woken up. Will all this be great for the long term? Or what…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kyltua/is_nokia_a_good_long_term_buy_current_market/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kyltua/is_nokia_a_good_long_term_buy_current_market/</guid><pubDate>Sat, 16 Jan 2021 23:27:30 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Nokia just secured multiple contracts to build its  presence in the 5g domain. Projects with the National Cybersecurity Center, T-mobile and Alphabet Inc. After the deal they secured with NASA it feels like Nokia is making moves and has woken up. Will all this be great for the long term? Or what about even short term?&lt;/p&gt;
+
+&lt;p&gt;(&lt;a href=&quot;https://finance.yahoo.com/news/nokia-nok-secures-key-deals-145002461.html&quot;&gt;https://finance.yahoo.com/news/nokia-nok-secures-key-deals-145002461.html&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Bill Gates is now the largest farmland owner in America https://t.co/vUHEZmLENc]]></title><link>https://reddit.buzzing.cc/tweet/1350499891198517250</link><guid isPermaLink="false">https://reddit.buzzing.cc/tweet/1350499891198517250</guid><pubDate>Sat, 16 Jan 2021 22:54:38 GMT</pubDate><content:encoded>Bill Gates is now the largest farmland owner in America https://t.co/vUHEZmLENc</content:encoded></item><item><title><![CDATA[According to the Buffett Indicator the US Stockmarket is strongly overvalued at 221%]]></title><description><![CDATA[According to this Website
+[http://www.currentmarketvaluation.com/models/buffett-indicator.php]
+
+ 
+
+> The Buffett Indicator is the ratio of total US stock market valuation to GDP.
+> As of January 14, 2021 we calculate the Buffett Indicator as:
+
+ 
+
+Aggregate US Market Value: $47.6T
+
+ 
+
+Current…]]></description><link>https://reddit.buzzing.cc/reddit/r/investing/comments/kyqyob/according_to_the_buffett_indicator_the_us/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/investing/comments/kyqyob/according_to_the_buffett_indicator_the_us/</guid><pubDate>Sat, 16 Jan 2021 22:09:11 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;According to this &lt;a href=&quot;http://www.currentmarketvaluation.com/models/buffett-indicator.php&quot;&gt;Website&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;According  to S&amp;amp;P Global Trucost, NextEra Energy ranked ahead of its peers on a  number of impressive reported performance metrics, among others,  including signed contracts to build approximately 12,000 megawatts of  additional wind, solar and battery storage projects as of the close of  2019, and NextEra Energy&amp;#39;s announced target of emissions reductions per  unit of generation by 67% by 2025 from a 2005 baseline, equivalent, to a  40% reduction in absolute emissions – and this, despite an expected  doubling of generation over the period. Already, NextEra Energy reports  more than 50% of its generation is from zero- and near-zero-emitting  sources.&lt;/p&gt;
+&lt;p&gt;The Buffett Indicator is the ratio of total US stock market valuation to GDP. As of January 14, 2021 we calculate the Buffett Indicator as:&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I think it&amp;#39;s fair to say that point 1 will hurt them much less than it will their less progressive competition.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;Additionally,  as a result of their investments so far, they&amp;#39;re not untested when it  comes to deployment: They know what to expect and we know they can  execute on larger CapEx programs with less risk than the competition. If  Biden is to throw the expected 40 billion a year into the industry,  it&amp;#39;s quite likely NextEra will be ready to scale up operations  sustainably and successfully to capitalize on the opportunity, clearing  point two.&lt;/p&gt;
+&lt;p&gt;Aggregate US Market Value: $47.6T&lt;/p&gt;
 
-&lt;p&gt;But point three is the  really interesting one. Let me start off with a question; If you were a  democratic president that wanted to create middle-class jobs in  renewables, how would you go about it? Would you invest in the companies  making the end product? Maybe a little for the companies that pull the  required resources out of the ground too?&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/investing/comments/khx7eb/stimulus_bill_includes_35_billion_for_clean/&quot;&gt;Let&amp;#39;s  take a look at what the clean energy portion stimulus bill a few weeks  ago contained and see how NextEra is positioned for each portion.&lt;/a&gt; Big thanks to &lt;a href=&quot;https://www.reddit.com/u/millerlit/&quot;&gt;/u/millerlit&lt;/a&gt; for summarizing. Also, &lt;a href=&quot;http://www.investor.nexteraenergy.com/reports-and-filings/annual-reports&quot;&gt;I&amp;#39;ll be referencing the NextEra 2019 annual report from this point on&lt;/a&gt;. Please bring up a copy if you&amp;#39;d like to verify the numbers I claim.&lt;/p&gt;
+&lt;p&gt;Current (Estimated) GDP: $21.5T&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Buffett Indicator: 221%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;By our calculation that is currently 82% (or about 2.7 standard deviations) above the historical average, suggesting that the market is Strongly Overvalued. It has not been around this level since the Internet Bubble of the early 2000&amp;#39;s. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Criticisms of The Buffett Indicator&lt;/strong&gt;
+It is important to call out that no single metric is illustrative of the entire market, of course. The primary criticism of using the Buffett Indicator as a valuation metric (and particularly in late 2020 using it as a metric to justify the overvaluation of the market), is that it does not address the state of non-equity asset markets.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Should you buy GME? Short-squeezes and the importance of 💎👐]]></title><description><![CDATA[TL;DR IN THE MIDDLE (IMPORTANT EDITS AT THE BOTTOM)
+
+Long-time lurker here, finally starting to post with the imminent GME squeeze
+
+Thought it would be helpful to give a VERY BRIEF, slightly more serious
+explanation on the current situation to the influx of new members:
+
+
+
+Before we start, here's a…]]></description><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyn0nz/should_you_buy_gme_shortsqueezes_and_the/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyn0nz/should_you_buy_gme_shortsqueezes_and_the/</guid><pubDate>Sat, 16 Jan 2021 22:09:11 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;h1&gt;TL;DR in the middle (important edits at the bottom)&lt;/h1&gt;
+
+&lt;p&gt;Long-time lurker here, finally starting to post with the imminent GME squeeze&lt;/p&gt;
+
+&lt;p&gt;Thought it would be helpful to give a VERY BRIEF, slightly more serious explanation on the current situation to the influx of new members:&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;Before we start, here&amp;#39;s a nice little glossary of autistic terms used around here:&lt;/p&gt;
+
+&lt;p&gt;🚀  = stock gonna go up&lt;/p&gt;
+
+&lt;p&gt;💎🙌 = holding onto a stock like a god&lt;/p&gt;
+
+&lt;p&gt;📝👐 = selling like a loser&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;So, currently Gamestop (GME) is on a pretty inevitable short-squeeze path, what does that mean? It means it&amp;#39;s about to do something like this:&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.redd.it/frjx9fil1qb61.gif&quot;&gt;fuckin ridiculous am i right, a more recent example would be tesla (TSLA) if you think this is old boomer shit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now the mechanics of it why short squeezes happen are a little complicated for beginners but here are some threads and other links explaining them IF you want to learn more:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/comments/kwb827/gme_endgame_dtc_infinity/&quot;&gt;WSB Thread&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FMRyWZ6CXqM&quot;&gt;Video explanation if you can&amp;#39;t read like many of the autists here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.investopedia.com/terms/s/shortsqueeze.asp&quot;&gt;Boring Boomer website explanation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There also a lot of other factors at play here, but go search that on your own, there&amp;#39;s tons of good threads here on WSB&lt;/p&gt;
+
+&lt;p&gt;AND if you&amp;#39;re really serious about it, ACTUALLY RESEARCH GAMESTOP, its annual revenue, market cap, stocks in general, but lmao none of y&amp;#39;all gonna do that so:&lt;/p&gt;
+
+&lt;p&gt;So should you buy GME stock asap?&lt;/p&gt;
+
+&lt;p&gt;Do you like free money? Fuck yeah buy that shit 💸💸💸&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;HOWEVER here are some VERY IMPORTANT things you should be mindful of in these upcoming weeks:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;$1.5 Billion for Solar - Will probably go to most industry players pretty  equally, NextEra will get a cut as a result of their investing through NEER. 12% of NEER&amp;#39;s generation is from solar power according to the 2019 annual report (p.13).&lt;/li&gt;
-&lt;li&gt;$2.6 Billion for Transport - NextEra probably won&amp;#39;t get much of this, but they have &lt;a href=&quot;http://www.investor.nexteraenergy.com/news-and-events/news-releases/2020/12-08-2020-123104618&quot;&gt;made an acquisition&lt;/a&gt; in the field within the last month. It would be a nice perk if they  announced major projects here, but let&amp;#39;s just leave this as a  hypothetical.&lt;/li&gt;
-&lt;li&gt;$1.7 billion for a Weatherization Assistance Program - I&amp;#39;m not 100% sure how  they&amp;#39;ll break this down, but up here in Canada they do these programs  as rebates through utility providers. &lt;a href=&quot;https://www.fpl.com/save/programs.html&quot;&gt;NextEra is almost definitely going to get a cut of this as far as I can see.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;$1.08 billion for short-term, long-term, seasonal and transportation energy  storage technologies - NextEra is pretty big in the battery storage  field. &lt;a href=&quot;https://www.greentechmedia.com/articles/read/nextera-energy-to-spend-1b-on-energy-storage-projects-in-2021&quot;&gt;I don&amp;#39;t think they&amp;#39;ll be the ones developing a new battery chemistry, but they&amp;#39;re definitely a serious user.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;$2.36 billion for smart utility and energy distribution technologies. -  They&amp;#39;re going to get a serious cut of this for obvious reasons.&lt;/li&gt;
-&lt;li&gt;$625  million for new research, development and commercialization for both  onshore and offshore wind technologies - 65% of NEER&amp;#39;s renewables  generation is wind power according to the 2019 annual report. They&amp;#39;re  going to get a nice cut here too.&lt;/li&gt;
-&lt;li&gt;$850 million for geothermal technology development - Nothing here will go to NextEra, as far as I&amp;#39;m aware.&lt;/li&gt;
-&lt;li&gt;$1093 million for marine energy and hydropower tech - Nothing here will go to NextEra, as far as I&amp;#39;m aware.&lt;/li&gt;
-&lt;li&gt;$500 million pot for industry and transportation looking to decarbonize - 0 stake in this race&lt;/li&gt;
-&lt;li&gt;$6.2  billion for carbon capture utilization and storage technologies - FPL  is investing quite heavily here, as 74% of their generation back in 2019  was from Natural Gas (p.9). They&amp;#39;re going to get a good portion of  this.&lt;/li&gt;
-&lt;li&gt;$6.6  billion in funding for the modernization of existing nuclear power  plants and the development of advanced reactors - FPL generated 22% of  their power from Nuclear in 2019 (p.9). They&amp;#39;re probably going to get a  fair slice of this.&lt;/li&gt;
-&lt;li&gt;$4.7 billion for fusion industry - NextEra isn&amp;#39;t spending money on fusion development, as far as I&amp;#39;m aware.&lt;/li&gt;
-&lt;li&gt;Looser  regulations for using government land for renewables - A nice gesture  to drop land costs by increasing supply for sustainable uses. &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/US_federal_land.agencies.svg/1280px-US_federal_land.agencies.svg.png&quot;&gt;Here&amp;#39;s a map of US public land so you can take a look.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The very tippy top of Short-squeezes last fairly long, in the picture above (Volkswagen) it shot up and stayed there for a whole day (at around $600, it did spike at a crazy $1000 for a couple hours though), SLOWLY coming back down over a few days, then finally dropping. THIS MEANS this isn&amp;#39;t some minute-by-minute play here, you have some time, just make sure you are prepared.&lt;/li&gt;
+&lt;li&gt;In these coming days (or maybe weeks) GME price will waver up and down as the big corporations (Melvin 👿) start trying to cover their asses until eventually it will start spiking like crazy, the Short-squeeze will have started&lt;/li&gt;
+&lt;li&gt;Some shit might go down this TUESDAY, it might not, but some shit will &lt;strong&gt;&lt;em&gt;definitely&lt;/em&gt;&lt;/strong&gt; go down within the next week or so as corporations are losing big amounts of money as time goes by&lt;/li&gt;
+&lt;li&gt;THE LONGER PEOPLE HOLD 💎🙌 ONTO THEIR STOCKS, THE HIGHER CORPS LIKE MELVIN WILL HAVE TO PAY FOR THEM, this brings me to my next and final point&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;But you get the point by now - NextEra has a slice in a lot of these pies directly. On top of that, the renewables segment as a whole is going to hugely benefit from the stimulus driving down the capital expenditures required for panels and turbines. Frankly, there are very few people  better positioned than a well-run utility company with massive credit  available taking on the debt at great rates. When I put it like that, it&amp;#39;s no surprise that these folks managed to thrive under Trump&amp;#39;s policies - and that they&amp;#39;re extremely well positioned to grow aggressively under Biden.&lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;p&gt;But there&amp;#39;s even a fun political trap for the republicans here. Do you know  where the best place to place on-shore wind turbines is? &lt;a href=&quot;https://www.nist.gov/sites/default/files/images/itl/sed/gsg/mri50_2mph_inc_gumbel_v2.png&quot;&gt;The midwest&lt;/a&gt; (&lt;a href=&quot;https://www.nist.gov/programs-projects/maps-non-hurricane-non-tornadic-extreme-wind-speeds-contiguous-united-states&quot;&gt;Source&lt;/a&gt;) - &lt;a href=&quot;https://www.google.com/search?client=firefox-b-d&amp;amp;q=US+2020+election+results&quot;&gt;A notable republican stronghold area&lt;/a&gt;. NEER&amp;#39;s own wind turbine deployment map in the annual report (p.13) backs up that their expansion is largely in that area.&lt;/p&gt;
+&lt;h1&gt;The importance of holding 💎🙌&lt;/h1&gt;
 
-&lt;p&gt;I wouldn&amp;#39;t be surprised at all if the Democrats quietly slated a lot of  the renewables spending into the midwest in an attempt to entrench a pro-union and pro-clean energy vote there - forcing the republican platform into a weird spot in future elections. It helps that that&amp;#39;s pretty much the economical way to play it too.&lt;/p&gt;
+&lt;p&gt;The price of GME will most likely STAIRCASE upwards (going UP then down then UP, etc), as corps begin to short, people with 📝👐 (pussies) will begin to sell because of the &amp;quot;profit&amp;quot; they&amp;#39;re making&lt;/p&gt;
 
-&lt;p&gt;To sum it up, I think NextEra&amp;#39;s going to be a serious beneficiary of the renewables bill however it ends up going down, even if only because of their financial resources, deployment experience, and contracts with  suppliers. A big portion of this is that I don&amp;#39;t believe the market has  priced in the amount they&amp;#39;re collecting directly and indirectly because  the response so far seems to have been &amp;quot;FAN/TAN/ICLN/QCLN goes brrrrr&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Not only will you regret it when the squeeze hits its peak, but you are letting the shorters get off easy by giving them cheap stocks&lt;/p&gt;
 
-&lt;p&gt;Let&amp;#39;s talk about the competition; The other US utility companies that were  listed as leaders in the clean energy transition by Global Platts are  Dominion Energy, Sempra Energy, and Xcel Energy. From one look at them  it seems like they&amp;#39;re (1) much smaller and (2) at best half off on P/E  so I didn&amp;#39;t really look at them too hard if I&amp;#39;m being honest.&lt;/p&gt;
+&lt;p&gt;Imagine this:&lt;/p&gt;
 
-&lt;p&gt;Now for the bigger question; Do I grab NEE or [clean energy ETF of choice]?  Really, it&amp;#39;s up to you. I think that the clean energy ETFs are trading  at downright idiotic valuations now. That, and I&amp;#39;d much rather bet on  one or two known strong performers that I believe in than I would on a  bunch of companies picked by someone else. That being said, those ETFs  have much more hype behind them, which is an important consideration in  this market.&lt;/p&gt;
+&lt;p&gt;you bought GME at $35, it goes up to $100, you panic sell cuz holy shit thats profit, you check again in an hour and see that GME is now $200 because of the many godlike 💎🙌 we have in this sub, then you start crying because not only did you hurt the cause, you missed out on a shit ton more money&lt;/p&gt;
 
-&lt;p&gt;Short-term catalysts  are basically the stimulus bill and earnings on the 26th. I expect some  big announcements on how they plan to capitalize on the bill during the  earnings call, and a huge bump in interest if they announce that they&amp;#39;re  accelerating their renewables pipeline and focusing on that portion of  the company more.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;This is the importance of holding 💎&lt;/em&gt;&lt;/strong&gt;🙌&lt;/p&gt;
 
-&lt;p&gt;Anyways, onto positions and how I&amp;#39;d trade it;&lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;Also if you read the DD (basically theory on future prospects) on Gamestop, you&amp;#39;ll realize that it actually does have a pretty bright future, so while this may be a pump and dump for many, &lt;strong&gt;I&amp;#39;m sure this stock will actually reach quite a large number in the not so distant future&lt;/strong&gt; (just google Ryan Cohen)&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;If  you just want to buy and hold in an account for the extreme long-term  -&amp;gt; buy shares and hold, I think this is going to heavily outperform  the S&amp;amp;P 500 into the future.&lt;/li&gt;
-&lt;li&gt;If  you want to get some of the spicy synthetic leverage gains with me  -&amp;gt; Jan 20 2023 80c&amp;#39;s. They print if the stock goes up ~15% in the  next 2 years because IV is super low. I grabbed 10 at 12.10 at the start  of the week on the dip, but I think they&amp;#39;ll open 13.00+ tomorrow. Keep  in mind that you don&amp;#39;t need to hold till expiry, I&amp;#39;ll probably liquidate  these after a year because I want the tax benefits.&lt;/li&gt;
+&lt;li&gt;My current estimation for the price target is:&lt;/li&gt;
+&lt;li&gt;It will &lt;strong&gt;&lt;em&gt;definitely&lt;/em&gt;&lt;/strong&gt; hit $100 within the next week&lt;/li&gt;
+&lt;li&gt;It will probably spike to around $200-$300 for a day or two&lt;/li&gt;
+&lt;li&gt;It has a small chance of going fucking nuclear and going past $300   🚀   🚀   🚀  (small chance but definitely possible)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;It of course, also has a chance of doing absolutely fucking nothing&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;That&amp;#39;s all from me today! This is my first DD post ever, so if you&amp;#39;ve got any suggestions/questions feel free to fire away.&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[WSB austists after YOLOing GME and making their parents salary in one night]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kwscdd/wsb_austists_after_yoloing_gme_and_making_their/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kwscdd/wsb_austists_after_yoloing_gme_and_making_their/</guid><pubDate>Thu, 14 Jan 2021 12:03:45 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Billionaire Republican Ken Langone feels ‘betrayed,’ urges Americans to unite behind Joe Biden https://t.co/pLR3OJcHk2]]></title><link>https://reddit.buzzing.cc/tweet/1349416369893347338</link><guid isPermaLink="false">https://reddit.buzzing.cc/tweet/1349416369893347338</guid><pubDate>Thu, 14 Jan 2021 10:16:27 GMT</pubDate><content:encoded>Billionaire Republican Ken Langone feels ‘betrayed,’ urges Americans to unite behind Joe Biden https://t.co/pLR3OJcHk2</content:encoded></item><item><title><![CDATA[CCIV on the path to the moon?]]></title><description><![CDATA[CCIV has been rumored to be acquiring Lucid E/V. While lucid just got its first
-factory going, its cars actually have a really cool design (product looks
-legit), its battery lasts almost 100miles more than Tesla, and Lucid just posted
-jobs on their website for Director of Investor Relations, SEC…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kwxc9v/cciv_on_the_path_to_the_moon/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kwxc9v/cciv_on_the_path_to_the_moon/</guid><pubDate>Thu, 14 Jan 2021 10:16:24 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;CCIV has been rumored to be acquiring Lucid E/V. While lucid just got its first factory going, its cars actually have a really cool design (product looks legit), its battery lasts almost 100miles more than Tesla, and Lucid just posted jobs on their website for Director of Investor Relations, SEC reporting manager, and Investor Relations Analyst. It popped today, but if they announce they are taking Lucid public...expect NIO-level jump (4x-5x in a few days)  🚀🚀🚀&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[r/WSB to Citi: Do You Feel In Charge?]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kwu9hu/rwsb_to_citi_do_you_feel_in_charge/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kwu9hu/rwsb_to_citi_do_you_feel_in_charge/</guid><pubDate>Thu, 14 Jan 2021 10:16:24 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Lion Electric: Who they are and why they should be of interest to you. Long DD post.]]></title><description><![CDATA[I WARN YOU THAT THIS WILL BE QUITE THE LONG READ, BUT ONE THAT YOU WILL
-HOPEFULLY THANK ME FOR.
+&lt;p&gt;Now, I didn&amp;#39;t want to speak boomer but this is important as this subreddit is quite literally an addiction for a lot of people, DON&amp;#39;T PUT MONEY IN THIS STOCK IF YOU&amp;#39;RE NOT COMFORTABLE, WE&amp;#39;RE LITERALLY A BUNCH OF RETARDS (sometimes smart retards)&lt;/p&gt;
 
-Another day, another EV play. TSLA and NIO are both examples of EV companies
-that have capitalized on the gains resulting from being early to the party for
-electric cars.
+&lt;p&gt;THIS IS NOT FINANACIAL ADVICE AND IF YOU LISTEN TO ME OR ANYONE ELSE ON THIS SUBREDDIT YOU ARE ALSO RETARDED LIKE ALL OF US&lt;/p&gt;
 
-Awesome. But there is a whole…]]></description><link>https://reddit.buzzing.cc/reddit/r/investing/comments/kwghg9/lion_electric_who_they_are_and_why_they_should_be/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/investing/comments/kwghg9/lion_electric_who_they_are_and_why_they_should_be/</guid><pubDate>Thu, 14 Jan 2021 09:16:55 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;h1&gt;I warn you that this will be quite the long read, but one that you will hopefully thank me for.&lt;/h1&gt;
+&lt;p&gt;This squeeze is most likely NOT (fully) caused by us, (assuming we&amp;#39;re around 10% of the shares) but I mean, 10% is quite a big number so we do have a little control.&lt;/p&gt;
 
-&lt;p&gt;Another day, another EV play. TSLA and NIO are both examples of EV companies that have capitalized on the gains resulting from being early to the party for electric cars.&lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;p&gt;Awesome. But there is a whole other dimension to the automobile industry other than cars that HAS NOT been electrified yet, and that this company has a first-mover advantage on (just like NIO and TSLA did): &lt;strong&gt;The medium-heavy duty vehicles.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;TL;DR:&lt;/h1&gt;
 
-&lt;p&gt;Today, I present you with an opportunity to be early to this party featuring the sleeping giant that is:&lt;/p&gt;
+&lt;h1&gt;THE MORE OF US THAT HOLD 💎🙌 THE HIGHER GME WILL🚀  🚀  🚀  🚀  🚀  🚀  🚀  🚀&lt;/h1&gt;
 
-&lt;h1&gt;LION ELECTRIC ($NGA)&lt;/h1&gt;
+&lt;h1&gt;IT MIGHT BE A ROUGH FEW DAYS OR WEEKS BUT DO NOT WAVER, HOLD💎🙌 AND YOU WILL BE REWARDED, SELL📝👐 AND YOU&amp;#39;LL FOREVER GET LAUGHED AT BY EVERYONE HERE LMAO&lt;/h1&gt;
 
-&lt;p&gt;It is currently trading under the SPAC ticker $NGA with a merger completion set for the end of Q1. &lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;That’s right, by buying 1 share of $NGA right now, you are effectively buying 1 share of Lion Electric. For anyone who wants to better understand SPACs, I highly recommend a quick search on Investopedia.&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;thank you for coming to my ted talk, and yes i do have many shares&lt;/p&gt;
 
-&lt;p&gt;Let me preface this post by saying that &lt;a href=&quot;https://thelionelectric.com/en&quot;&gt;Lion Electric&lt;/a&gt; has been working on their vehicles, battery technology, and charging grids since 2010 and ALREADY HAS VEHICLES ON THE ROAD. So no, they are not some shambolic ponzi scheme of an EV company (looking at you NKLA). In fact, it literally has the &lt;a href=&quot;https://www.prnewswire.com/news-releases/largest-zero-emission-school-bus-fleet-in-north-america-bolstered-by-10-bus-delivery-from-lion-electric-301194935.html#:%7E:text=The%20Lion%20Electric%20Co.&amp;amp;amp;amp;amp;text=With%20these%20new%20buses%2C%20Twin,school%20buses%20in%20its%20fleet.&quot;&gt;largest fleet of electified school buses&lt;/a&gt; on the road in North America as we speak. &lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;h1&gt;&lt;a href=&quot;https://pages.thelionelectric.com/wp-content/uploads/2020/11/Investor-Presentation_20203011.pdf&quot;&gt;Here is the link to their investor presentation where they are already forecasting a positive EBITDA by the end of 2021. Highly recommend skimming over it, but I will highlight the main points later on in the post for yall anyways.&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;edit:&lt;/strong&gt; Adding a few notes here since I&amp;#39;ve already gotten so many questions lmao:&lt;/p&gt;
 
-&lt;h1&gt;&lt;em&gt;So why haven&amp;#39;t I heard about this &amp;quot;Lion Electric&amp;quot; company?&lt;/em&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Do NOT buy stocks with leverage/margin, as corporations can basically borrow those, aka those stocks aren&amp;#39;t yours (as I understand it) Also stocks are better for the squeeze than options, so please try to buy stocks&lt;/li&gt;
+&lt;li&gt;What to do if it GME plummets? You can do whatever you want to do, however I&amp;#39;ll tell you my personal plan: I have quite a bit of money in this but I would have NEVER put it in if I didn&amp;#39;t believe in the long term, so if this squeeze ends up being more of a pinch (very small chance), I&amp;#39;m not selling shit 💎🙌 Again, refer to the DD and Ryan Cohens personal letter, this shit has the potential to grow 3-5x within a few or even this year&lt;/li&gt;
+&lt;li&gt;If you ever think about wavering and think &amp;quot;ooh man i&amp;#39;m really playing with big money i should sell 📝👐&amp;quot; think about all the other people in here backing this shit up. We have hundreds of daily YOLO threads of people dumping money in this, hell &lt;a href=&quot;/u/deepfuckingvalue&quot;&gt;/u/deepfuckingvalue&lt;/a&gt; our &lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/comments/kxeq23/gme_yolo_update_jan_14_2021/&quot;&gt;god&lt;/a&gt; LITERALLY has like 8 million dollars riding on this shit, so learn from him and 💎🙌 my brothers&lt;/li&gt;
+&lt;li&gt;Again... if you&amp;#39;re concerned or uncomfortable, do your own research, and come to your own conclusions. Don&amp;#39;t take advice from retards if you don&amp;#39;t want too&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Simple answer: it&amp;#39;s a Canadian company located in Quebec. No company outside of America or China can be of interest right? &lt;strong&gt;&lt;em&gt;RIGHT????&lt;/em&gt;&lt;/strong&gt; Well, the EV credits and subsidies in Quebec are great, but other than that you are right. The good thing is that it ain&amp;#39;t gonna be Canadian-based much longer. Lion is going to reveal its new U.S. manufacturing facility any day now, rumored to be in &lt;a href=&quot;https://www.prnewswire.com/news-releases/the-lion-electric-co-to-deliver-michigans-first-11-electric-school-buses-as-part-of-the-volkswagen-mitigation-settlement-300917333.html&quot;&gt;Michigan&lt;/a&gt; where it delivered the state&amp;#39;s first ever 100% electric school buses. Lion Electric, in fact, are already &lt;a href=&quot;https://michigan-company.com/co/the-lion-electric-co-usa-inc&quot;&gt;registered as a business&lt;/a&gt; in Michigan. Oh, and it just so happens that the rumored factory location is right in between two Amazon factories, and is not a mere coincidence (see more below on why this is pertinent). Anyhow, their future clearly lies in the United States, and they are uplisting as LEV on the NYSE when the &lt;a href=&quot;https://www.businesswire.com/news/home/20210104005149/en/Northern-Genesis-Acquisition-Corp.-Announces-Filing-by-The-Lion-Electric-Company-of-a-Preliminary-Registration-Statement-on-SEC-Form-F-4-in-Connection-With-Their-Proposed-Business-Combination&quot;&gt;merger&lt;/a&gt; with NGA closes in March, as per the CEO. Seriously, look at how many job listings are posted across America by Lion Electric by clicking &lt;a href=&quot;https://emploislion.com/en/jobs&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;h1&gt;&lt;em&gt;So, why should I care?&lt;/em&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;EDIT 2: DD BOOGALOO:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Because Jeff Bezos and Joe Biden care.&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;If the sheer amount of autism wasn&amp;#39;t enough to sell you on GME, here are some pretty boomer, but very important links that go into detail:&lt;/p&gt;
 
-&lt;p&gt;News silently broke last week that &lt;strong&gt;AMAZON&lt;/strong&gt; has come to an agreement to purchase up to 500 of Lions class-6 and class-8 delivery trucks per year from 2021-2025 (or up to 2500 over 5 years). Emphasis on &amp;#39;silently&amp;#39; because this company, unlike many, lets their results do the talking rather than a slimy PR team. Oh yeah, I almost forgot to mention that Amazon has the option to purchase at least &lt;strong&gt;2500 trucks per year (conservative number), or 1.1b worth&lt;/strong&gt; for the five years following 2025, with a possibility of acquiring up to &lt;a href=&quot;https://stnonline.com/news/school-bus-production-to-benefit-from-amazon-agreement-lion-electric/&quot;&gt;15.8% of the company&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://news.gamestop.com/news-releases/news-release-details/gamestop-reports-2020-holiday-sales-results&quot;&gt;&lt;strong&gt;Gamestop&amp;#39;s very own 2020 Holiday Sale Report&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Yup. Amazon are in bed with Lion Electric, and you should be too.&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;Important thing to take away here:&lt;/p&gt;
 
-&lt;p&gt;And, before anyone asks, the Tesla semi-truck serves entirely different purposes. No point in comparing apples to oranges. Tesla&amp;#39;s truck is specialized for a single purpose: long distance delivery from warehouse to retail. &lt;strong&gt;The Lion-8 and Lion-6 delivery trucks are much more versatile, will be used by Amazon to deliver between Amazon&amp;#39;s facilities, and most importantly they are ready for MASS SCALE PRODUCTION&lt;/strong&gt;. So, no, they are not competing against the Tesla semi and will fill different voids in the market. &lt;a href=&quot;https://imgur.com/nJiXzp8&quot;&gt;See here how diversified their truck lineup really is.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;&lt;strong&gt;E-Commerce sales&lt;/strong&gt;, which are included in comparable store sales, rose &lt;strong&gt;309%&lt;/strong&gt; and represented approximately &lt;strong&gt;34% of total company sales&lt;/strong&gt;, with total worldwide E-Commerce sales year to date reaching over &lt;strong&gt;$1.35 billion, far exceeding the Company’s $1.0 billion growth objective&lt;/strong&gt;&amp;quot;&lt;/p&gt;
 
-&lt;h1&gt;&lt;em&gt;And what about Joe Biden?&lt;/em&gt;&lt;/h1&gt;
+&lt;p&gt;This is obviously important as Cohen is most definitely pushing for bigger online presence with GME in the future, and uh yeah just the fact that it&amp;#39;s up by &lt;em&gt;that much&lt;/em&gt; is uh... 🚀🚀🚀&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Sleepy Joe and his Clean Energy Plan have vowed to &lt;a href=&quot;https://thenextweb.com/shift/2020/11/14/what-bidens-environmental-plans-mean-for-electric-vehicles-syndication/&quot;&gt;electrify 500,000 school buses&lt;/a&gt; over the next 4 years&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;p&gt;NO COMPANY better positioned to take a huge piece of that pie than Lion Electric. If that seems like a stretch to you, consider this: the CEO of Lion, Marc Bedard, will be speaking at a virtual event on the future of E-mobility this Wednesday (Jan 13), &lt;a href=&quot;https://my.demio.com/ref/vFksZ11nZGvHsaxG&quot;&gt;where the Co-chair of Biden&amp;#39;s Infrastructure Committee will be in attendance&lt;/a&gt;. Their client from Twin Rivers Unified School District went as far as labelling Lion&amp;#39;s electric buses as the &lt;strong&gt;[Rolls Royce and Tesla of school buses]&lt;/strong&gt;(&lt;a href=&quot;https://www.youtube.com/watch?v=StpnGrItO4E&amp;amp;t=45s&quot;&gt;https://www.youtube.com/watch?v=StpnGrItO4E&amp;amp;t=45s&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://shortsqueeze.com//shortinterest/stock/term2.php?s=GME&quot;&gt;&lt;strong&gt;Short Interest around 70million?&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;I’m sure many of you will be aware of the merger completed today with Proterra, another electric bus manufacturer. Awesome right? &lt;a href=&quot;https://www.sec.gov/Archives/edgar/data/1820630/000121390021001584/ea133141ex99-2_arclight.htm?fbclid=IwAR0X17En3iZX-fZhuNAneJG2lDvOX_pT-OcKlXVbKWmnAMFtuNbUsrqA4M0&quot;&gt;A real shame that, in their investors presentation, they did not compare their revenue projections to Lion&amp;#39;s past the year 2021, as they would&amp;#39;ve admitted to being second best.&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;A lot of figures have been going around on WSB on how many Shorts are left, not personally sure how many tbh but &lt;a href=&quot;https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest&quot;&gt;we&amp;#39;ll know by wednesday&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Proterra are also exclusively a bus play, while Lion expects nearly 90% of its revenue by 2024 to be from trucks. In fact, Lion&amp;#39;s revenue from their trucks ALONE in 2024 is projected to trump Proterra&amp;#39;s entire revenue in 2025.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;p&gt;Anyhow, none of these companies have anywhere near the capacity to electrify 25% of the American school bus fleet by themselves in 4 years. So I assure you that Lion will be providing buses to Biden over the next 4 years, as will Proterra probably, since there are only 3 players that are READY in the industry to be in on this.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.nasdaq.com/market-activity/stocks/gme/institutional-holdings&quot;&gt;&lt;strong&gt;List of Institutions holding GME&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1&gt;&lt;em&gt;Why should I be buying NOW?&lt;/em&gt;&lt;/h1&gt;
+&lt;p&gt;Take a look at it for yourself, getting into mega boomer territory here so just know this basically means 🚀🚀🚀&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Because today may very well be the last chance to get in $NGA under 30$.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
 
-&lt;p&gt;Jim Cramer is inviting Marc (the CEO) onto &lt;strong&gt;Mad Money&lt;/strong&gt; &lt;a href=&quot;https://i.redd.it/ucl54g5avaa61.jpg&quot;&gt;TODAY most likely&lt;/a&gt; after it was initially scheduled last week, but the events in Washington forced a postponement. A blessing in disguise for everyone really, and a final chance to get in before this it takes off. NGA is still trading at a measly 1B valuation, with Amazon ALONE forecasted to purchase more than 1b worth of trucks per year come 2025. Marc is going to pump Lion to the best of abilities on Mad Money, and Cramer is going to eat all of it up, as this company is the real deal. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/Long_GME&quot;&gt;&lt;strong&gt;And finally, a random twitter user who has been reporting some interesting things&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;How do I know $NGA will get pumped so hard?&lt;/strong&gt; The CEO of Lion featured on a &lt;a href=&quot;https://www.fm93.com/audio/361623/marc-bedard-pdg-de-lion-amazon-dispose-a-acheter-des-camions-du-producteur-quebecois?fbclid=IwAR1N4Kr0eX-nLjr2-VThUCUVcGIwRlL0ZpC7Abpic7fQY7In4BbJqz7Y7jE&quot;&gt;local news podcast&lt;/a&gt; last week and boasted about the Amazon deal as well as their advantage over competition in electrifying buses and trucks, &lt;strong&gt;comparing Lion to Tesla in the process&lt;/strong&gt;. Unfortunately, he said all of this in French, which I&amp;#39;m sure quite a few of you won&amp;#39;t understand. But once he regurgitates it all in English to Jim Cramer, the significant deal with Amazon and its similarities to Tesla in its infancy will wreak havoc in the market. &lt;/p&gt;
+&lt;p&gt;Honestly, some of the things this guy is reporting is kind of too big brain for me to understand, and you could just write it off as a shill account but so far this guy has been supplying some very cool info on the down low&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Oh yeah, and, by the way, the last time Cramer hosted a CEO from an up and coming EV merger acquisition (CIIC), that stock went from 21$-37$ in the two following trading sessions.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;TLDR: 💎🙌 &lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Big O Notation – Explained as Easily as Possible]]></title><link>https://reddit.buzzing.cc/hn/25803288</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25803288</guid><pubDate>Sat, 16 Jan 2021 21:35:34 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Rosenblatt: AMD to Expect More Market Share Gains in 2021, target $120]]></title><description><![CDATA[> The new Ryzen 5000 mobile series will launch in approximately 150 models this
+> year, compared to the Ryzen 4000 mobile’s 100 models in 2020 and the 70 models
+> introduced in 2019 for the Ryzen 3000 mobile
+> 
+> Mosesmann rates AMD a Buy along with a $120 price target. The implication for
+>…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kyfjkx/rosenblatt_amd_to_expect_more_market_share_gains/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kyfjkx/rosenblatt_amd_to_expect_more_market_share_gains/</guid><pubDate>Sat, 16 Jan 2021 20:58:03 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;blockquote&gt;
+&lt;p&gt;The new Ryzen 5000 mobile series will launch in approximately 150 models this year, compared to the Ryzen 4000 mobile’s 100 models in 2020 and the 70 models introduced in 2019 for the Ryzen 3000 mobile  &lt;/p&gt;
 
-&lt;h1&gt;&lt;em&gt;But why should I pick Lion Electric over all the other EV stocks that get spammed in here?&lt;/em&gt;&lt;/h1&gt;
+&lt;p&gt;Mosesmann rates AMD a Buy along with a $120 price target. The implication for investors? Upside of 36%  &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Because Lion Electric offers much more than just prototypes, ideas, and false hopes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ryzen 5000 HX brand for gaming notebooks that is positioned with over 35% better performance than Intel (10th Gen Core i9 mobile processor), and over 13% advantage in single threaded workloads.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Uranium and Nuclear stocks undervalued?]]></title><description><![CDATA[Get ready for a potential overdue golden age for the nuclear energy industry,
+including but not limited to nuclear power plants and you guessed it: uranium.
 
-&lt;p&gt;· There are currently 7 different &lt;a href=&quot;https://imgur.com/L1cu6oS&quot;&gt;trucks and buses&lt;/a&gt; &lt;strong&gt;available for purchase&lt;/strong&gt;&lt;/p&gt;
+Let’s dig in deeper
 
-&lt;p&gt;· They already have &lt;strong&gt;300+ vehicles on the road&lt;/strong&gt; today with over 
-  6mil miles between them &lt;/p&gt;
+Why Nuclear?
 
-&lt;p&gt;· Multi-year deal agreement for &lt;strong&gt;Amazon&lt;/strong&gt; to purchase up to 
-  2500 vehicles (Lion6 and Lion8) 2021-2025, with even bigger 
-  and more lucrative opportunities afterwards&lt;/p&gt;
+Nuclear reactors generate virtually emissions-free power which means they can
+form a part of getting to net…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kyajum/uranium_and_nuclear_stocks_undervalued/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kyajum/uranium_and_nuclear_stocks_undervalued/</guid><pubDate>Sat, 16 Jan 2021 20:58:03 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Get ready for a potential overdue golden age for the nuclear energy industry, including but not limited to nuclear power plants and you guessed it: uranium.&lt;/p&gt;
 
-&lt;p&gt;· &lt;strong&gt;CN (huge Canadian transporter)&lt;/strong&gt; recently Purchased 50 
-  trucks - with a chance to increase size of order later&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Let’s dig in deeper&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;· &lt;strong&gt;Government-backed&lt;/strong&gt;: &lt;a href=&quot;https://imgur.com/xoJ9Kze&quot;&gt;Canada&amp;#39;s prime minister Justin 
-  Trudeau supports the company&lt;/a&gt;, 
-  while nationalized companies like Hydro Quebec and SAQ have 
-  purchase agreements in place that provide a strong foundation 
-  for Lion&amp;#39;s business&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why Nuclear?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;· &lt;strong&gt;Produce their own batteries:&lt;/strong&gt; on top of already having suppliers for their batteries, Lion is 
-  building a facility to and immunize themselves against potential shortages as they upscale 
-  production, set to be completed in 2022&lt;/p&gt;
+&lt;p&gt;Nuclear reactors generate virtually emissions-free power which means they can form a part of getting to net-zero emissions from electricity generation in the fight to tackle global warming.&lt;/p&gt;
 
-&lt;p&gt;· &lt;strong&gt;V2G technology&lt;/strong&gt; ready for the batteries, and implemented 
-  into their school buses&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I thought nuclear equals bad?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;· Deals with &lt;strong&gt;BMW, ChargePoint, Nuvve, and Romeo Power&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Unless you’ve been living under a rock, being green and sustainable is hot. There are currently no safe or clean ways to generate the amount of sustainable energy that nuclear does. Also, as the world population grows, unless there are giant leaps im technology, the only viable way to create enough power will be through a combination of nuclear, solar, wind and water.&lt;/p&gt;
 
-&lt;p&gt;· &lt;strong&gt;&lt;a href=&quot;https://imgur.com/dFFTczt&quot;&gt;8 NEW vehicles&lt;/a&gt;&lt;/strong&gt; to be produced between 2021-2022 
-  including: Ambulance, bucket truck, Class 5 and Class 7 trucks&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Biden’s administration has a $400 billion dollar sustainable energy proposal and it includes nuclear&lt;/strong&gt; &lt;/p&gt;
 
-&lt;p&gt;· &lt;a href=&quot;https://imgur.com/wFbrle5&quot;&gt;USA expansion&lt;/a&gt; completed by 
-  2022, will give them a &lt;strong&gt;&amp;quot;Made in America&amp;quot;&lt;/strong&gt; image&lt;/p&gt;
+&lt;p&gt;This is rare. What’s even more rare is that he’s one of the only presidents to run on a platform &lt;em&gt;supporting advancement in nuclear energy.&lt;/em&gt; He is serious about it. &lt;/p&gt;
 
-&lt;p&gt;· NKLA &lt;em&gt;obviously&lt;/em&gt; had to &lt;a href=&quot;https://www.cnn.com/2020/12/23/tech/nikola-garbage-truck-%20%0A%20%20canceled/index.html&quot;&gt;scrap their deal on the table with Republic Services&lt;/a&gt; to 
-  provide them with up to &lt;strong&gt;5000 garbage disposal trucks&lt;/strong&gt; just a 
-  few weeks ago. Who could possibly fill the void and has a ZERO EMISSION
-  refuse truck ready for purchase? Lion Electric, that&amp;#39;s 
-  who. &lt;a href=&quot;https://www.youtube.com/watch?v=lAsNQwjXDP4&quot;&gt;See the truck in action here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;That’s right, there’s a reason EVs mooned last year and will continue to do well for the foreseeable future. It’s the same reason there is potential for it to happen to the nuclear industry:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1&gt;&lt;em&gt;How about their financials??&lt;/em&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.tdworld.com/utility-business/article/21151832/president-bidens-vision-for-the-power-sector&quot;&gt;https://www.tdworld.com/utility-business/article/21151832/president-bidens-vision-for-the-power-sector&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1&gt;&lt;a href=&quot;https://imgur.com/uLp1pf3&quot;&gt;Well, here are their financials and revenue projections&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;”But I’m republican. I can’t agree with Sleepy Joe...”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;· Projected revenue of &lt;strong&gt;3.6 billion $&lt;/strong&gt; by 2024&lt;/p&gt;
+&lt;p&gt;You’re in luck! This is something so appealing that everyone and their racist grandma can hold hands and sing Kumbaya on. Bipartisan political handoff shows this is an opportunity area that even politicians can agree to. &lt;/p&gt;
 
-&lt;p&gt;· &lt;strong&gt;Cash flow positive&lt;/strong&gt; in 2023&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.washingtonexaminer.com/policy/energy/trump-boost-to-nuclear-power-to-live-on-in-biden-administration%3f_amp=true&quot;&gt;https://www.washingtonexaminer.com/policy/energy/trump-boost-to-nuclear-power-to-live-on-in-biden-administration%3f_amp=true&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;· &lt;strong&gt;EBITDA positive by end of 2021&lt;/strong&gt;, with EBITDA growth of 
-  approximately 16% YOY afterwards&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Even Nuclear industry folks seem highly positive in their world which has been fear mongered and neglected for decades:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;· Cost reduction of 50% by 2024 &lt;strong&gt;(better profit margins)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;Things we&amp;#39;ve seen out of the Biden campaign and the transition team are very promising for a continuation and even acceleration of programs and policies that will support nuclear energy,&amp;quot; said John Kotek, policy development vice president for the Nuclear Energy Institute&lt;/em&gt;&lt;/p&gt;
 
-&lt;h1&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.eenews.net/stories/1063719675&quot;&gt;https://www.eenews.net/stories/1063719675&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Undervalued EV company tied to Amazon that has product labelled as the &amp;quot;Tesla of school buses&amp;quot;. CEO will appear on Mad Money today most likely, and $NGA will fly past 30$. &lt;/p&gt;
+&lt;p&gt;Make your own decision. Do your own research.
+I know I’ve done mine. I’m long Uranium and Nuclear.&lt;/p&gt;
 
-&lt;h1&gt;&lt;strong&gt;POSITIONS:&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Tickers:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://imgur.com/L4gr51J&quot;&gt;Here.&lt;/a&gt; 700 $NGA shares and 1k warrants, with an extra 500 shares in a separate account. Would not recommend options on this one.&lt;/p&gt;
-&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;$UEC $CCJ $UUUU $URA&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Uranium companies:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.theupa.org&quot;&gt;https://www.theupa.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Z&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[What sector etfs are you bullish on? Thoughts on these types?]]></title><description><![CDATA[Whats your view on these "quasi-passive" indices. I saw earlier today a post
+stating that specialized ETFs typically underperform the market as they were
+typically launched post rallies and publicity events. However, now you can find
+sector specific indices for almost every market, and thus should…]]></description><link>https://reddit.buzzing.cc/reddit/r/investing/comments/kyoizi/what_sector_etfs_are_you_bullish_on_thoughts_on/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/investing/comments/kyoizi/what_sector_etfs_are_you_bullish_on_thoughts_on/</guid><pubDate>Sat, 16 Jan 2021 20:58:03 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Whats your view on these &amp;quot;quasi-passive&amp;quot; indices. I saw earlier today a post stating that specialized ETFs typically underperform the market as they were typically launched post rallies and publicity events. However, now you can find sector specific indices for almost every market, and thus should be able to get in independent of triggering publicity/rally events. Hence, done right i think it can be a great addition to the portfolio &lt;/p&gt;
+
+&lt;p&gt;To add, I hold 4 of these (UK based): (all bought in 2020 and everyone except for espo has since beaten the global index)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cloud Computing (FSKY)&lt;/li&gt;
+&lt;li&gt;Green energy (INRG, top 35 companies)&lt;/li&gt;
+&lt;li&gt;Em eCommerce (emqp) &lt;/li&gt;
+&lt;li&gt;Video gaming (espo)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I see this as a way to get exposure to 4 sectors I am very convinced on over the next 5 years. Whats your view? Is this a good addition to a portfolio consisting of 50% global index and the rest sector and company specific shares?&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Predictions on commercial real estate?]]></title><description><![CDATA[Theres many predictions that companies may shift towards work from home even
+when pandemic ends, and that traditional office jobs may go away. Ive heard two
+arguments:
+
+Having employees work from home lowers operating expense on not having to lease
+out large office buildings.
+
+Also have had it…]]></description><link>https://reddit.buzzing.cc/reddit/r/investing/comments/kyl7kn/predictions_on_commercial_real_estate/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/investing/comments/kyl7kn/predictions_on_commercial_real_estate/</guid><pubDate>Sat, 16 Jan 2021 19:29:44 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Theres many predictions that companies may shift towards work from home even when pandemic ends, and that traditional office jobs may go away. Ive heard two arguments:&lt;/p&gt;
+
+&lt;p&gt;Having employees work from home lowers operating expense on not having to lease out large office buildings.&lt;/p&gt;
+
+&lt;p&gt;Also have had it counter argued that many office managers are old dinosaurs who resist change and will bring people back regardless, or that many people want to get out of the house and wont be pushed to want to work from home.&lt;/p&gt;
+
+&lt;p&gt;Obviously, if people go back to the office, then theres always a market and a real estate fun will be a valuable part of the portfolio. If work from home is the norm that market will not do so hot.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;Whats your prediction? Traditionally ive been told have a little in the portfolio but worried on this one.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[$PLTR - The Big DDD]]></title><description><![CDATA[I don't get what you guys are worried about with PLTR.
+
+Here's my personal DD on PLTR, you're welcome to read and do whatever you want.
+Other helpful info or pointing out mistakes in my DD is very welcome.
+
+Fears preventing you from buying PLTR
+
+ 1. Targeted ads on your phone from Yahoo Finance or…]]></description><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyhz9a/pltr_the_big_ddd/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kyhz9a/pltr_the_big_ddd/</guid><pubDate>Sat, 16 Jan 2021 18:39:37 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I don&amp;#39;t get what you guys are worried about with PLTR.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s my &lt;strong&gt;personal&lt;/strong&gt; DD on PLTR, you&amp;#39;re welcome to read and do whatever you want. Other helpful info or pointing out mistakes in my DD is very welcome.&lt;/p&gt;
+
+&lt;p&gt;Fears preventing you from buying PLTR&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Targeted ads on your phone from Yahoo Finance or Zacks telling you PLTR = BAD!!!1!eleven&lt;/li&gt;
+&lt;li&gt;Shills spamming &amp;quot;pLtR tO tHe MoOn&amp;quot; and :rocket: on PLTR thread comments.&lt;/li&gt;
+&lt;li&gt;Last quarter&amp;#39;s seemingly bad financials/earnings.&lt;/li&gt;
+&lt;li&gt;Financials Moving Forwards&lt;/li&gt;
+&lt;li&gt;Soros who owns 21 million shares &amp;quot;threatening&amp;quot; to sell his shares upon DPO expiry.&lt;/li&gt;
+&lt;li&gt;DPO expiry 3 days after February&amp;#39;s earnings and possible insiders and DPO holders sale and dip.&lt;/li&gt;
+&lt;li&gt;What does PLTR tldr.&lt;/li&gt;
+&lt;li&gt;Other Information&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;#1 Targeted Ads&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ads and articles are both paid for by someone.The fact that in the past 3 weeks i&amp;#39;ve been getting multiple multiple targeted ads on my phone related to PLTR since i love PLTR so much.&lt;/p&gt;
+
+&lt;p&gt;Ads are telling me that PLTR is bad, doesn&amp;#39;t provide a dividend, they&amp;#39;re telling me PLTR&amp;#39;s fair price is 20 instead of 25 based on some financial model and have gone as far as to provide a list of alternative stocks to buy.&lt;/p&gt;
+
+&lt;p&gt;To me, this all screams: &lt;strong&gt;SCARE TACTICS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Additionally, the last few weeks of ups and downs in PLTR&amp;#39;s stock price is another indication of the attempts to short the stock to sh!t and drive investors out. (For what reason? I don&amp;#39;t know.)&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;#2 Shilling PLTR&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I myself love to shill PLTR to people whenever i can. I do this because i legitimately think this company will do great. I work as a product manager in a software development house and understand what PLTR does. PLTR is not cryptic.Regardless, i think when people shill PLTR to you, they are right to do so as you&amp;#39;re probably missing out on a great opportunity to make money in the long run. If you&amp;#39;re looking for big gains short term, maybe try something else.&lt;/p&gt;
+
+&lt;p&gt;Shillery is OK, but at least give the facts.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;#3 Last Quarter&amp;#39;s Bad Financials&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;d done your DD not by searching reddit posts but by checking PLTR&amp;#39;s actual quarterly report, you&amp;#39;d know that PLTR&amp;#39;s &amp;quot;bad&amp;quot; last financial quarter/earnings were due to the costs of listing themselves on the &lt;em&gt;New York Stock Exchange&lt;/em&gt;.~855million were spent on listing and stock related compensations and this is the big reason.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Direct quote by PLTR here:&lt;/strong&gt; &lt;a href=&quot;https://investors.palantir.com/news-details/2020/Palantir-Reports-Revenue-Growth-of-52-in-the-Third-Quarter-Raises-Full-Year-2020-Guidance/default.aspx&quot;&gt;https://investors.palantir.com/news-details/2020/Palantir-Reports-Revenue-Growth-of-52-in-the-Third-Quarter-Raises-Full-Year-2020-Guidance/default.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We incurred a loss from operations of $847.8 million, which includes $847.0 million in stock-based compensation following our recent direct listing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I would like to remind everyone that this is a &lt;strong&gt;1 TIME THING.&lt;/strong&gt; Put simply, this means that PLTR won&amp;#39;t have as excessive losses next quarter as they did this last quarter.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Additionally&lt;/em&gt;, let me go into further detail on this and not just leave it to that.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;PLTR&amp;#39;s quarterly operating expenses for the past 3 quarters were at around ~260 million.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;PLTR&amp;#39;s operating expenses this quarter were ~987 million.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ADDITIONALLY...&lt;/p&gt;
+
+&lt;p&gt;PLTR also had a higher R&amp;amp;D cost this quarter that just passed. Normally they&amp;#39;d pay 80 million on R&amp;amp;D, but somehow ended up paying ~300 million this quarter. No one knows why, but this is another thing that influenced PLTR&amp;#39;s earnings.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://investors.palantir.com/news-details/2020/Palantir-Reports-Revenue-Growth-of-52-in-the-Third-Quarter-Raises-Full-Year-2020-Guidance/default.aspx&quot;&gt;https://investors.palantir.com/news-details/2020/Palantir-Reports-Revenue-Growth-of-52-in-the-Third-Quarter-Raises-Full-Year-2020-Guidance/default.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;On September 30, 2020, in connection with the Direct Listing, we incurred $769.5 million and $8.4 million of stock-based compensation using the accelerated attribution method related to the satisfaction of the performance-based vesting condition for RSUs and growth units, respectively, that had satisfied the service-based vesting condition as of such date.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;#4 PLTR financials moving forwards&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;PLTR is deep in bed with the government and the Biden regime although may look like it would be against using PLTR is in fact secretly very pro-surveillance e.g pro Palantir.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s some of the known organizations in the US Govt that use PLTR:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;CDC&lt;/li&gt;
+&lt;li&gt;Office of the Secretary&lt;/li&gt;
+&lt;li&gt;Food and Drug Administration&lt;/li&gt;
+&lt;li&gt;Immigration and Customs Enforcements / ICE&lt;/li&gt;
+&lt;li&gt;Internal Revenue Service / IRS&lt;/li&gt;
+&lt;li&gt;National Institute on Drug Abuse&lt;/li&gt;
+&lt;li&gt;DOD/ARMY - ACC Aberdeen Proving Ground&lt;/li&gt;
+&lt;li&gt;Coast Guard / DHS&lt;/li&gt;
+&lt;li&gt;DOD/NAVY - Naval Information Warfare Systems Command&lt;/li&gt;
+&lt;li&gt;US Attorney&amp;#39;s Offices / DOJ&lt;/li&gt;
+&lt;li&gt;US Special Operations Command / SPEC OPS&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Boys. The big institutional people know these things. You just found this out. See how deep PLTR is already in bed with the Government?????? Palantir IS the next Raytheon/Lockheed of DATA aggregation and visualization.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;UPCOMING EARNINGS&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve done some quick maths and it looks like PLTR is more likely to be in positive earnings this quarter and with a 0.02 cent EPS target, we can easily assume that they&amp;#39;ll destroy this with maybe 0.04 or 0.08 EPS. In the worst case scenario, PLTR&amp;#39;s EPS this quarter could be somewhere around MINUS -0.05 ish due to interview costs and ad/campaigning costs that were not there before the company was listed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;WHAT CAN DESTROY PALANTIR&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, there&amp;#39;s big possible downsides and Palantir can fail IF contracts that expire are not renewed. That&amp;#39;s biggest REAL reason for Palantir&amp;#39;s balance sheet getting screwed.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve seen a disturbing pattern with PLTR&amp;#39;s financials and that&amp;#39;s that every year, it&amp;#39;s R&amp;amp;D cost is rising by between 150 and 350 million dollars. This is quite a bit of negative revenue and if new contracts are not constantly coming in, PLTR&amp;#39;s balance can start going into the negative.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;WHAT WILL NOT DESTROY PALANTIR&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Some people may have concerns over the new left leaning government dumping PLTR. An article was posted that is behind a paywall EVERYWHERE that goes something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.thedailybeast.com/cdc-officials-urge-biden-team-to-dump-palantirs-covid-tracker&quot;&gt;https://www.thedailybeast.com/cdc-officials-urge-biden-team-to-dump-palantirs-covid-tracker&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my opinion, i believe this is inconsequential and that a few people crying to daddy Biden to kill a multimillion contract with PLTR is a stretch. Also we know the current new Biden team has his hands full and will have them full for at least the next 1 year with what&amp;#39;s going on.&lt;/p&gt;
+
+&lt;p&gt;There is no time to deal with a few crybabies and even if he did deal with it and did decide to kill the PLTR Tiberius Covid tracker contract with the CDC which he WONT, these things take months and years to deal with, and by then the contract/s will have already brought PLTR tons of money and revenue in.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;HOW MUCH DOES KARP AND HIS GOONS GET PAID&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Short answer is... A LOT. The amounts below are PER YEAR. That&amp;#39;s a lot of money in the hole and contributes to annoying amount to why PLTR is always just at the edge of just barely being profitable.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/ba58nqcurob61.png?width=2615&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=55d45833faad4d60ea8dc142a9601c44b4cc7395&quot;&gt;https://preview.redd.it/ba58nqcurob61.png?width=2615&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=55d45833faad4d60ea8dc142a9601c44b4cc7395&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Palantir&amp;#39;s prospectus 311 page document&amp;#39;s 130 last pages are almost all exclusively talking about extremely complicated options trading schemes that are made by Cohen and others to make sure they can squeeze out a LOT of money out of PLTR.&lt;/p&gt;
+
+&lt;p&gt;Mithril Investments has existed from before and is not a new company. Owned by Thiel/Cohen/Karp as a way to launder and exchange options for more options and more money for all 3 of them. Also Shyam Sankar to me feels corrupt which scares me a bit, he&amp;#39;s had some very shady dealings and has brought his wife in PLTR that gets paid 200k per year.&lt;/p&gt;
+
+&lt;p&gt;Prospectus Document: &lt;a href=&quot;https://www.sec.gov/Archives/edgar/data/1321655/000119312520230013/d904406ds1.htm&quot;&gt;https://www.sec.gov/Archives/edgar/data/1321655/000119312520230013/d904406ds1.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I suggest you skim through it, it contains EVERYTHING about Palantir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Palantir is going to need to have to be getting AT LEAST 500 million in NEW contracts per year to REMAIN BARELY profitable. It&amp;#39;s doable in my opinion, but just barely and it&amp;#39;s why they made the company public to try and get more people&amp;#39;s attention and increase the inflow of contracts.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;#5 Soros and his 21 million shares&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;First of all, i think we can all agree that Soros can suck it.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;ve read a few articles here and there, you&amp;#39;ll know that Soros owns/owned 1% of Class A PLTR shares. No one knows whether he&amp;#39;s sold them yet or if he&amp;#39;s an DPO holder who&amp;#39;ll sell 3 days after February&amp;#39;s earnings.&lt;/p&gt;
+
+&lt;p&gt;Whether he sells them or buys more will be mostly inconsequential in my opinion. We see dips and pumps every day. He legally cannot sell his shares all at once, he&amp;#39;ll have to sell certain amounts daily and over time. This will create annoying sideways motion as shares exchange hands and consolidation starts for 2-3 weeks until his and insider shares exchange hands.&lt;/p&gt;
+
+&lt;p&gt;Nothing special to see here, move along just a little draw down resulting in some consolidation.&lt;/p&gt;
+
+&lt;p&gt;PLTR is exposed to OIL more than anything, so fluctuations in the general market and general market crashes affect PLTR much less than other stocks. Also PLTR does not track ANY benchmarks. NONE.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;#6 DPO expiry 3 days after earnings in February&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To my limited knowledge, this is how BIG plays who are holding DPO shares usually work:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If a stock has performed well up to earnings and investors are more than happy with the returns, they&amp;#39;re more likely to not sell their stock or just sell less than they normally would.&lt;/li&gt;
+&lt;li&gt;If a stock hasn&amp;#39;t performed as well as investors thought, these investors are more likely to sell stock or reduce their positions more than normal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There&amp;#39;s a total of 1.16Billion Class A PLTR shares currently (Give or take don&amp;#39;t flog me). We are currently trading with ~250 million shares while the rest are locked away in the DPO.&lt;/p&gt;
+
+&lt;p&gt;When those shares are &amp;quot;unlocked&amp;quot; in February, the price of the stock won&amp;#39;t be diluted. These shares already exist and are accounted for. They are simply locked. Also when they are unlocked, the share price won&amp;#39;t simply multiply because all shares are now tradeable.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;According to &lt;a href=&quot;https://www.sec.gov/Archives/edgar/data/1321655/000119312520257973/d89036dex991.htm&quot;&gt;Palantir’s after-hours filing with the SEC this afternoon&lt;/a&gt;, the company has 1.16 billion Class A shares, 484 million Class B shares and 1 million Class F shares on its cap table outstanding today, or a total of roughly 1.64 billion. Only Class A shares will trade, and Class B and F shares are convertible to Class A shares on a one-to-one basis. On a fully diluted basis, which Palantir says represents 2.2 billion shares total according to its most recent S-1 filing, the company is valued at $16 billion. The difference between those two aggregate numbers comes from outstanding stock performance grants, warrants and other financial instruments.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What &lt;strong&gt;WILL&lt;/strong&gt; affect stock price:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Employees exercising their non class A options into Class A shares. This IS dilution.&lt;/li&gt;
+&lt;li&gt;The bigwigs e.g Alex Karp, Peter Thiel and a few other bigshots exercising their options and then selling them for a profit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;To note, regular employees will barely affect the price of the stock with their miniscule share holdings. Alex Karp, Peter Thiel and a handful of other high ranked executives in PLTR are the ones that will create a tiny but manageable ripple in the stock price.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What &lt;strong&gt;COULD&lt;/strong&gt; affect the stock price a lot:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Massive sell off by the big institutional holders.&lt;/li&gt;
+&lt;li&gt;Not shorters. (Citron and Citi can suck it, we&amp;#39;re in control here)&lt;/li&gt;
+&lt;li&gt;People with weak spaghetti wet paper hands.&lt;/li&gt;
+&lt;li&gt;Everyone fomoing the same weeklies e.g like when everyone bought Jan 15 calls on everything.&lt;/li&gt;
+&lt;li&gt;Big but silent scare campaign (that&amp;#39;s already going on) to scare off normies like us.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;#7 What does PLTR do, tldr.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine Facebook&amp;#39;s database of everything about everyone &amp;amp; Youtube&amp;#39;s Database of everything &amp;amp; Geolocation data in a database made by the US Army for known terrorist cells.&lt;/p&gt;
+
+&lt;p&gt;Palantir allows you to select and match varied data TYPES from several different database, combine it in any way you want and visualize it so that it&amp;#39;s human readable by even the dumbest person in the room so that even they can see patterns and come to conclusion on a subject matter.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s kind of like filling an excel sheet with data and then visualizing it with a bar chart, except the date you filled the sheet with can be anything and not just numbers or dates or countries and you can make various combinations using all the different rows of data to maybe come up with a pattern to something like how to best distribute the Covid vaccines in the counties in a very specific state in the US.&lt;/p&gt;
+
+&lt;p&gt;Literally what you see in SciFi movies where people combine random data by smashing keys on a keyboard and somehow find the murderer, the location of a terrorist or the percentage that someone will commit a murder in the future based on a lot of random data about that person or the area, country, family, history... anything.&lt;/p&gt;
+
+&lt;p&gt;While this all might sound super cool and amazing, it is. Maybe in 10 years time there will be a few more companies doing this, but for now, it&amp;#39;s only Palantir, Circles, Alteryx and a few other private entities that do this type of thing. Many of them work with governments and are hush hush due to the kinds of things they use this type of software for (terrorist cells, warzones, etc) and the public backlash this could cause.&lt;/p&gt;
+
+&lt;p&gt;tldr: Glorified data aggregator and visualization platform/software with different access levels for different people.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PLTR is superbly positioned to offer their software to SLOW and Boomer like organizations like Governments.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Governments are stupid and don&amp;#39;t have neither the time, nor technical knowledge to develop this software themselves for internal use. This is what PLTR capitalizes on and why Governments use them so much.&lt;/p&gt;
+
+&lt;p&gt;Governments could have spent the a fraction of the money they spend on PLTR contracts to make the software themselves but only for their own internal systems and use, but they can&amp;#39;t and if they tried, they&amp;#39;d fail because technocracy in governments is not a thing. By the time they&amp;#39;d even complete a project like this, it&amp;#39;d likely be out of spec, unusable and would require further development and money and we know how slow and bad governments are at doing even the basics. Again PLTR wins because of this.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PLTR is likely NOT&lt;/strong&gt; to be adopted by giants like Google or FB or other modern tech organizations of any size because they are not stupid. They have their own purpose built internal systems that they use to do everything related to data aggregation and visualization because they have the technical knowledge and resources. Buying PLTR for their use is a joke.&lt;/p&gt;
+
+&lt;p&gt;PLTR capitalizes on being general a general purpose tool and is set up manually by an engineer over the course of 4-10 days for each customer. The engineer customizes and configures the system for each company&amp;#39;s custom use since the software allows you to do so. Regular aggregation and visualization software CAN do the same, but typically lacks data input types and features that PLTR has because PLTR has cultivated a special set of features over many years that were suggested by their existing clientele in battlefields and other places.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;#8 Other Information&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;*Big known PLTR Holders*\&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/a404oalxrob61.png?width=1631&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=8c2dbcfac5a7ca207127771ec4e3133f8d943359&quot;&gt;https://preview.redd.it/a404oalxrob61.png?width=1631&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=8c2dbcfac5a7ca207127771ec4e3133f8d943359&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;*PLTR&amp;#39;s Price List (2019)*\&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.esi.mil/Download.aspx?id=7186&quot;&gt;https://www.esi.mil/Download.aspx?id=7186&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;*Personal TA and Crayon Mania*\&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.tradingview.com/chart/PLTR/nrjqL4dw-PLTR-Risky-April-100-200-possibility/&quot;&gt;https://www.tradingview.com/chart/PLTR/nrjqL4dw-PLTR-Risky-April-100-200-possibility/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.tradingview.com/chart/PLTR/5YcdCye0-PLTR-Schizzo-Technical-Analysis/&quot;&gt;https://www.tradingview.com/chart/PLTR/5YcdCye0-PLTR-Schizzo-Technical-Analysis/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.tradingview.com/chart/PLTR/CkCTvtqM-PLTR-PLTR-train-leaving-the-station-get-ready/&quot;&gt;https://www.tradingview.com/chart/PLTR/CkCTvtqM-PLTR-PLTR-train-leaving-the-station-get-ready/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;*PLTR stock pumping events*\&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;7&amp;#39;th Jan - Interview&lt;/li&gt;
+&lt;li&gt;26&amp;#39;th Jan - Demonstration&lt;/li&gt;
+&lt;li&gt;11&amp;#39;th Feb - Earnings&lt;/li&gt;
+&lt;li&gt;~15&amp;#39;th Feb - DPO expiration - Havoc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;*Similar Companies*\&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PLTR - Palantir - Stock Price ~$25 - Market Cap 48bln&lt;/li&gt;
+&lt;li&gt;AYX - Alteryx - Stock Price ~$125 - Market Cap 8bln&lt;/li&gt;
+&lt;li&gt;Semantic Research - Private&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;*Known Contract Info*\&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;240 million Palantir Air Force contract expiring soon in 3 months. If it&amp;#39;s re-signed, it&amp;#39;ll be a big catalyst for a PLTR pump. If not, it&amp;#39;ll be a sad dump day.&lt;/li&gt;
+&lt;li&gt;Mithril, investment/financial company owned by Karp and Thiel buys a 3.15million share stake in Palantir. Somehow this makes them major stakeholders.&lt;/li&gt;
+&lt;li&gt;Sompo holdings has 5% of all PLTR shares.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;*Past and new US KNOWN gov contracts. Source&lt;/strong&gt;* &lt;a href=&quot;https://govtribe.com/&quot;&gt;&lt;strong&gt;&lt;em&gt;govtribe.com&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;\&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/kbim7afrrob61.png?width=1392&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=9abc99d9995c4972919e275f407e1bba6382dfdd&quot;&gt;https://preview.redd.it/kbim7afrrob61.png?width=1392&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=9abc99d9995c4972919e275f407e1bba6382dfdd&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;*Quotes from Won and LOST contracts from Federal Agencies*\&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;p&gt;National Institute on Drug Abuse (NIH) - &lt;strong&gt;WON&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The National Institutes of Health (NIH) intends to award a contract without providing for full and open competition to Palantir Technologies, Inc., 100 Hamilton Ave., Suite 300, Palo Alto, CA 94301.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Veteran Health Association - &lt;strong&gt;WON&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The pandemic-related data management and operational decision-support requirements have led the program office to determine that the Palantir data management and analytics platform is the only viable solution that would maintain the current operational capability, without a degradation in VHA COVID-19 decision-support.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;AFLCMC Wright Patterson AFB (DOD - USAF - AFMC - AFLCMC) - &lt;strong&gt;LOST&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Subject Matter Experts (SMEs) held meetings in January/February 2020 timeframe with potential vendors to determine their capabilities and their abilities to meet this mission requirement. They met with Palantir, Recorded Future, Altyrex, In-Q-tel and Semantic AI. From the information they gathered in those meetings it was determined that Semantic AI would be the only company that could fully meet the requirements of this effort without further delaying the project and incurring additional costs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;h1&gt;&lt;/h1&gt;
+
+&lt;h1&gt;&lt;/h1&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;Now friends, here&amp;#39;s my position on PLTR. I&amp;#39;ll be holding onto it for the next year. If it&amp;#39;s not at least 300% by then, i&amp;#39;m selling it and moving on to the next stock. App i&amp;#39;m using is Revolut.&lt;/p&gt;
+
+&lt;p&gt;Also yes, i&amp;#39;m ALL-IN only on Palantir because i know my money will multiply itself in the short term. I&amp;#39;m not holding this till 2025 as others are supposedly doing. I&amp;#39;m selling in 2022 with 300% or more profit. PLTR is severely undervalued, underpriced because it&amp;#39;s a DPO. Give it till EOY and we&amp;#39;re going to be rich. If it was an IPO it&amp;#39;d be trading at 180+ already imho.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve spent the last month and a half holding PLTR. I&amp;#39;ve gone full schizzo mode when it comes to PLTR. I lose sleep daily and i love it. I hadn&amp;#39;t slept for 37 hours a few days ago because i spent so much time researching PLTR and scraping the internet for all possible information.&lt;/p&gt;
+
+&lt;p&gt;I come from an IT/Development background, so i understand what PLTR does completely.&lt;/p&gt;
+
+&lt;p&gt;My PT&amp;#39;s for PLTR are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;48-89 by March or April.&lt;/li&gt;
+&lt;li&gt;75 - 125 by EOY.&lt;/li&gt;
+&lt;li&gt;200+ 2022 IF they solve their income and constantly increasing R&amp;amp;D cost issues.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/4t0k1ujprob61.png?width=407&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=0b3a16265edafa290432e6b79f9009e3df99f495&quot;&gt;https://preview.redd.it/4t0k1ujprob61.png?width=407&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=0b3a16265edafa290432e6b79f9009e3df99f495&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Remember this guy? RIP 🌈🐻]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kykugo/remember_this_guy_rip/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kykugo/remember_this_guy_rip/</guid><pubDate>Sat, 16 Jan 2021 18:39:37 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Everyone’s a genius in a bull market: The Dunning-Kruger Effect.]]></title><description><![CDATA[The Dunning-Kruger Effect is a cognitive bias in which people with a low ability
+of a given task are prone to overestimate their ability at that task. We are
+incapable of objective evaluation of our own competency levels. I'm writing
+about it as I've come to realise I suffer from it.
+
+Dunning and…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kykerk/everyones_a_genius_in_a_bull_market_the/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kykerk/everyones_a_genius_in_a_bull_market_the/</guid><pubDate>Sat, 16 Jan 2021 17:30:18 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;The Dunning-Kruger Effect is a cognitive bias in which people with a low ability of a given task are prone to overestimate their ability at that task. We are incapable of objective evaluation of our own competency levels. I&amp;#39;m writing about it as I&amp;#39;ve come to realise I suffer from it.&lt;/p&gt;
+
+&lt;p&gt;Dunning and Kruger&amp;#39;s main finding from their 1999 study “Unskilled and Unaware of it” was that the worst performers consistently overestimate their ability relative to others.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve outlined two examples of this bias in action and how you can avoid some of these pitfalls:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Investing&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As the age old saying goes, &amp;quot;Everyone is a genius in a bull market.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;When your portfolio is growing and the markets are ripping as they have in 2020, many fall victim to the Dunning-Kruger Effect. We tend to wrongly attribute this performance to our ability as talented investors.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Politics&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;An obvious example people have been using recently is Donald Trump, whose confidence never wavers, despite his weak interest and understanding of policy matters.&lt;/p&gt;
+
+&lt;p&gt;The first rule of the Dunning-Kruger club is you don&amp;#39;t know you&amp;#39;re a member of the Dunning-Kruger club. But we&amp;#39;re all human, and it&amp;#39;s important to recognise that we are all prone to this cognitive bias.&lt;/p&gt;
+
+&lt;p&gt;Here are a few strategies to avoid it:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Identify your circle of competence&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The circle of competence is a sacred place. It&amp;#39;s a set of topics or areas that align with a person&amp;#39;s expertise. Be ruthless in identifying and protecting the boundaries, and it&amp;#39;s usually smaller than you think.&lt;/p&gt;
+
+&lt;p&gt;As Charlie Munger said, &amp;quot;It is remarkable how much long-term advantage people like us have gotten by trying to be consistently not stupid, instead of being very intelligent.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Know your competencies, focus on them. Know your incompetencies, avoid or outsource them.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Be a first principles thinker&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A first principle is a foundational assumption or proposition - it is foundational in that it cannot be deduced from other assumptions. In chemistry, it&amp;#39;s like an element. It cannot be broken down further.&lt;/p&gt;
+
+&lt;p&gt;Ground yourself in foundational truths and build up from there. Challenge your reasoning, and most importantly, always ask why.&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;It isn&amp;#39;t what you don&amp;#39;t know that gets you in trouble. It&amp;#39;s what you know for sure that just isn&amp;#39;t so.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Link to original: &lt;a href=&quot;https://mrsk.substack.com/p/everyone-is-a-genius-in-a-bull-market&quot;&gt;https://mrsk.substack.com/p/everyone-is-a-genius-in-a-bull-market&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Computer System Engineering]]></title><link>https://reddit.buzzing.cc/hn/25800858</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25800858</guid><pubDate>Sat, 16 Jan 2021 17:30:12 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[How to join a team and learn a codebase (2020)]]></title><link>https://reddit.buzzing.cc/hn/25789336</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25789336</guid><pubDate>Sat, 16 Jan 2021 17:30:12 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Kurt James Wolf, employee with title Director at Gamestop sold shares for a total value of $17,188,200.00 on 1/13/2021, the largest insider trading event in Gamestop's history since 2013...at an average share price of $21.22, completely missing yesterday's big green dildo]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kybl3r/kurt_james_wolf_employee_with_title_director_at/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kybl3r/kurt_james_wolf_employee_with_title_director_at/</guid><pubDate>Sat, 16 Jan 2021 16:09:30 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Time to stack up some $PLUG]]></title><description><![CDATA[With 4th pedestal customer announcement coming likely before Plug's business
+conference on 26.1, this thing is headed for further growth to $80-$100 range.
+
+JP got us a nice dip few days ago with $60 price target, however this was
+analyzed according to management's previous revenue guidance for…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/kyhy8c/time_to_stack_up_some_plug/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/kyhy8c/time_to_stack_up_some_plug/</guid><pubDate>Sat, 16 Jan 2021 16:09:30 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;With 4th pedestal customer announcement coming likely before Plug&amp;#39;s business conference on 26.1, this thing is headed for further growth to $80-$100 range.&lt;/p&gt;
+
+&lt;p&gt;JP got us a nice dip few days ago with $60 price target, however this was analyzed according to management&amp;#39;s previous revenue guidance for 2024, a number that&amp;#39;s likely to be increased significantly at the abovementioned conference.&lt;/p&gt;
+
+&lt;p&gt;Anyone who&amp;#39;s followed the company also knows that  we&amp;#39;ll soon get a contract with a large technology company, for their data centers&amp;#39; back up power solutions. You can google around which technology companies have recently tested hydrogen for back up power... &lt;/p&gt;
+
+&lt;p&gt;Honestly the future is very exciting for this company and I&amp;#39;m happy Plug finally gets the recognition it deserves. The barriers of entry for this industry are very high so it seems inevitable Plug will be one of the biggest players around in a massive market.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Google Safe Browsing can kill a startup]]></title><link>https://reddit.buzzing.cc/hn/25802366</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25802366</guid><pubDate>Sat, 16 Jan 2021 16:09:26 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[GME - Revenge of the Shorts]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/ky6u4h/gme_revenge_of_the_shorts/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/ky6u4h/gme_revenge_of_the_shorts/</guid><pubDate>Sat, 16 Jan 2021 15:28:40 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Running a fake power plant on the internet for a month]]></title><link>https://reddit.buzzing.cc/hn/25801426</link><guid isPermaLink="false">https://reddit.buzzing.cc/hn/25801426</guid><pubDate>Sat, 16 Jan 2021 15:28:36 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Philosophy Friday: Fighting FOMO]]></title><description><![CDATA[tl;dr takeaways:
+
+"Whether or not an investment is a "good investment" or a "bad investment" has
+nothing at all to do with whether or not you end up turning a profit."
+
+"Spend some time this long weekend consciously and deliberately assigning a date
+and a dollar value to your investment goals. Write…]]></description><link>https://reddit.buzzing.cc/reddit/r/stocks/comments/ky5ufc/philosophy_friday_fighting_fomo/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/stocks/comments/ky5ufc/philosophy_friday_fighting_fomo/</guid><pubDate>Sat, 16 Jan 2021 14:12:11 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;tl;dr takeaways:  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;quot;Whether or not an investment is a &amp;quot;good investment&amp;quot; or a &amp;quot;bad investment&amp;quot; has nothing at all to do with whether or not you end up turning a profit.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;&lt;em&gt;Spend some time this long weekend consciously and deliberately assigning a date and a dollar value to your investment goals. Write it down.&lt;/em&gt;&amp;quot;  &lt;/p&gt;
+
+&lt;p&gt;---------------------------------------------------------------------------------------------&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Within an hour after selling Bio Nano for a handsome profit this morning at $7.75/share ($0.72 CB), it spiked to $8.75 and threatened to break $9. I missed out on nearly $1,400 by selling 98 minutes too soon. &lt;/li&gt;
+&lt;li&gt;MSFT, which has reliably doubled every two years since Lincoln was in office, picked the exact time I bought it last year to finally break that pattern and start trading sideways for six months. &lt;/li&gt;
+&lt;li&gt;A friend IRL told me in Nov 2019 that he was YOLO&amp;#39;ing into NIO with $35K, at less than $2/share, but I didn&amp;#39;t get in until $21, after he had already cashed out and written a check to buy his new, giant house. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We all have similar stories, and as long as we invest, we&amp;#39;ll keep piling them up. My secret to not having any FOMO or regrets is a concept that&amp;#39;s important enough, I think it&amp;#39;s fair to call it the investing secret of life:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Whether or not an investment is a &amp;quot;good investment&amp;quot; or a &amp;quot;bad investment&amp;quot; has nothing at all to do with whether or not you end up turning a profit.&lt;/em&gt; &amp;lt;-- Re-read that sentence.&lt;/p&gt;
+
+&lt;p&gt;A good investment is one that helps your personal portfolio align with your personal financial goals, risk tolerance, and investment time line. (This includes another key lesson - when setting goals, &amp;quot;make money&amp;quot; is not a valid goal, because it&amp;#39;s not specific, measurable, or attached to a timeframe.) If an investment is truly good and it properly fits your strategy, you&amp;#39;ll never have to sweat over whether or not it&amp;#39;s time to sell GME, and the bad week ICLN* and AMD just had wouldn&amp;#39;t stress you out. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Spend some time this long weekend consciously and deliberately assigning a date and a dollar value to your investment goals. Write it down.&lt;/em&gt; What kind of strategy will it take to get there? What kind of risk will it involve? If the worst feasible and realistic outcome happens, where will that leave you? With markets closed, look at your portfolio. How much do you know about the companies you hold? Are you being honest with yourself about the risk level you&amp;#39;ve taken on and what you&amp;#39;re comfortable with? &lt;/p&gt;
+
+&lt;p&gt;I hope everyone bought some dips today. I feel a rebound coming on next week. Happy Friday and Green Numbers to everyone! &lt;/p&gt;
+
+&lt;p&gt;* Yes, this is politely directed at a number of you&lt;/p&gt;
+
+&lt;p&gt;** If news breaks that substantially and materially alters the outlook for a holding (glares motherfuckerly at BABA), then the risk equation has changed and you&amp;#39;ll have to start making difficult re-assessments about how much risk you now know to be involved and adjust accordingly.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[They’re really mad at us boys. We cost them almost $1b in a day. Now is the time, dig in and fucking hold. Ill see you on the moon🚀🚀🚀🚀]]></title><link>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kybzw6/theyre_really_mad_at_us_boys_we_cost_them_almost/</link><guid isPermaLink="false">https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/kybzw6/theyre_really_mad_at_us_boys_we_cost_them_almost/</guid><pubDate>Sat, 16 Jan 2021 14:12:11 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[$1 invested in Bitcoin in July 2010 is worth $800,000 today.]]></title><link>https://reddit.buzzing.cc/tweet/1348071853617782784</link><guid isPermaLink="false">https://reddit.buzzing.cc/tweet/1348071853617782784</guid><pubDate>Sat, 16 Jan 2021 13:22:22 GMT</pubDate><content:encoded>$1 invested in Bitcoin in July 2010 is worth $800,000 today.</content:encoded></item></channel></rss>
