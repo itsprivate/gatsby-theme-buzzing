@@ -26,10 +26,12 @@ if (isDev) {
         "data/youtube-top/**",
         "data/ph-top/**",
         "data/reddit-stocks/**",
+        "data/tweet-stocks/**",
         "data/reddit-changemyview/**",
+        "data/reddit-crypto/**",
         "data/tweet-crypto/**",
-        "data/hn-top-issues/**",
         "data/stocks-issues/**",
+        "data/hn-top-issues/**",
       ],
     },
   })
