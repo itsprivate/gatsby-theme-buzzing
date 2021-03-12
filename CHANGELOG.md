@@ -1,3 +1,10 @@
+# [0.28.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.27.4...v0.28.0) (2021-03-12)
+
+
+### Features
+
+* add maker ([0bc7bc4](https://github.com/itsprivate/gatsby-theme-buzzing/commit/0bc7bc46e391c448b658bdaa9b84fb96a9ec01e3))
+
 ## [0.27.4](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.27.3...v0.27.4) (2021-03-03)
 
 ## [0.27.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.27.2...v0.27.3) (2021-01-17)
