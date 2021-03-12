@@ -28,6 +28,7 @@ if (isDev) {
         "data/reddit-stocks/**",
         "data/tweet-stocks/**",
         "data/reddit-changemyview/**",
+        "data/redirect-news/**",
         "data/reddit-crypto/**",
         "data/tweet-crypto/**",
         "data/stocks-issues/**",
