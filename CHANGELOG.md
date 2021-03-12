@@ -1,3 +1,10 @@
+## [0.29.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.29.0...v0.29.1) (2021-03-12)
+
+
+### Bug Fixes
+
+* stick ([7983a7f](https://github.com/itsprivate/gatsby-theme-buzzing/commit/7983a7f435bef7af747a7d86baf38f3db89d874a))
+
 # [0.29.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.28.2...v0.29.0) (2021-03-12)
 
 
