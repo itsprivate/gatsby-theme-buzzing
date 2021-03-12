@@ -1,3 +1,10 @@
+# [0.29.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.28.2...v0.29.0) (2021-03-12)
+
+
+### Features
+
+* publish ([a801508](https://github.com/itsprivate/gatsby-theme-buzzing/commit/a8015087dc42c108556ce26966c53b70e2b9793c))
+
 ## [0.28.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.28.1...v0.28.2) (2021-03-12)
 
 ## [0.28.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.28.0...v0.28.1) (2021-03-12)
