@@ -15,7 +15,7 @@ const Aside = ({ data, pageContext }) => {
   } = data
   const { social } = siteMetadata
   return (
-    <Styled.div data-test="aside" as="aside" sx={{ height: `full` }}>
+    <Styled.div data-test="aside" as="aside">
       <Styled.div>
         <Bio basePath={basePath}></Bio>
         <Subscription pageContext={pageContext}></Subscription>
