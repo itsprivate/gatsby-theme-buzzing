@@ -1,3 +1,10 @@
+# [0.30.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.29.1...v0.30.0) (2021-03-19)
+
+
+### Features
+
+* add ad ([30b4600](https://github.com/itsprivate/gatsby-theme-buzzing/commit/30b4600fc7fa1ac3a7c2f05d58ae88746caa6fab))
+
 ## [0.29.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.29.0...v0.29.1) (2021-03-12)
 
 
