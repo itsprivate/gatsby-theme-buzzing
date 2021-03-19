@@ -6,7 +6,7 @@ import Tags from "gatsby-theme-timeline/src/components/tags"
 import Links from "gatsby-theme-timeline/src/components/links"
 import Subscription from "../../components/subscription"
 import Maker from "../../components/maker"
-
+import Ad from "../../components/ad"
 const Aside = ({ data, pageContext }) => {
   const { basePath } = pageContext
   const {
@@ -22,6 +22,7 @@ const Aside = ({ data, pageContext }) => {
         <Tags basePath={basePath} group={group}></Tags>
         <Links siteMetadata={siteMetadata} links={social}></Links>
         <Maker pageContext={pageContext}></Maker>
+        <Ad></Ad>
       </Styled.div>
     </Styled.div>
   )

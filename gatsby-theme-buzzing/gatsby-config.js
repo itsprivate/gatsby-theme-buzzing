@@ -207,6 +207,12 @@ module.exports = themeOptions => {
         sitemapSize: 5000,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-5211209136530011`,
+      },
+    },
   ])
   return {
     plugins,
