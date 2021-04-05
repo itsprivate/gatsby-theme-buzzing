@@ -163,6 +163,7 @@ export const query = graphql`
             ... on RedirectJson {
               localize {
                 title
+                description
                 locale
               }
             }

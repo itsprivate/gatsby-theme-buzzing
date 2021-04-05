@@ -12,7 +12,12 @@ export default function ({ item, pageContext: { locale } }) {
       sx={{ color: `text` }}
       href={finalUrl}
     >
-      <Styled.h3 sx={{ fontWeight: `normal`, fontSize: `1.15rem` }}>
+      <Styled.h3
+        sx={{
+          fontWeight: item.excerpt ? "medium" : `normal`,
+          fontSize: item.excerpt ? 2 : `1.15rem`,
+        }}
+      >
         {getTitle(item, locale)}
       </Styled.h3>
     </LinkUI>
