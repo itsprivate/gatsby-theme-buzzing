@@ -87,3 +87,15 @@ jobs:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/dep
           event-type: new_version_with_buzzing_theme
+      - name: Repository Dispatch10
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/dev
+          event-type: new_version_with_buzzing_theme
+      - name: Repository Dispatch11
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/quora
+          event-type: new_version_with_buzzing_theme
