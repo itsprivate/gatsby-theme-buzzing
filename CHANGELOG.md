@@ -1,3 +1,10 @@
+# [0.32.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.31.0...v0.32.0) (2021-04-06)
+
+
+### Features
+
+* add japanese ([d252afa](https://github.com/itsprivate/gatsby-theme-buzzing/commit/d252afad4bda66e9f6b46ca99acc70877ed2587d))
+
 # [0.31.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.30.0...v0.31.0) (2021-04-05)
 
 
