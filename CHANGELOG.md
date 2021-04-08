@@ -1,3 +1,10 @@
+## [0.32.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.32.0...v0.32.1) (2021-04-08)
+
+
+### Bug Fixes
+
+* detail title for tweet and ph ([7e9b0e1](https://github.com/itsprivate/gatsby-theme-buzzing/commit/7e9b0e1e0d6cea65e093e1e50f7a64e5be6762e4))
+
 # [0.32.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v0.31.0...v0.32.0) (2021-04-06)
 
 
