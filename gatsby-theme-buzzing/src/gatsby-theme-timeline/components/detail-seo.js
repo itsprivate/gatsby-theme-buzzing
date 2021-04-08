@@ -1,8 +1,13 @@
 import React from "react"
 import SEO from "gatsby-theme-timeline/src/components/seo"
 import { t } from "../../util"
-
+import {
+  TWEET_TYPE_NAME,
+  REDDIT_TYPE_NAME,
+  PH_TYPE_NAME,
+} from "gatsby-theme-timeline/src/constans"
 export default ({ item, location, pageContext: { locale } }) => {
+  const provider = item.provider
   let description = item.excerpt
   let title = item.title
 
@@ -10,16 +15,17 @@ export default ({ item, location, pageContext: { locale } }) => {
   if (item.parent && item.parent.localize) {
     localize = item.parent.localize
   }
-
-  if (item.__typename === "PhPost") {
-    title = `${title} - ${t("tagline", localize, item.tagline, locale)}`
-  } else if (item.__typename === "TweetPost") {
+  if (provider === PH_TYPE_NAME) {
+    const titleArr = title.split(" - ")
+    const pureTitle = titleArr[0]
+    title = `${pureTitle} - ${t("tagline", localize, item.tagline, locale)}`
+  } else if (provider === TWEET_TYPE_NAME) {
     title = t("full_text", localize, title, locale)
   } else {
     title = t("title", localize, title, locale)
   }
 
-  if (item.__typename === "RedditPost") {
+  if (provider === REDDIT_TYPE_NAME) {
     description = t(
       "the_new_excerpt",
       localize,
