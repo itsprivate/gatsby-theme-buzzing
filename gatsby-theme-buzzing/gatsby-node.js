@@ -33,6 +33,9 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type SiteSiteMetadataLocalize {
       author: String
+      keywords: [String]
+      social: SiteSiteMetadataLocalizeSocial
+      menuLinks: [SiteSiteMetadataLocalizeMenuLinks]
     }
   `)
 }

@@ -9,7 +9,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "start:prod": "LOCAL=false yarn start",
-    "build:dev": "LOCAL=true gatsby build"
+    "build:dev": "LOCAL=true gatsby build",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@theowenyoung/gatsby-source-git": "^2.1.2",
