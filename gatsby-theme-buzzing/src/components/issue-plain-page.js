@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import ItemBox from "./issue-plain-item"
-import { jsx, Styled, Link as LinkUI } from "theme-ui"
+import { jsx, Themed, Link as LinkUI } from "theme-ui"
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import i18next from "i18next"
 import SEO from "gatsby-theme-timeline/src/components/seo"
@@ -47,9 +47,9 @@ const Items = ({ data, pageContext }) => {
       itemType="https://schema.org/ItemList"
     >
       <SEO title={seoTitle} description={seoDescription} />
-      <Styled.h1 sx={{ mb: 3, fontSize: 4 }} itemProp="name">
+      <Themed.h1 sx={{ mb: 3, fontSize: 4 }} itemProp="name">
         {pageTitle}
-      </Styled.h1>
+      </Themed.h1>
       <address sx={{ pb: 4 }}>
         <LinkUI href={siteMetadata.siteUrl} rel="author">
           {siteMetadata.author}

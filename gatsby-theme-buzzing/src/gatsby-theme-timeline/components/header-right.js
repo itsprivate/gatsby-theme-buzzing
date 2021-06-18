@@ -2,7 +2,7 @@
 import { jsx, Flex, Select } from "theme-ui"
 import { useLocalization } from "gatsby-theme-i18n"
 import { withPrefix, navigate } from "gatsby"
-import { join } from "path"
+import { join } from "path-browserify"
 const HeaderRight = props => {
   const { pageContext } = props
   const { locale: currentLocale, config, defaultLang } = useLocalization()

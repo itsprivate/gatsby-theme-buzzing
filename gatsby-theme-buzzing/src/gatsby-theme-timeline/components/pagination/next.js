@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { withPrefix } from "gatsby"
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import { Link as LinkUI } from "theme-ui"
-import { join as urlJoin } from "path"
+import { join as urlJoin } from "path-browserify"
 import { Trans } from "react-i18next"
 
 export default function NextPageLink({ prefix, pageContext }, props) {

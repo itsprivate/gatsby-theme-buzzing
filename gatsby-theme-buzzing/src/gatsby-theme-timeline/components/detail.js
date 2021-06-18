@@ -19,7 +19,7 @@ import PHDetail from "gatsby-theme-timeline/src/components/ph/detail"
 import RedirectDetail from "gatsby-theme-timeline/src/components/redirect/detail"
 import YoutubeDetail from "gatsby-theme-timeline/src/components/youtube/detail"
 import InstagramDetail from "gatsby-theme-timeline/src/components/instagram/detail"
-import { Styled, jsx } from "theme-ui"
+import { Themed, jsx } from "theme-ui"
 import { getTitle } from "../../util"
 
 const Detail = props => {
@@ -56,9 +56,9 @@ const Wrapper = props => {
   } = props
   return (
     <div>
-      <Styled.blockquote sx={{ fontSize: 2 }}>
+      <Themed.blockquote sx={{ fontSize: 2 }}>
         {getTitle(item, locale)}
-      </Styled.blockquote>
+      </Themed.blockquote>
       <Detail {...props}></Detail>
     </div>
   )

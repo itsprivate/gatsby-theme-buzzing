@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { Link as LinkUI, jsx, Styled } from "theme-ui"
+import { Link as LinkUI, jsx, Themed } from "theme-ui"
 import { withPrefix } from "gatsby"
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import { Trans } from "react-i18next"
-import path from "path"
+import path from "path-browserify"
 const ItemsTitle = props => {
   const pageContext = props.pageContext
   const { pageType, tag, basePath, currentPage, date } = pageContext
@@ -11,7 +11,7 @@ const ItemsTitle = props => {
   const page = currentPage
   if (pageType === `tag`) {
     return (
-      <Styled.h4
+      <Themed.h4
         data-test="list-title"
         sx={{ fontWeight: `normal`, mb: `1.5rem` }}
       >
@@ -28,7 +28,7 @@ const ItemsTitle = props => {
             <Trans page={currentPage}>page {{ page }}</Trans>
           </span>
         )}
-      </Styled.h4>
+      </Themed.h4>
     )
   } else {
     let itemsTitle = "Latest"
@@ -40,7 +40,7 @@ const ItemsTitle = props => {
 
     const issueNumber = page
     return (
-      <Styled.h4
+      <Themed.h4
         data-test="list-title"
         sx={{ fontWeight: `normal`, mb: `1.5rem` }}
       >
@@ -66,7 +66,7 @@ const ItemsTitle = props => {
         {pageType === "issue" ? (
           <span sx={{ color: `textMuted` }}>{` · ${date}`}</span>
         ) : null}
-      </Styled.h4>
+      </Themed.h4>
     )
   }
 }

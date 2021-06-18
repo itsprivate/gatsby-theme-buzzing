@@ -4,7 +4,7 @@ import { withPrefix } from "gatsby"
 import { Trans } from "react-i18next"
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import { Link as LinkUI } from "theme-ui"
-import { join as urlJoin } from "path"
+import { join as urlJoin } from "path-browserify"
 
 export default function PreviousPageLink({ prefix, pageContext }, props) {
   const { originalPath, currentPage, pageType } = pageContext

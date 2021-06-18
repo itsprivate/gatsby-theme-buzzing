@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { jsx, Styled } from "theme-ui"
+import { jsx, Themed } from "theme-ui"
 import Bio from "gatsby-theme-timeline/src/components/bio"
 import Tags from "gatsby-theme-timeline/src/components/tags"
 import Links from "gatsby-theme-timeline/src/components/links"
@@ -15,16 +15,24 @@ const Aside = ({ data, pageContext }) => {
   } = data
   const { social } = siteMetadata
   return (
-    <Styled.div data-test="aside" as="aside">
-      <Styled.div>
+    <Themed.div data-test="aside" as="aside">
+      <Themed.div
+        sx={{
+          top: 4,
+          position: `sticky`,
+          overflowY: `auto`,
+          height: `calc(100vh - 32px)`,
+          overscrollBehavior: `contain`,
+        }}
+      >
         <Bio basePath={basePath}></Bio>
         <Subscription pageContext={pageContext}></Subscription>
         <Tags basePath={basePath} group={group}></Tags>
         <Links siteMetadata={siteMetadata} links={social}></Links>
         <Maker pageContext={pageContext}></Maker>
         <Ad></Ad>
-      </Styled.div>
-    </Styled.div>
+      </Themed.div>
+    </Themed.div>
   )
 }
 export default Aside

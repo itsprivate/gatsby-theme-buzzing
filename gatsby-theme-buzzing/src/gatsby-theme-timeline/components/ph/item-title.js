@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Link as LinkUI, jsx, Styled } from "theme-ui"
+import { Link as LinkUI, jsx, Themed } from "theme-ui"
 import { getTitle } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
@@ -11,9 +11,9 @@ export default function ({ item, pageContext: { locale } }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Styled.h3 sx={{ fontWeight: `normal` }}>
+      <Themed.h3 sx={{ fontWeight: `normal` }}>
         {getTitle(item, locale)}
-      </Styled.h3>
+      </Themed.h3>
     </LinkUI>
   )
 }

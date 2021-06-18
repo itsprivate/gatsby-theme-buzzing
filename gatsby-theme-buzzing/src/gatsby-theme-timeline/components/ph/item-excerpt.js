@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Styled, jsx } from "theme-ui"
+import { Themed, jsx } from "theme-ui"
 import { t } from "../../../util"
 
 export default function ({ item, pageContext: { locale } }) {
@@ -14,11 +14,11 @@ export default function ({ item, pageContext: { locale } }) {
   const finalExcerpt = t("description", localize, excerpt, locale)
 
   return (
-    <Styled.p
+    <Themed.p
       data-test="item-excerpt"
       sx={{ whiteSpace: `pre-line`, color: `textMuted` }}
     >
       {finalExcerpt}
-    </Styled.p>
+    </Themed.p>
   )
 }

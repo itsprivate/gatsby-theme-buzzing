@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Link as LinkUI, jsx, Styled } from "theme-ui"
+import { Link as LinkUI, jsx, Themed } from "theme-ui"
 import { t } from "../../../util"
 
 function getDomain(url) {
@@ -22,7 +22,7 @@ export default function ({ item, pageContext: { locale } }) {
 
   return (
     <LinkUI data-test="item-title" sx={{ color: `text` }} href={finalUrl}>
-      <Styled.h3 sx={{ fontWeight: `normal`, fontSize: `1.15rem` }}>
+      <Themed.h3 sx={{ fontWeight: `normal`, fontSize: `1.15rem` }}>
         {finalTitle}
         {` `}
         {finalUrl && (
@@ -30,7 +30,7 @@ export default function ({ item, pageContext: { locale } }) {
             ({getDomain(finalUrl)})
           </span>
         )}
-      </Styled.h3>
+      </Themed.h3>
     </LinkUI>
   )
 }

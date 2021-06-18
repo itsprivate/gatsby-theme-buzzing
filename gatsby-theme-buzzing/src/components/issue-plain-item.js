@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled, Link } from "theme-ui"
+import { jsx, Themed, Link } from "theme-ui"
 import ProcessString from "./process-string"
 import { getTitle, getExcerpt } from "../util"
 import Video from "gatsby-theme-timeline/src/components/item-video"
@@ -33,24 +33,24 @@ const ItemBox = props => {
       itemType="https://schema.org/Article https://schema.org/itemListElement"
       sx={{ m: 0, listStyle: "none" }}
     >
-      <Styled.h4>
+      <Themed.h4>
         <Link itemProp="name" href={finalUrl} sx={{ color: "text" }}>
           {index + 1}. {provider === "Twitter" ? null : getTitle(item, locale)}
         </Link>
-      </Styled.h4>
+      </Themed.h4>
 
       {imageRemote && !item.video && (
-        <Styled.img
+        <Themed.img
           sx={{ maxHeight: "512px", display: "block" }}
           src={imageRemote}
           alt="item hero"
           itemProp="image"
-        ></Styled.img>
+        ></Themed.img>
       )}
       <Video item={item}></Video>
-      <Styled.blockquote data-test="item-header" sx={{ color: "#718096" }}>
+      <Themed.blockquote data-test="item-header" sx={{ color: "#718096" }}>
         {finalExcerpt && (
-          <Styled.p
+          <Themed.p
             itemProp="description"
             sx={{
               color: "textMuted",
@@ -58,9 +58,9 @@ const ItemBox = props => {
             }}
           >
             {ProcessString(provider, finalExcerpt)}
-          </Styled.p>
+          </Themed.p>
         )}
-        <Styled.p data-test="source">
+        <Themed.p data-test="source">
           Posted by{" "}
           <Link href={finalAuthorUrl} itemProp="author">
             {finalAuthor}
@@ -75,14 +75,14 @@ const ItemBox = props => {
               {`/r/${channel}`}
             </Link>
           )}
-        </Styled.p>
-      </Styled.blockquote>
-      <Styled.hr
+        </Themed.p>
+      </Themed.blockquote>
+      <Themed.hr
         sx={{
           mt: "48px",
           mb: "48px",
         }}
-      ></Styled.hr>
+      ></Themed.hr>
     </li>
   )
 }

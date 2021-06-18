@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Styled, jsx } from "theme-ui"
+import { Themed, jsx } from "theme-ui"
 import ItemBox from "./issue-item-box"
 
 const Items = props => {
@@ -21,7 +21,7 @@ const Items = props => {
         const issueItems = itemsByYears[year]
         return (
           <div sx={{ pb: 3 }} key={year}>
-            <Styled.h4>{year}</Styled.h4>
+            <Themed.h4>{year}</Themed.h4>
             {issueItems.map((item, issueIndex) => {
               return (
                 <ItemBox
