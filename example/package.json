@@ -12,7 +12,7 @@
     "build:dev": "LOCAL=true gatsby build"
   },
   "dependencies": {
-    "@theowenyoung/gatsby-source-git": "^1.1.2",
+    "@theowenyoung/gatsby-source-git": "^2.1.2",
     "gatsby": "^3.0.0",
     "gatsby-plugin-google-gtag": "^3.7.1",
     "gatsby-plugin-manifest": "^3.7.1",
