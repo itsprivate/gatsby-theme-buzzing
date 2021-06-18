@@ -17,7 +17,7 @@
     "example"
   ],
   "dependencies": {
-    "gatsby-theme-timeline": "^1.0.3",
+    "gatsby-theme-timeline": "^1.0.4",
     "release-it": "^14.2.2"
   },
   "devDependencies": {

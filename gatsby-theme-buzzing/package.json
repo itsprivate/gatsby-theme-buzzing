@@ -31,7 +31,7 @@
     "gatsby-plugin-robots-txt": "^1.6.2",
     "gatsby-plugin-sitemap": "^4.3.1",
     "gatsby-theme-i18n-react-i18next": "^1.0.4",
-    "gatsby-theme-timeline": "^1.0.2",
+    "gatsby-theme-timeline": "^1.0.4",
     "gatsby-transformer-json": "^3.7.1",
     "react-adsense": "^0.1.0",
     "theme-ui": "^0.7.0"
