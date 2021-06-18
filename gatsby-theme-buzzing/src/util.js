@@ -17,7 +17,7 @@ export function localizedPath(defaultLang, locale, path) {
   }
 
   const [, base] = path.split(`/`)
-
+  //
   // If for whatever reason we receive an already localized path
   // (e.g. if the path was made with location.pathname)
   // just return it as-is.
