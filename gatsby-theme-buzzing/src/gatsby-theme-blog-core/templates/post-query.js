@@ -8,7 +8,6 @@ export const query = graphql`
     $id: String!
     $previousId: String
     $nextId: String
-    $maxWidth: Int
   ) {
     site {
       siteMetadata {
@@ -57,19 +56,13 @@ export const query = graphql`
       datetime: date(formatString: "YYYY-MM-DD HH:mm")
       image {
         childImageSharp {
-          fluid(maxWidth: $maxWidth) {
-            ...GatsbyImageSharpFluid
-            src
-          }
+          gatsbyImageData
         }
       }
       imageAlt
       socialImage {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-            src
-          }
+          gatsbyImageData
         }
       }
       ... on SocialMediaPost {
@@ -93,9 +86,7 @@ export const query = graphql`
         authorUrl
         authorImage {
           childImageSharp {
-            fixed(width: 48, height: 48) {
-              ...GatsbyImageSharpFixed
-            }
+            gatsbyImageData(width: 48, height: 48, layout: FIXED)
           }
         }
         authorSlug
@@ -114,18 +105,13 @@ export const query = graphql`
           imageRemote
           image {
             childImageSharp {
-              fluid(maxWidth: $maxWidth) {
-                ...GatsbyImageSharpFluid
-                src
-              }
+              gatsbyImageData
             }
           }
           imageAlt
           authorImage {
             childImageSharp {
-              fixed(width: 24, height: 24) {
-                ...GatsbyImageSharpFixed
-              }
+              gatsbyImageData(width: 24, height: 24, layout: FIXED)
             }
           }
           video {

@@ -11,12 +11,15 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import urlJoin from "url-join"
+import { getSrc } from "gatsby-plugin-image"
+
 import { t } from "../../util"
 function SEO({
   description,
   lang,
   meta,
   title,
+  authorImage,
   imageSource,
   imageAlt,
   location,
@@ -47,16 +50,12 @@ function SEO({
           absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 630, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData
           }
         }
         avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
           childImageSharp {
-            fixed(width: 48, height: 48) {
-              ...GatsbyImageSharpFixed
-            }
+            gatsbyImageData(width: 48, height: 48, layout: FIXED)
           }
         }
       }
@@ -86,7 +85,7 @@ function SEO({
     site.siteMetadata.keywords,
     locale
   )
-  const avatarImage = avatar.childImageSharp.fixed.src
+  const avatarImage = authorImage || (avatar && getSrc(avatar))
   const getImagePath = imageURI => {
     if (
       !imageURI.match(
@@ -99,9 +98,8 @@ function SEO({
   }
   const image = imageSource
     ? getImagePath(imageSource)
-    : getImagePath(
-        defaultImage ? defaultImage?.childImageSharp?.fluid.src : null
-      )
+    : getImagePath(defaultImage ? getSrc(defaultImage) : null)
+
   const imageAltText = imageAlt || metaDescription
   const siteTitle = t(
     "title",
