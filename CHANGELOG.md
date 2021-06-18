@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.0.0...v1.1.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* gatsby 3.0 changes ([998dffa](https://github.com/itsprivate/gatsby-theme-buzzing/commit/998dffa6b02ed88d5caa824075dd8bbf191f6b3f))
+
 # [1.1.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.0.0...v1.1.0) (2021-06-18)
 
 ## [1.0.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.0.0...v1.0.1) (2021-06-18)
