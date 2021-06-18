@@ -204,7 +204,7 @@ module.exports = themeOptions => {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        sitemapSize: 5000,
+        entryLimit: 10000,
       },
     },
     {
