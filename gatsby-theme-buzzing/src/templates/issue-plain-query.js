@@ -77,6 +77,7 @@ export const query = graphql`
           }
         }
         imageAlt
+        __typename
         ... on SocialMediaPost {
           provider
           thirdPartyId
