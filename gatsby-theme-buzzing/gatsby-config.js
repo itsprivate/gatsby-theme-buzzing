@@ -201,13 +201,20 @@ module.exports = themeOptions => {
       },
     },
     "gatsby-plugin-robots-txt",
-    // {
-    //   resolve: `gatsby-plugin-sitemap`,
-    //   options: {
-    //     entryLimit: 10000,
-    //     excludes: ["/redirect/"],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        excludes: ["redirect"],
+        filterPages: (page, excludedRoute) => {
+          const pathArr = page.path.split("/")
+          if (pathArr[1] === excludedRoute || pathArr[2] === excludedRoute) {
+            return true
+          } else {
+            return false
+          }
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {

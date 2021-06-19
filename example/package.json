@@ -10,7 +10,8 @@
     "build": "gatsby build",
     "start:prod": "LOCAL=false yarn start",
     "build:dev": "LOCAL=true gatsby build",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "@theowenyoung/gatsby-source-git": "^2.1.2",
