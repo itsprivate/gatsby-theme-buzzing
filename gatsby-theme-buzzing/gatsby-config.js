@@ -13,7 +13,7 @@ module.exports = themeOptions => {
 
   plugins = plugins.concat([
     {
-      resolve: `gatsby-transformer-json`,
+      resolve: `@theowenyoung/gatsby-transformer-json`,
       options: {
         typeName: ({ node }) => {
           const rootDirectoryName = node.relativeDirectory.split(`/`)[1]
@@ -201,12 +201,13 @@ module.exports = themeOptions => {
       },
     },
     "gatsby-plugin-robots-txt",
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        entryLimit: 10000,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-sitemap`,
+    //   options: {
+    //     entryLimit: 10000,
+    //     excludes: ["/redirect/"],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
