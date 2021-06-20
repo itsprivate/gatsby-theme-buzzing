@@ -10,8 +10,8 @@ module.exports = themeOptions => {
     shouldTransformJson: false,
     shouldTransformImage: false,
     postsFilter: {
-      id: {
-        glob: "!*Post-1",
+      date: {
+        gt: "2000-12-25T10:54:58.000Z",
       },
     },
     ...themeOptions,
