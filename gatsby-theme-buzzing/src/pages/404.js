@@ -1,9 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-import SEO from "gatsby-theme-timeline/src/components/seo"
 const NotFoundPage = () => (
   <>
-    <SEO title="404: Not found" />
     <div
       style={{
         width: `100vw`,

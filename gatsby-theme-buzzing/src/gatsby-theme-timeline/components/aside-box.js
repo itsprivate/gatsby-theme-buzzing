@@ -8,9 +8,8 @@ import Subscription from "../../components/subscription"
 import Maker from "../../components/maker"
 import Ad from "../../components/ad"
 const Aside = ({ data, pageContext }) => {
-  const { basePath } = pageContext
+  const { basePath, siteMetadata } = pageContext
   const {
-    site: { siteMetadata },
     tagsGroup: { group },
   } = data
   const { social } = siteMetadata
@@ -26,7 +25,7 @@ const Aside = ({ data, pageContext }) => {
           px: 4,
         }}
       >
-        <Bio basePath={basePath}></Bio>
+        <Bio siteMetadata={siteMetadata} basePath={basePath}></Bio>
         <Subscription pageContext={pageContext}></Subscription>
         <Tags basePath={basePath} group={group}></Tags>
         <Links siteMetadata={siteMetadata} links={social}></Links>

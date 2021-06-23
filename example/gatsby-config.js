@@ -21,13 +21,13 @@ if (isDev) {
       // Only import the docs folder from a codebase.
       patterns: [
         "data/*-placeholder/1.json",
-        // "data/reddit-top/**",
+        "data/reddit-top/**",
         // "data/hn-top/**",
         // "data/youtube-top/**",
         // "data/ph-top/**",
         // "data/reddit-stocks/**",
         // "data/tweet-stocks/**",
-        "data/reddit-books/**",
+        // "data/reddit-books/**",
         // "data/redirect-newstop/**",
         // "data/redirect-devtop/**",
         // "data/reddit-crypto/**",
@@ -51,10 +51,12 @@ if (isDev) {
         // "data/reddit-top/**",
         // "data/hn-top/**",
         // "data/youtube-top/**",
-        "data/ph-top/**",
+        // "data/ph-top/**",
         // "data/reddit-stocks/**",
-        "data/tweet-stocks/**",
-        // "data/reddit-changemyview/**",
+        // "data/reddit-books/**",
+
+        // "data/tweet-stocks/**",
+        "data/reddit-changemyview/**",
         // "data/reddit-crypto/**",
         // "data/tweet-crypto/**",
         // "data/stocks-issues/**",
@@ -86,9 +88,7 @@ plugins = plugins.concat([
       redditTypeName: ["RedditJson"],
       issueTypeName: ["HnTopIssuesJson"],
       localesPath: localesPath,
-      disqus: {
-        shortname: "reddit-top",
-      },
+      siteMetadata,
     },
   },
   {

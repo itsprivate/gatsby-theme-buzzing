@@ -4,7 +4,7 @@
   "scripts": {
     "develop": "npm -w example run develop",
     "start": "npm -w example run start",
-    "start:prod": "LOCAL=false run start",
+    "start:prod": "LOCAL=false npm -w example run start",
     "build": "npm -w example run build",
     "build:dev": "LOCAL=true npm -w example run build",
     "clean": "npm -w example run clean",

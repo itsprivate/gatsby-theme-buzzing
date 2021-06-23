@@ -7,11 +7,9 @@ import AsideBox from "gatsby-theme-timeline/src/components/aside-box"
 import ItemsSEO from "gatsby-theme-timeline/src/components/items-seo"
 import IssueItems from "./issue-items"
 const Items = ({ location, data, pageContext }) => {
-  const { basePath, pageType } = pageContext
+  const { basePath, pageType, siteMetadata } = pageContext
   const items = data.allIssue.nodes
-  const {
-    site: { siteMetadata },
-  } = data
+
   const { title, menuLinks } = siteMetadata
   return (
     <Layout

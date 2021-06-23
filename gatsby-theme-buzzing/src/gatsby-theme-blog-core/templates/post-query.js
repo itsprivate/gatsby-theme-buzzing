@@ -9,41 +9,6 @@ export const query = graphql`
     $previousId: String
     $nextId: String
   ) {
-    site {
-      siteMetadata {
-        title
-        description
-        social {
-          name
-          url
-          external
-          prefetch
-        }
-        menuLinks {
-          name
-          url
-          external
-          prefetch
-        }
-        localize {
-          title
-          description
-          locale
-          social {
-            name
-            url
-            external
-            prefetch
-          }
-          menuLinks {
-            name
-            url
-            external
-            prefetch
-          }
-        }
-      }
-    }
     blogPost(id: { eq: $id }) {
       id
       excerpt

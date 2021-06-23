@@ -59,6 +59,7 @@ export default ({ pageContext, siteMetadata, image }) => {
       title={title}
       description={seoDescription}
       imageSource={pageType === `home` ? null : image}
+      siteMetadata={siteMetadata}
     />
   )
 }

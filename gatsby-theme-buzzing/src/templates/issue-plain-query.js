@@ -10,43 +10,6 @@ export const query = graphql`
     $filter: BlogPostFilterInput
     $tagsFilter: BlogPostFilterInput
   ) {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-        siteUrl
-        social {
-          name
-          url
-          external
-          prefetch
-        }
-        menuLinks {
-          name
-          url
-          external
-          prefetch
-        }
-        localize {
-          locale
-          title
-          description
-          social {
-            name
-            url
-            external
-            prefetch
-          }
-          menuLinks {
-            name
-            url
-            external
-            prefetch
-          }
-        }
-      }
-    }
     tagsGroup: allBlogPost(
       sort: { fields: [date, slug], order: DESC }
       filter: $tagsFilter

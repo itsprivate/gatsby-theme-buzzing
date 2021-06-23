@@ -6,7 +6,7 @@ import {
   REDDIT_TYPE_NAME,
   PH_TYPE_NAME,
 } from "gatsby-theme-timeline/src/constans"
-export default ({ item, location, pageContext: { locale } }) => {
+export default ({ item, location, pageContext: { locale, siteMetadata } }) => {
   const provider = item.provider
   let description = item.excerpt
   let title = item.title
@@ -49,6 +49,7 @@ export default ({ item, location, pageContext: { locale } }) => {
         pageType="detail"
         item={item}
         location={location}
+        siteMetadata={siteMetadata}
       />
     </div>
   )

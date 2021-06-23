@@ -110,12 +110,14 @@ exports.onCreateNode = async ({ node, actions, getNode }, themeOptions) => {
     })
   }
 }
-exports.createPages = async ({ graphql, actions, reporter }) => {
+exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   const { createPage } = actions
   const basePath = "/"
   const imageMaxWidth = 1024
   const imageMaxHeight = 512
   const postsPerPage = 1
+  const { siteMetadata } = withDefaults(themeOptions)
+
   // get posts
   const ItemsTemplate = require.resolve(
     `gatsby-theme-timeline/src/templates/posts-query`
@@ -185,6 +187,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         currentPage: issueNumber,
         maxWidth: imageMaxWidth,
         maxHeight: imageMaxHeight,
+        siteMetadata,
       },
     }
     createPage(pageInfo)
@@ -201,6 +204,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     context: {
       basePath,
       pageType: "issues",
+      siteMetadata,
     },
   }
   createPage(issuePageInfo)

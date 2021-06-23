@@ -25,67 +25,27 @@ function SEO({
   location,
   pageType,
   item,
+  siteMetadata,
 }) {
-  const { site, avatar, defaultImage } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            siteUrl
-            keywords
-            telegram
-            localize {
-              locale
-              title
-              description
-              author
-              keywords
-            }
-          }
-        }
-        defaultImage: file(
-          absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }
-        ) {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
-        avatar: file(absolutePath: { regex: "/avatar.(jpeg|jpg|gif|png)/" }) {
-          childImageSharp {
-            gatsbyImageData(width: 48, height: 48, layout: FIXED)
-          }
-        }
-      }
-    `
-  )
-
   const { locale } = useLocalization()
   const siteDescription = t(
     "description",
-    site.siteMetadata.localize,
-    site.siteMetadata.description,
+    siteMetadata.localize,
+    siteMetadata.description,
     locale
   )
   const metaDescription = description || siteDescription
-  const telegram = site.siteMetadata.telegram
+  const telegram = siteMetadata.telegram
 
-  const author = t(
-    "author",
-    site.siteMetadata.localize,
-    site.siteMetadata.author,
-    locale
-  )
-  const siteUrl = site.siteMetadata.siteUrl
+  const author = t("author", siteMetadata.localize, siteMetadata.author, locale)
+  const siteUrl = siteMetadata.siteUrl
   const keywords = t(
     "keywords",
-    site.siteMetadata.localize,
-    site.siteMetadata.keywords,
+    siteMetadata.localize,
+    siteMetadata.keywords,
     locale
   )
-  const avatarImage = authorImage || (avatar && getSrc(avatar))
+  const avatarImage = authorImage || siteMetadata.iconUrl
   const getImagePath = imageURI => {
     if (
       !imageURI.match(
@@ -98,13 +58,13 @@ function SEO({
   }
   const image = imageSource
     ? getImagePath(imageSource)
-    : getImagePath(defaultImage ? getSrc(defaultImage) : null)
+    : siteMetadata.defaultSocialImageUrl
 
   const imageAltText = imageAlt || metaDescription
   const siteTitle = t(
     "title",
-    site.siteMetadata.localize,
-    site.siteMetadata.title,
+    siteMetadata.localize,
+    siteMetadata.title,
     locale
   )
   const pageTitle = `${title} - ${siteTitle}`
@@ -115,7 +75,7 @@ function SEO({
 
   const logoJSONLD = {
     "@type": `ImageObject`,
-    url: getImagePath(avatarImage),
+    url: avatarImage ? getImagePath(avatarImage) : null,
     "@id": urlJoin(siteUrl, withPrefix(`#logo`)),
     caption: `${siteTitle} Logo`,
   }

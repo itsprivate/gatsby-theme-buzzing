@@ -7,11 +7,15 @@ import SEO from "gatsby-theme-timeline/src/components/seo"
 import ItemsFooter from "gatsby-theme-timeline/src/components/items-footer"
 
 const Items = ({ data, pageContext }) => {
-  const { basePath, currentPage: issueNumber, date, dateISO } = pageContext
-  const items = data.allBlogPost.nodes
   const {
-    site: { siteMetadata },
-  } = data
+    basePath,
+    currentPage: issueNumber,
+    date,
+    dateISO,
+    siteMetadata,
+  } = pageContext
+  const items = data.allBlogPost.nodes
+
   const siteTitle = siteMetadata.title
   const pageTitle =
     siteMetadata.title +
@@ -46,7 +50,11 @@ const Items = ({ data, pageContext }) => {
       itemScope
       itemType="https://schema.org/ItemList"
     >
-      <SEO title={seoTitle} description={seoDescription} />
+      <SEO
+        title={seoTitle}
+        description={seoDescription}
+        siteMetadata={siteMetadata}
+      />
       <Themed.h1 sx={{ mb: 3, fontSize: 4 }} itemProp="name">
         {pageTitle}
       </Themed.h1>
