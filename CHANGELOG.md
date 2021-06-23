@@ -1,3 +1,20 @@
+# [1.1.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.0.0...v1.1.0) (2021-06-23)
+
+
+### Bug Fixes
+
+* detail pages ([d65394f](https://github.com/itsprivate/gatsby-theme-buzzing/commit/d65394fa2543525cd619faee3583ebe24ba479f5))
+* gatsby 3.0 changes ([998dffa](https://github.com/itsprivate/gatsby-theme-buzzing/commit/998dffa6b02ed88d5caa824075dd8bbf191f6b3f))
+* rss ([c55305a](https://github.com/itsprivate/gatsby-theme-buzzing/commit/c55305a181ccc45cbc1fd3430e4bfd94af3b335f))
+* sitempa ([887095e](https://github.com/itsprivate/gatsby-theme-buzzing/commit/887095e7c0f8d46227856f2238504410fe7efa31))
+
+
+### Features
+
+* add sitemap ([b5db23b](https://github.com/itsprivate/gatsby-theme-buzzing/commit/b5db23b05453701a729bf0cae3cf560d25cc8cd4))
+* archive ([676beb9](https://github.com/itsprivate/gatsby-theme-buzzing/commit/676beb916d544f88149410d7d74491628b72675c))
+* better for building ([e47866b](https://github.com/itsprivate/gatsby-theme-buzzing/commit/e47866bbab4923acf58e3a4015ac1822d951c6f4))
+
 ## [1.3.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.0.0...v1.3.1) (2021-06-22)
 
 
