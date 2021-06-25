@@ -7,6 +7,8 @@
     "start:prod": "LOCAL=false npm -w example run start",
     "build": "npm -w example run build",
     "build:dev": "LOCAL=true npm -w example run build",
+    "archive:dev": "npm -w example run archive:dev",
+    "archive": "npm -w example run archive",
     "clean": "npm -w example run clean",
     "serve": "npm -w example run serve",
     "release": "release-it"

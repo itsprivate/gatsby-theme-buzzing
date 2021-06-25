@@ -1,5 +1,5 @@
 const { urlResolve, createContentDigest } = require(`gatsby-core-utils`)
-const { ISSUE_TYPE_NAME } = require("./utils/constans")
+const { ISSUE_TYPE_NAME, ARCHIVE_TYPE_NAME } = require("./utils/constans")
 const withDefaults = require("./utils/default-options")
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
@@ -17,6 +17,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date! @dateformat
       issueNumber: Int!
       draft: Boolean!
+      items: [IssueItem!]
+    }
+    type ${ISSUE_TYPE_NAME} implements Node @dontInfer {
+      id: ID!
+      slug: String!
+      date: Date! @dateformat
       items: [IssueItem!]
     }
     type SiteSiteMetadataLocalizeMenuLinks {
@@ -116,20 +122,23 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   const imageMaxWidth = 1024
   const imageMaxHeight = 512
   const postsPerPage = 1
-  const { siteMetadata } = withDefaults(themeOptions)
+  const { siteMetadata, shouldArchive, postsFilter } =
+    withDefaults(themeOptions)
 
   // get posts
   const ItemsTemplate = require.resolve(
     `gatsby-theme-timeline/src/templates/posts-query`
   )
   const IssuesTemplate = require.resolve(`./src/templates/issues-query`)
+  const archivesTemplate = require.resolve(`./src/templates/archives-query`)
+
   const IssuePlainTemplate = require.resolve(
     `./src/templates/issue-plain-query`
   )
 
   const issuesResult = await graphql(
     `
-      {
+      query ItemsBuzzingQuery($filter: BlogPostFilterInput) {
         allIssue(
           filter: { draft: { eq: false } }
           sort: { fields: [date], order: DESC }
@@ -144,17 +153,40 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
             }
           }
         }
+        archiveGroup: allBlogPost(
+          sort: { fields: [date, title], order: DESC }
+          filter: $filter
+        ) {
+          nodes {
+            ... on MdxBlogPost {
+              fields {
+                yearMonth
+                year
+                month
+              }
+            }
+            ... on SocialMediaPost {
+              fields {
+                yearMonth
+                year
+                month
+              }
+            }
+            slug
+          }
+        }
       }
     `,
     {
-      filter: {},
+      filter: postsFilter,
     }
   )
 
   if (issuesResult.errors) {
     reporter.panic(issuesResult.errors)
   }
-  const { allIssue } = issuesResult.data
+  const { allIssue, archiveGroup } = issuesResult.data
+
   const issues = allIssue.nodes
   for (let i = 0; i < issues.length; i++) {
     const issue = issues[i]
@@ -208,4 +240,81 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
     },
   }
   createPage(issuePageInfo)
+
+  // create arechive page
+  if (shouldArchive) {
+    // create archive
+
+    const grouped = archiveGroup.nodes.reduce(
+      (r, v, i, a, k = v.fields.yearMonth) => (
+        (r[k] || (r[k] = [])).push(v), r
+      ),
+      {}
+    )
+
+    const groups = []
+    const archiveItems = []
+    let groupKeys = Object.keys(grouped)
+
+    const sortGroupKeys = groupKeys.sort((a, b) => {
+      const dateStr1 = `${a}-01`
+      const dateStr2 = `${b}-01`
+      return new Date(dateStr2) - new Date(dateStr1)
+    })
+    sortGroupKeys.forEach(key => {
+      const groupItems = grouped[key]
+      const timeArr = key.split("-")
+      const year = timeArr[0]
+      const month = timeArr[1]
+      const date = new Date(Date.UTC(year, month))
+      const postsFilter = {
+        slug: {
+          in: groupItems.map(item => {
+            return `${item.slug}`
+          }),
+        },
+      }
+      // Create Posts and Post pages.
+      const totalPages = 1
+      const total = groupItems.length
+      // create posts pages
+      const pageInfo = {
+        path: urlResolve(basePath, `archive/${year}/${month}`),
+        component: ItemsTemplate,
+        context: {
+          basePath,
+          pageType: `archive`,
+          date: date,
+          dateISO: date.toISOString(),
+          tagsFilter: {},
+          filter: postsFilter,
+          limit: 1000,
+          skip: 0,
+          totalPages,
+          total: total,
+          currentPage: 1,
+          maxWidth: imageMaxWidth,
+          maxHeight: imageMaxHeight,
+          siteMetadata,
+          title: key,
+        },
+      }
+      createPage(pageInfo)
+      archiveItems.push({
+        year: year,
+        month: month,
+      })
+    })
+    const archivePageInfo = {
+      path: urlResolve(basePath, `archive`),
+      component: archivesTemplate,
+      context: {
+        basePath,
+        pageType: "archives",
+        siteMetadata,
+        items: archiveItems,
+      },
+    }
+    createPage(archivePageInfo)
+  }
 }

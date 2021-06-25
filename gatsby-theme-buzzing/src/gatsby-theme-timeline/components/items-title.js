@@ -6,7 +6,7 @@ import { Trans } from "react-i18next"
 import path from "path-browserify"
 const ItemsTitle = props => {
   const pageContext = props.pageContext
-  const { pageType, tag, basePath, currentPage, date } = pageContext
+  const { pageType, tag, basePath, currentPage, date, title } = pageContext
 
   const page = currentPage
   if (pageType === `tag`) {
@@ -36,6 +36,9 @@ const ItemsTitle = props => {
     if (pageType === "issues" || pageType === "issue") {
       itemsTitle = "Weekly Selection"
       homePath = path.join(basePath, "issues")
+    } else if (pageType === "archives" || pageType === "archive") {
+      itemsTitle = "Archive"
+      homePath = path.join(basePath, "archive")
     }
 
     const issueNumber = page
@@ -51,13 +54,19 @@ const ItemsTitle = props => {
         ) : (
           <Trans>{itemsTitle}</Trans>
         )}
-        {(currentPage > 1 || pageType === "issue") && (
+        {(currentPage > 1 ||
+          pageType === "issue" ||
+          pageType === "archive") && (
           <span sx={{ color: `textMuted` }}> / </span>
         )}
-        {(currentPage > 1 || pageType === "issue") && (
+        {(currentPage > 1 ||
+          pageType === "issue" ||
+          pageType === "archive") && (
           <span sx={{ color: `textMuted` }}>
             {pageType === "issue" ? (
               <Trans page={currentPage}>Issue {{ issueNumber }}</Trans>
+            ) : pageType === "archive" ? (
+              <span>{title}</span>
             ) : (
               <Trans page={currentPage}>page {{ page }}</Trans>
             )}
