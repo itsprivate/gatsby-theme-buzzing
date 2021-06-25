@@ -9,6 +9,8 @@
     "build:dev": "LOCAL=true npm -w example run build",
     "archive:dev": "npm -w example run archive:dev",
     "archive": "npm -w example run archive",
+    "archive:index": "npm -w example run archive:index",
+    "archive:detail": "npm -w example run archive:detail",
     "clean": "npm -w example run clean",
     "serve": "npm -w example run serve",
     "release": "release-it"
