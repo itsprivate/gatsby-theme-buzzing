@@ -25,5 +25,5 @@
     "@release-it/conventional-changelog": "^2.0.0",
     "release-it-yarn-workspaces": "^2.0.0"
   },
-  "version": "1.4.1"
+  "version": "1.5.0"
 }
