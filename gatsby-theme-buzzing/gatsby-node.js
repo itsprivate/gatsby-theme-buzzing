@@ -108,7 +108,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   const imageMaxWidth = 1024
   const imageMaxHeight = 512
   const postsPerPage = 1
-  const { siteMetadata, shouldArchive, postsFilter } =
+  const { siteMetadata, shouldArchive, postsFilter, skipCreateIndexPages } =
     withDefaults(themeOptions)
 
   // get posts
@@ -121,98 +121,99 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   const IssuePlainTemplate = require.resolve(
     `./src/templates/issue-plain-query`
   )
-
-  const issuesResult = await graphql(
-    `
-      query ItemsBuzzingQuery($filter: BlogPostFilterInput) {
-        allIssue(
-          filter: { draft: { eq: false } }
-          sort: { fields: [date], order: DESC }
-        ) {
-          nodes {
-            id
-            issueNumber
-            date(formatString: "YYYY-MM-DD")
-            dateISO: date
-            items {
+  if (!skipCreateIndexPages) {
+    const issuesResult = await graphql(
+      `
+        query ItemsBuzzingQuery($filter: BlogPostFilterInput) {
+          allIssue(
+            filter: { draft: { eq: false } }
+            sort: { fields: [date], order: DESC }
+          ) {
+            nodes {
+              id
+              issueNumber
+              date(formatString: "YYYY-MM-DD")
+              dateISO: date
+              items {
+                slug
+              }
+            }
+          }
+          archiveGroup: allBlogPost(
+            sort: { fields: [date, title], order: DESC }
+            filter: $filter
+          ) {
+            nodes {
+              date
               slug
             }
           }
         }
-        archiveGroup: allBlogPost(
-          sort: { fields: [date, title], order: DESC }
-          filter: $filter
-        ) {
-          nodes {
-            date
-            slug
-          }
-        }
+      `,
+      {
+        filter: postsFilter,
       }
-    `,
-    {
-      filter: postsFilter,
-    }
-  )
+    )
 
-  if (issuesResult.errors) {
-    reporter.panic(issuesResult.errors)
-  }
-  const { allIssue, archiveGroup } = issuesResult.data
-
-  const issues = allIssue.nodes
-  for (let i = 0; i < issues.length; i++) {
-    const issue = issues[i]
-    const issueNumber = issue.issueNumber
-    const postsFilter = {
-      slug: {
-        in: issue.items.map(item => {
-          return `${item.slug}`
-        }),
-      },
+    if (issuesResult.errors) {
+      reporter.panic(issuesResult.errors)
     }
-    // Create Posts and Post pages.
-    const totalPages = Math.ceil(issues.length / postsPerPage)
-    const total = issues.length
-    // create posts pages
-    const pageInfo = {
-      path: urlResolve(basePath, `issues/${issueNumber}`),
-      component: ItemsTemplate,
+    const { allIssue, archiveGroup } = issuesResult.data
+
+    const issues = allIssue.nodes
+    for (let i = 0; i < issues.length; i++) {
+      const issue = issues[i]
+      const issueNumber = issue.issueNumber
+      const postsFilter = {
+        slug: {
+          in: issue.items.map(item => {
+            return `${item.slug}`
+          }),
+        },
+      }
+      // Create Posts and Post pages.
+      const totalPages = Math.ceil(issues.length / postsPerPage)
+      const total = issues.length
+      // create posts pages
+      const pageInfo = {
+        path: urlResolve(basePath, `issues/${issueNumber}`),
+        component: ItemsTemplate,
+        context: {
+          basePath,
+          pageType: `issue`,
+          date: issue.date,
+          dateISO: issue.dateISO,
+          tagsFilter: {},
+          filter: postsFilter,
+          limit: 1000,
+          skip: 0,
+          totalPages,
+          total: total,
+          currentPage: issueNumber,
+          maxWidth: imageMaxWidth,
+          maxHeight: imageMaxHeight,
+          siteMetadata,
+        },
+      }
+      createPage(pageInfo)
+      const issuePlainPageInfo = {
+        ...pageInfo,
+        path: urlResolve(basePath, `/plain/issues/${issueNumber}`),
+        component: IssuePlainTemplate,
+      }
+      createPage(issuePlainPageInfo)
+    }
+    const issuePageInfo = {
+      path: urlResolve(basePath, `issues`),
+      component: IssuesTemplate,
       context: {
         basePath,
-        pageType: `issue`,
-        date: issue.date,
-        dateISO: issue.dateISO,
-        tagsFilter: {},
-        filter: postsFilter,
-        limit: 1000,
-        skip: 0,
-        totalPages,
-        total: total,
-        currentPage: issueNumber,
-        maxWidth: imageMaxWidth,
-        maxHeight: imageMaxHeight,
+        pageType: "issues",
         siteMetadata,
       },
     }
-    createPage(pageInfo)
-    const issuePlainPageInfo = {
-      ...pageInfo,
-      path: urlResolve(basePath, `/plain/issues/${issueNumber}`),
-      component: IssuePlainTemplate,
-    }
-    createPage(issuePlainPageInfo)
+    createPage(issuePageInfo)
   }
-  const issuePageInfo = {
-    path: urlResolve(basePath, `issues`),
-    component: IssuesTemplate,
-    context: {
-      basePath,
-      pageType: "issues",
-      siteMetadata,
-    },
-  }
-  createPage(issuePageInfo)
 
   // create arechive page
   if (shouldArchive) {
