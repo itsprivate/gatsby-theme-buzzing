@@ -86,7 +86,7 @@ export const query = graphql`
           channelUrl
           author
           authorUrl
-          authorImageRemote: String
+          authorImageRemote
           authorImage {
             childImageSharp {
               gatsbyImageData(width: 48, height: 48, layout: FIXED)
