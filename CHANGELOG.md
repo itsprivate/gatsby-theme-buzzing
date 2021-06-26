@@ -1,3 +1,25 @@
+## [1.7.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.0.0...v1.7.1) (2021-06-26)
+
+
+### Bug Fixes
+
+* author image remote ([16f3ff3](https://github.com/itsprivate/gatsby-theme-buzzing/commit/16f3ff3393f6f7795c828f04e20dfaf41bab79c9))
+* detail pages ([d65394f](https://github.com/itsprivate/gatsby-theme-buzzing/commit/d65394fa2543525cd619faee3583ebe24ba479f5))
+* gatsby 3.0 changes ([998dffa](https://github.com/itsprivate/gatsby-theme-buzzing/commit/998dffa6b02ed88d5caa824075dd8bbf191f6b3f))
+* items page ([26c3b8b](https://github.com/itsprivate/gatsby-theme-buzzing/commit/26c3b8b305e7673053645cf33dd2c5736eb41335))
+* rss ([c55305a](https://github.com/itsprivate/gatsby-theme-buzzing/commit/c55305a181ccc45cbc1fd3430e4bfd94af3b335f))
+* sitempa ([887095e](https://github.com/itsprivate/gatsby-theme-buzzing/commit/887095e7c0f8d46227856f2238504410fe7efa31))
+
+
+### Features
+
+* add sitemap ([b5db23b](https://github.com/itsprivate/gatsby-theme-buzzing/commit/b5db23b05453701a729bf0cae3cf560d25cc8cd4))
+* archive ([676beb9](https://github.com/itsprivate/gatsby-theme-buzzing/commit/676beb916d544f88149410d7d74491628b72675c))
+* better for building ([e47866b](https://github.com/itsprivate/gatsby-theme-buzzing/commit/e47866bbab4923acf58e3a4015ac1822d951c6f4))
+* build ([610b091](https://github.com/itsprivate/gatsby-theme-buzzing/commit/610b0917f5752a07a295e9c681c6f7affeeec276))
+* fix ([3de80b0](https://github.com/itsprivate/gatsby-theme-buzzing/commit/3de80b059368973c72029186fe4ef1300c0818f0))
+* support archive ([0c61580](https://github.com/itsprivate/gatsby-theme-buzzing/commit/0c61580786a9da2f6c3f83d23710f897c81216ff))
+
 # [1.1.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.0.0...v1.1.0) (2021-06-26)
 
 
