@@ -155,7 +155,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
     for (let i = 0; i < issues.length; i++) {
       const issue = issues[i]
       const issueNumber = issue.issueNumber
-      const postsFilter = {
+      const issuePostsFilter = {
         slug: {
           in: issue.items.map(item => {
             return `${item.slug}`
@@ -174,8 +174,8 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
           pageType: `issue`,
           date: issue.date,
           dateISO: issue.dateISO,
-          tagsFilter: {},
-          filter: postsFilter,
+          tagsFilter: postsFilter,
+          filter: issuePostsFilter,
           limit: 1000,
           skip: 0,
           totalPages,
@@ -201,6 +201,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         basePath,
         pageType: "issues",
         siteMetadata,
+        tagsFilter: postsFilter,
       },
     }
     createPage(issuePageInfo)
@@ -254,7 +255,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
       const year = timeArr[0]
       const month = timeArr[1]
       const date = new Date(Date.UTC(year, month))
-      const postsFilter = {
+      const archivePostsFilter = {
         slug: {
           in: groupItems.map(item => {
             return `${item.slug}`
@@ -273,8 +274,9 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
           pageType: `archive`,
           date: date,
           dateISO: date.toISOString(),
-          tagsFilter: {},
-          filter: postsFilter,
+          tagsFilter: postsFilter,
+
+          filter: archivePostsFilter,
           limit: 1000,
           skip: 0,
           totalPages,
@@ -299,6 +301,8 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         basePath,
         pageType: "archives",
         siteMetadata,
+        tagsFilter: postsFilter,
+
         items: archiveItems,
       },
     }

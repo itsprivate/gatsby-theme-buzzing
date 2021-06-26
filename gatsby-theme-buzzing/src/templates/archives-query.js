@@ -41,7 +41,7 @@ const Items = ({ location, data, pageContext }) => {
 }
 export default Items
 export const query = graphql`
-  {
+  query ArchivesItemsPostsQuery($tagsFilter: BlogPostFilterInput) {
     site {
       siteMetadata {
         title
@@ -71,7 +71,10 @@ export const query = graphql`
         }
       }
     }
-    tagsGroup: allBlogPost(sort: { fields: [date, slug], order: DESC }) {
+    tagsGroup: allBlogPost(
+      sort: { fields: [date, slug], order: DESC }
+      filter: $tagsFilter
+    ) {
       group(field: tags) {
         fieldValue
         totalCount
