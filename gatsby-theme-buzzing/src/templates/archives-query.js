@@ -9,8 +9,8 @@ import ArchiveItems from "../components/archive-items"
 import { graphql } from "gatsby"
 
 const Items = ({ location, data, pageContext }) => {
-  const { basePath, pageType, siteMetadata, items } = pageContext
-
+  const { basePath, pageType, items } = pageContext
+  const siteMetadata = data.site.siteMetadata
   const { title, menuLinks } = siteMetadata
   return (
     <Layout
@@ -32,6 +32,7 @@ const Items = ({ location, data, pageContext }) => {
           location={location}
           data={data}
           pageContext={pageContext}
+          siteMetadata={siteMetadata}
         ></AsideBox>
       </Grid>
       <Footer />
@@ -41,6 +42,35 @@ const Items = ({ location, data, pageContext }) => {
 export default Items
 export const query = graphql`
   {
+    site {
+      siteMetadata {
+        title
+        author
+        description
+        keywords
+        siteUrl
+        telegram
+        iconUrl
+        defaultSocialImageUrl
+        social {
+          name
+          url
+          external
+        }
+        menuLinks {
+          name
+          url
+          external
+        }
+        disqus {
+          shortname
+        }
+        utterances {
+          repo
+          label
+        }
+      }
+    }
     tagsGroup: allBlogPost(sort: { fields: [date, slug], order: DESC }) {
       group(field: tags) {
         fieldValue

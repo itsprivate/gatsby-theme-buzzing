@@ -4,9 +4,6 @@ const withDefaults = require("./utils/default-options")
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   createTypes(`
-    type Fields {
-      basePath: String
-    }
     type IssueItem {
       type: String!
       slug: String!
@@ -17,12 +14,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date! @dateformat
       issueNumber: Int!
       draft: Boolean!
-      items: [IssueItem!]
-    }
-    type ${ISSUE_TYPE_NAME} implements Node @dontInfer {
-      id: ID!
-      slug: String!
-      date: Date! @dateformat
       items: [IssueItem!]
     }
     type SiteSiteMetadataLocalizeMenuLinks {
@@ -47,11 +38,6 @@ exports.createSchemaCustomization = ({ actions }) => {
 }
 exports.createResolvers = ({ createResolvers }) => {
   const resolvers = {
-    [ISSUE_TYPE_NAME]: {
-      fields: {
-        type: `Fields`,
-      },
-    },
     SocialMediaPost: {
       excerpt: {
         resolve: (source, _, context, __) => {
@@ -158,20 +144,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
           filter: $filter
         ) {
           nodes {
-            ... on MdxBlogPost {
-              fields {
-                yearMonth
-                year
-                month
-              }
-            }
-            ... on SocialMediaPost {
-              fields {
-                yearMonth
-                year
-                month
-              }
-            }
+            date
             slug
           }
         }
@@ -246,7 +219,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
     // create archive
 
     const grouped = archiveGroup.nodes.reduce(
-      (r, v, i, a, k = v.fields.yearMonth) => (
+      (r, v, i, a, k = getDateInfo(v.date).yearMonth) => (
         (r[k] || (r[k] = [])).push(v), r
       ),
       {}
@@ -316,5 +289,17 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
       },
     }
     createPage(archivePageInfo)
+  }
+}
+
+function getDateInfo(date) {
+  const dateObj = new Date(date)
+  const year = dateObj.getUTCFullYear()
+  const month = dateObj.getUTCMonth() + 1
+  const yearMonth = `${year}-${month}`
+  return {
+    year,
+    month,
+    yearMonth,
   }
 }

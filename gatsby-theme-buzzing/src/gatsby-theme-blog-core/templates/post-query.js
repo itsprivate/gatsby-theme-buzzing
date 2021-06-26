@@ -9,6 +9,35 @@ export const query = graphql`
     $previousId: String
     $nextId: String
   ) {
+    site {
+      siteMetadata {
+        title
+        author
+        description
+        keywords
+        siteUrl
+        telegram
+        iconUrl
+        defaultSocialImageUrl
+        social {
+          name
+          url
+          external
+        }
+        menuLinks {
+          name
+          url
+          external
+        }
+        disqus {
+          shortname
+        }
+        utterances {
+          repo
+          label
+        }
+      }
+    }
     blogPost(id: { eq: $id }) {
       id
       excerpt
@@ -32,9 +61,6 @@ export const query = graphql`
       }
       __typename
       ... on SocialMediaPost {
-        fields {
-          basePath
-        }
         thirdPartyId
         provider
         url
@@ -55,6 +81,7 @@ export const query = graphql`
             gatsbyImageData(width: 48, height: 48, layout: FIXED)
           }
         }
+        authorImageRemote
         authorSlug
         score
         views
@@ -75,6 +102,7 @@ export const query = graphql`
             }
           }
           imageAlt
+          authorImageRemote
           authorImage {
             childImageSharp {
               gatsbyImageData(width: 24, height: 24, layout: FIXED)

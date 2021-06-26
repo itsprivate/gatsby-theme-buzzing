@@ -5,6 +5,35 @@ export default PostsPage
 
 export const query = graphql`
   {
+    site {
+      siteMetadata {
+        title
+        author
+        description
+        keywords
+        siteUrl
+        telegram
+        iconUrl
+        defaultSocialImageUrl
+        social {
+          name
+          url
+          external
+        }
+        menuLinks {
+          name
+          url
+          external
+        }
+        disqus {
+          shortname
+        }
+        utterances {
+          repo
+          label
+        }
+      }
+    }
     tagsGroup: allBlogPost(sort: { fields: [date, slug], order: DESC }) {
       group(field: tags) {
         fieldValue

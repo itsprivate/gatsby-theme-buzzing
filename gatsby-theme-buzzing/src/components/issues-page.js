@@ -7,8 +7,9 @@ import AsideBox from "gatsby-theme-timeline/src/components/aside-box"
 import ItemsSEO from "gatsby-theme-timeline/src/components/items-seo"
 import IssueItems from "./issue-items"
 const Items = ({ location, data, pageContext }) => {
-  const { basePath, pageType, siteMetadata } = pageContext
+  const { basePath, pageType } = pageContext
   const items = data.allIssue.nodes
+  const siteMetadata = data.site.siteMetadata
 
   const { title, menuLinks } = siteMetadata
   return (
@@ -31,6 +32,7 @@ const Items = ({ location, data, pageContext }) => {
           location={location}
           data={data}
           pageContext={pageContext}
+          siteMetadata={siteMetadata}
         ></AsideBox>
       </Grid>
       <Footer />

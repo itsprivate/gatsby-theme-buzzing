@@ -88,7 +88,6 @@ plugins = plugins.concat([
       redditTypeName: ["RedditJson"],
       issueTypeName: ["HnTopIssuesJson"],
       localesPath: localesPath,
-      siteMetadata,
     },
   },
   {

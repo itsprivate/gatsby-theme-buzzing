@@ -7,13 +7,9 @@ import SEO from "gatsby-theme-timeline/src/components/seo"
 import ItemsFooter from "gatsby-theme-timeline/src/components/items-footer"
 
 const Items = ({ data, pageContext }) => {
-  const {
-    basePath,
-    currentPage: issueNumber,
-    date,
-    dateISO,
-    siteMetadata,
-  } = pageContext
+  const { basePath, currentPage: issueNumber, date, dateISO } = pageContext
+  const siteMetadata = data.site.siteMetadata
+
   const items = data.allBlogPost.nodes
 
   const siteTitle = siteMetadata.title

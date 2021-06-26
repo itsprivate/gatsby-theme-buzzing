@@ -9,8 +9,8 @@ import Maker from "../../components/maker"
 import Ad from "../../components/ad"
 import Archive from "../../components/archive"
 
-const Aside = ({ data, pageContext }) => {
-  const { basePath, siteMetadata } = pageContext
+const Aside = ({ data, pageContext, siteMetadata }) => {
+  const { basePath } = pageContext
   const {
     tagsGroup: { group },
   } = data

@@ -45,9 +45,7 @@ export default function NextPageLink({ prefix, pageContext }, props) {
           textAlign: `right`,
         }}
       >
-        <h4 sx={{ fontWeight: "400" }}>
-          <Trans>{nextText}</Trans> &rarr;
-        </h4>
+        <Trans>{nextText}</Trans> &rarr;
       </LinkUI>
     </div>
   )

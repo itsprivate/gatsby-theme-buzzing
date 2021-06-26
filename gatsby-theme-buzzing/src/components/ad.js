@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { Box, jsx } from "theme-ui"
 import AdSense from "react-adsense"
-
 const Ad = () => {
   return (
     <Box data-test="ad-container">
