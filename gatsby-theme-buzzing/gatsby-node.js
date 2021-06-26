@@ -124,7 +124,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   if (!skipCreateIndexPages) {
     const issuesResult = await graphql(
       `
-        query ItemsBuzzingQuery($filter: BlogPostFilterInput) {
+        query IssuesItemsBuzzingQuery {
           allIssue(
             filter: { draft: { eq: false } }
             sort: { fields: [date], order: DESC }
@@ -140,10 +140,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
             }
           }
         }
-      `,
-      {
-        filter: postsFilter,
-      }
+      `
     )
 
     if (issuesResult.errors) {
