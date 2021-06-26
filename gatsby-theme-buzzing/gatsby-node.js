@@ -142,12 +142,10 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         }
       `
     )
-
     if (issuesResult.errors) {
       reporter.panic(issuesResult.errors)
     }
     const { allIssue } = issuesResult.data
-
     const issues = allIssue.nodes
     for (let i = 0; i < issues.length; i++) {
       const issue = issues[i]

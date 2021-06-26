@@ -53,10 +53,11 @@ if (isDev) {
         // "data/youtube-top/**",
         // "data/ph-top/**",
         // "data/reddit-stocks/**",
-        "data/reddit-books/**",
+        // "data/reddit-books/**",
 
         // "data/tweet-stocks/**",
-        // "data/reddit-changemyview/**",
+        "data/reddit-changemyview/**",
+        "data/reddit-changemyview-issues/**",
         // "data/reddit-crypto/**",
         // "data/tweet-crypto/**",
         // "data/stocks-issues/**",
@@ -86,7 +87,7 @@ plugins = plugins.concat([
     options: {
       tweetTypeName: ["TweetJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditJson"],
-      issueTypeName: ["HnTopIssuesJson"],
+      issueTypeName: ["RedditChangemyviewIssuesJson"],
       localesPath: localesPath,
     },
   },

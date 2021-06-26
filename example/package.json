@@ -12,9 +12,9 @@
     "build:dev": "LOCAL=true gatsby build",
     "clean": "gatsby clean",
     "serve": "gatsby serve",
-    "archive:detail": "npm run clean && cp -r \"./original-static/\" ./static/  && GATSBY_SKIP_CREATE_INDEX_PAGES=true GATSBY_SKIP_CREATE_TAG_PAGES=true npm run build && cp -r \"./public/\" ./static/",
-    "archive": "npm run clean && cp -r \"./original-static/\" ./static/ &&  GATSBY_SHOULD_ARCHIVE=true GATSBY_SKIP_CREATE_INDEX_PAGES=true GATSBY_SKIP_CREATE_DETAIL_PAGES=false GATSBY_POST_END_TIME=$(npx date-cli sub --from monthBeginning --months 2) npm run build && cp -r \"./public/\" ./static/ && echo GATSBY_POST_START_TIME=$(npx date-cli sub --from monthBeginning --months 2) > .env",
-    "archive:dev": "npm run clean && cp -r \"./original-static/\" ./static/ &&  GATSBY_SHOULD_ARCHIVE=true GATSBY_SKIP_CREATE_INDEX_PAGES=true GATSBY_SKIP_CREATE_DETAIL_PAGES=false GATSBY_POST_END_TIME=$(npx date-cli sub --from monthBeginning --months 2) npm run build:dev && cp -r \"./public/\" ./static/ && echo GATSBY_POST_START_TIME=$(npx date-cli sub --from monthBeginning --months 2) > .env"
+    "archive:detail": "npm run clean && npx ncp ./original-static ./static  && GATSBY_SKIP_CREATE_INDEX_PAGES=true GATSBY_SKIP_CREATE_TAG_PAGES=true npm run build && npx ncp ./public ./static",
+    "archive": "npm run clean && npx ncp ./original-static ./static &&  GATSBY_SHOULD_ARCHIVE=true GATSBY_SKIP_CREATE_INDEX_PAGES=true GATSBY_SKIP_CREATE_DETAIL_PAGES=false GATSBY_POST_END_TIME=$(npx date-cli sub --from monthBeginning --months 2) npm run build && npx ncp ./public ./static && echo GATSBY_POST_START_TIME=$(npx date-cli sub --from monthBeginning --months 2) > .env",
+    "archive:dev": "npm run clean && npx ncp ./original-static ./static &&  GATSBY_SHOULD_ARCHIVE=true GATSBY_SKIP_CREATE_INDEX_PAGES=true GATSBY_SKIP_CREATE_DETAIL_PAGES=false GATSBY_POST_END_TIME=$(npx date-cli sub --from monthBeginning --months 2) npm run build:dev && npx ncp ./public ./static && echo GATSBY_POST_START_TIME=$(npx date-cli sub --from monthBeginning --months 2) > .env"
   },
   "dependencies": {
     "@theowenyoung/gatsby-source-git": "^2.1.2",
@@ -25,6 +25,7 @@
     "gatsby-plugin-manifest": "^3.7.1",
     "gatsby-theme-buzzing": "^1.9.0",
     "i18next": "^19.4.5",
+    "ncp": "^2.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-i18next": "^11.11.0",
