@@ -139,15 +139,6 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
               }
             }
           }
-          archiveGroup: allBlogPost(
-            sort: { fields: [date, title], order: DESC }
-            filter: $filter
-          ) {
-            nodes {
-              date
-              slug
-            }
-          }
         }
       `,
       {
@@ -158,7 +149,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
     if (issuesResult.errors) {
       reporter.panic(issuesResult.errors)
     }
-    const { allIssue, archiveGroup } = issuesResult.data
+    const { allIssue } = issuesResult.data
 
     const issues = allIssue.nodes
     for (let i = 0; i < issues.length; i++) {
@@ -218,7 +209,29 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   // create arechive page
   if (shouldArchive) {
     // create archive
+    const archivesResult = await graphql(
+      `
+        query ArchiveItemsBuzzingQuery($filter: BlogPostFilterInput) {
+          archiveGroup: allBlogPost(
+            sort: { fields: [date, title], order: DESC }
+            filter: $filter
+          ) {
+            nodes {
+              date
+              slug
+            }
+          }
+        }
+      `,
+      {
+        filter: postsFilter,
+      }
+    )
 
+    if (archivesResult.errors) {
+      reporter.panic(archivesResult.errors)
+    }
+    const { archiveGroup } = archivesResult.data
     const grouped = archiveGroup.nodes.reduce(
       (r, v, i, a, k = getDateInfo(v.date).yearMonth) => (
         (r[k] || (r[k] = [])).push(v), r

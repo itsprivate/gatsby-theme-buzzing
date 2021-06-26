@@ -48,12 +48,12 @@ if (isDev) {
       // Only import the docs folder from a codebase.
       patterns: [
         "data/*-placeholder/1.json",
-        "data/reddit-top/**",
+        // "data/reddit-top/**",
         // "data/hn-top/**",
         // "data/youtube-top/**",
         // "data/ph-top/**",
         // "data/reddit-stocks/**",
-        // "data/reddit-books/**",
+        "data/reddit-books/**",
 
         // "data/tweet-stocks/**",
         // "data/reddit-changemyview/**",
