@@ -1,0 +1,15 @@
+name: Test2
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for NPM Update
+        run: sleep 5m
+      - name: Repository Dispatch2
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/ask
+          event-type: sync
