@@ -16,15 +16,19 @@ const Aside = ({ data, pageContext, siteMetadata }) => {
   } = data
   const { social } = siteMetadata
   return (
-    <Themed.div data-test="aside" as="aside">
+    <Themed.div
+      data-test="aside"
+      as="aside"
+      sx={{ height: [null, null, `full`] }}
+    >
       <Themed.div
         sx={{
-          top: 4,
-          position: `sticky`,
-          overflowY: `auto`,
-          height: `calc(100vh - 32px)`,
-          overscrollBehavior: `contain`,
-          px: 4,
+          top: [null, null, 4],
+          position: [null, null, `sticky`],
+          overflowY: [null, null, `auto`],
+          height: [null, null, `calc(100vh - 32px)`],
+          overscrollBehavior: [null, null, `contain`],
+          px: [null, null, 4],
         }}
       >
         <Bio siteMetadata={siteMetadata} basePath={basePath}></Bio>
