@@ -1,138 +1,129 @@
-name: Release
+name: Archive
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - "v*"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Sleep for NPM Update
         run: sleep 5m
-      - name: Repository Dispatch1
-        uses: peter-evans/repository-dispatch@v1
-        with:
-          token: ${{ secrets.PERSONAL_TOKEN }}
-          repository: itsprivate/gatsby-buzzing-starter
-          event-type: new_version_with_buzzing_theme
       - name: Repository Dispatch2
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/rt
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch3
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/rs
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch4
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/hn
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch5
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/ph
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch6
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/cmv
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch7
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/crp
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch8
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/news
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch9
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/yt
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch10
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/da
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch11
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/ask
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch12
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/kn
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch13
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/dep
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch14
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/dev
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch15
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/qu
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch16
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/wsj
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch17
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/ny
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch18
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/ec
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch19
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/100
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch20
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/sp
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
       - name: Repository Dispatch21
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: itsprivate/bo
-          event-type: new_version_with_buzzing_theme
+          event-type: archive
