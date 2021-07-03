@@ -21,6 +21,7 @@ import YoutubeDetail from "gatsby-theme-timeline/src/components/youtube/detail"
 import InstagramDetail from "gatsby-theme-timeline/src/components/instagram/detail"
 import { Themed, jsx } from "theme-ui"
 import { getTitle } from "../../util"
+import Ad from "../../components/ad"
 
 const Detail = props => {
   const { item } = props
@@ -59,6 +60,7 @@ const Wrapper = props => {
       <Themed.blockquote sx={{ fontSize: 2 }}>
         {getTitle(item, locale)}
       </Themed.blockquote>
+      <Ad />
       <Detail {...props}></Detail>
     </div>
   )

@@ -5,38 +5,37 @@ const isDev =
 let localesPath =
   ".cache/gatsby-source-git/itsprivate/ts/RedditTop/i18n/i18next"
 if (isDev) {
-  localesPath =
-    ".cache/gatsby-source-git/itsprivate/ts-test/RedditTop/i18n/i18next"
+  localesPath = "./i18n/i18next"
 }
 let plugins = []
 if (isDev) {
   // development not include the whole data
-  plugins.push({
-    resolve: `@theowenyoung/gatsby-source-git`,
-    options: {
-      name: `RedditTop`,
-      remote: `https://github.com/itsprivate/ts-test.git`,
-      branch: `main`,
-      fetchOptions: ["--depth", "1"],
-      // Only import the docs folder from a codebase.
-      patterns: [
-        "data/*-placeholder/1.json",
-        // "data/reddit-top/**",
-        // "data/hn-top/**",
-        // "data/youtube-top/**",
-        // "data/ph-top/**",
-        // "data/reddit-stocks/**",
-        // "data/tweet-stocks/**",
-        "data/reddit-books/**",
-        // "data/redirect-newstop/**",
-        // "data/redirect-devtop/**",
-        // "data/reddit-crypto/**",
-        // "data/tweet-crypto/**",
-        // "data/stocks-issues/**",
-        // "data/hn-top-issues/**",
-      ],
-    },
-  })
+  // plugins.push({
+  //   resolve: `@theowenyoung/gatsby-source-git`,
+  //   options: {
+  //     name: `RedditTop`,
+  //     remote: `https://github.com/itsprivate/ts-test.git`,
+  //     branch: `main`,
+  //     fetchOptions: ["--depth", "1"],
+  //     // Only import the docs folder from a codebase.
+  //     patterns: [
+  //       "data/*-placeholder/1.json",
+  //       // "data/reddit-top/**",
+  //       // "data/hn-top/**",
+  //       // "data/youtube-top/**",
+  //       // "data/ph-top/**",
+  //       // "data/reddit-stocks/**",
+  //       // "data/tweet-stocks/**",
+  //       "data/reddit-books/**",
+  //       // "data/redirect-newstop/**",
+  //       // "data/redirect-devtop/**",
+  //       // "data/reddit-crypto/**",
+  //       // "data/tweet-crypto/**",
+  //       // "data/stocks-issues/**",
+  //       // "data/hn-top-issues/**",
+  //     ],
+  //   },
+  // })
 } else {
   plugins.push({
     resolve: `@theowenyoung/gatsby-source-git`,

@@ -1,0 +1,104 @@
+{
+  "created_at": "Sun Nov 25 09:24:27 +0000 2018",
+  "id": 1315580687861182500,
+  "id_str": "1315580687861182465",
+  "full_text": "TLI when stargazers of your github repo reach to 1000, 1251 stars will be displayed as 1.3k",
+  "truncated": false,
+  "display_text_range": [0, 91],
+  "entities": {
+    "hashtags": [
+      {
+        "text": "documentation",
+        "indices": [211, 225]
+      },
+      {
+        "text": "parsingJSON",
+        "indices": [226, 238]
+      },
+      {
+        "text": "GeoTagged",
+        "indices": [239, 249]
+      }
+    ],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": []
+  },
+  "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 1241294513575878700,
+    "id_str": "1241294513575878656",
+    "name": "Owen Young",
+    "screen_name": "TheOwenYoung",
+    "location": "",
+    "description": "Freelancer / perfectionism / workflow lover",
+    "url": null,
+    "entities": {
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followers_count": 10,
+    "friends_count": 69,
+    "listed_count": 1,
+    "created_at": "Sun Nov 25 09:24:27 +0000 2018",
+    "favourites_count": 12,
+    "utc_offset": null,
+    "time_zone": null,
+    "geo_enabled": false,
+    "verified": false,
+    "statuses_count": 11,
+    "lang": null,
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "F5F8FA",
+    "profile_background_image_url": null,
+    "profile_background_image_url_https": null,
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/1241298955742273536/E26HEH2o_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1241298955742273536/E26HEH2o_normal.jpg",
+    "profile_link_color": "1DA1F2",
+    "profile_sidebar_border_color": "C0DEED",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": true,
+    "default_profile": true,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
+  "contributors": null,
+  "is_quote_status": false,
+  "retweet_count": 0,
+  "favorite_count": 0,
+  "favorited": false,
+  "retweeted": false,
+  "lang": "en",
+  "localize": [
+    {
+      "locale": "ja",
+      "full_text": "ロシアがアフガニスタンの米軍および同盟国軍への攻撃に対して報奨金を提供した可能性が高いとCIAが結論づけた理由が、機密解除された新情報で明らかになりました。\nhttps://t.co/u6BMdt0Q2M"
+    },
+    {
+      "locale": "zh",
+      "full_text": "新解密的信息揭示了中情局为何得出结论，即俄罗斯很可能为袭击驻阿富汗的美国和盟军提供赏金。\nhttps://t.co/u6BMdt0Q2M"
+    },
+    {
+      "locale": "zh-Hant",
+      "full_text": "新解密的信息揭示了中情局爲何得出結論，即俄羅斯很可能爲襲擊駐阿富汗的美國和盟軍提供賞金。\nhttps://t.co/u6BMdt0Q2M"
+    }
+  ]
+}
