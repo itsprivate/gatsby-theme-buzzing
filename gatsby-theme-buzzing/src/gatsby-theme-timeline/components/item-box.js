@@ -17,15 +17,9 @@ const ItemBox = props => {
     >
       <Item {...props}></Item>
       {props.index > 0 &&
-        (props.index === 4 || (props.index > 7 && props.index % 6 === 0)) && (
+        (props.index === 4 || (props.index > 10 && props.index % 10 === 0)) && (
           <Box
             sx={{
-              borderRadius: `default`,
-              overflow: `hidden`,
-              wordWrap: `break-word`,
-              borderWidth: 1,
-              borderStyle: `solid`,
-              borderColor: `muted`,
               mt: 5,
             }}
           >
