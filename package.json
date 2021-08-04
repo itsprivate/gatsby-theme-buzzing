@@ -2,6 +2,7 @@
   "name": "gatsby-starter-buzzing",
   "private": true,
   "scripts": {
+    "80": "npm -w example run 80",
     "develop": "npm -w example run develop",
     "start": "npm -w example run start",
     "start:prod": "LOCAL=false npm -w example run start",
@@ -13,8 +14,7 @@
     "archive:detail": "npm -w example run archive:detail",
     "clean": "npm -w example run clean",
     "serve": "npm -w example run serve",
-    "release": "release-it",
-    "80": "npm -w example run 80"
+    "release": "release-it"
   },
   "license": "0BSD",
   "workspaces": [
@@ -28,5 +28,5 @@
     "@release-it/conventional-changelog": "^3.0.1",
     "release-it-yarn-workspaces": "^2.0.1"
   },
-  "version": "1.11.1"
+  "version": "1.11.2"
 }

@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.1...v1.11.2) (2021-08-04)
+
+
+### Bug Fixes
+
+* ad and localize ([44c5fd0](https://github.com/itsprivate/gatsby-theme-buzzing/commit/44c5fd09da338f71c08e09c89338c49938c4ab56))
+
 ## [1.11.1](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.0...v1.11.1) (2021-07-06)
 
 # [1.11.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.10.0...v1.11.0) (2021-07-06)
