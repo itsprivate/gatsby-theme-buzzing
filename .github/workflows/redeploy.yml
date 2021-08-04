@@ -1,0 +1,127 @@
+name: redeploy
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Dispatch2
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/rt
+          event-type: redeploy
+      - name: Repository Dispatch3
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/rs
+          event-type: redeploy
+      - name: Repository Dispatch4
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/hn
+          event-type: redeploy
+      - name: Repository Dispatch5
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/ph
+          event-type: redeploy
+      - name: Repository Dispatch6
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/cmv
+          event-type: redeploy
+      - name: Repository Dispatch7
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/crp
+          event-type: redeploy
+      - name: Repository Dispatch8
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/news
+          event-type: redeploy
+      - name: Repository Dispatch9
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/yt
+          event-type: redeploy
+      - name: Repository Dispatch10
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/da
+          event-type: redeploy
+      - name: Repository Dispatch11
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/ask
+          event-type: redeploy
+      - name: Repository Dispatch12
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/kn
+          event-type: redeploy
+      - name: Repository Dispatch13
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/dep
+          event-type: redeploy
+      - name: Repository Dispatch14
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/dev
+          event-type: redeploy
+      - name: Repository Dispatch15
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/qu
+          event-type: redeploy
+      - name: Repository Dispatch16
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/wsj
+          event-type: redeploy
+      - name: Repository Dispatch17
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/ny
+          event-type: redeploy
+      - name: Repository Dispatch18
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/ec
+          event-type: redeploy
+      - name: Repository Dispatch19
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/100
+          event-type: redeploy
+      - name: Repository Dispatch20
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/sp
+          event-type: redeploy
+      - name: Repository Dispatch21
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: itsprivate/bo
+          event-type: redeploy
