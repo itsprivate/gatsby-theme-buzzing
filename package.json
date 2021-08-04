@@ -13,7 +13,8 @@
     "archive:detail": "npm -w example run archive:detail",
     "clean": "npm -w example run clean",
     "serve": "npm -w example run serve",
-    "release": "release-it"
+    "release": "release-it",
+    "80": "npm -w example run 80"
   },
   "license": "0BSD",
   "workspaces": [
@@ -21,11 +22,11 @@
     "example"
   ],
   "dependencies": {
-    "release-it": "^14.2.2"
+    "release-it": "^14.10.1"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^2.0.0",
-    "release-it-yarn-workspaces": "^2.0.0"
+    "@release-it/conventional-changelog": "^3.0.1",
+    "release-it-yarn-workspaces": "^2.0.1"
   },
   "version": "1.11.1"
 }

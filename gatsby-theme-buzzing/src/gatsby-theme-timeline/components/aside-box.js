@@ -33,11 +33,11 @@ const Aside = ({ data, pageContext, siteMetadata }) => {
       >
         <Bio siteMetadata={siteMetadata} basePath={basePath}></Bio>
         <Subscription pageContext={pageContext}></Subscription>
+        <Ad></Ad>
         <Archive pageContext={pageContext}></Archive>
-        <Tags basePath={basePath} group={group}></Tags>
         <Links siteMetadata={siteMetadata} links={social}></Links>
         <Maker pageContext={pageContext}></Maker>
-        <Ad></Ad>
+        <Tags basePath={basePath} group={group}></Tags>
       </Themed.div>
     </Themed.div>
   )

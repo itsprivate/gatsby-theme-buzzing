@@ -11,6 +11,7 @@ const t = (key, localize, defaultValue, locale = "zh") => {
       if (locale === currentLocale) {
         if (localeItem[key]) {
           value = localeItem[key]
+
           return value
         }
       }

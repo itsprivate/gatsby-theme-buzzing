@@ -36,6 +36,22 @@ export const query = graphql`
           repo
           label
         }
+        localize {
+          title
+          description
+          keywords
+          locale
+          social {
+            name
+            url
+            external
+          }
+          menuLinks {
+            name
+            url
+            external
+          }
+        }
       }
     }
     blogPost(id: { eq: $id }) {
