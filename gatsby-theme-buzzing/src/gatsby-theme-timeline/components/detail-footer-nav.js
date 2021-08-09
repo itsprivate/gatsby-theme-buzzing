@@ -1,5 +1,10 @@
 /** @jsx jsx */
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
+import {
+  TWEET_TYPE_NAME,
+  PH_TYPE_NAME,
+  SOCIAL_MEDIA_TYPE_NAME,
+} from "gatsby-theme-timeline/src/constans"
 import { Flex, jsx, Link as LinkUI } from "theme-ui"
 import { t } from "../../util"
 
@@ -16,14 +21,20 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
       localize = previous.parent.localize
     }
 
-    if (previous.__typename === "PhPost") {
+    if (
+      previous.__typename === SOCIAL_MEDIA_TYPE_NAME &&
+      previous.provider === PH_TYPE_NAME
+    ) {
       finalPreviousTitle = `${title} - ${t(
         "tagline",
         localize,
         previous.tagline,
         locale
       )}`
-    } else if (previous.__typename === "TweetPost") {
+    } else if (
+      previous.__typename === SOCIAL_MEDIA_TYPE_NAME &&
+      previous.provider === TWEET_TYPE_NAME
+    ) {
       finalPreviousTitle = t("full_text", localize, finalPreviousTitle, locale)
     } else {
       finalPreviousTitle = t("title", localize, finalPreviousTitle, locale)
@@ -36,14 +47,20 @@ const DetailFooterNav = ({ previous, next, item, pageContext: { locale } }) => {
     if (next.parent && next.parent.localize) {
       localize = next.parent.localize
     }
-    if (next.__typename === "PhPost") {
+    if (
+      next.__typename === SOCIAL_MEDIA_TYPE_NAME &&
+      next.provider === PH_TYPE_NAME
+    ) {
       finalNextTitle = `${title} - ${t(
         "tagline",
         localize,
         next.tagline,
         locale
       )}`
-    } else if (next.__typename === "TweetPost") {
+    } else if (
+      next.__typename === SOCIAL_MEDIA_TYPE_NAME &&
+      next.provider === TWEET_TYPE_NAME
+    ) {
       finalNextTitle = t("full_text", localize, finalNextTitle, locale)
     } else {
       finalNextTitle = t("title", localize, finalNextTitle, locale)
