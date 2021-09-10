@@ -1,3 +1,11 @@
+## [1.11.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.2...v1.11.3) (2021-09-10)
+
+
+### Bug Fixes
+
+* detail footer title locale ([6942a84](https://github.com/itsprivate/gatsby-theme-buzzing/commit/6942a843d99f0eb01d167455dacf5c118ef7eaa1))
+* youtube description ([56213e6](https://github.com/itsprivate/gatsby-theme-buzzing/commit/56213e6b258894e697a5c59ac7a91d9bcde570de))
+
 ## [1.11.2](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.1...v1.11.2) (2021-08-04)
 
 
