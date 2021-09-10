@@ -7,12 +7,12 @@ export default function ({ item, pageContext: { locale } }) {
   if (!excerpt) {
     return null
   }
-
-  let finalExcerpt = excerpt
-  finalExcerpt = processReactString(getExcerpt(item, locale))
-  return (
-    <Themed.p sx={{ whiteSpace: `pre-line`, color: `textMuted` }}>
-      {finalExcerpt}
-    </Themed.p>
-  )
+  return null;
+  // let finalExcerpt = excerpt
+  // finalExcerpt = processReactString(getExcerpt(item, locale))
+  // return (
+  //   <Themed.p sx={{ whiteSpace: `pre-line`, color: `textMuted` }}>
+  //     {finalExcerpt}
+  //   </Themed.p>
+  // )
 }
