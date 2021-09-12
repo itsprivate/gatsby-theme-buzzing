@@ -33,6 +33,15 @@ const Subscription = ({ pageContext: { locale, basePath } }) => {
         <Trans>Subscribe to us in the following ways:</Trans>
       </Themed.p>
       <Themed.ul>
+        <li>
+          <LinkUI
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://t.me/joinchat/GVK5UiDwPUAwMjkx"
+          >
+            Telegram Group
+          </LinkUI>
+        </li>
         {links
           ? links.map((link, i) => {
               const attr = {}
