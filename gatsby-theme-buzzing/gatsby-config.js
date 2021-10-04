@@ -46,6 +46,8 @@ module.exports = themeOptions => {
           },
           keySeparator: "__::__",
           nsSeparator: "__::::__",
+          returnEmptyString: false,
+          returnNull: false,
         },
       },
     },
