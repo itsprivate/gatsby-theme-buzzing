@@ -1,3 +1,10 @@
+## [1.11.5](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.4...v1.11.5) (2021-10-04)
+
+
+### Bug Fixes
+
+* translation emptyH ([ef58110](https://github.com/itsprivate/gatsby-theme-buzzing/commit/ef5811020c1b37989fcd48bddafe3056d48de56a))
+
 ## [1.11.4](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.3...v1.11.4) (2021-09-12)
 
 ## [1.11.3](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.2...v1.11.3) (2021-09-10)
