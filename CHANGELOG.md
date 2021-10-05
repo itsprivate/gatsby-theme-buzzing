@@ -1,3 +1,10 @@
+## [1.11.6](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.5...v1.11.6) (2021-10-05)
+
+
+### Bug Fixes
+
+* retweet avatar ([3e43fca](https://github.com/itsprivate/gatsby-theme-buzzing/commit/3e43fca52738903899d10593bf60a575d99447c7))
+
 ## [1.11.5](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.4...v1.11.5) (2021-10-04)
 
 
