@@ -133,6 +133,7 @@ export const query = graphql`
                 gatsbyImageData(width: 24, height: 24, layout: FIXED)
               }
             }
+            authorImageRemote
             video {
               url
               embed
