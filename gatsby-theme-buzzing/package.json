@@ -24,7 +24,7 @@
     "node": ">=12.13.0"
   },
   "dependencies": {
-    "@theowenyoung/gatsby-transformer-json": "^1.0.1",
+    "@theowenyoung/gatsby-transformer-json": "^1.0.2",
     "fs-extra": "^10.0.0",
     "gatsby-plugin-emotion": "^6.10.0",
     "gatsby-plugin-feed": "^3.10.0",
