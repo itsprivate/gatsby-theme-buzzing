@@ -1,3 +1,10 @@
+## [1.11.7](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.6...v1.11.7) (2021-11-08)
+
+
+### Bug Fixes
+
+* ph id ([15a74c6](https://github.com/itsprivate/gatsby-theme-buzzing/commit/15a74c667e88cedaa2e5010ec0c2d97d46055d80))
+
 ## [1.11.6](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.5...v1.11.6) (2021-10-05)
 
 
