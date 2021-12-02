@@ -1,3 +1,11 @@
+# [1.12.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.7...v1.12.0) (2021-12-02)
+
+
+### Features
+
+* update reddit image ([35ffe91](https://github.com/itsprivate/gatsby-theme-buzzing/commit/35ffe911bf0965c81b7ca6bb40957d5f462723f3))
+* update version ([6cf94d6](https://github.com/itsprivate/gatsby-theme-buzzing/commit/6cf94d669934422c34bddfa125951209948759d2))
+
 ## [1.11.7](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.11.6...v1.11.7) (2021-11-08)
 
 
