@@ -1,7 +1,7 @@
 {
   "name": "example",
   "private": "true",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -24,7 +24,7 @@
     "gatsby": "^3.10.2",
     "gatsby-plugin-google-gtag": "^3.10.0",
     "gatsby-plugin-manifest": "^3.10.0",
-    "gatsby-theme-buzzing": "^1.12.0",
+    "gatsby-theme-buzzing": "^1.13.0",
     "i18next": "^20.3.5",
     "ncp": "^2.0.0",
     "react": "^17.0.2",
