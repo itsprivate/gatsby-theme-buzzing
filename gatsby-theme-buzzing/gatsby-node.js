@@ -117,6 +117,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   )
   const IssuesTemplate = require.resolve(`./src/templates/issues-query`)
   const archivesTemplate = require.resolve(`./src/templates/archives-query`)
+  const DetailTemplate = require.resolve(`./src/templates/detail-query`)
 
   const IssuePlainTemplate = require.resolve(
     `./src/templates/issue-plain-query`
@@ -201,6 +202,22 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
     }
     createPage(issuePageInfo)
   }
+
+  const pageTypes = ["tweet", "reddit", "hh", "ph", "youtube", "instagram"]
+  pageTypes.forEach(pageType => {
+    // create details page
+    const detailPageInfo = {
+      path: `${urlResolve(basePath, pageType)}/`,
+      matchPath: `${urlResolve(basePath, pageType)}/*`,
+      component: DetailTemplate,
+      context: {
+        basePath,
+        pageType: pageType,
+        siteMetadata,
+      },
+    }
+    createPage(detailPageInfo)
+  })
 
   // create arechive page
   if (shouldArchive) {

@@ -64,7 +64,7 @@ module.exports = themeOptions => {
 
                 let title = getTitle(node, locale)
                 let description = getExcerpt(node, locale)
-
+                console.log("title", title)
                 items.push({
                   title,
                   description,
@@ -198,6 +198,7 @@ module.exports = themeOptions => {
             `,
             output: locale === "zh" ? "/rss.xml" : `/${locale}/rss.xml`,
             language: locale,
+            title: `Buzzing ${locale} RSS Feed`,
           }
         }),
       },

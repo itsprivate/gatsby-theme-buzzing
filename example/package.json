@@ -21,15 +21,15 @@
     "@theowenyoung/gatsby-source-git": "^2.2.2",
     "cpy-cli": "^3.1.1",
     "date-cli": "^1.1.0",
-    "gatsby": "^3.10.2",
-    "gatsby-plugin-google-gtag": "^3.10.0",
-    "gatsby-plugin-manifest": "^3.10.0",
+    "gatsby": "^4.4.0",
+    "gatsby-plugin-google-gtag": "^4.4.0",
+    "gatsby-plugin-manifest": "^4.4.0",
     "gatsby-theme-buzzing": "^1.13.0",
-    "i18next": "^20.3.5",
+    "i18next": "^21.6.4",
     "ncp": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-i18next": "^11.11.4",
-    "trash-cli": "^4.0.0"
+    "react-i18next": "^11.15.2",
+    "trash-cli": "^5.0.0"
   }
 }
