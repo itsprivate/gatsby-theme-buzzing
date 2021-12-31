@@ -1,0 +1,6 @@
+{
+    "componentChunkName": "component---gatsby-theme-buzzing-src-templates-detail-query-js",
+    "path": "/zh-Hant/tweet/",
+    "result": {"pageContext":{"basePath":"/","pageType":"tweet","siteMetadata":null,"locale":"zh-Hant","hrefLang":"zh-Hant","originalPath":"/tweet/","dateFormat":"YYYY-MM-DD"}},
+    "staticQueryHashes": ["1239077767","2617711539","2744905544","3280999885"],
+    "matchPath": "/zh-Hant/tweet/*"}

@@ -1,0 +1,6 @@
+{
+    "componentChunkName": "component---gatsby-theme-buzzing-src-templates-detail-query-js",
+    "path": "/ja/reddit/",
+    "result": {"pageContext":{"basePath":"/","pageType":"reddit","siteMetadata":null,"locale":"ja","hrefLang":"ja-JA","originalPath":"/reddit/","dateFormat":"YYYY-MM-DD"}},
+    "staticQueryHashes": ["1239077767","2617711539","2744905544","3280999885"],
+    "matchPath": "/ja/reddit/*"}
