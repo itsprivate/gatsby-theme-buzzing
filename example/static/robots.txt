@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://changemyview.buzzing.cc/sitemap/sitemap-index.xml
-Host: https://changemyview.buzzing.cc

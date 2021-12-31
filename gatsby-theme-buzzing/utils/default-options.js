@@ -20,6 +20,7 @@ module.exports = themeOptions => {
     shouldTransformImage: false,
     postsPerPage: 50,
     tagPostsPerPage: 500,
+    skipCreateDetailPages: true, // skip create detail , use json api instead
     shouldArchive,
     postsFilter: {
       date: {
