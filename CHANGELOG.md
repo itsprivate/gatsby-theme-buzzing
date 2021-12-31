@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.13.0...v1.14.0) (2021-12-31)
+
+
+### Features
+
+* gatsby v4 ([68d45dd](https://github.com/itsprivate/gatsby-theme-buzzing/commit/68d45dd82cc89c725a8045df2a6aff5bc776c700))
+
 # [1.13.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.12.0...v1.13.0) (2021-12-02)
 
 
