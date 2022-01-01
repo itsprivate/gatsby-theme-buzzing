@@ -1,5 +1,11 @@
 # gatsby-theme-buzzing
 
+## 1.16.1
+
+### Patch Changes
+
+- a3a59a7a31b: remove arcchived
+
 ## 1.16.0
 
 ### Minor Changes
