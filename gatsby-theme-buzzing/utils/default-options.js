@@ -19,13 +19,13 @@ module.exports = themeOptions => {
     shouldTransformJson: false,
     shouldTransformImage: false,
     postsPerPage: 50,
-    tagPostsPerPage: 500,
+    tagPostsPerPage: 100,
     skipCreateDetailPages: false, // skip create detail , use json api instead
     shouldArchive,
     postsFilter: {
       date: {
-        gt: "2000-12-25T10:54:58.000Z",
-      },
+        gt: "2000-12-25T10:54:58.000Z"
+      }
     },
     ...themeOptions,
     issueTypeName,
@@ -33,7 +33,7 @@ module.exports = themeOptions => {
     i18nConfig: {
       defaultLang: `zh`,
       configPath: require.resolve(`../i18n/config.json`),
-      ...themeOptions.i18nConfig,
-    },
+      ...themeOptions.i18nConfig
+    }
   }
 }
