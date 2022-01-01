@@ -4,15 +4,17 @@ import { useLocalization } from "gatsby-theme-i18n"
 import { withPrefix, navigate } from "gatsby"
 import { join } from "path-browserify"
 const HeaderRight = props => {
-  const { pageContext } = props
+  const { location } = props
   const { locale: currentLocale, config, defaultLang } = useLocalization()
+  let currentPath = location.pathname
+  if (currentPath.startsWith(`/${currentLocale}`)) {
+    currentPath = currentPath.substring(`/${currentLocale}`.length)
+  }
   const handleChangeLocale = e => {
     const localeCode = e.target.value
     const targetUrl = withPrefix(
       join(
-        `${localeCode === defaultLang ? "" : `/${localeCode}`}${
-          pageContext.originalPath
-        }`
+        `${localeCode === defaultLang ? "" : `/${localeCode}`}${currentPath}`
       )
     )
     navigate(targetUrl)

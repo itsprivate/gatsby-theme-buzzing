@@ -53,6 +53,9 @@ const DetailPage = ({ location, pageContext }) => {
   useEffect(() => {
     let currentLocation = window.location
     let currentPath = currentLocation.pathname
+    if (currentPath.startsWith(`/${locale}`)) {
+      currentPath = currentPath.substring(`/${locale}`.length)
+    }
     let mounted = true
     const api = `https://json-api.buzzing.cc/ref${currentPath}data.json`
 
