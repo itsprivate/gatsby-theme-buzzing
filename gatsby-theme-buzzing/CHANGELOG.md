@@ -1,5 +1,11 @@
 # gatsby-theme-buzzing
 
+## 1.16.2
+
+### Patch Changes
+
+- dependence
+
 ## 1.16.1
 
 ### Patch Changes
