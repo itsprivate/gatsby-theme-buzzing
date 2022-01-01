@@ -1,3 +1,11 @@
+# [1.14.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.13.0...v1.14.0) (2022-01-01)
+
+
+### Features
+
+* dependence ([2a40984](https://github.com/itsprivate/gatsby-theme-buzzing/commit/2a409845f50b7512aee50bcee3b033365a490e94))
+* gatsby v4 ([68d45dd](https://github.com/itsprivate/gatsby-theme-buzzing/commit/68d45dd82cc89c725a8045df2a6aff5bc776c700))
+
 # [1.14.0](https://github.com/itsprivate/gatsby-theme-buzzing/compare/v1.13.0...v1.14.0) (2021-12-31)
 
 
