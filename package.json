@@ -22,6 +22,7 @@
     "example"
   ],
   "dependencies": {
+    "@changesets/cli": "^2.19.0",
     "release-it": "^14.10.1"
   },
   "devDependencies": {

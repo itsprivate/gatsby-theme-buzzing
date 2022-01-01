@@ -6,8 +6,8 @@ const fs = require("fs").promises
 const { getTitle, getExcerpt } = require("./utils")
 module.exports = themeOptions => {
   const options = withDefaults(themeOptions)
-
-  init(options)
+  // seems not need do this
+  // init(options)
 
   let plugins = []
 
