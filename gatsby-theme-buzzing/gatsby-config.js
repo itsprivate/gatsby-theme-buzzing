@@ -72,7 +72,6 @@ module.exports = themeOptions => {
                 let description = getExcerpt(node, locale)
                 let provider = node.provider
                 let url = site.siteMetadata.siteUrl + node.slug
-                console.log("provider", provider)
 
                 if (
                   provider === "Hacker News" ||
@@ -83,7 +82,7 @@ module.exports = themeOptions => {
                     node.score
                   }&original_url=${encodeURIComponent(
                     node.originalUrl || node.url
-                  )}&hn_url=${encodeURIComponent(node.url)}`
+                  )}&discuss_url=${encodeURIComponent(node.url)}`
                 }
                 items.push({
                   title,
@@ -96,7 +95,6 @@ module.exports = themeOptions => {
                   ]
                 })
               }
-              console.log("items", items)
 
               return items
             },

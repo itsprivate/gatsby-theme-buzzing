@@ -1,5 +1,13 @@
 # example
 
+## 1.16.3
+
+### Patch Changes
+
+- fix: console
+- Updated dependencies
+  - gatsby-theme-buzzing@1.16.7
+
 ## 1.16.2
 
 ### Patch Changes

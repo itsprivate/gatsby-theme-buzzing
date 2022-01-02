@@ -1,5 +1,11 @@
 # gatsby-theme-buzzing
 
+## 1.16.7
+
+### Patch Changes
+
+- fix: console
+
 ## 1.16.6
 
 ### Patch Changes
