@@ -46,7 +46,7 @@ if (isDev) {
       fetchOptions: ["--depth", "1"],
       // Only import the docs folder from a codebase.
       patterns: [
-        "data/*-placeholder/1.json",
+        "data/*-placeholder/1.json"
         // "data/reddit-top/**",
         // "data/hn-top/**",
         // "data/youtube-top/**",
@@ -61,8 +61,8 @@ if (isDev) {
         // "data/tweet-crypto/**",
         // "data/stocks-issues/**",
         // "data/hn-top-issues/**",
-      ],
-    },
+      ]
+    }
   })
   // plugins.push({
   //   resolve: `@theowenyoung/gatsby-source-git`,
@@ -84,11 +84,12 @@ plugins = plugins.concat([
   {
     resolve: `gatsby-theme-buzzing`,
     options: {
+      siteMetadata: siteMetadata,
       tweetTypeName: ["TweetJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditJson"],
       issueTypeName: ["RedditChangemyviewIssuesJson"],
-      localesPath: localesPath,
-    },
+      localesPath: localesPath
+    }
   },
   {
     resolve: `gatsby-plugin-manifest`,
@@ -109,24 +110,24 @@ plugins = plugins.concat([
           lang: item.locale,
           name: item.title,
           short_name: item.shortTitle,
-          description: item.description,
+          description: item.description
         }
-      }),
-    },
+      })
+    }
   },
   {
     resolve: `gatsby-plugin-google-gtag`,
     options: {
       // You can add multiple tracking ids and a pageview event will be fired for all of them.
       trackingIds: [
-        "G-GQVR44BC8T", // Google Analytics / GA
-      ],
-    },
-  },
+        "G-GQVR44BC8T" // Google Analytics / GA
+      ]
+    }
+  }
 ])
 
 module.exports = {
   flags: { QUERY_ON_DEMAND: true },
   plugins: plugins,
-  siteMetadata: siteMetadata,
+  siteMetadata: siteMetadata
 }
