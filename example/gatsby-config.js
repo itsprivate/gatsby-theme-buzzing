@@ -87,7 +87,7 @@ plugins = plugins.concat([
       siteMetadata: siteMetadata,
       tweetTypeName: ["TweetJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditJson"],
-      issueTypeName: ["RedditChangemyviewIssuesJson"],
+      issueTypeName: ["HnTopIssuesJson"],
       localesPath: localesPath
     }
   },

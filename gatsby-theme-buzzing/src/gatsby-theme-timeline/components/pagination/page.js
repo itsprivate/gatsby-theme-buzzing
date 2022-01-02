@@ -15,7 +15,7 @@ export default function Page({ prefix, pagePath, pageContext }, props) {
         sx={{
           px: 2,
           fontWeight: props.isActive ? `bold` : undefined,
-          color: props.isActive ? `text` : `textMuted`,
+          color: props.isActive ? `text` : `textMuted`
         }}
       >
         {props.value}
@@ -28,11 +28,11 @@ export default function Page({ prefix, pagePath, pageContext }, props) {
       to={withPrefix(
         props.value === 1
           ? `${prefix}`
-          : urlJoin(`${prefix}`, `${pagePath}/${props.value}`)
+          : urlJoin(`${prefix}`, `${pagePath}/${props.value}/`)
       )}
       sx={{
         px: 2,
-        color: `textMuted`,
+        color: `textMuted`
       }}
     >
       {props.value}

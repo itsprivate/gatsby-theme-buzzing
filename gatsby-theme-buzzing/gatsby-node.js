@@ -43,15 +43,15 @@ exports.createResolvers = ({ createResolvers }) => {
         resolve: (source, _, context, __) => {
           if (source.provider === "Reddit") {
             const parentNode = context.nodeModel.getNodeById({
-              id: source.parent,
+              id: source.parent
             })
             return parentNode.the_new_excerpt || ""
           } else {
             return source.excerpt || ""
           }
-        },
-      },
-    },
+        }
+      }
+    }
   }
   createResolvers(resolvers)
 }
@@ -72,11 +72,11 @@ exports.onCreateNode = async ({ node, actions, getNode }, themeOptions) => {
   if (allIssueTypeName.includes(node.internal.type)) {
     const date = new Date(node.updatedAt).toISOString()
     const fieldData = {
-      slug: urlResolve(basePath, `issues/${node.issueNumber}`),
+      slug: urlResolve(basePath, `issues/${node.issueNumber}/`),
       date: date,
       issueNumber: node.issueNumber,
       draft: node.draft,
-      items: node.items,
+      items: node.items
     }
 
     const nodeId = `${ISSUE_TYPE_NAME}-${node.id}`
@@ -90,15 +90,15 @@ exports.onCreateNode = async ({ node, actions, getNode }, themeOptions) => {
         type: ISSUE_TYPE_NAME,
         contentDigest: createContentDigest(fieldData),
         content: JSON.stringify(fieldData),
-        description: `${ISSUE_TYPE_NAME}`,
-      },
+        description: `${ISSUE_TYPE_NAME}`
+      }
     })
     createParentChildLink({ parent: node, child: getNode(nodeId) })
     // createNodeField
     createNodeField({
       node: getNode(nodeId),
       name: `basePath`,
-      value: basePath,
+      value: basePath
     })
   }
 }
@@ -108,12 +108,21 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
   const imageMaxWidth = 1024
   const imageMaxHeight = 512
   const postsPerPage = 1
-  const { siteMetadata, shouldArchive, postsFilter, skipCreateIndexPages } =
-    withDefaults(themeOptions)
+  const {
+    siteMetadata,
+    shouldArchive,
+    postsFilter,
+    skipCreateIndexPages,
+    redirectTypeName
+  } = withDefaults(themeOptions)
 
   // get posts
   const ItemsTemplate = require.resolve(
     `gatsby-theme-timeline/src/templates/posts-query`
+  )
+  // get post
+  const PostTemplate = require.resolve(
+    `gatsby-theme-timeline/src/templates/post-query`
   )
   const IssuesTemplate = require.resolve(`./src/templates/issues-query`)
   const archivesTemplate = require.resolve(`./src/templates/archives-query`)
@@ -155,15 +164,16 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         slug: {
           in: issue.items.map(item => {
             return `${item.slug}`
-          }),
-        },
+          })
+        }
       }
       // Create Posts and Post pages.
       const totalPages = Math.ceil(issues.length / postsPerPage)
       const total = issues.length
       // create posts pages
+
       const pageInfo = {
-        path: urlResolve(basePath, `issues/${issueNumber}`),
+        path: urlResolve(basePath, `issues/${issueNumber}/`),
         component: ItemsTemplate,
         context: {
           basePath,
@@ -172,38 +182,95 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
           dateISO: issue.dateISO,
           tagsFilter: postsFilter,
           filter: issuePostsFilter,
-          limit: 1000,
+          limit: 100,
           skip: 0,
           totalPages,
           total: total,
           currentPage: issueNumber,
           maxWidth: imageMaxWidth,
           maxHeight: imageMaxHeight,
-          siteMetadata,
-        },
+          siteMetadata
+        }
       }
       createPage(pageInfo)
       const issuePlainPageInfo = {
         ...pageInfo,
-        path: urlResolve(basePath, `/plain/issues/${issueNumber}`),
-        component: IssuePlainTemplate,
+        path: urlResolve(basePath, `/plain/issues/${issueNumber}/`),
+        component: IssuePlainTemplate
       }
       createPage(issuePlainPageInfo)
+
+      const issuePostsResult = await graphql(
+        `
+          query IssuesItemsCreatePageQuery(
+            $filter: BlogPostFilterInput
+            $maxPosts: Int
+          ) {
+            allBlogPost(
+              sort: { fields: [date, title], order: DESC }
+              filter: $filter
+              limit: $maxPosts
+            ) {
+              nodes {
+                id
+                slug
+                date
+                __typename
+                ... on SocialMediaPost {
+                  parent {
+                    internal {
+                      type
+                    }
+                  }
+                }
+              }
+            }
+          }
+        `,
+        {
+          filter: issuePostsFilter,
+          maxPosts: 100
+        }
+      )
+      const issuePosts = issuePostsResult.data.allBlogPost.nodes
+      // create detail page
+      issuePosts.forEach((post, index) => {
+        // not create redirect type post
+
+        const pageInfo = {
+          path: post.slug,
+          component: PostTemplate,
+          context: {
+            basePath: basePath,
+            pageType: `detail`,
+            id: post.id,
+            maxWidth: imageMaxWidth,
+            siteMetadata
+          }
+        }
+        if (
+          post.__typename === `SocialMediaPost` &&
+          redirectTypeName.includes(post.parent.internal.type)
+        ) {
+          return
+        }
+        createPage(pageInfo)
+      })
     }
     const issuePageInfo = {
-      path: urlResolve(basePath, `issues`),
+      path: urlResolve(basePath, `issues/`),
       component: IssuesTemplate,
       context: {
         basePath,
         pageType: "issues",
         siteMetadata,
-        tagsFilter: postsFilter,
-      },
+        tagsFilter: postsFilter
+      }
     }
     createPage(issuePageInfo)
   }
 
-  const pageTypes = ["tweet", "reddit", "hh", "ph", "youtube", "instagram"]
+  const pageTypes = ["tweet", "reddit", "hn", "ph", "youtube", "instagram"]
   pageTypes.forEach(pageType => {
     // create details page
     const detailPageInfo = {
@@ -213,8 +280,8 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
       context: {
         basePath,
         pageType: pageType,
-        siteMetadata,
-      },
+        siteMetadata
+      }
     }
     createPage(detailPageInfo)
   })
@@ -237,7 +304,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         }
       `,
       {
-        filter: postsFilter,
+        filter: postsFilter
       }
     )
 
@@ -271,15 +338,15 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         slug: {
           in: groupItems.map(item => {
             return `${item.slug}`
-          }),
-        },
+          })
+        }
       }
       // Create Posts and Post pages.
       const totalPages = 1
       const total = groupItems.length
       // create posts pages
       const pageInfo = {
-        path: urlResolve(basePath, `archive/${year}/${month}`),
+        path: urlResolve(basePath, `archive/${year}/${month}/`),
         component: ItemsTemplate,
         context: {
           basePath,
@@ -297,17 +364,17 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
           maxWidth: imageMaxWidth,
           maxHeight: imageMaxHeight,
           siteMetadata,
-          title: key,
-        },
+          title: key
+        }
       }
       createPage(pageInfo)
       archiveItems.push({
         year: year,
-        month: month,
+        month: month
       })
     })
     const archivePageInfo = {
-      path: urlResolve(basePath, `archive`),
+      path: urlResolve(basePath, `archive/`),
       component: archivesTemplate,
       context: {
         basePath,
@@ -315,8 +382,8 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
         siteMetadata,
         tagsFilter: postsFilter,
 
-        items: archiveItems,
-      },
+        items: archiveItems
+      }
     }
     createPage(archivePageInfo)
   }
@@ -330,6 +397,6 @@ function getDateInfo(date) {
   return {
     year,
     month,
-    yearMonth,
+    yearMonth
   }
 }

@@ -19,7 +19,7 @@ export default function NextPageLink({ prefix, pageContext }, props) {
       <div
         sx={{
           flexGrow: 1,
-          textAlign: `right`,
+          textAlign: `right`
         }}
       ></div>
     )
@@ -28,7 +28,7 @@ export default function NextPageLink({ prefix, pageContext }, props) {
     <div
       sx={{
         flexGrow: 1,
-        textAlign: `right`,
+        textAlign: `right`
       }}
     >
       <LinkUI
@@ -37,12 +37,12 @@ export default function NextPageLink({ prefix, pageContext }, props) {
         to={withPrefix(
           props.value === 1
             ? `${prefix}`
-            : urlJoin(prefix, `${pagePath}/${props.value}`)
+            : urlJoin(prefix, `${pagePath}/${props.value}/`)
         )}
         sx={{
           color: `textMuted`,
           flexGrow: 1,
-          textAlign: `right`,
+          textAlign: `right`
         }}
       >
         <Trans>{nextText}</Trans> &rarr;

@@ -12,7 +12,7 @@ const Item = props => {
     <Themed.li sx={{ fontSize: 2 }}>
       <LinkUI
         as={Link}
-        to={withPrefix(path.join(basePath, `issues/${item.issueNumber}`))}
+        to={withPrefix(path.join(basePath, `issues/${item.issueNumber}/`))}
       >
         <Trans>Issue {{ issueNumber }}</Trans>
       </LinkUI>

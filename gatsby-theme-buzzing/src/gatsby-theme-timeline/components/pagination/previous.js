@@ -20,7 +20,7 @@ export default function PreviousPageLink({ prefix, pageContext }, props) {
       <div
         sx={{
           flexGrow: 1,
-          textAlign: `left`,
+          textAlign: `left`
         }}
       ></div>
     )
@@ -29,7 +29,7 @@ export default function PreviousPageLink({ prefix, pageContext }, props) {
     <div
       sx={{
         flexGrow: 1,
-        textAlign: `left`,
+        textAlign: `left`
       }}
     >
       <LinkUI
@@ -37,10 +37,10 @@ export default function PreviousPageLink({ prefix, pageContext }, props) {
         to={withPrefix(
           props.value === 1 && pageType !== "issue"
             ? `${prefix}`
-            : urlJoin(prefix, `${pagePath}/${props.value}`)
+            : urlJoin(prefix, `${pagePath}/${props.value}/`)
         )}
         sx={{
-          color: `textMuted`,
+          color: `textMuted`
         }}
       >
         &larr; <Trans>{previousText}</Trans>

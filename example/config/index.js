@@ -12,42 +12,42 @@ const siteMetadata = {
   menuLinks: [
     {
       name: "每周精选",
-      url: "/issues",
-    },
+      url: "/issues/"
+    }
   ],
   subscriptions: [
     {
       name: "Telegram @Reddit热门",
       url: "https://t.me/reddit_zh",
-      external: true,
+      external: true
     },
     {
       name: "Twitter @buzzingcc",
       url: "https://twitter.com/buzzingcc",
-      external: true,
+      external: true
     },
     {
       name: "Telegram @buzzingcc",
       url: "https://t.me/buzzingcc",
-      external: true,
+      external: true
     },
     {
       name: "RSS",
       url: "/rss.xml",
-      prefetch: false,
-    },
+      prefetch: false
+    }
   ],
   social: [
     {
       name: `Reddit`,
       url: `https://www.reddit.com`,
-      external: true,
+      external: true
     },
     {
       name: `Buzzing`,
       url: `https://www.buzzing.cc/`,
-      external: true,
-    },
+      external: true
+    }
   ],
   localize: [
     {
@@ -59,9 +59,9 @@ const siteMetadata = {
       menuLinks: [
         {
           name: "Weekly Selection",
-          url: "/en/issues",
-        },
-      ],
+          url: "/en/issues/"
+        }
+      ]
     },
     {
       locale: "zh-Hant",
@@ -72,9 +72,9 @@ const siteMetadata = {
       menuLinks: [
         {
           name: "每週精選",
-          url: "/zh-Hant/issues",
-        },
-      ],
+          url: "/zh-Hant/issues/"
+        }
+      ]
     },
     {
       locale: "ja",
@@ -92,11 +92,11 @@ const siteMetadata = {
         //   url: "/zh-Hant/rss.xml",
         //   prefetch: false,
         // },
-      ],
-    },
-  ],
+      ]
+    }
+  ]
 }
 
 module.exports = {
-  siteMetadata,
+  siteMetadata
 }
