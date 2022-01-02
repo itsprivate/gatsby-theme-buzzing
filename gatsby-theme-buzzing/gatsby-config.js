@@ -2,7 +2,6 @@ require("dotenv").config()
 const _ = require("lodash")
 const { onPreInit: init, t } = require("./util")
 const withDefaults = require(`./utils/default-options`)
-const fs = require("fs").promises
 const { getTitle, getExcerpt } = require("./utils")
 module.exports = themeOptions => {
   const options = withDefaults(themeOptions)
@@ -26,12 +25,12 @@ module.exports = themeOptions => {
           return _.upperFirst(
             _.camelCase(`${isOtherType ? rootDirectoryName : rootPrefix} Json`)
           )
-        },
-      },
+        }
+      }
     },
     {
       resolve: `gatsby-theme-timeline`,
-      options: options,
+      options: options
     },
     {
       resolve: `gatsby-theme-i18n-react-i18next`,
@@ -42,20 +41,27 @@ module.exports = themeOptions => {
           ns: ["translation", "translation-tag"],
           fallbackLng: {
             "zh-Hant": ["zh", "en"],
-            default: ["en"],
+            default: ["en"]
           },
           keySeparator: "__::__",
           nsSeparator: "__::::__",
           returnEmptyString: false,
-          returnNull: false,
-        },
-      },
+          returnNull: false
+        }
+      }
     },
 
     {
       resolve: `gatsby-plugin-feed`,
       options: {
         feeds: ["en", "zh", "zh-Hant"].map(locale => {
+          const themeSiteMetadata = options.siteMetadata
+          const siteTitle = t(
+            "title",
+            themeSiteMetadata.localize,
+            themeSiteMetadata.title,
+            locale
+          )
           return {
             serialize: async ({ query: { site, allBlogPost } }) => {
               let items = []
@@ -71,8 +77,8 @@ module.exports = themeOptions => {
                   url: site.siteMetadata.siteUrl + node.slug,
                   guid: site.siteMetadata.siteUrl + node.slug,
                   custom_elements: [
-                    { "content:encoded": node.body || description },
-                  ],
+                    { "content:encoded": node.body || description }
+                  ]
                 })
               }
               return items
@@ -197,10 +203,10 @@ module.exports = themeOptions => {
             `,
             output: locale === "zh" ? "/rss.xml" : `/${locale}/rss.xml`,
             language: locale,
-            title: `Buzzing ${locale} RSS Feed`,
+            title: siteTitle
           }
-        }),
-      },
+        })
+      }
     },
     "gatsby-plugin-robots-txt",
     {
@@ -214,15 +220,15 @@ module.exports = themeOptions => {
           } else {
             return false
           }
-        },
-      },
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
-        publisherId: `ca-pub-5211209136530011`,
-      },
-    },
+        publisherId: `ca-pub-5211209136530011`
+      }
+    }
   ])
   return {
     plugins,
@@ -247,19 +253,19 @@ module.exports = themeOptions => {
           menuLinks: [
             {
               name: "Weekly Selection",
-              url: "/issues",
-            },
+              url: "/issues"
+            }
           ],
           social: [
             {
               name: `Reddit`,
               url: `https://www.reddit.com/`,
-              external: true,
-            },
-          ],
-        },
-      ],
-    },
+              external: true
+            }
+          ]
+        }
+      ]
+    }
   }
 }
 const kebabToSnakeCase = str => {

@@ -1,5 +1,11 @@
 # gatsby-theme-buzzing
 
+## 1.16.4
+
+### Patch Changes
+
+- fix feed title
+
 ## 1.16.2
 
 ### Patch Changes
