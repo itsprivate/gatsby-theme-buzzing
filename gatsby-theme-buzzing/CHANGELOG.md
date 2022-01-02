@@ -1,5 +1,11 @@
 # gatsby-theme-buzzing
 
+## 1.16.6
+
+### Patch Changes
+
+- fix link
+
 ## 1.16.5
 
 ### Patch Changes
