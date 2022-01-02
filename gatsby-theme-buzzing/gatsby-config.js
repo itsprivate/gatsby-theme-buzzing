@@ -70,17 +70,34 @@ module.exports = themeOptions => {
 
                 let title = getTitle(node, locale)
                 let description = getExcerpt(node, locale)
+                let provider = node.provider
+                let url = site.siteMetadata.siteUrl + node.slug
+                console.log("provider", provider)
+
+                if (
+                  provider === "Hacker News" ||
+                  provider === "Reddit" ||
+                  provider === "Product Hunt"
+                ) {
+                  url = `${url}?score=${
+                    node.score
+                  }&original_url=${encodeURIComponent(
+                    node.originalUrl || node.url
+                  )}&hn_url=${encodeURIComponent(node.url)}`
+                }
                 items.push({
                   title,
                   description,
                   date: node.dateISO,
-                  url: site.siteMetadata.siteUrl + node.slug,
+                  url,
                   guid: site.siteMetadata.siteUrl + node.slug,
                   custom_elements: [
                     { "content:encoded": node.body || description }
                   ]
                 })
               }
+              console.log("items", items)
+
               return items
             },
             query: `
