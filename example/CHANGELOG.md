@@ -1,5 +1,16 @@
 # example
 
+## 2.0.0
+
+### Major Changes
+
+- fix feed url
+
+### Patch Changes
+
+- Updated dependencies
+  - gatsby-theme-buzzing@2.0.0
+
 ## 1.16.3
 
 ### Patch Changes

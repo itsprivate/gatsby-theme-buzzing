@@ -1,5 +1,11 @@
 # gatsby-theme-buzzing
 
+## 2.0.0
+
+### Major Changes
+
+- fix feed url
+
 ## 1.16.7
 
 ### Patch Changes
