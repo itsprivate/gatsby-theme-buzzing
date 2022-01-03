@@ -71,7 +71,8 @@ module.exports = themeOptions => {
                 let title = getTitle(node, locale)
                 let description = getExcerpt(node, locale)
                 let provider = node.provider
-                let url = site.siteMetadata.siteUrl + node.slug
+                let slimUrl = locale === "zh" ? (site.siteMetadata.siteUrl + node.slug) : `${site.siteMetadata.siteUrl}/${locale}${node.slug}`
+                let url = slimUrl
 
                 if (
                   provider === "Hacker News" ||
@@ -89,7 +90,7 @@ module.exports = themeOptions => {
                   description,
                   date: node.dateISO,
                   url,
-                  guid: site.siteMetadata.siteUrl + node.slug,
+                  guid: slimUrl,
                   custom_elements: [
                     { "content:encoded": node.body || description }
                   ]
