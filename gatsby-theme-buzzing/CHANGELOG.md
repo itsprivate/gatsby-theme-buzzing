@@ -1,5 +1,11 @@
 # gatsby-theme-buzzing
 
+## 2.0.3
+
+### Patch Changes
+
+- news
+
 ## 2.0.2
 
 ### Patch Changes

@@ -75,6 +75,9 @@ module.exports = themeOptions => {
                   locale === "zh"
                     ? site.siteMetadata.siteUrl + node.slug
                     : `${site.siteMetadata.siteUrl}/${locale}${node.slug}`
+                if (provider === "Google News") {
+                  slimUrl = node.originalUrl
+                }
                 let urlObj = new URL(slimUrl)
 
                 if (
