@@ -71,25 +71,34 @@ module.exports = themeOptions => {
                 let title = getTitle(node, locale)
                 let description = getExcerpt(node, locale)
                 let provider = node.provider
-                let slimUrl = locale === "zh" ? (site.siteMetadata.siteUrl + node.slug) : `${site.siteMetadata.siteUrl}/${locale}${node.slug}`
-                let url = slimUrl
+                let slimUrl =
+                  locale === "zh"
+                    ? site.siteMetadata.siteUrl + node.slug
+                    : `${site.siteMetadata.siteUrl}/${locale}${node.slug}`
+                let urlObj = new URL(slimUrl)
 
                 if (
                   provider === "Hacker News" ||
                   provider === "Reddit" ||
                   provider === "Product Hunt"
                 ) {
-                  url = `${url}?score=${
-                    node.score
-                  }&original_url=${encodeURIComponent(
+                  urlObj.searchParams.set("score", node.score)
+                  urlObj.searchParams.set(
+                    "original_url",
                     node.originalUrl || node.url
-                  )}&discuss_url=${encodeURIComponent(node.url)}`
+                  )
+                  urlObj.searchParams.set("discuss_url", node.url)
                 }
+                if (node.channel) {
+                  urlObj.searchParams.set("channel", node.channel)
+                }
+                urlObj.searchParams.set("sensitive", node.sensitive)
+
                 items.push({
                   title,
                   description,
                   date: node.dateISO,
-                  url,
+                  url: urlObj.toString(),
                   guid: slimUrl,
                   custom_elements: [
                     { "content:encoded": node.body || description }
@@ -113,6 +122,7 @@ module.exports = themeOptions => {
                     title
                     body
                     dateISO: date
+                    sensitive
                     ... on SocialMediaPost {
                       provider
                       thirdPartyId

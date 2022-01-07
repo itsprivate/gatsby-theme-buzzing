@@ -1,5 +1,13 @@
 # example
 
+## 2.0.1
+
+### Patch Changes
+
+- add sensitive to rss
+- Updated dependencies
+  - gatsby-theme-buzzing@2.0.2
+
 ## 2.0.0
 
 ### Major Changes

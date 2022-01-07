@@ -1,5 +1,17 @@
 # gatsby-theme-buzzing
 
+## 2.0.2
+
+### Patch Changes
+
+- add sensitive to rss
+
+## 2.0.1
+
+### Patch Changes
+
+- 17b8b495e44: test
+
 ## 2.0.0
 
 ### Major Changes
